@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
- //alert("ASCII´úÂëÊÇ£º"+event.keyCode);
+function KeyDown(){ //å±è”½é¼ æ ‡å³é”®ã€Ctrl+nã€shift+F10ã€F5åˆ·æ–°ã€é€€æ ¼é”®
+ //alert("ASCIIä»£ç æ˜¯ï¼š"+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //ÆÁ±Î Alt+ ·½Ïò¼ü ¡û
-       (window.event.keyCode==39))){  //ÆÁ±Î Alt+ ·½Ïò¼ü ¡ú
+      ((window.event.keyCode==37)||   //å±è”½ Alt+ æ–¹å‘é”® â†
+       (window.event.keyCode==39))){  //å±è”½ Alt+ æ–¹å‘é”® â†’
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //ÆÁ±ÎÍË¸ñÉ¾³ı¼ü
-      (event.keyCode==116)||                 //ÆÁ±Î F5 Ë¢ĞÂ¼ü
-      (event.keyCode==112)||                 //ÆÁ±Î F1 Ë¢ĞÂ¼ü
-      (event.keyCode==80)||                 //ÆÁ±Î p Ë¢ĞÂ¼ü
+  if ((event.keyCode==8)  ||                 //å±è”½é€€æ ¼åˆ é™¤é”®
+      (event.keyCode==116)||                 //å±è”½ F5 åˆ·æ–°é”®
+      (event.keyCode==112)||                 //å±è”½ F1 åˆ·æ–°é”®
+      (event.keyCode==80)||                 //å±è”½ p åˆ·æ–°é”®
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //ÆÁ±Î shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //å±è”½ shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //ÆÁ±Î shift ¼ÓÊó±ê×ó¼üĞÂ¿ªÒ»ÍøÒ³
+      window.event.returnValue = false;  //å±è”½ shift åŠ é¼ æ ‡å·¦é”®æ–°å¼€ä¸€ç½‘é¡µ
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>Ïµ±ğ¶ÔÊôĞÔµÄÓ°Ïì</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ç³»åˆ«å¯¹å±æ€§çš„å½±å“</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "»ªÎÄĞĞ¿¬";
+	font-family: "åæ–‡è¡Œæ¥·";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">¡¡</td>
+				<td height="36" width="131">ã€€</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						Ïµ±ğ¶ÔÊôĞÔµÄÓ°Ïì</span></div></td>
+						ç³»åˆ«å¯¹å±æ€§çš„å½±å“</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">¡¡</td>
+                <td height="36" width="53">ã€€</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -180,7 +180,7 @@ MM_reloadPage(true);
 <TBODY>
 <TR>
 <TD>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ËùÓĞÈËÎï³õÆÚÊôĞÔµãÊı¶¼²»ÍêÈ«ÏàÍ¬,¼´Ê¹Íæ¼ÒÑ¡ÔñÍ¬ÑùÒ»¸ö½ÇÉ«,´´Á¢ÈËÎïµÄ³õÆÚµãÊıÅäµãÒ²ÏàÍ¬,µ«ÊÇÈÔ»áÒòÎªÑ¡ÔñÏµ±ğµÄ²»Í¬,¶øÊ¹½ÇÉ«ÊôĞÔ³É³¤²úÉú²îÒì,<BR>Èç:</P></TD></TR></TBODY></TABLE></DIV>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ‰€æœ‰äººç‰©åˆæœŸå±æ€§ç‚¹æ•°éƒ½ä¸å®Œå…¨ç›¸åŒ,å³ä½¿ç©å®¶é€‰æ‹©åŒæ ·ä¸€ä¸ªè§’è‰²,åˆ›ç«‹äººç‰©çš„åˆæœŸç‚¹æ•°é…ç‚¹ä¹Ÿç›¸åŒ,ä½†æ˜¯ä»ä¼šå› ä¸ºé€‰æ‹©ç³»åˆ«çš„ä¸åŒ,è€Œä½¿è§’è‰²å±æ€§æˆé•¿äº§ç”Ÿå·®å¼‚,<BR>å¦‚:</P></TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table23 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
@@ -190,41 +190,41 @@ MM_reloadPage(true);
 <TBODY>
 <TR>
 <TD align=middle colSpan=5>
-<P align=center>lv1¸÷Ïµ½á¹û</P></TD></TR>
+<P align=center>lv1å„ç³»ç»“æœ</P></TD></TR>
 <TR>
-<TD align=middle width=55 rowSpan=2>µãÊı·ÖÅä</TD>
-<TD align=middle colSpan=4>Ï¯µÂÊôĞÔÖµ</TD></TR>
+<TD align=middle width=55 rowSpan=2>ç‚¹æ•°åˆ†é…</TD>
+<TD align=middle colSpan=4>å¸­å¾·å±æ€§å€¼</TD></TR>
 <TR>
-<TD align=middle width=32>»ğ</TD>
-<TD align=middle width=32>·ç</TD>
-<TD align=middle width=28>µØ</TD>
-<TD align=middle width=16>Ë®</TD></TR>
+<TD align=middle width=32>ç«</TD>
+<TD align=middle width=32>é£</TD>
+<TD align=middle width=28>åœ°</TD>
+<TD align=middle width=16>æ°´</TD></TR>
 <TR>
-<TD align=middle>¹¥7</TD>
+<TD align=middle>æ”»7</TD>
 <TD align=middle>16</TD>
 <TD align=middle>15</TD>
 <TD align=middle>15</TD>
 <TD align=middle>15</TD></TR>
 <TR>
-<TD align=middle>·À0</TD>
+<TD align=middle>é˜²0</TD>
 <TD align=middle>4</TD>
 <TD align=middle>4</TD>
 <TD align=middle>5</TD>
 <TD align=middle>4</TD></TR>
 <TR>
-<TD align=middle>Ä§¹¥0</TD>
+<TD align=middle>é­”æ”»0</TD>
 <TD align=middle>2</TD>
 <TD align=middle>1</TD>
 <TD align=middle>1</TD>
 <TD align=middle>1</TD></TR>
 <TR>
-<TD align=middle>Ä§·À0</TD>
+<TD align=middle>é­”é˜²0</TD>
 <TD align=middle>2</TD>
 <TD align=middle>2</TD>
 <TD align=middle>2</TD>
 <TD align=middle>2</TD></TR>
 <TR>
-<TD align=middle>ÁéÇÉ1</TD>
+<TD align=middle>çµå·§1</TD>
 <TD align=middle>4</TD>
 <TD align=middle>5</TD>
 <TD align=middle>4</TD>
@@ -234,41 +234,41 @@ MM_reloadPage(true);
 <TBODY>
 <TR>
 <TD style="BORDER-RIGHT: medium none; BORDER-LEFT: medium none" align=middle colSpan=5>
-<P align=center>lv2¸÷Ïµ½á¹û</P></TD></TR>
+<P align=center>lv2å„ç³»ç»“æœ</P></TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle width=52 rowSpan=2>µãÊı·ÖÅä</TD>
-<TD style="BORDER-RIGHT: medium none" align=middle colSpan=4>Ï¯µÂÊôĞÔÖµ</TD></TR>
+<TD style="BORDER-LEFT: medium none" align=middle width=52 rowSpan=2>ç‚¹æ•°åˆ†é…</TD>
+<TD style="BORDER-RIGHT: medium none" align=middle colSpan=4>å¸­å¾·å±æ€§å€¼</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle width=33>»ğ</TD>
-<TD align=middle width=29>·ç</TD>
-<TD align=middle width=36>µØ</TD>
-<TD style="BORDER-RIGHT: medium none" align=middle width=16>Ë®</TD></TR>
+<TD style="BORDER-LEFT: medium none" align=middle width=33>ç«</TD>
+<TD align=middle width=29>é£</TD>
+<TD align=middle width=36>åœ°</TD>
+<TD style="BORDER-RIGHT: medium none" align=middle width=16>æ°´</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>¹¥10</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>æ”»10</TD>
 <TD align=middle>24</TD>
 <TD align=middle>23</TD>
 <TD align=middle>23</TD>
 <TD style="BORDER-RIGHT: medium none" align=middle>23</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>·À0</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>é˜²0</TD>
 <TD align=middle>6</TD>
 <TD align=middle>6</TD>
 <TD align=middle>7</TD>
 <TD style="BORDER-RIGHT: medium none" align=middle>6</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>Ä§¹¥0</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>é­”æ”»0</TD>
 <TD align=middle>3</TD>
 <TD align=middle>3</TD>
 <TD align=middle>3</TD>
 <TD style="BORDER-RIGHT: medium none" align=middle>3</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>Ä§·À0</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>é­”é˜²0</TD>
 <TD align=middle>4</TD>
 <TD align=middle>4</TD>
 <TD align=middle>4</TD>
 <TD style="BORDER-RIGHT: medium none" align=middle>4</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>ÁéÇÉ1</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>çµå·§1</TD>
 <TD align=middle>6</TD>
 <TD align=middle>7</TD>
 <TD align=middle>6</TD>
@@ -277,41 +277,41 @@ MM_reloadPage(true);
 <TABLE id=table26 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=162 border=1>
 <TBODY>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle colSpan=5>lv3¸÷Ïµ½á¹û</TD></TR>
+<TD style="BORDER-LEFT: medium none" align=middle colSpan=5>lv3å„ç³»ç»“æœ</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle width=54 rowSpan=2>µãÊı·ÖÅä</TD>
-<TD align=middle colSpan=4>Ï¯µÂÊôĞÔÖµ</TD></TR>
+<TD style="BORDER-LEFT: medium none" align=middle width=54 rowSpan=2>ç‚¹æ•°åˆ†é…</TD>
+<TD align=middle colSpan=4>å¸­å¾·å±æ€§å€¼</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle width=32>»ğ</TD>
-<TD align=middle width=33>·ç</TD>
-<TD align=middle width=27>µØ</TD>
-<TD align=middle width=16>Ë®</TD></TR>
+<TD style="BORDER-LEFT: medium none" align=middle width=32>ç«</TD>
+<TD align=middle width=33>é£</TD>
+<TD align=middle width=27>åœ°</TD>
+<TD align=middle width=16>æ°´</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>¹¥13</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>æ”»13</TD>
 <TD align=middle>32</TD>
 <TD align=middle>30</TD>
 <TD align=middle>30</TD>
 <TD align=middle>30</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>·À0</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>é˜²0</TD>
 <TD align=middle>8</TD>
 <TD align=middle>8</TD>
 <TD align=middle>10</TD>
 <TD align=middle>8</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>Ä§¹¥0</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>é­”æ”»0</TD>
 <TD align=middle>5</TD>
 <TD align=middle>4</TD>
 <TD align=middle>4</TD>
 <TD align=middle>4</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>Ä§·À0</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>é­”é˜²0</TD>
 <TD align=middle>6</TD>
 <TD align=middle>6</TD>
 <TD align=middle>7</TD>
 <TD align=middle>6</TD></TR>
 <TR>
-<TD style="BORDER-LEFT: medium none" align=middle>ÁéÇÉ1</TD>
+<TD style="BORDER-LEFT: medium none" align=middle>çµå·§1</TD>
 <TD align=middle>8</TD>
 <TD align=middle>9</TD>
 <TD align=middle>8</TD>
@@ -320,7 +320,7 @@ MM_reloadPage(true);
 <TABLE id=table27 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ·ÖÎö:lv1ÏÂ,»ğÏµ¹¥»÷Á¦±ÈÆäËüÈıÏµ¶àÒ»µã,·çÏµÁéÇÉ¶àÒ»µã,µØÏµ·ÀÓùÁ¦¶àÒ»µã,Ë®ÏµÔòÊÇÃ»ÓĞÈÎºÎ¼Ó³ÉĞ§¹û,ËùÒÔÍæ¼ÒÈç¹ûÑ¡ÔñÏ¯µÂ½ÇÉ«Ê±,½¨ÒéÑ¡Ôñ»ğÏµ»òµØÏµ.Éı¼¶ºóÊôĞÔ¶îÍâÔö¼ÓÊıÖµ»á½Ï¶à</TD></TR></TBODY></TABLE></DIV></DIV><!--Content End--></td>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åˆ†æ:lv1ä¸‹,ç«ç³»æ”»å‡»åŠ›æ¯”å…¶å®ƒä¸‰ç³»å¤šä¸€ç‚¹,é£ç³»çµå·§å¤šä¸€ç‚¹,åœ°ç³»é˜²å¾¡åŠ›å¤šä¸€ç‚¹,æ°´ç³»åˆ™æ˜¯æ²¡æœ‰ä»»ä½•åŠ æˆæ•ˆæœ,æ‰€ä»¥ç©å®¶å¦‚æœé€‰æ‹©å¸­å¾·è§’è‰²æ—¶,å»ºè®®é€‰æ‹©ç«ç³»æˆ–åœ°ç³».å‡çº§åå±æ€§é¢å¤–å¢åŠ æ•°å€¼ä¼šè¾ƒå¤š</TD></TR></TBODY></TABLE></DIV></DIV><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -336,7 +336,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="»Ø¶¥²¿" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="å›é¡¶éƒ¨" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

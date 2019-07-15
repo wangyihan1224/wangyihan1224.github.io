@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
- //alert("ASCII´úÂëÊÇ£º"+event.keyCode);
+function KeyDown(){ //å±è”½é¼ æ ‡å³é”®ã€Ctrl+nã€shift+F10ã€F5åˆ·æ–°ã€é€€æ ¼é”®
+ //alert("ASCIIä»£ç æ˜¯ï¼š"+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //ÆÁ±Î Alt+ ·½Ïò¼ü ¡û
-       (window.event.keyCode==39))){  //ÆÁ±Î Alt+ ·½Ïò¼ü ¡ú
+      ((window.event.keyCode==37)||   //å±è”½ Alt+ æ–¹å‘é”® â†
+       (window.event.keyCode==39))){  //å±è”½ Alt+ æ–¹å‘é”® â†’
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //ÆÁ±ÎÍË¸ñÉ¾³ı¼ü
-      (event.keyCode==116)||                 //ÆÁ±Î F5 Ë¢ĞÂ¼ü
-      (event.keyCode==112)||                 //ÆÁ±Î F1 Ë¢ĞÂ¼ü
-      (event.keyCode==80)||                 //ÆÁ±Î p Ë¢ĞÂ¼ü
+  if ((event.keyCode==8)  ||                 //å±è”½é€€æ ¼åˆ é™¤é”®
+      (event.keyCode==116)||                 //å±è”½ F5 åˆ·æ–°é”®
+      (event.keyCode==112)||                 //å±è”½ F1 åˆ·æ–°é”®
+      (event.keyCode==80)||                 //å±è”½ p åˆ·æ–°é”®
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //ÆÁ±Î shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //å±è”½ shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //ÆÁ±Î shift ¼ÓÊó±ê×ó¼üĞÂ¿ªÒ»ÍøÒ³
+      window.event.returnValue = false;  //å±è”½ shift åŠ é¼ æ ‡å·¦é”®æ–°å¼€ä¸€ç½‘é¡µ
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>5.0×ÊÁÏÆ¬-Ç°ÑÔ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>5.0èµ„æ–™ç‰‡-å‰è¨€</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "»ªÎÄĞĞ¿¬";
+	font-family: "åæ–‡è¡Œæ¥·";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">¡¡</td>
+				<td height="36" width="131">ã€€</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						5.0×ÊÁÏÆ¬-Ç°ÑÔ</span></div></td>
+						5.0èµ„æ–™ç‰‡-å‰è¨€</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">¡¡</td>
+                <td height="36" width="53">ã€€</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -180,20 +180,20 @@ MM_reloadPage(true);
 <TABLE id=table1 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 bgColor=#f3f3f3 border=1>
 <TBODY>
 <TR>
-<TD align=middle width="20%"><A href="113738.html">Ç°ÑÔ</A></TD>
-<TD align=middle width="20%"><A href="141132.html">ÀËÂşÓÎÅ·ÖŞ</A></TD>
-<TD align=middle width="20%"><A href="142521.html">ĞÂNPCµÇ³¡</A></TD>
-<TD align=middle width="20%"><A href="143747.html">ĞÂÍæ¼Ò½ÇÉ«¿ª·Å</A></TD>
-<TD align=middle width="20%"><A href="144224.html">ÎŞ½çPKµÇ³¡</A></TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width="20%"><A href="113738.html">å‰è¨€</A></TD>
+<TD align=middle width="20%"><A href="141132.html">æµªæ¼«æ¸¸æ¬§æ´²</A></TD>
+<TD align=middle width="20%"><A href="142521.html">æ–°NPCç™»åœº</A></TD>
+<TD align=middle width="20%"><A href="143747.html">æ–°ç©å®¶è§’è‰²å¼€æ”¾</A></TD>
+<TD align=middle width="20%"><A href="144224.html">æ— ç•ŒPKç™»åœº</A></TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>&nbsp;</DIV>
 <TABLE class=font cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
 <TD><IMG height=39 src="../../../plhjtp/2008-6-26/t1.gif" width=490 border=0></TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
-<TD vAlign=top>¡¡¡¡Æ®Á÷»Ã¾³¼´½«ÍÆ³ö×îĞÂ×ÊÁÏÆ¬¡¾ÎŞ½çÖ®ÃÅ¡¿£¬À´Ó­½Ó¼´½«µ½À´µÄÊî¼Ù¡£Õâ´Î×ÊÁÏÆ¬ÔÙ´Î¿ª·ÅÅ·ÖŞÁ½´ó³¡¾°£¬ÍÆ³öÓĞ×ÅÔ²×ÀÎäÊ¿±³¾°µÄÓ¢¹ú£®¿µÎÖ¶û£¬ÒÔ¼°Ê¥Å®ÕêµÂµÄ¼ÒÏç¶°À×Ã×£¬ÈÃÏ²»¶¹ÊÊÂµÄÍæ¼Ò¶àÁË¿ÉÌ½ÏÕµÄºÃÈ¥´¦¡£<BR><BR>¡¡¡¡ »¹»á³öÏÖÕêµÂ¡¢°¢ÉªÍõ¡¢À¼Ë¹ÂåµÈÖªÃû´«ÆæÈËÎï£¬½«»á´øÁìÍæ¼Ò½øÈëËûÃÇµÄ¹ÊÊÂÀï£¬¿ÉÒÔÌåÑéÒ»ÏÂÓ¢¹úÖĞ¹ÅÆïÊ¿¾«Éñ£¬ÒÔ¼°Ê¥Å®ÕêµÂÎŞË½·îÏ×µÄ¾«Éñà¸¡£<BR><BR>¡¡¡¡ ³ı´ËÖ®Íâ£¬»¹½«ÍÆ³ö¿ç·şÎñÆ÷PK¹¦ÄÜ£¬ÈÃ¸÷·şÎñÆ÷ÒÀ½Ï¸ßÏÂ£¬µÇÉÏ×î¸ßÈÙÓşÖ®Î»©¤ÎŞ½çÖ®Íõ¡£</TD></TR></TBODY></TABLE></DIV><!--Content End--></td>
+<TD vAlign=top>ã€€ã€€é£˜æµå¹»å¢ƒå³å°†æ¨å‡ºæœ€æ–°èµ„æ–™ç‰‡ã€æ— ç•Œä¹‹é—¨ã€‘ï¼Œæ¥è¿æ¥å³å°†åˆ°æ¥çš„æš‘å‡ã€‚è¿™æ¬¡èµ„æ–™ç‰‡å†æ¬¡å¼€æ”¾æ¬§æ´²ä¸¤å¤§åœºæ™¯ï¼Œæ¨å‡ºæœ‰ç€åœ†æ¡Œæ­¦å£«èƒŒæ™¯çš„è‹±å›½ï¼åº·æ²ƒå°”ï¼Œä»¥åŠåœ£å¥³è´å¾·çš„å®¶ä¹¡æ ‹é›·ç±³ï¼Œè®©å–œæ¬¢æ•…äº‹çš„ç©å®¶å¤šäº†å¯æ¢é™©çš„å¥½å»å¤„ã€‚<BR><BR>ã€€ã€€ è¿˜ä¼šå‡ºç°è´å¾·ã€é˜¿ç‘Ÿç‹ã€å…°æ–¯æ´›ç­‰çŸ¥åä¼ å¥‡äººç‰©ï¼Œå°†ä¼šå¸¦é¢†ç©å®¶è¿›å…¥ä»–ä»¬çš„æ•…äº‹é‡Œï¼Œå¯ä»¥ä½“éªŒä¸€ä¸‹è‹±å›½ä¸­å¤éª‘å£«ç²¾ç¥ï¼Œä»¥åŠåœ£å¥³è´å¾·æ— ç§å¥‰çŒ®çš„ç²¾ç¥å–”ã€‚<BR><BR>ã€€ã€€ é™¤æ­¤ä¹‹å¤–ï¼Œè¿˜å°†æ¨å‡ºè·¨æœåŠ¡å™¨PKåŠŸèƒ½ï¼Œè®©å„æœåŠ¡å™¨ä¾è¾ƒé«˜ä¸‹ï¼Œç™»ä¸Šæœ€é«˜è£èª‰ä¹‹ä½â”€æ— ç•Œä¹‹ç‹ã€‚</TD></TR></TBODY></TABLE></DIV><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -209,7 +209,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="»Ø¶¥²¿" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="å›é¡¶éƒ¨" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

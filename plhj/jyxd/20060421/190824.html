@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>С���ӵĲ�ժ�ռ�</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>小妮子的采摘日记</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						С���ӵĲ�ժ�ռ�</span></div></td>
+						小妮子的采摘日记</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,11 +175,11 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>���ߣ�С����</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; С���ӻ����˷ܵ�����������Ʈ���þ��������У�����³��ѷ���ҵ�ľ���������򰶱ߣ��ò����׵��ϰ��ߣ�һ·������ͣͣ ����������һ����ׯ������-�����壬�ڴ��������䣬��Ȼ����һ��ɽ�������Ų�������������ɽ���ڣ���Ȼ����һת������ս�����������Ĺֶ��� ��֣��ѵ������ǿ�ӣ�</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ò�����������2¥����Ȼ����ǰ��Χ����һȺ�ˣ��������ǰ��ȥ��ԭ���Ǹ���ʯ�Ĳɼ��㣬������ɼ�������õ�ҳ�ҡ� ��ĸ�ҡ���ǡ������ҡ�ú�󣬲Ų���һ���Ӿ��������Ŀ�ʯ���벻��Ʈ��׬Ǯ���淽���أ��ող�������������˵��3¥����һ���ɼ�����Բɵ�� ����׬Ǯ��һ���ң���Ȼ������˵�嵽3¥����΢����һ���Ӿ��õ���ɫ��������������������������߱ر��Ĳ����أ�</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �߳��˿����������˴��⣬����Զ���и�ɽ�����ں����ĵ���ʹ���̲�סǰ����һ��ɽ������һ������ɽ������һ��֮�²�֪ ���������ǡ���������ɽ����һ¥����Ҷ��ڴ��������������������ıȿ��ǿ�Ϻü�����С���Ӻü��β������������ϣ���ս���������ֱ��� �ҵ�һ���ɼ�����������ɼ�������õ�����ͭ������Ǧ�����������Ҵ�׬��һ�ʡ�</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����������Ҳ���ˣ����Ҹ��羰�����ĵط���΢��Ϣһ�£��߳��˿���������ұߺ�����ȥ���������ߵ�·��С�����ۼ⣬�� ����һ����ˮ�ɼ��㣬�߲ɼ��߸����ڵ�����һ�£�˳�㽻�����鱨��ԭ����ˮ����ˮ�ϳ����л�������õ���ˮ�ģ����ҵ�ˮ���Ժ��������ر��Ĳ� ��֮һ�����˱����������ϵ����϶�Ҳ�к�ˮ�Ĳɼ��㣬������˵�Ǳߵ���λ���ն�һ��С�ľͶ������������ǵ�����ǿһ����ȥ�ɣ�</P><!--Content End--></td>
+			<!--Content Start--><P align=right>作者：小妮子</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 小妮子怀着兴奋的心情来到了飘流幻境的世界中，坐着鲁宾逊给我的木筏奋力划向岸边，好不容易登上岸边，一路上走走停停 终于遇到第一个村庄，北岛-克兰村，在村内随意逛逛，忽然发现一座山洞，带着不安的心情进入的山洞内，忽然画面一转进入了战斗，所遇到的怪都是 矿怪，难道这里是矿坑？</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 好不容易来到了2楼，忽然看到前方围绕了一群人，好奇的向前走去，原来是个矿石的采集点，在这个采集点可以拿到页岩、 云母岩、硫磺、花岗岩、煤矿，才采了一下子就满包包的矿石，想不到飘流赚钱还真方便呢，刚刚不经意听到有人说，3楼还有一个采集点可以采到黏 土，赚钱第一的我，当然二话不说冲到3楼，稍微采了一下子就拿到黑色黏土跟干黏土，黏土可是制作器具必备的材料呢！</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 走出了克兰村来到了村外，看到远处有个山洞，在好奇心的驱使下忍不住前往，一进山洞吓了一跳，满山洞的人一问之下才知 道，这里是『卡玛那瓦山洞』一楼，大家都在打蚯蚓拿黏土，不过蚯蚓真的比矿怪强上好几倍，小妮子好几次差点死在蚯蚓手上，且战且逃终于又被我 找到一个采集点拉，这个采集点可以拿到铁矿、铜矿、锡矿、铅矿、铝矿，又让我大赚了一笔。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 走着走着腿也酸了，想找个风景优美的地方稍微休息一下，走出了矿坑往北岛右边海岸走去，在往海边的路上小妮子眼尖，发 现了一个海水采集点，边采集边跟隔壁的闲聊一下，顺便交换了情报，原来海水跟海水合成是有机会可以拿到淡水的，而且淡水是以后做尼龙必备的材 料之一，除了北岛以外在南岛的南端也有海水的采集点，不过听说那边地理位置险恶，一不小心就丢了老命，还是等我练强一点再去吧！</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -195,7 +195,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

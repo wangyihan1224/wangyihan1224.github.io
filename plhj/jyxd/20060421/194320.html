@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>�ϼ�����֮������СŮ��</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>南极任务之卖火柴的小女孩</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						�ϼ�����֮������СŮ��</span></div></td>
+						南极任务之卖火柴的小女孩</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,28 +175,28 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ص㣺�ϼ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���ƣ��������������СŮ������ </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ȫ�����̣� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������ڽ��ϼ�����֮ǰ�����ȵ�������������������СŮ����ǰ�����񡣣��Խ������ֱ���������裴�� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������СŮ�����ڻ��������ǰ��Ĺ㳡�ϣ�ȥ��СŮ���Ի�֮����������Ұ�æ׼��������н�� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����������н֮��СŮ����������ң���������ֵ�����Ҹ��������Ҫȥ����ĵط�����񣨾��Ǻ�����ϼ����񡣣� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������Ҫ���ϼ�ȥ������׼����һ�ҡ���ľ�ۡ��������뿴���Ƽ����ᡸ�ӣУԲݰ���Ư���þ�������ĺ�����ͼ�� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���������⣬��ǵ�����������򣬾���ʵ��֤���������Խ�죬������Խ�� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��������һ�ж�׼���õ�ʱ�����ɱ���ȡ���ǵĵط����� ����ҹ��ʱ�Ǵ���߳����ģ�����Ȥ�Ĵ���ǿ������Ŵӱ�ĵط������� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������������򣺳���֮���������½Ǻ��У��������ͼ����һᷢ�֣��ϼ�����ڴ���ʵ���ϱ����ǳʡ��u���ķ�ʽ </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������ȿ����˱���֮�󣬿�ʼ��Ѱ�ϼ�����ڣ���ǵã������ұߡ��ң����������һֱ�����·����еĻ���һ���ᳬԽһ����ڵ����ڵأ��������ұ��������ʺϵķ��������ϼ�����ڴ���һ���Ӵ������ڣ������׷����ġ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������Ƚ������˴�֮����Ѵ������ұߡ�������Ϊֻ���ұ߲��ǵ����ࡣ��������ҹһ��ɵɵ�Ĺ�����ߺþá�����㻵�أģ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������������˰�֮�󣬻ᷢ��ǰ����Զ���и���Ѩ���Ǿ���ͨ���ϼ���Ķ�Ѩ�ˣ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����������붴Ѩ֮�󣬻ῴ����Լ�����ĵ�ͼ�����㣱�Ǵ�������һ�������ţ�������ֵĶ�Ѩ������Ҳ�Ҫȥð�զ�䣢 ���㣲���Ǵ����ϼ��壬Ҳ���ǽ�����ĵط����ڶ�Ѩ���涼�ǣ��������ϵĹ����������ҳ��á�ע���󷨡����ǡ���ƽ���桹 </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �У��ӣ�ע���󷨽�˵��ϵͳѡ�������ע����Ϸ�������������ʱ������ע��֮���ٵ����ʱ�򣬽�ɫ���������ո����ֵ��Ǹ����ϡ�<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��ƽ���棺ʥ���ڵ�С����֮һ������ȥ��һ���Ӳ����������� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����������ȥ���㣲��ʱ�򣬻ῴ��һ�ŷ��� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����������СŮ���Ի����֮����������Ұ�æ��Ǯȥ���������Ƶĸ��� �����ĸ�������������ߵڶ����������档 </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������������������һЩ�����ȥ��СŮ����ʱ��СŮ���Ѿ����ˣ���֮����Ҿͻ�õ� ����������Ϊ���ͣ������������Ħ�䣢������ҹ���ˣ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �У��ӣ��ϼ���װ�����ǣ�����ͷ�ģ�����Ȥ����ҿ�������Ԥ���æ�䣢 </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ֮ǰ��Ϊ˵��̫�����˺�����Щ�����ʧ��Щ���Ĵ�ֻʵ�ںܱ�Ǹ���ߣ���</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������ҹ����ȥ���˵���ȷλ�ӵ�ͼƬϣ�������ֲ����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���Ϧ��ϣ�������;���<BR></P><!--Content End--></td>
+			<!--Content Start--><P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 地点：南极 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 限制：必须解完卖火柴的小女孩任务１ </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 全部流程： </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （１）在解南极任务之前，请先到基督村里面找卖火柴的小女孩解前置任务。（以解过的请直接跳到步骤４） </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （２）小女孩就在基督村教堂前面的广场上，去跟小女孩对话之后，他会请玩家帮忙准备３个柴薪。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （３）给完柴薪之后，小女孩会赠予玩家１００经验值，并且告诉玩家她要去更冷的地方卖火柴（就是后面的南极任务。） </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （４）要到南极去，请先准备好一艘「独木舟」，并且请看过推荐连结「ＳＰＴ草包的漂流幻境」里面的航海地图。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （５）另外，请记得下载连点程序，经过实验证明，鼠标点的越快，船坏的越慢 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （６）等一切都准备好的时候，请由北岛取贝壳的地方出海 （月夜当时是从这边出海的，有兴趣的大大们可以试着从别的地方出海） </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （７）航海方向：出海之后请往左下角航行，看过大地图的玩家会发现，南极的入口处其实跟南北岛是呈「�u」的方式 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （８）等看到了冰岛之后，开始找寻南极的入口，请记得，往「右边」找，假如玩家是一直往左下方航行的话，一定会超越一点入口的所在地，所以往右边找事最适合的方法。而南极的入口处是一个河川出海口，很容易发觉的。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （９）等近了入了处之后，请把船往「右边」开，因为只有右边才是登入点唷！（别跟月夜一样傻傻的逛了左边好久…船差点坏ＸＤ） </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （１０）等上了岸之后，会发现前方不远处有个洞穴，那就是通往南极村的洞穴了！ </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （１１）进入洞穴之后，会看到大约这样的地图。传点１是传往另外一个充满着７０ｕｐ怪的洞穴，请玩家不要去冒险�洇洌� 传点２则是传往南极村，也就是解任务的地方由于洞穴里面都是７０等以上的怪物，所以请玩家常用「注销大法」或是「和平拉面」 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ｐ．Ｓ：注销大法解说：系统选项里面的注销游戏，当遇到怪物的时候请先注销之后再登入的时候，角色会出现在你刚刚遇怪的那个点上。<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 和平拉面：圣诞节的小礼物之一，吃下去有一分钟不会遇到怪物 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （１２）进去传点２的时候，会看到一排房屋 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （１３）跟小女孩对话完毕之后，她会请玩家帮忙拿钱去给她喝醉酒的父亲 而她的父亲则是在她左边第二个房子里面。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （１４）接下来看完一些剧情回去找小女孩的时候，小女孩已经死了，而之后玩家就会得到 １个星星作为奖赏（好像还有其它的�洇洌⒌�是月夜忘了） </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ｐ．Ｓ：南极的装备都是２ｘ开头的，有兴趣的玩家可以买来预备用�洇洌� </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 之前因为说的太含糊了害的有些玩家损失了些许的船只实在很抱歉＞＿＜ａ</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 所以月夜重新去拍了点正确位子的图片希望可以弥补�洇�</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 以上�洇湎Ｍ�大家旅途愉快<BR></P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -212,7 +212,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

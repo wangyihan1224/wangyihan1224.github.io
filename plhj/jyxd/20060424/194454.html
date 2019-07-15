@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>�����Ƽ� һ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>练功推荐 一</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						�����Ƽ� һ</span></div></td>
+						练功推荐 一</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,9 +175,9 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �տ�ʼ�����ڴ��ϵ��м���Ȼ�޷����ÿ����ϵõ�̫����Ϣ����ǧ�����Ծư��ڵ���̨��Ϸ����һ̨���õ�����Ϸ����һ̨���������Ϸ���ɹ����غ󽱻�� 2 �Ŷһ�ȯ��ƾ�Ŷһ�ȯ�����̨�������һ�����������߳������Ҵ����Ի�����ᴥ�������¼�������ڱ�³��ѷ����ĵ��Ͽ��ҵ��������� *13 ���ɿ��� *8 �������� *12 ������ *12 ��Ҭ�� *2 �Ȼظ����ߣ������ֺ쳾���൱�а�����³��ѷ����������ľ������ҿɴ���������Ϸ������뿪���ֵ����뱱�����뿪С�����޷��ټ��������ʹ�չ���ĵ���ð�գ������������г���������ָ����ԵĹ������Բ���Ҫ�������ݹ���������ѡ�������ص㣬��ֻҪ͸������ͻ����ܿ���С����С���� 3 �������룬��ʹ�����������Լ���ˣ�Ҳ�ɽ��ɻ�鸨����������˺������ص��ѡ�񣬳��ڽ��Թ��������Ʒ��ʵ����Ϊ���� LV1~15 �����ص��ѡ�񣬴����ɷ�Ϊ 3 ���׶� <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV1~6 ���������ܵȼ� <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����Ϸ����Ҫ����ѧ���¼��ܣ��ͱ��뾡���������ܾ���ֵ��ȼ���ѧ��Щ���ܴﵽ�ض��ȼ�����ѧ���¼��ܣ����ڵȼ�δ�� 6 �����������ҽ��æ�ָ� HP �� SP ����ҿɽ��ѹ�������ܣ������ֿ�˵��һ�������Ƽ������ص�Ϊ��������߳��ڸ������� LV1 ���㽶�����֡����ܹ����֡���������֡����Ѻ綳��Ϊ��Ҫ����Ϊʲ?ר�� LV1 �Ĺ����أ���Ϊ��ȼ��ߵĹ��ﾭ��ֵ�࣬��ӿ�ȼ������ٶȣ���Խ������������ҽ�� HP �� SP ��Ȩ�档 </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV6~10 ����ʵ������� <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6������������ȣ��ͱ������Գ�ʵ���ΪĿ�꣬�����塢��������������������˷���������۸��Ʊ��ˣ������Բ����ñ�����������úã���Ϸ�еĽ�ǮҲ������?�����ۻ���������ҿ����Կ�����ľ�������ִ�Ϊ������������������ʡ�¹���װ�����ϳɲ��ϵ�Ǯ��Ҳ����˳�������ȼ��� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV10~15 ������ɭ��̽�� <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������Ѿ�������ɱ 10 ���ֺ󣬾Ϳ�ǰ����һ���ص�����һ��������ɽ��ɭɭ�Թ����Թ���NPC��Ȼ�ߴ�17�����㼸��ÿ�������� 1 ֻ������֣�Ѫ������ʱֻҪ�����������Ϣ���� HP �ָ����ٶ�ǰ��ս�����ɣ���Ȼ���Ҳ�ɴ� 1~2 �����һͬ���ǰ��ร� 15 �����ϵ���ҿ�ǰ���ϵ����ˣ�����Ĺ���ǿ��Լ 23~24 ������Ȼ�����������ԶһЩ�����˴����������ľ�Ĳ����л���ϳ�������ͬʱҲ������Ʒ����Ҫ����֮һร�</P><!--Content End--></td>
+			<!--Content Start--><P><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 刚开始出生在船上的列家虽然无法从旅客身上得到太多信息，但千万别忽略酒吧内的两台游戏机，一台是敲地鼠游戏，另一台则是射击游戏，成功过关后奖获得 2 张兑换券，凭着兑换券可与吧台服务生兑换奖励，最后，走出船舱找船长对话，便会触发船难事件。玩家在被鲁宾逊救起的岛上可找到乳酸饮料 *13 、巧克力 *8 、口香糖 *12 、泡面 *12 、椰子 *2 等回复道具，对新手红尘功相当有帮助；鲁宾逊身后宝箱里有木筏，玩家可搭乘它由右上方传点离开新手岛进入北岛（离开小岛后即无法再加来），就此展开荒岛大冒险！初期由于所有场景都会出现各属性的怪物所以不需要刻意依据怪物属性来选择练功地点，且只要透过任务就会有萝卡、小兰、小猴子 3 个伙伴加入，即使怪物属性与自己相克，也可藉由伙伴辅助攻击，因此红练功地点的选择，初期皆以怪物掉落物品的实用性为主。 LV1~15 练功地点的选择，大至可分为 3 个阶段 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV1~6 ：提升技能等级 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在游戏中想要快速学到新技能，就必须尽量提升技能经验值与等级，学基些技能达到特定等级即可学到新技能；由于等级未满 6 级可免费请巫医帮忙恢复 HP 与 SP ，玩家可藉此压等练技能，对新手可说是一大福音！推荐练功地点为克兰村左边出口附近，以 LV1 的香蕉果冻怪、菠萝果冻怪、奇异果冻怪、葡萄虹冻怪为主要对象，为什?专挑 LV1 的怪物呢？因为打等级高的怪物经验值多，会加快等级提升速度，相对将减少免费找巫医补 HP 与 SP 的权益。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV6~10 ：充实自身武防 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6级后想快速升等，就必须先以充实武防为目标，克兰村、威灵村与基督村的武器商人贩卖的武防价格看似便宜，但属性不见得比玩家自制来得好，游戏中的金钱也不是这?容易累积，所以玩家可先以矿类与木材类入手处为练功场景，不但可以省下购买装备及合成材料的钱，也可以顺便练练等级。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV10~15 ：北岛森林探索 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当玩家已经轻松秒杀 10 级怪后，就可前往另一个地点练功一卡玛那瓦山后森森迷宫；迷宫的NPC虽然高达17级，便几乎每场都仅有 1 只怪物出现，血量过低时只要打开帐篷进入休息，待 HP 恢复后再度前往战场即可，当然玩家也可打 1~2 名伙伴一同组队前来喔！ 15 级以上的玩家可前往南岛北端，这里的怪物强度约 23~24 级，虽然距离基督城稍远一些，但此处掉落的柳安木材不但有机会合出武器，同时也是制作品的重要材料之一喔！</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -193,7 +193,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

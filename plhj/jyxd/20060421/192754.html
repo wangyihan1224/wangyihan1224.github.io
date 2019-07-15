@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>Ʈ�������￪ʼ[4]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>飘流从这里开始[4]</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						Ʈ�������￪ʼ[4]</span></div></td>
+						飘流从这里开始[4]</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,10 +175,10 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���һ�������㣬������Ȼ������һ���ֵ�Ӱ�ӣ����Ͳȵ����Ƶģ���ʱ��������û���κ����׵������������������Ĺ�������ô���֣�ʯ�֡���ʯ�֡���ʯ�֡���ʯ�֡���ʯ�֡��������Ͽ��Ե��ܶ�ʯ�������������Ǹ������������ʹ���ϵĳ����� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����ڿ�ӵ�����Ķ��ˣ����Ա���ֻ�޴�����������ţ�ɱ������Ϳ����õ����ύ��������峤���Ϳ���ѧ���µ�ս���ܡ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������ڴ����HP����Ļ������Ե��Լ���������������Ϣ�������Ͳ�������Ϣ�б�������������ˡ�������ķ���������Ʒ�������˫�������ͼ�꣬Ȼ���ڵ�ͼ�ϵ�����񼴿ɽ��롣���ڵ�����ǳ���ª��ֻ��һ���������ߵ����ӡ�������ƽ̨��һ������Ͱ��ʹ�ù���ƽ̨���������������ߡ���Ҭ���衢ʯ�����ٵ����õ��Ĳ�����Ҭ�ӡ�ľ�ĵȣ�Ҭ�ӿ��Դ�ǰ��������Ҭ�����ϲɼ���ľ�Ŀ��Դӿ������Ҳഫ�͵㴫���ĵ�ͼ�ϴ򵽡��и�ʯ�����ٵ��󣬾Ϳ������������������õ����ߺ�����ˣ�������ò����Ĳ��ϣ����Զ�������Ͱ����ղ��ϣ�����һ����Ƥ������Ի�����Ƥ����������Ƥ���ıر����ϣ�ͬʱ�������Խ�2�����ϵ���Ʒ���ϳ�¯�кϳɣ�˵�����������벻���ľ�ϲŶ�������ϳ�����һ�����ɵģ��ڲ��Ϻϳɹ�����Ҫѧ���ܽᾭ�飬������Щ���ɺ󣬾Ϳ��Ժϳ�����ߵȼ�������װ������</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��������ľ������򵽲��ٲ��ϲ��Ҿ߱�һ����ɫ�ȼ�֮�󣬾Ϳ��������������У�����һ��ð��Ŀ������һ���ˣ�</P><!--Content End--></td>
+			<!--Content Start--><P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 矿坑一共有三层，里面虽然看不到一个怪的影子，但和踩地雷似的，随时都可能在没有任何征兆的情况下碰到到，里面的怪物有这么几种：石怪、土石怪、绿石怪、黑石怪、红石怪。它们身上可以掉很多石矿和黏土，这里是个不错的练级和打材料的场所。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 卷轴在矿坑第三层的顶端，它旁边有只巨大的蜥蜴守卫着，杀死它后就可以拿到卷轴交给克兰村村长，就可以学到新的战技能。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果你在打怪中HP不足的话，可以到自己的帐篷中坐下休息，这样就不怕在休息中被其他怪物打扰了。打开帐篷的方法是在物品栏中左键双击帐篷的图标，然后在地图上点击帐篷即可进入。初期的帐篷非常简陋，只有一个摆满工具的桌子――工作平台和一个回收桶，使用工作平台可以制作初级工具――椰子盆、石刀、刨刀，用到的材料有椰子、木材等，椰子可以从前面遇到的椰子树上采集，木材可以从矿坑入口右侧传送点传至的地图上打到。有个石刀、刨刀后，就可以制作更多新奇有用的器具和零件了！如果有用不到的材料，可以丢到回收桶里回收材料，比如一个兽皮护腕可以回收兽皮，这是制作皮袋的必备材料！同时，还可以将2种以上的物品到合成炉中合成，说不定又有意想不到的惊喜哦！不过合成是有一定规律的，在不断合成过程中要学会总结经验，掌握这些规律后，就可以合成许多高等级的武器装备啦！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 有了上面的经历，打到不少材料并且具备一定角色等级之后，就可以脱离新手行列，向下一个冒险目标迈进一步了！</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -194,7 +194,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

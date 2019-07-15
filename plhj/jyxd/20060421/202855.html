@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
- //alert("ASCII´úÂëÊÇ£º"+event.keyCode);
+function KeyDown(){ //å±è”½é¼ æ ‡å³é”®ã€Ctrl+nã€shift+F10ã€F5åˆ·æ–°ã€é€€æ ¼é”®
+ //alert("ASCIIä»£ç æ˜¯ï¼š"+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //ÆÁ±Î Alt+ ·½Ïò¼ü ¡û
-       (window.event.keyCode==39))){  //ÆÁ±Î Alt+ ·½Ïò¼ü ¡ú
+      ((window.event.keyCode==37)||   //å±è”½ Alt+ æ–¹å‘é”® â†
+       (window.event.keyCode==39))){  //å±è”½ Alt+ æ–¹å‘é”® â†’
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //ÆÁ±ÎÍË¸ñÉ¾³ı¼ü
-      (event.keyCode==116)||                 //ÆÁ±Î F5 Ë¢ĞÂ¼ü
-      (event.keyCode==112)||                 //ÆÁ±Î F1 Ë¢ĞÂ¼ü
-      (event.keyCode==80)||                 //ÆÁ±Î p Ë¢ĞÂ¼ü
+  if ((event.keyCode==8)  ||                 //å±è”½é€€æ ¼åˆ é™¤é”®
+      (event.keyCode==116)||                 //å±è”½ F5 åˆ·æ–°é”®
+      (event.keyCode==112)||                 //å±è”½ F1 åˆ·æ–°é”®
+      (event.keyCode==80)||                 //å±è”½ p åˆ·æ–°é”®
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //ÆÁ±Î shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //å±è”½ shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //ÆÁ±Î shift ¼ÓÊó±ê×ó¼üĞÂ¿ªÒ»ÍøÒ³
+      window.event.returnValue = false;  //å±è”½ shift åŠ é¼ æ ‡å·¦é”®æ–°å¼€ä¸€ç½‘é¡µ
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>ÎÒµÄ¹¤·ä³É³¤¹ı³Ì</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>æˆ‘çš„å·¥èœ‚æˆé•¿è¿‡ç¨‹</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "»ªÎÄĞĞ¿¬";
+	font-family: "åæ–‡è¡Œæ¥·";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">¡¡</td>
+				<td height="36" width="131">ã€€</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						ÎÒµÄ¹¤·ä³É³¤¹ı³Ì</span></div></td>
+						æˆ‘çš„å·¥èœ‚æˆé•¿è¿‡ç¨‹</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">¡¡</td>
+                <td height="36" width="53">ã€€</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,51 +175,51 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>×÷Õß£º»ÃÓ°ĞÇ³½</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ç°ÌáÊÇ Ã¿ÏàÍ¬µÄÖ»³èÎï³É³¤¹ı³Ì¶¼²»Ò»Ñù!! ×¥µ½µÄÄÜÁ¦Ò²²»Ò»Ñù¡£ </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÒÔÎÒµÄÀ´Ëµ »ğÊô ¹¤·ä </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; µÈ¼¶ Á¦Á¿ ÌåÖÊ ÖÇÁ¦ ÖÇ»Û Ãô½İ Éı¼¶¼Ó³É <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV1&nbsp;&nbsp; 9.&nbsp;&nbsp; 10.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; ³õ¼¶ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV2&nbsp;&nbsp; 9.&nbsp;&nbsp; 11.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; +1ÌåÖÊ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV3&nbsp;&nbsp; 9.&nbsp;&nbsp; 12.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; +1ÌåÖÊ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV4&nbsp;&nbsp; 9.&nbsp;&nbsp; 13.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; +1ÌåÖÊ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV5&nbsp;&nbsp; 9.&nbsp;&nbsp; 13.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 10.&nbsp; +1Ãô½İ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV6&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 10.&nbsp; +1ÌåÖÊ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV7&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 11.&nbsp; +1Ãô½İ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV8&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 12.&nbsp; +1Ãô½İ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV9&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 13.&nbsp; +1Ãô½İ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV10&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 14.&nbsp; +1Ãô½İ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV11&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 14.&nbsp; +1ÖÇÁ¦ = =? <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV12&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 15.&nbsp; +1Ãô½İ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV13&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 16.&nbsp; +1Ãô½İ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV14&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 17.&nbsp; +1Ãô½İ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV15&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 18.&nbsp; +1Ãô½İ </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÒòÎªÖ»Á·µ½15¼¶×Ü¹² ÌåÖÊ+4µã ÖÇÁ¦+1µã Ãô½İ+9µã</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ï°µÃ¼¼ÄÜ£ºÈıĞı·äÏ® 8¼¶Âú »¨·ÑSP£º8 </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ½áÂÛ£º·Ïµ½±¬!! ²»Ë¬Á·ÏÂÈ¥ÁË!! </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ô­Òò£º³èÎïÃô¸ßÃ»ÓĞÄ§·¨¸¨Öú¼¼ÄÜ¾ÍÊÇ·ÏÎï!! ³ı·ÇÒÔµÈ¸ß Ñ¹ÖÆ!!</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¹¥»÷Á¦³¬¼¶²î£¬´ò»¨£¬ÈıĞı·äÏ® 2X. 2X. 2X. = 6X </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÒªÑø³èÎï½¨ÒéÑªÒª¶à£¬ºóÆÚºÜ¶àÈÎÎñÏëÒªÏÈ½â£¬¾ÍÊÇÒª³èÎïµ²!! </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¹Ö¼¸ºõ¶¼»áÏÈ´ò³èÎï£¬ÄãÄÃ¾«È·»ğ¼ıÅÚºä!! <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÏëÒª¿ñ³åµÈ¼¶Ò²ÊÇÒªÕâÑù!!</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ä¿Ç°ÎÒ×¥µ½µÄ³èÎï¶¼Ã»ÓĞÒ»¸öÓĞÏñĞ¡À¼ÄÇÑùÓĞÄ§·¨¸¨Öú¼¼£¬ </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ËùÒÔ³èÎïÃôÔÙ¸ßµÈÓÚÎŞÓÃ£¬³ı·ÇËûµÄ¹¥»÷¼¼ÄÜ¹»Ç¿£¬ </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; µ«ÊÇÒªÖªµÀ¹¥»÷¼¼ÄÜµÄÓ°ÏìÒòËØÊÇ£ºÁ¦Á¿»òÖÇÁ¦ </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ãô¸ßĞÍÓÃÔÚ·ÅÄ§·¨¸¨Öú¼¼ÄÜ»á±È½ÏÇ¢µ±!! </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÀıÈç£ºÏÈ·ÅÎŞÊÓÎïÀí¹¥»÷¼¼»òÇ£ÖÆµĞÈË¹¥»÷»ØºÏ¼¼!!</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ãô¸ßµÄ³è£¬»òÈËÎï£¬ÓĞÕâÖÖ¼¼ÄÜ£¬ÎŞÂÛPK»ò´ò¹Ö¶¼ÊÇºÜŒÅµÄ¡£</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ËùÒÔËµĞ¡À¼²¢²»ÊÇ·Ï³è£¬ÎÒµ¹ÊÇÈÏÎªËûÊÇºóÆÚ×îŒÅµÄ³è¡£</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ²»¹ıĞ¡µÜÈÏÎªÓĞÄ³Ğ©ÒòËØÓ¦¸Ã»áÓ°Ïì³èÎï³É³¤Åäµã!!</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; µÈ¸ßµÄ¹Ö×¥À´µ±³èÎï£¬Ã»´í!! ³õÊ¼ÄÜÁ¦»á±È½ÏºÃ!!</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÄÃÉÏÃæÎÒ¹¤·ä11¼¶+1ÖÇÁ¦µÄÀı×ÓÀ´Ëµ</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ËûÄÇ´ÎÉı¼¶+ÖÇÁ¦¸ÕºÃÊÇ¸úÎÒÅóÓÑºÏ»÷´òËÀ¹Ö¾ÍÉı¼¶£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ç¡ÇÉÎÒÅóÓÑËûÊÇÈ«ÖÇÁ¦·¨Ê¦£¬²»ÖªµÀÊÇ²»ÊÇÕâ¸öÔ­Òò¸Ä±äÁËËûÉı¼¶Åäµã?!</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÏÂÃæÎÒ»¹»á²¹³äËµÃ÷³èÎïÆæ¹ÖµÄ³É³¤ÒòËØ!!</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÏÈËµÎÒ·ÖÉí£¬ÎÒ·ÖÉíÉı¼¶¶¼ÊÇ¼Ó1Á¦Á¿2ÌåÖÊ£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ËûµÄÂŞ¿¨Ò»Ö±Åã°é×ÅËüÉı¼¶³É³¤£¬Éı¼¶¾¹È»Ò²ÊÇÌåÖÊ¸ßÓÚÁ¦Á¿!!</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ½Ó×Å»Øµ½ÉÏÃæ³èÎïÆæ¹ÖµÄ³É³¤ÒòËØ</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¸Õ¸ÕÎÒ°ïÎÒÄÇÎ»·¨Ê¦ÅóÓÑ½â80¼¶¾ŞĞÍÌÙÂû»¨ÈÎÎñ£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ´òÍêÖ®ºó£¬ÎÒÅóÓÑ»Ø´å£¬ÎÒ¾Í¸ú·ÖÉí¹ÒÔÚÏÂÃæ´òĞ¡ÌÙÂû»¨£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ë³±ã·¢ÎÄĞ´ĞÄµÃ£¬È»ºóÌø»ØÈ¥¿´»­Ãæ£¬¸ÕºÃ¿´µ½ÎÒµÄ·ÖÉíµÄÂŞ¿¨Éı¼¶£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÊÇ¸úÎÒºÏ»÷Ö®ºóÉı¼¶£¬¾¹È»+Á¦Á¿£¬Ô­±¾Ëı¼¸ºõ¶¼ÊÇ¼ÓÌåÖÊµÄ!!</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ²ÎÕÕÉÏÃæ2¸öÀı×Ó£¬³èÎïÉı¼¶Åäµã£¬ÕâÑùÊÇ²»ÊÇ·Ç³£¹îÒìÄØ??</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ËùÒÔËµ³èÎï´ÓĞ¡ÅàÑøÓ¦¸ÃÊÇ×îºÃµÄ£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Èç¹ıÉÏÃæÎÒËµµÄÃ»´íµÄ»°£¬ËûÓ¦¸Ã»á´ÓÄãµÄÅäµã·½Ê½À´Ó°Ïì³èÎïÅäµã£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÏµÍ³·¢µÄ³èÎïÎÒÊÇ²»ÖªµÀ£¬ÒòÎª»¹Ã»Á·£¬ÀıÈç£ºĞ¡À¼¡£</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Èç¹ûÊÇÕÕÎÒÉÏÃæµÄËµ·¨À´¾ö¶¨Ó°Ïì³èÎïµÄ³É³¤µãÊıµÄ»°£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÄÇÃô½İĞÍ»òÌåÖÊĞÍµÄĞ¡À¼Ó¦¸ÃÊÇ·Ç³£Ç¿µÄ³è£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÒÔÄ¿Ç°×¥µÄ³èÃ»ÓĞÄ§·¨¸¨Öú¼¼À´Ëµ£¬Ìå»òÃôĞ¡À¼ºóÆÚÓ¦¸ÃÊÇºÜÇ¿£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÒòÎªËû¿ÉÒÔ·ÅÄ§·¨À´°ïÄãµ²¹¥»÷£¬¹âÊÇÕâÕĞ¾Í¹»ìÅÁË£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Èç¹ûËûÉı¼¶ÅäµãÊÇ±»ÏµÍ³Éè¶¨ºÃ£¬ÊÇÖÇÁ¦¸úÖÇÄÜÔÚÅÜµÄ»°£¬ÄÇ¾Í²»ÓÃÁ·ÁË£¬</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ³ı·ÇÄãÓĞĞÅĞÄÁ·µ½µÈ¸ßÔÚËµ°É!! </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÒÔÉÏÊÇÎÒÁ·³èµÄĞ¡ĞÄµÃ£¬½ñÍíÔÙÁ·Ğ¡À¼¿´¿´£¬ÎÒÔÙ×öËûµÄÉı¼¶¼ÇÂ¼¡£</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÓĞÊ±¼äÎÒÔÙPO³öÀ´¡£¸æËß¸÷Î»ÓĞÃ»ÓĞ±ØÒªÁ·¡£</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Èç¹ûÎÒËµµÄ²»´íµÎ»°°ï°´¸öºÃ°É¡£ </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÈôÓĞ´íÎóÒ²Âé·³Ö¸µ¼Ò»ÏÂà¸~</P><!--Content End--></td>
+			<!--Content Start--><P align=right>ä½œè€…ï¼šå¹»å½±æ˜Ÿè¾°</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å‰ææ˜¯ æ¯ç›¸åŒçš„åªå® ç‰©æˆé•¿è¿‡ç¨‹éƒ½ä¸ä¸€æ ·!! æŠ“åˆ°çš„èƒ½åŠ›ä¹Ÿä¸ä¸€æ ·ã€‚ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä»¥æˆ‘çš„æ¥è¯´ ç«å± å·¥èœ‚ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç­‰çº§ åŠ›é‡ ä½“è´¨ æ™ºåŠ› æ™ºæ…§ æ•æ· å‡çº§åŠ æˆ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV1&nbsp;&nbsp; 9.&nbsp;&nbsp; 10.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; åˆçº§ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV2&nbsp;&nbsp; 9.&nbsp;&nbsp; 11.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; +1ä½“è´¨ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV3&nbsp;&nbsp; 9.&nbsp;&nbsp; 12.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; +1ä½“è´¨ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV4&nbsp;&nbsp; 9.&nbsp;&nbsp; 13.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; +1ä½“è´¨ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV5&nbsp;&nbsp; 9.&nbsp;&nbsp; 13.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 10.&nbsp; +1æ•æ· <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV6&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 10.&nbsp; +1ä½“è´¨ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV7&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 11.&nbsp; +1æ•æ· <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV8&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 12.&nbsp; +1æ•æ· <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV9&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 13.&nbsp; +1æ•æ· <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV10&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 14.&nbsp; +1æ•æ· <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV11&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 14.&nbsp; +1æ™ºåŠ› = =? <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV12&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 15.&nbsp; +1æ•æ· <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV13&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 16.&nbsp; +1æ•æ· <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV14&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 17.&nbsp; +1æ•æ· <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV15&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 18.&nbsp; +1æ•æ· </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å› ä¸ºåªç»ƒåˆ°15çº§æ€»å…± ä½“è´¨+4ç‚¹ æ™ºåŠ›+1ç‚¹ æ•æ·+9ç‚¹</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä¹ å¾—æŠ€èƒ½ï¼šä¸‰æ—‹èœ‚è¢­ 8çº§æ»¡ èŠ±è´¹SPï¼š8 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç»“è®ºï¼šåºŸåˆ°çˆ†!! ä¸çˆ½ç»ƒä¸‹å»äº†!! </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åŸå› ï¼šå® ç‰©æ•é«˜æ²¡æœ‰é­”æ³•è¾…åŠ©æŠ€èƒ½å°±æ˜¯åºŸç‰©!! é™¤éä»¥ç­‰é«˜ å‹åˆ¶!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ”»å‡»åŠ›è¶…çº§å·®ï¼Œæ‰“èŠ±ï¼Œä¸‰æ—‹èœ‚è¢­ 2X. 2X. 2X. = 6X </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; è¦å…»å® ç‰©å»ºè®®è¡€è¦å¤šï¼ŒåæœŸå¾ˆå¤šä»»åŠ¡æƒ³è¦å…ˆè§£ï¼Œå°±æ˜¯è¦å® ç‰©æŒ¡!! </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ€ªå‡ ä¹éƒ½ä¼šå…ˆæ‰“å® ç‰©ï¼Œä½ æ‹¿ç²¾ç¡®ç«ç®­ç‚®è½°!! <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æƒ³è¦ç‹‚å†²ç­‰çº§ä¹Ÿæ˜¯è¦è¿™æ ·!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç›®å‰æˆ‘æŠ“åˆ°çš„å® ç‰©éƒ½æ²¡æœ‰ä¸€ä¸ªæœ‰åƒå°å…°é‚£æ ·æœ‰é­”æ³•è¾…åŠ©æŠ€ï¼Œ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ‰€ä»¥å® ç‰©æ•å†é«˜ç­‰äºæ— ç”¨ï¼Œé™¤éä»–çš„æ”»å‡»æŠ€èƒ½å¤Ÿå¼ºï¼Œ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä½†æ˜¯è¦çŸ¥é“æ”»å‡»æŠ€èƒ½çš„å½±å“å› ç´ æ˜¯ï¼šåŠ›é‡æˆ–æ™ºåŠ› </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ•é«˜å‹ç”¨åœ¨æ”¾é­”æ³•è¾…åŠ©æŠ€èƒ½ä¼šæ¯”è¾ƒæ´½å½“!! </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä¾‹å¦‚ï¼šå…ˆæ”¾æ— è§†ç‰©ç†æ”»å‡»æŠ€æˆ–ç‰µåˆ¶æ•Œäººæ”»å‡»å›åˆæŠ€!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ•é«˜çš„å® ï¼Œæˆ–äººç‰©ï¼Œæœ‰è¿™ç§æŠ€èƒ½ï¼Œæ— è®ºPKæˆ–æ‰“æ€ªéƒ½æ˜¯å¾ˆï¿½è¯ºæ‘¹ï¿½</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ‰€ä»¥è¯´å°å…°å¹¶ä¸æ˜¯åºŸå® ï¼Œæˆ‘å€’æ˜¯è®¤ä¸ºä»–æ˜¯åæœŸæœ€ï¿½è¯ºæŸç›ï¿½</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä¸è¿‡å°å¼Ÿè®¤ä¸ºæœ‰æŸäº›å› ç´ åº”è¯¥ä¼šå½±å“å® ç‰©æˆé•¿é…ç‚¹!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç­‰é«˜çš„æ€ªæŠ“æ¥å½“å® ç‰©ï¼Œæ²¡é”™!! åˆå§‹èƒ½åŠ›ä¼šæ¯”è¾ƒå¥½!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ‹¿ä¸Šé¢æˆ‘å·¥èœ‚11çº§+1æ™ºåŠ›çš„ä¾‹å­æ¥è¯´</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä»–é‚£æ¬¡å‡çº§+æ™ºåŠ›åˆšå¥½æ˜¯è·Ÿæˆ‘æœ‹å‹åˆå‡»æ‰“æ­»æ€ªå°±å‡çº§ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ°å·§æˆ‘æœ‹å‹ä»–æ˜¯å…¨æ™ºåŠ›æ³•å¸ˆï¼Œä¸çŸ¥é“æ˜¯ä¸æ˜¯è¿™ä¸ªåŸå› æ”¹å˜äº†ä»–å‡çº§é…ç‚¹?!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä¸‹é¢æˆ‘è¿˜ä¼šè¡¥å……è¯´æ˜å® ç‰©å¥‡æ€ªçš„æˆé•¿å› ç´ !!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å…ˆè¯´æˆ‘åˆ†èº«ï¼Œæˆ‘åˆ†èº«å‡çº§éƒ½æ˜¯åŠ 1åŠ›é‡2ä½“è´¨ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä»–çš„ç½—å¡ä¸€ç›´é™ªä¼´ç€å®ƒå‡çº§æˆé•¿ï¼Œå‡çº§ç«Ÿç„¶ä¹Ÿæ˜¯ä½“è´¨é«˜äºåŠ›é‡!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ¥ç€å›åˆ°ä¸Šé¢å® ç‰©å¥‡æ€ªçš„æˆé•¿å› ç´ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åˆšåˆšæˆ‘å¸®æˆ‘é‚£ä½æ³•å¸ˆæœ‹å‹è§£80çº§å·¨å‹è—¤è”“èŠ±ä»»åŠ¡ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ‰“å®Œä¹‹åï¼Œæˆ‘æœ‹å‹å›æ‘ï¼Œæˆ‘å°±è·Ÿåˆ†èº«æŒ‚åœ¨ä¸‹é¢æ‰“å°è—¤è”“èŠ±ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; é¡ºä¾¿å‘æ–‡å†™å¿ƒå¾—ï¼Œç„¶åè·³å›å»çœ‹ç”»é¢ï¼Œåˆšå¥½çœ‹åˆ°æˆ‘çš„åˆ†èº«çš„ç½—å¡å‡çº§ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ˜¯è·Ÿæˆ‘åˆå‡»ä¹‹åå‡çº§ï¼Œç«Ÿç„¶+åŠ›é‡ï¼ŒåŸæœ¬å¥¹å‡ ä¹éƒ½æ˜¯åŠ ä½“è´¨çš„!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å‚ç…§ä¸Šé¢2ä¸ªä¾‹å­ï¼Œå® ç‰©å‡çº§é…ç‚¹ï¼Œè¿™æ ·æ˜¯ä¸æ˜¯éå¸¸è¯¡å¼‚å‘¢??</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ‰€ä»¥è¯´å® ç‰©ä»å°åŸ¹å…»åº”è¯¥æ˜¯æœ€å¥½çš„ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å¦‚è¿‡ä¸Šé¢æˆ‘è¯´çš„æ²¡é”™çš„è¯ï¼Œä»–åº”è¯¥ä¼šä»ä½ çš„é…ç‚¹æ–¹å¼æ¥å½±å“å® ç‰©é…ç‚¹ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç³»ç»Ÿå‘çš„å® ç‰©æˆ‘æ˜¯ä¸çŸ¥é“ï¼Œå› ä¸ºè¿˜æ²¡ç»ƒï¼Œä¾‹å¦‚ï¼šå°å…°ã€‚</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å¦‚æœæ˜¯ç…§æˆ‘ä¸Šé¢çš„è¯´æ³•æ¥å†³å®šå½±å“å® ç‰©çš„æˆé•¿ç‚¹æ•°çš„è¯ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; é‚£æ•æ·å‹æˆ–ä½“è´¨å‹çš„å°å…°åº”è¯¥æ˜¯éå¸¸å¼ºçš„å® ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä»¥ç›®å‰æŠ“çš„å® æ²¡æœ‰é­”æ³•è¾…åŠ©æŠ€æ¥è¯´ï¼Œä½“æˆ–æ•å°å…°åæœŸåº”è¯¥æ˜¯å¾ˆå¼ºï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å› ä¸ºä»–å¯ä»¥æ”¾é­”æ³•æ¥å¸®ä½ æŒ¡æ”»å‡»ï¼Œå…‰æ˜¯è¿™æ‹›å°±å¤Ÿç‚«äº†ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å¦‚æœä»–å‡çº§é…ç‚¹æ˜¯è¢«ç³»ç»Ÿè®¾å®šå¥½ï¼Œæ˜¯æ™ºåŠ›è·Ÿæ™ºèƒ½åœ¨è·‘çš„è¯ï¼Œé‚£å°±ä¸ç”¨ç»ƒäº†ï¼Œ</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; é™¤éä½ æœ‰ä¿¡å¿ƒç»ƒåˆ°ç­‰é«˜åœ¨è¯´å§!! </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä»¥ä¸Šæ˜¯æˆ‘ç»ƒå® çš„å°å¿ƒå¾—ï¼Œä»Šæ™šå†ç»ƒå°å…°çœ‹çœ‹ï¼Œæˆ‘å†åšä»–çš„å‡çº§è®°å½•ã€‚</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æœ‰æ—¶é—´æˆ‘å†POå‡ºæ¥ã€‚å‘Šè¯‰å„ä½æœ‰æ²¡æœ‰å¿…è¦ç»ƒã€‚</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å¦‚æœæˆ‘è¯´çš„ä¸é”™æ»´è¯å¸®æŒ‰ä¸ªå¥½å§ã€‚ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; è‹¥æœ‰é”™è¯¯ä¹Ÿéº»çƒ¦æŒ‡å¯¼ä¸€ä¸‹å–”~</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -235,7 +235,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="»Ø¶¥²¿" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="å›é¡¶éƒ¨" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

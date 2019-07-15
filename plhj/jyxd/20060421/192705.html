@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>Ʈ�������￪ʼ[3]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>飘流从这里开始[3]</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						Ʈ�������￪ʼ[3]</span></div></td>
+						飘流从这里开始[3]</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,7 +175,7 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �Ĵ��й���ڱ��������������·�������һ�����͵㣬����֮����ǰͻȻһ�����ۣ����ڿ��������̵ĵط��ˣ�����ǰ����һ��СС�Ĵ��䡪�������塣���������С��������ȥ����ͦ�����ģ��˿��ܼ�����Ů���������ڽ��ϣ�һ�㶼û�����������˸е����棡�ǻ�֮�䣬����ǰ����һ����Ժ����������ſ�������������վ���࣬����ȥ�������һ��������ݣ��ֳ���������ʵ���Ǹ����裬���������ʱ�����Ƿǵ�û����������������֨һ����һ����֪����ֻ�Է����ɻ�Ķ����ӡ�<BR>&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��ȥ֮�󣬺�����Ŀ�����峤�Ի��󣬾Ϳ��Խӵ���һ���������񡪡������ӱ��ߵ�һ�������ȡһ�����ᣬ��ʱ���峤������ı���Ů���޿�����һ���������������ո�ǿ��Ů��������ͬ�У��ǲ����޸���ǳ������Ȼ���������Ů���ӵĻ���һ��������������Ϊʲô�峤ֻ��һ��Ů��ȴû�ж����أ��ѵ�������ĸϵ���壿����Ҳ�мƻ��������ߣ��Ǻǣ��޿���Ȼ��ս������ǿ����������Ҳ�Ҫ̫������������Ϊ�Ժ��޿��������Ϊ�¼��뿪���飡<BR>&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���˴峤���������ڴ������������˶Ի������˼���С������ʲô������ɽ����������Ϊһ��С�����ߵ磬��10����Ϳ���װ����ȫƵ�����ˣ�����������С�����ȵȵģ�����ͦ�򵥣������������Ҫ�ر�˵����ʱ����ͷ�ϱߵ�ռ�����żҿ�һ����Ҫ���Ƿ��ʣ������Ի����뿪ʱ��������ס�㲢����һ�������һ��������±�����������������ɴ����ô�����<BR>&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���⻹���Ѵ��һ�£���Ȧ�����ֻ���ǿ��Ե������ǵ�С��Ϸ�ģ��ǳ����棡�ȴ�����ļ���������ɺ󣬾Ϳ��Դ����޿������ߵĿ���������������ˣ�<BR><!--Content End--></td>
+			<!--Content Start-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 四处闲逛后，在北岛北部地区的下方发现了一个传送点，进入之后，眼前突然一亮，哇！终于看到有人烟的地方了，就在前面有一个小小的村落――克兰村。这个村落虽小，但看上去还是挺繁华的，人口密集，男女老少行走在街上，一点都没对我这个外地人感到惊奇！徘徊之间，见到前面有一间相对豪华的帐篷，门口有两个守卫侍站两侧，看上去这两个家伙威风凛凛，手持武器，其实就是个摆设，进入帐篷的时候，他们非但没有阻拦，连声都不吱一声，一看就知道是只吃饭不干活的二混子。<BR>&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 进去之后，和里面的克兰村村长对话后，就可以接到第一个试炼任务――到村子北边的一个矿坑中取一个卷轴，这时，村长会叫他的宝贝女儿罗卡――一个聪明美丽又武艺高强的女孩子与你同行，是不是艳福不浅啊！当然，如果你是女孩子的话，一定会再想啦――为什么村长只有一个女儿却没有儿子呢？难道这里是母系氏族？或是也有计划生育政策，呵呵！罗卡虽然做战能力超强，但建议玩家不要太过依赖她，因为以后罗卡会可能因为事件离开队伍！<BR>&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 出了村长的帐篷，又在村子里找其他人对话，接了几个小任务，有什么帮多尔找山椒啊（奖励为一个小型无线电，等10级后就可以装备它全频喊话了），帮丽娜找小狗啊等等的，任务都挺简单，但奖励丰厚！需要特别说明的时，村头南边的占卜婆婆家可一定不要忘记访问，和她对话完离开时，她会拦住你并给你一个帐篷和一个任务记事本，这两样东西对你可大有用处啊！<BR>&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 另外还提醒大家一下，猪圈里的有只猪是可以点击玩打狼的小游戏的，非常好玩！等村子里的几个任务都完成后，就可以带着罗卡到北边的矿坑中做试炼任务了！<BR><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -191,7 +191,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
- //alert("ASCII´úÂëÊÇ£º"+event.keyCode);
+function KeyDown(){ //å±è”½é¼ æ ‡å³é”®ã€Ctrl+nã€shift+F10ã€F5åˆ·æ–°ã€é€€æ ¼é”®
+ //alert("ASCIIä»£ç æ˜¯ï¼š"+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //ÆÁ±Î Alt+ ·½Ïò¼ü ¡û
-       (window.event.keyCode==39))){  //ÆÁ±Î Alt+ ·½Ïò¼ü ¡ú
+      ((window.event.keyCode==37)||   //å±è”½ Alt+ æ–¹å‘é”® â†
+       (window.event.keyCode==39))){  //å±è”½ Alt+ æ–¹å‘é”® â†’
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //ÆÁ±ÎÍË¸ñÉ¾³ı¼ü
-      (event.keyCode==116)||                 //ÆÁ±Î F5 Ë¢ĞÂ¼ü
-      (event.keyCode==112)||                 //ÆÁ±Î F1 Ë¢ĞÂ¼ü
-      (event.keyCode==80)||                 //ÆÁ±Î p Ë¢ĞÂ¼ü
+  if ((event.keyCode==8)  ||                 //å±è”½é€€æ ¼åˆ é™¤é”®
+      (event.keyCode==116)||                 //å±è”½ F5 åˆ·æ–°é”®
+      (event.keyCode==112)||                 //å±è”½ F1 åˆ·æ–°é”®
+      (event.keyCode==80)||                 //å±è”½ p åˆ·æ–°é”®
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //ÆÁ±Î shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //å±è”½ shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //ÆÁ±Î shift ¼ÓÊó±ê×ó¼üĞÂ¿ªÒ»ÍøÒ³
+      window.event.returnValue = false;  //å±è”½ shift åŠ é¼ æ ‡å·¦é”®æ–°å¼€ä¸€ç½‘é¡µ
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>5.0×ÊÁÏÆ¬-ÀËÂşÓÎÅ·ÖŞ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>5.0èµ„æ–™ç‰‡-æµªæ¼«æ¸¸æ¬§æ´²</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "»ªÎÄĞĞ¿¬";
+	font-family: "åæ–‡è¡Œæ¥·";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">¡¡</td>
+				<td height="36" width="131">ã€€</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						5.0×ÊÁÏÆ¬-ÀËÂşÓÎÅ·ÖŞ</span></div></td>
+						5.0èµ„æ–™ç‰‡-æµªæ¼«æ¸¸æ¬§æ´²</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">¡¡</td>
+                <td height="36" width="53">ã€€</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -180,71 +180,71 @@ MM_reloadPage(true);
 <TABLE id=table1 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 bgColor=#f3f3f3 border=1>
 <TBODY>
 <TR>
-<TD align=middle width="20%"><A href="113738.html">Ç°ÑÔ</A></TD>
-<TD align=middle width="20%"><A href="141132.html">ÀËÂşÓÎÅ·ÖŞ</A></TD>
-<TD align=middle width="20%"><A href="142521.html">ĞÂNPCµÇ³¡</A></TD>
-<TD align=middle width="20%"><A href="143747.html">ĞÂÍæ¼Ò½ÇÉ«¿ª·Å</A></TD>
-<TD align=middle width="20%"><A href="144224.html">ÎŞ½çPKµÇ³¡</A></TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width="20%"><A href="113738.html">å‰è¨€</A></TD>
+<TD align=middle width="20%"><A href="141132.html">æµªæ¼«æ¸¸æ¬§æ´²</A></TD>
+<TD align=middle width="20%"><A href="142521.html">æ–°NPCç™»åœº</A></TD>
+<TD align=middle width="20%"><A href="143747.html">æ–°ç©å®¶è§’è‰²å¼€æ”¾</A></TD>
+<TD align=middle width="20%"><A href="144224.html">æ— ç•ŒPKç™»åœº</A></TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>&nbsp;</DIV>
 <TABLE cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
 <TD><IMG src="../../../plhjtp/2008-6-26/t2.gif"></TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
-<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ´Ë´Î¸Ä°æ¿ªÅ·ÖŞĞ¡Õò£¬ÈÃÍæ¼ÒÌåÑéÖĞ¹ÅÅ·ÖŞ·çÇé£¬½«ÔÚ´Ë³ÇÕòÖĞÓöµ½ÀúÊ·ÖĞÖªÃûµÄÈËÎï©¤©¤°¢ÉªÍõºÍÕêµÂ¡£<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÔÚ½éÉÜÈËÎïÖ®Ç°£¬ÏÈÀ´¿´¿´¿µÎÖ¶ûºÍ¶°À×Ã×°É¡£</TD></TR>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ­¤æ¬¡æ”¹ç‰ˆå¼€æ¬§æ´²å°é•‡ï¼Œè®©ç©å®¶ä½“éªŒä¸­å¤æ¬§æ´²é£æƒ…ï¼Œå°†åœ¨æ­¤åŸé•‡ä¸­é‡åˆ°å†å²ä¸­çŸ¥åçš„äººç‰©â”€â”€é˜¿ç‘Ÿç‹å’Œè´å¾·ã€‚<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åœ¨ä»‹ç»äººç‰©ä¹‹å‰ï¼Œå…ˆæ¥çœ‹çœ‹åº·æ²ƒå°”å’Œæ ‹é›·ç±³å§ã€‚</TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
-<TD>Ó¢¹ú£®¿µÎÖ¶û£¨Cornwall£©</TD></TR>
+<TD>è‹±å›½ï¼åº·æ²ƒå°”ï¼ˆCornwallï¼‰</TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
-<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÖĞ¹ÅÊÀ¼ÍµÄÓ¢¸ñÀ¼£¬ËÄ´¦¿É¼û´óÆ¬É­ÁÖÓëÔ­Ò°£¬ÓĞÒ»¸ö´¿ÆÓµÄĞ¡Õò£¬ÕâÀïµÄÈËÃñ°²¾ÓÀÖÒµ¡¢Ò¹²»±Õ»§£¬ÈçÍ¬Í¯»°¹ÊÊÂÖĞµÄ³¡¾°°ã¡£<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÓĞÌì£¬ÄêÀÏµÄ¹úÍõÍ»È»ÉúÁËÖØ²¡£¬¼Ì³ĞÍõÎ»µÄÍõ×ÓÓÖÏÂÂä²»Ã÷£¬Ò»Ğ©³äÂúÒ°ĞÄµÄÓÂÊ¿ÃÇ£¬¿ªÊ¼ÔÚ¾º¼¼³¡Õ¹¿ªÕù¶áÍõÎ»µÄÉ±Â¾Õ½¡£´ËÊ±£¬°¢ÉªÍõ×ÓÌıÎÅ£¬Á¢¼´¸ÏÍù¾º¼¼³¡×èÖ¹Ò»ÇĞ·¢Éú£¬µ±Ëûµ½¾º¼¼³¡ÉÏ£¬ÇáÒ×µÄ½«±»·âÓ¡ÔÚÊ¯ÕèÀïµÄ½£È¡³ö£¬´ËÊ±È«³¡ÈËÃñÍ£Ö¹Ò»ÇĞÎä¶·£¬ÆëÉù»¶ºôÓ­½ÓĞÂÈÎµÄ¹úÍõ¡£<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÔÚ°¢ÉªÍõ³ÉÎª¹úÍõºó£¬ËùÓĞÈËÃñÒò°¢ÉªÍõ»ñµÃºÍÆ½£¬Ç¿µÁ²»¸ÒÇÖ·¸¿µÎÖ¶û£¬Ò²·×·×¹é½µ¡£</TD></TR>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä¸­å¤ä¸–çºªçš„è‹±æ ¼å…°ï¼Œå››å¤„å¯è§å¤§ç‰‡æ£®æ—ä¸åŸé‡ï¼Œæœ‰ä¸€ä¸ªçº¯æœ´çš„å°é•‡ï¼Œè¿™é‡Œçš„äººæ°‘å®‰å±…ä¹ä¸šã€å¤œä¸é—­æˆ·ï¼Œå¦‚åŒç«¥è¯æ•…äº‹ä¸­çš„åœºæ™¯èˆ¬ã€‚<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æœ‰å¤©ï¼Œå¹´è€çš„å›½ç‹çªç„¶ç”Ÿäº†é‡ç—…ï¼Œç»§æ‰¿ç‹ä½çš„ç‹å­åˆä¸‹è½ä¸æ˜ï¼Œä¸€äº›å……æ»¡é‡å¿ƒçš„å‹‡å£«ä»¬ï¼Œå¼€å§‹åœ¨ç«æŠ€åœºå±•å¼€äº‰å¤ºç‹ä½çš„æ€æˆ®æˆ˜ã€‚æ­¤æ—¶ï¼Œé˜¿ç‘Ÿç‹å­å¬é—»ï¼Œç«‹å³èµ¶å¾€ç«æŠ€åœºé˜»æ­¢ä¸€åˆ‡å‘ç”Ÿï¼Œå½“ä»–åˆ°ç«æŠ€åœºä¸Šï¼Œè½»æ˜“çš„å°†è¢«å°å°åœ¨çŸ³ç §é‡Œçš„å‰‘å–å‡ºï¼Œæ­¤æ—¶å…¨åœºäººæ°‘åœæ­¢ä¸€åˆ‡æ­¦æ–—ï¼Œé½å£°æ¬¢å‘¼è¿æ¥æ–°ä»»çš„å›½ç‹ã€‚<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åœ¨é˜¿ç‘Ÿç‹æˆä¸ºå›½ç‹åï¼Œæ‰€æœ‰äººæ°‘å› é˜¿ç‘Ÿç‹è·å¾—å’Œå¹³ï¼Œå¼ºç›—ä¸æ•¢ä¾µçŠ¯åº·æ²ƒå°”ï¼Œä¹Ÿçº·çº·å½’é™ã€‚</TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
 <TD>
 <P align=center><IMG height=193 src="../../../plhjtp/2008-6-26/p1_1.jpg" width=280></P></TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
 <TD>
-<P align=center><IMG height=120 hspace=2 src="../../../plhjtp/2008-6-26/p1_2.jpg" width=175 vspace=2><BR>Äş¾²°²ºÍµÄ¿µÎÖ¶û³äÂú×Å»¶Ğ¦£¬ÕâÈºº¢×ÓÕıºÍĞ¡Ã¨ßäÍæË£</P></TD></TR>
+<P align=center><IMG height=120 hspace=2 src="../../../plhjtp/2008-6-26/p1_2.jpg" width=175 vspace=2><BR>å®é™å®‰å’Œçš„åº·æ²ƒå°”å……æ»¡ç€æ¬¢ç¬‘ï¼Œè¿™ç¾¤å­©å­æ­£å’Œå°çŒ«å’ªç©è€</P></TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
-<TR>
-<TD>
-<P align=center><IMG height=120 hspace=2 src="../../../plhjtp/2008-6-26/p1_3.jpg" width=175 vspace=2><BR>ØùÁ¢¿µÎÖ¶û³ÇÕòÖĞµÄ¿¨ÃÀÀ­³Ç£¬ÊØÎÀÕı×¼±¸½»½Ó</P></TD></TR>
-<TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
 <TD>
-<P align=center><IMG height=120 hspace=2 src="../../../plhjtp/2008-6-26/p1_4.jpg" width=175 vspace=2><BR>´«ËµÖĞ¿ÉÒÔÈİÄÉ12¸öÈËµÄÔ²×À</P></TD></TR>
+<P align=center><IMG height=120 hspace=2 src="../../../plhjtp/2008-6-26/p1_3.jpg" width=175 vspace=2><BR>ä¼«ç«‹åº·æ²ƒå°”åŸé•‡ä¸­çš„å¡ç¾æ‹‰åŸï¼Œå®ˆå«æ­£å‡†å¤‡äº¤æ¥</P></TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
-<TD><SPAN class=style1>·¨¹ú£®¶°À×Ã×£¨Domremy£©</SPAN></TD></TR>
+<TD>
+<P align=center><IMG height=120 hspace=2 src="../../../plhjtp/2008-6-26/p1_4.jpg" width=175 vspace=2><BR>ä¼ è¯´ä¸­å¯ä»¥å®¹çº³12ä¸ªäººçš„åœ†æ¡Œ</P></TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
-<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Õâ¸öÄş¾²µÄĞ¡´å×¯ÊÇÕêµÂµÄ¹ÊÏç£¬ÔÚÕâÀï¿ÉÒÔÕÒÑ°ÕêµÂËù´¥Ãş¹ıµÄÒ»²İÒ»Ä¾£¬ÉõÖÁÁ¬¿ÕÆøÖĞ¶¼áİ·ğ»¹Áô×ÅËıÉíÉÏËùÉ¢·¢³öµ­µ­µÄÏãÎ¶¡£<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¶°À×Ã×Î»ÓÚ·¨¹ú¶«±±²¿£¬ÊÇÈÔÖÒ³ÏÓÚ·¨¹úÍõÊÒµÄÒ»Ğ¡¿é¹ÂÁ¢µØÇø£¬µ«ÊÇÖÜÔâ¶¼±»²ªôŞµÚÈËµÄÁìÍÁËù°üÎ§ÁË¡£ÔÚÕêµÂµÄÍ¯ÄêÖĞ£¬´å×¯ÔâÊÜÁË¼¸´ÎÏ®»÷£¬ÆäÖĞÒ»´ÎÉõÖÁÊ¹´å×¯ÆğÁË´ó»ğ£¬µ«ÊÇÕâÀïµÄ´åÃñ²»Òò´Ë¶øÇü·ş£¬ÔÚ´ó¼ÒµÄÅ¬Á¦Ö®ÏÂ£¬ÖØ½¨µÄÕâ×ùĞ¡´å×¯£¬Öğ½¥»Ö¸´Éú»ú¡£ÕâÀïµÄÈËÃñÊ¼ÖÕÏàĞÅ£¬·¨¹ú½«»á»ñµÃ×îÖÕµÄÊ¤Àû¡¢»ñµÃ×ÔÓÉ£¬ÍÑÀëÓ¢¹úÈËµÄÍ³ÖÎ¡£</TD></TR>
+<TD><SPAN class=style1>æ³•å›½ï¼æ ‹é›·ç±³ï¼ˆDomremyï¼‰</SPAN></TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
+<TR>
+<TD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; è¿™ä¸ªå®é™çš„å°æ‘åº„æ˜¯è´å¾·çš„æ•…ä¹¡ï¼Œåœ¨è¿™é‡Œå¯ä»¥æ‰¾å¯»è´å¾·æ‰€è§¦æ‘¸è¿‡çš„ä¸€è‰ä¸€æœ¨ï¼Œç”šè‡³è¿ç©ºæ°”ä¸­éƒ½å½·ä½›è¿˜ç•™ç€å¥¹èº«ä¸Šæ‰€æ•£å‘å‡ºæ·¡æ·¡çš„é¦™å‘³ã€‚<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ ‹é›·ç±³ä½äºæ³•å›½ä¸œåŒ—éƒ¨ï¼Œæ˜¯ä»å¿ è¯šäºæ³•å›½ç‹å®¤çš„ä¸€å°å—å­¤ç«‹åœ°åŒºï¼Œä½†æ˜¯å‘¨é­éƒ½è¢«å‹ƒè‰®ç¬¬äººçš„é¢†åœŸæ‰€åŒ…å›´äº†ã€‚åœ¨è´å¾·çš„ç«¥å¹´ä¸­ï¼Œæ‘åº„é­å—äº†å‡ æ¬¡è¢­å‡»ï¼Œå…¶ä¸­ä¸€æ¬¡ç”šè‡³ä½¿æ‘åº„èµ·äº†å¤§ç«ï¼Œä½†æ˜¯è¿™é‡Œçš„æ‘æ°‘ä¸å› æ­¤è€Œå±ˆæœï¼Œåœ¨å¤§å®¶çš„åŠªåŠ›ä¹‹ä¸‹ï¼Œé‡å»ºçš„è¿™åº§å°æ‘åº„ï¼Œé€æ¸æ¢å¤ç”Ÿæœºã€‚è¿™é‡Œçš„äººæ°‘å§‹ç»ˆç›¸ä¿¡ï¼Œæ³•å›½å°†ä¼šè·å¾—æœ€ç»ˆçš„èƒœåˆ©ã€è·å¾—è‡ªç”±ï¼Œè„±ç¦»è‹±å›½äººçš„ç»Ÿæ²»ã€‚</TD></TR>
+<TR>
+<TD>ã€€</TD></TR>
 <TR>
 <TD>
 <P align=center><IMG height=194 src="../../../plhjtp/2008-6-26/p1_5.jpg" width=280></P></TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
 <TD>
-<P align=center><IMG height=149 hspace=2 src="../../../plhjtp/2008-6-26/p1_6.jpg" width=200 vspace=2><BR>¸Õ×öÍêÀñ°İ£¬ÔÚ½ÌÌÃÍâÏĞÁÄµÄ´åÃñ</P></TD></TR>
+<P align=center><IMG height=149 hspace=2 src="../../../plhjtp/2008-6-26/p1_6.jpg" width=200 vspace=2><BR>åˆšåšå®Œç¤¼æ‹œï¼Œåœ¨æ•™å ‚å¤–é—²èŠçš„æ‘æ°‘</P></TD></TR>
 <TR>
-<TD>¡¡</TD></TR>
+<TD>ã€€</TD></TR>
 <TR>
 <TD>
-<P align=center><IMG height=149 hspace=2 src="../../../plhjtp/2008-6-26/p1_7.jpg" width=200 vspace=2><BR>ÔÚÇÅÉÏÓÆÏĞµöÓãµÄ´åÃñ</P></TD></TR></TBODY></TABLE></DIV><!--Content End--></td>
+<P align=center><IMG height=149 hspace=2 src="../../../plhjtp/2008-6-26/p1_7.jpg" width=200 vspace=2><BR>åœ¨æ¡¥ä¸Šæ‚ é—²é’“é±¼çš„æ‘æ°‘</P></TD></TR></TBODY></TABLE></DIV><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -260,7 +260,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="»Ø¶¥²¿" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="å›é¡¶éƒ¨" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
- //alert("ASCII´úÂëÊÇ£º"+event.keyCode);
+function KeyDown(){ //å±è”½é¼ æ ‡å³é”®ã€Ctrl+nã€shift+F10ã€F5åˆ·æ–°ã€é€€æ ¼é”®
+ //alert("ASCIIä»£ç æ˜¯ï¼š"+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //ÆÁ±Î Alt+ ·½Ïò¼ü ¡û
-       (window.event.keyCode==39))){  //ÆÁ±Î Alt+ ·½Ïò¼ü ¡ú
+      ((window.event.keyCode==37)||   //å±è”½ Alt+ æ–¹å‘é”® â†
+       (window.event.keyCode==39))){  //å±è”½ Alt+ æ–¹å‘é”® â†’
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //ÆÁ±ÎÍË¸ñÉ¾³ı¼ü
-      (event.keyCode==116)||                 //ÆÁ±Î F5 Ë¢ĞÂ¼ü
-      (event.keyCode==112)||                 //ÆÁ±Î F1 Ë¢ĞÂ¼ü
-      (event.keyCode==80)||                 //ÆÁ±Î p Ë¢ĞÂ¼ü
+  if ((event.keyCode==8)  ||                 //å±è”½é€€æ ¼åˆ é™¤é”®
+      (event.keyCode==116)||                 //å±è”½ F5 åˆ·æ–°é”®
+      (event.keyCode==112)||                 //å±è”½ F1 åˆ·æ–°é”®
+      (event.keyCode==80)||                 //å±è”½ p åˆ·æ–°é”®
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //ÆÁ±Î shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //å±è”½ shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //ÆÁ±Î shift ¼ÓÊó±ê×ó¼üĞÂ¿ªÒ»ÍøÒ³
+      window.event.returnValue = false;  //å±è”½ shift åŠ é¼ æ ‡å·¦é”®æ–°å¼€ä¸€ç½‘é¡µ
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>ĞÇĞÇÈÎÎñ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>æ˜Ÿæ˜Ÿä»»åŠ¡</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "»ªÎÄĞĞ¿¬";
+	font-family: "åæ–‡è¡Œæ¥·";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">¡¡</td>
+				<td height="36" width="131">ã€€</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						ĞÇĞÇÈÎÎñ</span></div></td>
+						æ˜Ÿæ˜Ÿä»»åŠ¡</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">¡¡</td>
+                <td height="36" width="53">ã€€</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,22 +175,22 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>×÷Õß£ºĞ¡Ğ¡·ç¶ù</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ±±µº (4¿Å) </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; É½ÖíÈëÃÎ¼Ç£­¡¡µãÑ¡¿ËÀ¼´åÖíÈ¦Ë¯×ÅµÄÖíÍæĞ¡ÓÎÏ·£¨£±¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ±»ÇÀ½ÙµÄ×æËïÁ©£­¡¡ÔÚ¿ËÀ¼´åĞ¡À¼µÄÎİ×ÓÖĞ´òµ¹Ç¿µÁ£¨£±¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ğ¡ºìÃ±µÄ¹ÊÊÂ£­¡¡¿ËÀ¼´å£¯ÍşÁé´åÖĞ¼äµÄµØÍ¼´òµ¹£²Ö»´óÒ°ÀÇ£¨£±¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÊÇ½ğ¸«»¹ÊÇÌú¸«£¿£­¡¡°ïÍşÁé´åµÄ·¥Ä¾¹¤ÈË´Óºş±ßÕÒ¸«Í·£¬ÔÚºş±ß¸úÏÉ×ÓËµµôµÄÊÇ Ìú ¸«Í·£®£¨£±¿Å£© </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÄÏµº (11¿Å) </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÃàÑòÈëÃÎ¼Ç£­¡¡µãÑ¡·ÅÑòĞ¡º¢ÅÔ±ßË¯×ÅµÄÑòÍæĞ¡ÓÎÏ·£¨£±¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÓÃÀ´µöÓãµÄÓã¶ü£­¡¡»ù¶½´åÑ§µöÓãÊõÊ±Ñ¡Ôñ°Ñ·ÛºìòÇò¾ ·ÅÉú £¨£±¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ´ó½ÌÌÃµÄÒì½ÌÍ½£­¡¡´Ó»ù¶½´å½ÌÌÃµØ½ÑÖĞ¾È³ö´åÃñ£¨£²¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ñ°ÕÒÓÂÆøÖ®Ê¯£­¡¡´ò°ÜÄÏµºÉ½¶´ÖĞµÄ¾ŞÊ¯¹Ö£¬ÄÃÓÂÕßÖ®Ê¯¸ø»ù¶½´åµÄÉñÃØÀÏÈË£¨£²¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ğ¡À¼µÄÃüÔË£­¡¡´ò°ÜÄÏµº×îÏÂ·½Ğ¡µºÉ½¶´ÀïµÄ£³Ö»´óÖ©Öë£¨£²¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ê¥ÁéÊØ»¤Õß£­¡¡´òµ¹ÄÏµº×îÏÂ·½Ğ¡µºÉ½¶´ÀïµÄÊ¯Öù£¬Òª´òÁ½³¡£¨£³¿Å£© </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÂêÑÅ (2¿Å) </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÂêÑÅ¶·Çò±ÈÈü£­¡¡Óë´å×ÓÓÒÉÏ·½Çò³¡ÖĞµÄÒ»ÃûÕ½Ê¿¶Ô»°£¬È»ºóÔÚ¶·ÇòĞ¡ÓÎÏ·ÖĞ»ñÊ¤£¨£±¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÂêÑÅ²¿ÂäÓöÏ®£­¡¡Óë´å×Ó×óÉÏ·½ÊØÎÀ¶Ô»°ºó´òµ¹£³Ö»Ò°Öí£¨£±¿Å£© </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÄÏ¼« (1¿Å) <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Âô»ğ²ñµÄÅ®º¢£­¡¡°ïËûÕÒÂÃ¹İÖĞµÄ°Ö°Ö£¨Òª´¥·¢´ËÈÎÎñ£¬ĞèÏÈÍê³ÉÔÚ»ù¶½´åµÄ¡±À´Âò»ğ²ñ°É£¡¡±£­£¾¸øÅ®º¢£³¸ù²ÄĞ½£©£¨£±¿Å£© </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÖĞ¹ú (3¿Å) </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ºóôàÊÂ¼ş£­¡¡°ïºóôà´òµ¹£³Ö»Ì«Ñô£¨Ğè´ò£²³¡£¬¹²£¶Ö»£©£¨£²¿Å£© <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÃÀÀöºüÏÉ£­¡¡°ï´å×ÓÎİ×ÓÖĞµÄÒ»ÃûÀÏÆÅÆÅ´òµ½ÎİÅÔµÄºüÏÉ£¨£±¿Å£© </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÈÕ±¾ (£±¿Å) </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ë½±¼µÄ¹«Ö÷£­¡¡½øÈëÁìÖ÷³Ç¾È³ö¹«Ö÷£¨£±¿Å£© </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ó¡¶È(£±¿Å) </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ´µµÑÈËµÄÉßµÑ--ÏòÉßÅÔ±ßµÄÈË½²»°£¨¸úÉß½²»°»á½øÈëÕ½¶·£¬ÊıÖµÌùµ×ÏÂ£©£¬Ëû»áÇëÄãÈ¥ºóÃæÁ½¸öµØÍ¼¼ñµÑ×Ó£¡×ßµ½É½µÄ¾¡Í·£¬Óöµ½±»Éß°üÎ§µÄĞ¡º¢£¨¿¿½ü¾Í»á´¥·¢£©£¬ÎŞ´ÓÑ¡Ôñ£¬Ö»ÄÜÓ²´ò£¨×¢ÏúÔÙ½øÀ´£¬»¹ÊÇ»áÕ¾ÔÚ´¥·¢µã£©£¬Òª´òµÄÒ²ÊÇËÄÊôĞÔµÄÉß£¬¸÷£¸£°¼¶¡£ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÎèÉßÈËÅÔµÄ¶¾Éß×ÊÁÏÈçÏÂ£º£Ì£Ö£º£¶£·ÊôĞÔ£ºµØ £È£Ğ£º£µ£³£± £Ó£Ğ£º£µ£´£² Á¦Á¿£º£´£¶ÌåÖÊ£º£´£°ÖÇÁ¦£º£³£¸ÖÇ»Û£º£³£µÃô½İ£º£µ£²£¨£±¿Å£© </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÏÄÍşÒÄ (1¿Å) </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÔÚÏÄÍşÒÄ´óµºÏÂ·½µÄÉ³Ì²,ÓĞ7¸öÅ®NPC ¸úÆäÖĞÒ»¸ö¶Ô»° Ëû»á¸úÄãËµËûÃÇÈ±Ò»¸öÈË,¿´ÄãÒª²»Òª¼ÓÈë ÓÎÏ·ÄÚÈİ¸úÂíÑÅµÄÍ¶ÇòÈÎÎñÏàÍ¬(1¿Å) </P><!--Content End--></td>
+			<!--Content Start--><P align=right>ä½œè€…ï¼šå°å°é£å„¿</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åŒ—å²› (4é¢—) </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å±±çŒªå…¥æ¢¦è®°ï¼ã€€ç‚¹é€‰å…‹å…°æ‘çŒªåœˆç¡ç€çš„çŒªç©å°æ¸¸æˆï¼ˆï¼‘é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; è¢«æŠ¢åŠ«çš„ç¥–å­™ä¿©ï¼ã€€åœ¨å…‹å…°æ‘å°å…°çš„å±‹å­ä¸­æ‰“å€’å¼ºç›—ï¼ˆï¼‘é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å°çº¢å¸½çš„æ•…äº‹ï¼ã€€å…‹å…°æ‘ï¼å¨çµæ‘ä¸­é—´çš„åœ°å›¾æ‰“å€’ï¼’åªå¤§é‡ç‹¼ï¼ˆï¼‘é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ˜¯é‡‘æ–§è¿˜æ˜¯é“æ–§ï¼Ÿï¼ã€€å¸®å¨çµæ‘çš„ä¼æœ¨å·¥äººä»æ¹–è¾¹æ‰¾æ–§å¤´ï¼Œåœ¨æ¹–è¾¹è·Ÿä»™å­è¯´æ‰çš„æ˜¯ é“ æ–§å¤´ï¼ï¼ˆï¼‘é¢—ï¼‰ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å—å²› (11é¢—) </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç»µç¾Šå…¥æ¢¦è®°ï¼ã€€ç‚¹é€‰æ”¾ç¾Šå°å­©æ—è¾¹ç¡ç€çš„ç¾Šç©å°æ¸¸æˆï¼ˆï¼‘é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç”¨æ¥é’“é±¼çš„é±¼é¥µï¼ã€€åŸºç£æ‘å­¦é’“é±¼æœ¯æ—¶é€‰æ‹©æŠŠç²‰çº¢èš¯èš“ æ”¾ç”Ÿ ï¼ˆï¼‘é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å¤§æ•™å ‚çš„å¼‚æ•™å¾’ï¼ã€€ä»åŸºç£æ‘æ•™å ‚åœ°çª–ä¸­æ•‘å‡ºæ‘æ°‘ï¼ˆï¼’é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å¯»æ‰¾å‹‡æ°”ä¹‹çŸ³ï¼ã€€æ‰“è´¥å—å²›å±±æ´ä¸­çš„å·¨çŸ³æ€ªï¼Œæ‹¿å‹‡è€…ä¹‹çŸ³ç»™åŸºç£æ‘çš„ç¥ç§˜è€äººï¼ˆï¼’é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å°å…°çš„å‘½è¿ï¼ã€€æ‰“è´¥å—å²›æœ€ä¸‹æ–¹å°å²›å±±æ´é‡Œçš„ï¼“åªå¤§èœ˜è››ï¼ˆï¼’é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åœ£çµå®ˆæŠ¤è€…ï¼ã€€æ‰“å€’å—å²›æœ€ä¸‹æ–¹å°å²›å±±æ´é‡Œçš„çŸ³æŸ±ï¼Œè¦æ‰“ä¸¤åœºï¼ˆï¼“é¢—ï¼‰ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç›é›… (2é¢—) </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç›é›…æ–—çƒæ¯”èµ›ï¼ã€€ä¸æ‘å­å³ä¸Šæ–¹çƒåœºä¸­çš„ä¸€åæˆ˜å£«å¯¹è¯ï¼Œç„¶ååœ¨æ–—çƒå°æ¸¸æˆä¸­è·èƒœï¼ˆï¼‘é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç›é›…éƒ¨è½é‡è¢­ï¼ã€€ä¸æ‘å­å·¦ä¸Šæ–¹å®ˆå«å¯¹è¯åæ‰“å€’ï¼“åªé‡çŒªï¼ˆï¼‘é¢—ï¼‰ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å—æ (1é¢—) <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å–ç«æŸ´çš„å¥³å­©ï¼ã€€å¸®ä»–æ‰¾æ—…é¦†ä¸­çš„çˆ¸çˆ¸ï¼ˆè¦è§¦å‘æ­¤ä»»åŠ¡ï¼Œéœ€å…ˆå®Œæˆåœ¨åŸºç£æ‘çš„â€æ¥ä¹°ç«æŸ´å§ï¼â€ï¼ï¼ç»™å¥³å­©ï¼“æ ¹æè–ªï¼‰ï¼ˆï¼‘é¢—ï¼‰ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ä¸­å›½ (3é¢—) </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åç¾¿äº‹ä»¶ï¼ã€€å¸®åç¾¿æ‰“å€’ï¼“åªå¤ªé˜³ï¼ˆéœ€æ‰“ï¼’åœºï¼Œå…±ï¼–åªï¼‰ï¼ˆï¼’é¢—ï¼‰ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç¾ä¸½ç‹ä»™ï¼ã€€å¸®æ‘å­å±‹å­ä¸­çš„ä¸€åè€å©†å©†æ‰“åˆ°å±‹æ—çš„ç‹ä»™ï¼ˆï¼‘é¢—ï¼‰ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ—¥æœ¬ (ï¼‘é¢—) </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç§å¥”çš„å…¬ä¸»ï¼ã€€è¿›å…¥é¢†ä¸»åŸæ•‘å‡ºå…¬ä¸»ï¼ˆï¼‘é¢—ï¼‰ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å°åº¦(ï¼‘é¢—) </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å¹ç¬›äººçš„è›‡ç¬›--å‘è›‡æ—è¾¹çš„äººè®²è¯ï¼ˆè·Ÿè›‡è®²è¯ä¼šè¿›å…¥æˆ˜æ–—ï¼Œæ•°å€¼è´´åº•ä¸‹ï¼‰ï¼Œä»–ä¼šè¯·ä½ å»åé¢ä¸¤ä¸ªåœ°å›¾æ¡ç¬›å­ï¼èµ°åˆ°å±±çš„å°½å¤´ï¼Œé‡åˆ°è¢«è›‡åŒ…å›´çš„å°å­©ï¼ˆé è¿‘å°±ä¼šè§¦å‘ï¼‰ï¼Œæ— ä»é€‰æ‹©ï¼Œåªèƒ½ç¡¬æ‰“ï¼ˆæ³¨é”€å†è¿›æ¥ï¼Œè¿˜æ˜¯ä¼šç«™åœ¨è§¦å‘ç‚¹ï¼‰ï¼Œè¦æ‰“çš„ä¹Ÿæ˜¯å››å±æ€§çš„è›‡ï¼Œå„ï¼˜ï¼çº§ã€‚ <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; èˆè›‡äººæ—çš„æ¯’è›‡èµ„æ–™å¦‚ä¸‹ï¼šï¼¬ï¼¶ï¼šï¼–ï¼—å±æ€§ï¼šåœ° ï¼¨ï¼°ï¼šï¼•ï¼“ï¼‘ ï¼³ï¼°ï¼šï¼•ï¼”ï¼’ åŠ›é‡ï¼šï¼”ï¼–ä½“è´¨ï¼šï¼”ï¼æ™ºåŠ›ï¼šï¼“ï¼˜æ™ºæ…§ï¼šï¼“ï¼•æ•æ·ï¼šï¼•ï¼’ï¼ˆï¼‘é¢—ï¼‰ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å¤å¨å¤· (1é¢—) </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; åœ¨å¤å¨å¤·å¤§å²›ä¸‹æ–¹çš„æ²™æ»©,æœ‰7ä¸ªå¥³NPC è·Ÿå…¶ä¸­ä¸€ä¸ªå¯¹è¯ ä»–ä¼šè·Ÿä½ è¯´ä»–ä»¬ç¼ºä¸€ä¸ªäºº,çœ‹ä½ è¦ä¸è¦åŠ å…¥ æ¸¸æˆå†…å®¹è·Ÿé©¬é›…çš„æŠ•çƒä»»åŠ¡ç›¸åŒ(1é¢—) </P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -206,7 +206,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="»Ø¶¥²¿" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="å›é¡¶éƒ¨" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

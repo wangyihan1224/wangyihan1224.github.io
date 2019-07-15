@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>��Դ����</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>开源节流</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						��Դ����</span></div></td>
+						开源节流</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,13 +175,13 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>���ߣ���������</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��Դ����� </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������˻�������Ϊֻ�в��ϴ�֡����㡢����ϡ��ϳɲ�������׬Ǯ��������ʵ��ֻ������һ�����ݡ�����Դ���������ǳ���ǵ����һ�䡣����ʵ���������ǳ���������ϣ��������һ������������ͳɱ������������󡣡�����Ϸ�Ϸ�⣬��������ǲ���ġ������Ҫ���Լ���Ʈ���þ��������ۻ��Ƹ���Ҳ��Ҫ���ؾ������ģ�Ҳֻ�������Ż��°빦������Ʈ���þ���˵�����˸����������ֵ�Ķ����⣬��ξ���������װ���ı��롣��װ���������˴�Ǯ�����⣬�������кϳɣ�����������װ���Ļ����ǱȽϿ���Ԥ���ġ�Ω������Ķ�����������Ҫ׼�����ʽ����޷����ֻ��ġ������������������ĵ��У�������ѽ����ͳ��˽�����ص��ˡ� </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��ʡ��ʡ����װ���� </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������������Ʒ��˵��������ҿ��еġ����⡹(��Ѫ�ಹƷ)�͡���SP��(��ħ���ಹƷ)Ϊ��������ڡ���ҿ���������֮������ļ۲������δ����ļ۲���׬Ǯ���ɱ���Ϊ����СǮ�����������С������Lv1~Lv40����LvX(X�����޷��ж������޵ȼ�)����Ҫ�Զ��ٵĲ�Ʒ�����������δ֪��ร�Ҳ���ڴ�Ҷ�֪���ⷽʽ�����Դ�Ҷ��ǳ���ϣ��������������̱������õĹ�ϵ�ء�֮ǰ��Ҳ�Ǹ�ĬĬ������ƽ����ң��Դӿ�ʼ�����������ʼ������г���ҵ����һ��ʼ�Լ�����6ֻ�������㣬�����ȶ���Դ֮��ʼ�������ӡ��������Ÿ�����ÿ��������2�����������㣬������Ҳ�����������Ҽ��ҵĺ��ѡ��ȵ�(�׳ƣ��ʹ�ϵ)����Ȼ�ʹ�ϵ���׶���û�ã�����������ҿ���������������̡� </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ħ������һ��ҪʡǮ </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���ߣ�����һ��Ҳ�Ǵ�ҷǳ�ͷʹ�����⣬���ǡ�ħ���Ļ��������������ÿ������Ʈ�������������ʡ�Ҫ��ô���ҵ�ħ���Ż�����������ٶȡ���ʵħ��Ҫ��һ�㶼���ѡ��������������Ⲣ������������Ǵ�ֵķ�ʽ������Ʈ���κ��书ȫ��Ҫ��ħ�����������ܷ��ӣ���ƫƫħ��������ֻ�ܿ������ӵ㡣�����ͻᷢ�ֵ����ں�ܶ���Ҷ�����һ�����ϵȹ���ǰ���Ҳ꣬���������Ч����ħ������ʡ����Ҳ��һ����Ҫ�Ŀγ̡��ڴ�ǿ�ҽ���Ʈ���þ�������˾�������SP���������ħ�ٶ����Լӳ�Ч����������Ȼ��ĺ���Ǯ(���ֲ����Ǯ)�� <BR></P><!--Content End--></td>
+			<!--Content Start--><P align=right>作者：浪漫美梦</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 开源与节流 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 大多数人或许都认为只有不断打怪、钓鱼、打材料、合成才是最快的赚钱方法，其实这只是其中一个部份。『开源节流』这是成语辞典里的一句。在现实生活中我们常听到，它希望我们有一个观念→「降低成本便是增加利润。」无论戏里、戏外，这道理都是不变的。因此想要让自己在飘流幻境里妥善累积财富，也是要有秘诀与观念的，也只有这样才会事半功倍。以飘流幻境来说，除了各人物的能力值的锻炼外，其次就是武器与装备的备齐。而装备武器除了存钱购买外，就是自行合成！所以武器与装备的花费是比较可以预估的。惟独人物的锻炼，其所需要准备的资金是无法数字化的。所以玩家如何在练功的当中，做好最佳节流就成了今天的重点了。 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 能省则省，别装阔少 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 若以消耗性物品来说，就属玩家口中的「肉肉」(补血类补品)和「补SP」(补魔力类补品)为消耗最大宗。大家可利用买卖之间量大的价差及煮熟与未煮熟的价差来赚钱，可别以为这是小钱，当你人物从小长大由Lv1~Lv40甚至LvX(X代表无法判定的上限等级)，需要吃多少的补品啊？这真的是未知数喔！也由于大家都知道这方式，所以大家都非常的希望能与鱼货大盘商保持量好的关系呢。之前我也是个默默无名的平凡玩家，自从开始卖起鱼货，开始将鱼货市场企业化，一开始自己开了6只分身钓鱼，后来稳定客源之后开始到「银河」服务器九个分流每分流各请2名工读生钓鱼，卖久了也愈来愈多的玩家加我的好友…等等(俗称：攀关系)，当然攀关系这套对我没用，所以其它玩家可以另找其它鱼货商。 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 魔力提升一样要省钱 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 再者，还有一个也是大家非常头痛的问题，就是「魔力的回升」。新手玩家每当加入飘流，几乎都会问「要怎么做我的魔力才会配的上练功速度」其实魔力要多一点都不难。但是真正的问题并不是这个，而是打怪的方式！凡举飘流任何武功全都要靠魔力来补给才能发挥，但偏偏魔力的提升只能靠升级加点。因此你就会发现到中期后很多玩家都坐在一个点上等怪上前来找碴，所以如何有效提升魔力并节省花费也是一个重要的课程【在此强烈建议飘流幻境网龙公司！◎玩家SP上限愈大回魔速度能以加成效果回升，不然真的很伤钱(怪又不会掉钱)◎】 <BR></P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -197,7 +197,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

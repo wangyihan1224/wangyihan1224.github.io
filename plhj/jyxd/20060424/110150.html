@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ÐÂ¡¢ÍË¸ñ¼ü
- //alert("ASCII´úÂëÊÇ£º"+event.keyCode);
+function KeyDown(){ //å±è”½é¼ æ ‡å³é”®ã€Ctrl+nã€shift+F10ã€F5åˆ·æ–°ã€é€€æ ¼é”®
+ //alert("ASCIIä»£ç æ˜¯ï¼š"+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //ÆÁ±Î Alt+ ·½Ïò¼ü ¡û
-       (window.event.keyCode==39))){  //ÆÁ±Î Alt+ ·½Ïò¼ü ¡ú
+      ((window.event.keyCode==37)||   //å±è”½ Alt+ æ–¹å‘é”® â†
+       (window.event.keyCode==39))){  //å±è”½ Alt+ æ–¹å‘é”® â†’
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //ÆÁ±ÎÍË¸ñÉ¾³ý¼ü
-      (event.keyCode==116)||                 //ÆÁ±Î F5 Ë¢ÐÂ¼ü
-      (event.keyCode==112)||                 //ÆÁ±Î F1 Ë¢ÐÂ¼ü
-      (event.keyCode==80)||                 //ÆÁ±Î p Ë¢ÐÂ¼ü
+  if ((event.keyCode==8)  ||                 //å±è”½é€€æ ¼åˆ é™¤é”®
+      (event.keyCode==116)||                 //å±è”½ F5 åˆ·æ–°é”®
+      (event.keyCode==112)||                 //å±è”½ F1 åˆ·æ–°é”®
+      (event.keyCode==80)||                 //å±è”½ p åˆ·æ–°é”®
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ÐÂ¡¢ÍË¸ñ¼ü
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //ÆÁ±Î shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //å±è”½ shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //ÆÁ±Î shift ¼ÓÊó±ê×ó¼üÐÂ¿ªÒ»ÍøÒ³
+      window.event.returnValue = false;  //å±è”½ shift åŠ é¼ æ ‡å·¦é”®æ–°å¼€ä¸€ç½‘é¡µ
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>½ÇÉ«Åäµã Ò»</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>è§’è‰²é…ç‚¹ ä¸€</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "»ªÎÄÐÐ¿¬";
+	font-family: "åŽæ–‡è¡Œæ¥·";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">¡¡</td>
+				<td height="36" width="131">ã€€</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						½ÇÉ«Åäµã Ò»</span></div></td>
+						è§’è‰²é…ç‚¹ ä¸€</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">¡¡</td>
+                <td height="36" width="53">ã€€</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -179,205 +179,205 @@ MM_reloadPage(true);
 <TABLE id=table66 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76>·²ÄÝÉ¯</TD>
-<TD width=254>½¨ÒéÊôÐÔ:µØ Ë® »ð ·ç</TD>
-<TD width=155>ÍÆ¼öÅäµã: ÖÇÁ¦</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76>å‡¡å¦®èŽŽ</TD>
+<TD width=254>å»ºè®®å±žæ€§:åœ° æ°´ ç« é£Ž</TD>
+<TD width=155>æŽ¨èé…ç‚¹: æ™ºåŠ›</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table67 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>·² ÄÝ É¯³õÊ¼ÖµÎªÖÇÁ¦ (INT)3 µã , ÈôÄÜÔÙ½«×ÔÓÉ·ÖÅäµÄ 5 µã¼ÓÔÚÖÇÁ¦ (INT), Ôò²»¹ÜÑ¡ÔñÄÄÒ»ÏµÊôÐÔ , ¶¼¿ÉÒÔÔÚ 4 ¼¶Ç°Ñ§Ï°µ½¸ß½×¶Î¼¼ÄÜ ¡¢ Èç»ðÏµ±¬Ñ×Õó ¡¢ Ë®Ïµº®Æøµ¯ ¡¢ µØÏµÂä Ê¯Êõ ¡¢ ·çÏµ·çÇÐÊõ ¡­ µÈµÈ£¬¸ü¿ÉÔÚÕ½¶·ÖÐ¿ìËÙÌáÉý¼¼ÄÜµÈ¼¶¡£</TD></TR></TBODY></TABLE>
+<TD>å‡¡ å¦® èŽŽåˆå§‹å€¼ä¸ºæ™ºåŠ› (INT)3 ç‚¹ , è‹¥èƒ½å†å°†è‡ªç”±åˆ†é…çš„ 5 ç‚¹åŠ åœ¨æ™ºåŠ› (INT), åˆ™ä¸ç®¡é€‰æ‹©å“ªä¸€ç³»å±žæ€§ , éƒ½å¯ä»¥åœ¨ 4 çº§å‰å­¦ä¹ åˆ°é«˜é˜¶æ®µæŠ€èƒ½ ã€ å¦‚ç«ç³»çˆ†ç‚Žé˜µ ã€ æ°´ç³»å¯’æ°”å¼¹ ã€ åœ°ç³»è½ çŸ³æœ¯ ã€ é£Žç³»é£Žåˆ‡æœ¯ â€¦ ç­‰ç­‰ï¼Œæ›´å¯åœ¨æˆ˜æ–—ä¸­å¿«é€Ÿæå‡æŠ€èƒ½ç­‰çº§ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table68 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <TABLE id=table69 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=75><SPAN>µ¤Äá¶û</SPAN></TD>
-<TD width=255>½¨ÒéÊôÐÔ:µØ</TD>
-<TD width=155>ÍÆ¼öÅäµã: ÌåÖÊ Á¦Á¿</TD></TR></TBODY></TABLE>
+<TD align=middle width=75><SPAN>ä¸¹å°¼å°”</SPAN></TD>
+<TD width=255>å»ºè®®å±žæ€§:åœ°</TD>
+<TD width=155>æŽ¨èé…ç‚¹: ä½“è´¨ åŠ›é‡</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table70 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>Õâ¸ö½ÇÉ«ÓÉÓÚ³õÊ¼ÄÜÁ¦ÎªÁ¦Á¿£¨ STR £© 1 µã¡¢ÌåÁ¦£¨ CON £© 2 µã£¬¼´Ê¹Ã»ÓÐºÜºÃµÄ×°±¸£¬µÈ¼¶ÌáÉýºó½ÇÉ«³É³¤½«×Ô¶¯Ôö¼ÓÒ»¶¨µÄÎïÀí·ÀÓùÁ¦£¨ DEF £©£¬ÈôÔÙ½«Åäµã·ÅÓÚÁ¦Á¿£¨ STR £©£¬²¢´îÅäµØÊôÐÔµÄ»¤¶ÜÊõ£¬¸ü¿ÉÎª×î¼Ñ´òÊÖà¡!</TD></TR></TBODY></TABLE>
+<TD>è¿™ä¸ªè§’è‰²ç”±äºŽåˆå§‹èƒ½åŠ›ä¸ºåŠ›é‡ï¼ˆ STR ï¼‰ 1 ç‚¹ã€ä½“åŠ›ï¼ˆ CON ï¼‰ 2 ç‚¹ï¼Œå³ä½¿æ²¡æœ‰å¾ˆå¥½çš„è£…å¤‡ï¼Œç­‰çº§æå‡åŽè§’è‰²æˆé•¿å°†è‡ªåŠ¨å¢žåŠ ä¸€å®šçš„ç‰©ç†é˜²å¾¡åŠ›ï¼ˆ DEF ï¼‰ï¼Œè‹¥å†å°†é…ç‚¹æ”¾äºŽåŠ›é‡ï¼ˆ STR ï¼‰ï¼Œå¹¶æ­é…åœ°å±žæ€§çš„æŠ¤ç›¾æœ¯ï¼Œæ›´å¯ä¸ºæœ€ä½³æ‰“æ‰‹å”·!</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table71 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table72 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76>±´µÙ</TD>
-<TD width=254>½¨ÒéÊôÐÔ:Ë® »ð ·ç</TD>
-<TD width=155>ÍÆ¼öÅäµã: ÖÇÁ¦ Ãô½Ý</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76>è´è’‚</TD>
+<TD width=254>å»ºè®®å±žæ€§:æ°´ ç« é£Ž</TD>
+<TD width=155>æŽ¨èé…ç‚¹: æ™ºåŠ› æ•æ·</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table73 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>´Ó³õÊ¼ÄÜÁ¦Öµ¿´À´£¬ËäÈ»ÖÇÁ¦µãÊý½ÏÎªÑ·É«£¬µ«Èô½«Éý¼¶µãÊý·ÖÅäÓÚÖÇÁ¦£¨ INT £©ÓÚÃô½Ý£¨ AGI £©£¬±ãÄÜÓÚµÚÒ»Ê±¼ä³öÊÖ½â¾ö¼¬ÊÖµÄµÐÈË£¬·Ç³£ÊÊºÏÏ²»¶¿ìËÙÕ½¶·µÄÍæ¼Ò¡£ºóÆÚÃô½Ý£¨ AGI £©½«»áÊÇÕ½¶·³É°ÜµÄÖØÒª¹Ø¼ü£¬ÈôÄÜ´îÅäË®ÏµµÄÖÎÁÆ¡¢»ðÏµµÄ½µÃôÊõ»ò·çÏµµÄ¼ÓËÙÊõ£¬¸ü¿É³ÉÎªÕ½³¡ÉÏµÄ×î¼Ñ¸¨Öú½ÇÉ«¡£</TD></TR></TBODY></TABLE>
+<TD>ä»Žåˆå§‹èƒ½åŠ›å€¼çœ‹æ¥ï¼Œè™½ç„¶æ™ºåŠ›ç‚¹æ•°è¾ƒä¸ºé€Šè‰²ï¼Œä½†è‹¥å°†å‡çº§ç‚¹æ•°åˆ†é…äºŽæ™ºåŠ›ï¼ˆ INT ï¼‰äºŽæ•æ·ï¼ˆ AGI ï¼‰ï¼Œä¾¿èƒ½äºŽç¬¬ä¸€æ—¶é—´å‡ºæ‰‹è§£å†³æ£˜æ‰‹çš„æ•Œäººï¼Œéžå¸¸é€‚åˆå–œæ¬¢å¿«é€Ÿæˆ˜æ–—çš„çŽ©å®¶ã€‚åŽæœŸæ•æ·ï¼ˆ AGI ï¼‰å°†ä¼šæ˜¯æˆ˜æ–—æˆè´¥çš„é‡è¦å…³é”®ï¼Œè‹¥èƒ½æ­é…æ°´ç³»çš„æ²»ç–—ã€ç«ç³»çš„é™æ•æœ¯æˆ–é£Žç³»çš„åŠ é€Ÿæœ¯ï¼Œæ›´å¯æˆä¸ºæˆ˜åœºä¸Šçš„æœ€ä½³è¾…åŠ©è§’è‰²ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table74 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table75 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76><SPAN>ÄÝÄÈ</SPAN></TD>
-<TD width=254>½¨ÒéÊôÐÔ:µØ »ð</TD>
-<TD width=155>ÍÆ¼öÅäµã: Æ½¾ùÅäµã</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76><SPAN>å¦®å¨œ</SPAN></TD>
+<TD width=254>å»ºè®®å±žæ€§:åœ° ç«</TD>
+<TD width=155>æŽ¨èé…ç‚¹: å¹³å‡é…ç‚¹</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table76 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>´Ë½ÇÉ«³õÊ¼ÄÜÁ¦½ÏÎªÆ½¾ù£¬±ÊÕßÔø²âÊÔ½«³õÊ¼ÄÜÁ¦µÄ 5 µãÔÙ¶ÈÆ½¾ùÅäµã£¬²¢Óë½ÇÉ«Éý¼¶ºó£¬½«µãÊýÈ«²¿Í¶ÈëÁ¦Á¿£¨ STR £© , ½á¹û·ÀÓùÁ¦µÄ±íÏÖËä²»¼°µ¤Äá¶û£¬ÎïÀí¹¥»÷£¨ ATK £©±È²»ÉÏÏ¯µÂ£¬µ«Ò²ÒòÎª³õÊ¼ÖµµÄ¹ØÏµ£¬ÄÜÁ¦½Ô±ÈÏ¯µÂÓëµ¤Äá¶û¸ßÒ»Ð©£¬½«ËýÅàÑø³ÉÕ½Ê¿»ò·¨Ê¦£¬¶¼ÊÇ²»´íµÄÑ¡Ôñ¡£ </TD></TR></TBODY></TABLE>
+<TD>æ­¤è§’è‰²åˆå§‹èƒ½åŠ›è¾ƒä¸ºå¹³å‡ï¼Œç¬”è€…æ›¾æµ‹è¯•å°†åˆå§‹èƒ½åŠ›çš„ 5 ç‚¹å†åº¦å¹³å‡é…ç‚¹ï¼Œå¹¶ä¸Žè§’è‰²å‡çº§åŽï¼Œå°†ç‚¹æ•°å…¨éƒ¨æŠ•å…¥åŠ›é‡ï¼ˆ STR ï¼‰ , ç»“æžœé˜²å¾¡åŠ›çš„è¡¨çŽ°è™½ä¸åŠä¸¹å°¼å°”ï¼Œç‰©ç†æ”»å‡»ï¼ˆ ATK ï¼‰æ¯”ä¸ä¸Šå¸­å¾·ï¼Œä½†ä¹Ÿå› ä¸ºåˆå§‹å€¼çš„å…³ç³»ï¼Œèƒ½åŠ›çš†æ¯”å¸­å¾·ä¸Žä¸¹å°¼å°”é«˜ä¸€äº›ï¼Œå°†å¥¹åŸ¹å…»æˆæˆ˜å£«æˆ–æ³•å¸ˆï¼Œéƒ½æ˜¯ä¸é”™çš„é€‰æ‹©ã€‚ </TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table77 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table78 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76><SPAN>Âå¿Ë</SPAN></TD>
-<TD width=254>½¨ÒéÊôÐÔ:µØ ·ç</TD>
-<TD width=155>ÍÆ¼öÅäµã: ÖÇÁ¦ Ãô½Ý</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76><SPAN>æ´›å…‹</SPAN></TD>
+<TD width=254>å»ºè®®å±žæ€§:åœ° é£Ž</TD>
+<TD width=155>æŽ¨èé…ç‚¹: æ™ºåŠ› æ•æ·</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table79 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>ÓÉÓÚ½ÇÉ«×¨Êô¼¼ÄÜÆ«ÏòµØÊôÐÔ£¬ÇÒ³õÊ¼ÄÜÁ¦ÒÔÃô½ÝÎª¸¨£¬½¨ÒéÅàÓý³É·çÏµÃô·¨£¬Èôº¦ÅÂÑªÁ¿ÓÚ·ÀÓù½ÏµÍ£¬Ò²¿ÉÒÔÑ¡ÔñµØÏµ£»ËäÈ»·ç¡¢µØÁ½ÏµµÄÊõ·¨¹¥»÷ÂÔÑ·ÓÚ»ðÏµµÄÆÆ»·Á¦£¬µ«·ç¡¢µØµÄ¸¨ÖúÐÍ·¨ÊõÔÙÅäºÏÉÏ³õÊ¼Ãô½ÝµÄ¼Ó³É£¬½«»áÓÐ²»´íµÄÐ§¹û¡£</TD></TR></TBODY></TABLE>
+<TD>ç”±äºŽè§’è‰²ä¸“å±žæŠ€èƒ½åå‘åœ°å±žæ€§ï¼Œä¸”åˆå§‹èƒ½åŠ›ä»¥æ•æ·ä¸ºè¾…ï¼Œå»ºè®®åŸ¹è‚²æˆé£Žç³»æ•æ³•ï¼Œè‹¥å®³æ€•è¡€é‡äºŽé˜²å¾¡è¾ƒä½Žï¼Œä¹Ÿå¯ä»¥é€‰æ‹©åœ°ç³»ï¼›è™½ç„¶é£Žã€åœ°ä¸¤ç³»çš„æœ¯æ³•æ”»å‡»ç•¥é€ŠäºŽç«ç³»çš„ç ´çŽ¯åŠ›ï¼Œä½†é£Žã€åœ°çš„è¾…åŠ©åž‹æ³•æœ¯å†é…åˆä¸Šåˆå§‹æ•æ·çš„åŠ æˆï¼Œå°†ä¼šæœ‰ä¸é”™çš„æ•ˆæžœã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table80 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table81 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76><SPAN>Ï¯µÂ</SPAN></TD>
-<TD width=254>½¨ÒéÊôÐÔ:»ð</TD>
-<TD width=155>ÍÆ¼öÅäµã: Á¦Á¿</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76><SPAN>å¸­å¾·</SPAN></TD>
+<TD width=254>å»ºè®®å±žæ€§:ç«</TD>
+<TD width=155>æŽ¨èé…ç‚¹: åŠ›é‡</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table82 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>Ï¯µÂ³õÊ¼ÄÜÁ¦¼´ÓµÓÐ³¬¸ßµÄÁ¦Á¿£¨ STR £©³É³¤ÂÊÓÚÌåÁ¦Öµ (CON) £¬½¨ÒéºóÐøÉý¼¶µãÊý¿ÉÆ½¾ù·ÖÅäÓÚÁ¦Á¿£¨ STR £©ÓÚËÙ¶È£¨ AGI £©£¬»òÁ¦Á¿£¨ STR £©ÓÚÌåÁ¦ (CON) £¬ÉõÖÁ½«ËùÓÐµÄµãÊý·ÖÅäÓÚÁ¦Á¿£¬¶¼ÊÇ²»´íµÄÑ¡Ôñ¡£ÁíÍâ£¬ÈôÄÜ¼ÓÉÏ»ðÏµµÄÈâ²«¼¼ÄÜµÄ¼Ó³Ö£¬Ëæ±ã»Ó¸öÊÖ¶¼ÄÜ¿´µ½ÆÆ°ÙµÄ¹¥»÷Á¦£¬¿ÉËµÊÇÅàÑøÕ½Ê¿µÄ×î¼Ñ½ÇÉ«¡£</TD></TR></TBODY></TABLE>
+<TD>å¸­å¾·åˆå§‹èƒ½åŠ›å³æ‹¥æœ‰è¶…é«˜çš„åŠ›é‡ï¼ˆ STR ï¼‰æˆé•¿çŽ‡äºŽä½“åŠ›å€¼ (CON) ï¼Œå»ºè®®åŽç»­å‡çº§ç‚¹æ•°å¯å¹³å‡åˆ†é…äºŽåŠ›é‡ï¼ˆ STR ï¼‰äºŽé€Ÿåº¦ï¼ˆ AGI ï¼‰ï¼Œæˆ–åŠ›é‡ï¼ˆ STR ï¼‰äºŽä½“åŠ› (CON) ï¼Œç”šè‡³å°†æ‰€æœ‰çš„ç‚¹æ•°åˆ†é…äºŽåŠ›é‡ï¼Œéƒ½æ˜¯ä¸é”™çš„é€‰æ‹©ã€‚å¦å¤–ï¼Œè‹¥èƒ½åŠ ä¸Šç«ç³»çš„è‚‰ææŠ€èƒ½çš„åŠ æŒï¼Œéšä¾¿æŒ¥ä¸ªæ‰‹éƒ½èƒ½çœ‹åˆ°ç ´ç™¾çš„æ”»å‡»åŠ›ï¼Œå¯è¯´æ˜¯åŸ¹å…»æˆ˜å£«çš„æœ€ä½³è§’è‰²ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table83 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table84 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76><SPAN>ÄÂ¶û</SPAN></TD>
-<TD width=254>½¨ÒéÊôÐÔ: »ð ·ç</TD>
-<TD width=155>ÍÆ¼öÅäµã: ÖÇÁ¦ Ãô½Ý</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76><SPAN>ç©†å°”</SPAN></TD>
+<TD width=254>å»ºè®®å±žæ€§: ç« é£Ž</TD>
+<TD width=155>æŽ¨èé…ç‚¹: æ™ºåŠ› æ•æ·</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table85 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>´Ë½ÇÉ«×¨Êô¼¼ÄÜÎª»ðÏµ£¬ÇÒÓÉÓÚ»ðÏµÆÆ»µÁ¦½ÏÆäËüÈýÏµ¸ß£¬´îÅä³õÊ¼ÄÜÁ¦µÄÃô½Ý¼Ó³ÉÐ§¹û£¬¼´Ê¹ÅäµãÒÔÖÇÁ¦¡¢ÖÇ»ÛÎªÖ÷£¬Ò²»áÒòÎªÓÐ³õÊ¼ÊôÐÔ¼Ó³ÉµÄ¸¨Öú£¬Ê¹µÃ³öÊÖËÙ¶È²»»áÌ«¹ýÓÚ»ºÂý£»ÈôÅäºÏ³õÊ¼ÊôÐÔ¶ø½«Éý¼¶µãÊý·ÖÅäÓÚÖÇÁ¦ÓÚËÙ¶È£¬Ôò½«Òò³öÊÖËÙ¶È¿ìÇÒÓÖÓµÓÐ¸ßË®Æ½ÆÆ»µÁ¦£¬¶ø³ÉÎªÒÔËÙ¶ÈÐÍÈ¡Ê¤µÄ·¨Ê¦¡£</TD></TR></TBODY></TABLE>
+<TD>æ­¤è§’è‰²ä¸“å±žæŠ€èƒ½ä¸ºç«ç³»ï¼Œä¸”ç”±äºŽç«ç³»ç ´ååŠ›è¾ƒå…¶å®ƒä¸‰ç³»é«˜ï¼Œæ­é…åˆå§‹èƒ½åŠ›çš„æ•æ·åŠ æˆæ•ˆæžœï¼Œå³ä½¿é…ç‚¹ä»¥æ™ºåŠ›ã€æ™ºæ…§ä¸ºä¸»ï¼Œä¹Ÿä¼šå› ä¸ºæœ‰åˆå§‹å±žæ€§åŠ æˆçš„è¾…åŠ©ï¼Œä½¿å¾—å‡ºæ‰‹é€Ÿåº¦ä¸ä¼šå¤ªè¿‡äºŽç¼“æ…¢ï¼›è‹¥é…åˆåˆå§‹å±žæ€§è€Œå°†å‡çº§ç‚¹æ•°åˆ†é…äºŽæ™ºåŠ›äºŽé€Ÿåº¦ï¼Œåˆ™å°†å› å‡ºæ‰‹é€Ÿåº¦å¿«ä¸”åˆæ‹¥æœ‰é«˜æ°´å¹³ç ´ååŠ›ï¼Œè€Œæˆä¸ºä»¥é€Ÿåº¦åž‹å–èƒœçš„æ³•å¸ˆã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table86 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
 <DIV align=center>
 <TABLE id=table87 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76><SPAN>°¬ÀöË¹</SPAN></TD>
-<TD width=254>½¨ÒéÊôÐÔ:µØ</TD>
-<TD width=155>ÍÆ¼öÅäµã: ÌåÁ¦ Á¦Á¿</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76><SPAN>è‰¾ä¸½æ–¯</SPAN></TD>
+<TD width=254>å»ºè®®å±žæ€§:åœ°</TD>
+<TD width=155>æŽ¨èé…ç‚¹: ä½“åŠ› åŠ›é‡</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table88 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>°¬ÀöË¹µÄÄÜÁ¦¿ÉËµÊÇµ¤Äá¶ûµÄÅ®Éú°æ£¬ËäÈ»³õÊ¼ÄÜÁ¦ÓÚµ¤Äá¶øÏàÍ¬£¬µ«³õÊ¼×°±¸ ¼ÓÆðÀ´µÄ·ÀÓùÖµÓÐÂÔ¸ßÓÚµ¤Äá¶ûÒ»Ð©£¬½¨Òé¿É´îÅäµØÊôÐÔµÄ»¤¶ÜÊõ£¬¸ü¿ÉÐ­ÖúÍæ¼Ò¿ìËÙ³åµÈà¡£¡</TD></TR></TBODY></TABLE>
+<TD>è‰¾ä¸½æ–¯çš„èƒ½åŠ›å¯è¯´æ˜¯ä¸¹å°¼å°”çš„å¥³ç”Ÿç‰ˆï¼Œè™½ç„¶åˆå§‹èƒ½åŠ›äºŽä¸¹å°¼è€Œç›¸åŒï¼Œä½†åˆå§‹è£…å¤‡ åŠ èµ·æ¥çš„é˜²å¾¡å€¼æœ‰ç•¥é«˜äºŽä¸¹å°¼å°”ä¸€äº›ï¼Œå»ºè®®å¯æ­é…åœ°å±žæ€§çš„æŠ¤ç›¾æœ¯ï¼Œæ›´å¯ååŠ©çŽ©å®¶å¿«é€Ÿå†²ç­‰å”·ï¼</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table89 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table90 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76><SPAN>Àò¿É</SPAN></TD>
-<TD width=254>½¨ÒéÊôÐÔ: »ð ·ç</TD>
-<TD width=155>ÍÆ¼öÅäµã: Ãô½Ý Á¦Á¿</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76><SPAN>èŽ‰å¯</SPAN></TD>
+<TD width=254>å»ºè®®å±žæ€§: ç« é£Ž</TD>
+<TD width=155>æŽ¨èé…ç‚¹: æ•æ· åŠ›é‡</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table91 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>ËÙ¶È¿ì¡¢Á¦Á¿´óÊÇÀò¿ÉµÄ×î´óÌØÉ«£¬ÇÒÓÉ³õÊ¼ÄÜÁ¦¿ÉÍÆ²â£¬Î´À´½ÇÉ«Ãô½Ý£¨ AGI £©µÄ³É³¤ÂÊ£¬½«Ã÷ÏÔµÄ±ÈÆäËüÍ¬µÈµÄ½ÇÉ«À´µÄ¸ß£¬ÊÊºÏÏëÁ·ÃôÕ½µÄÍæ¼Ò¡£ÓÉÓÚ½ÇÉ«³õÊ¼ÄÜÁ¦¾ÍÔ¶Ô¶¸ßÓÚÆäËü½ÇÉ«£¬ÈôÄÜ´îÅäÓµÓÐÇ¿´ó¹¥»÷Á¦µÄ»ðÊôÐÔ¼¼ÄÜ£¬»ò·çÊôÐÔµÄËÙ¶È¼Ó³É¼¼ÄÜ¸¨Öú£¬½«»áÊÇËÙ¶ÈÐÍÕ½Ê¿µÄ×î¼Ñ´ú±í¡£</TD></TR></TBODY></TABLE>
+<TD>é€Ÿåº¦å¿«ã€åŠ›é‡å¤§æ˜¯èŽ‰å¯çš„æœ€å¤§ç‰¹è‰²ï¼Œä¸”ç”±åˆå§‹èƒ½åŠ›å¯æŽ¨æµ‹ï¼Œæœªæ¥è§’è‰²æ•æ·ï¼ˆ AGI ï¼‰çš„æˆé•¿çŽ‡ï¼Œå°†æ˜Žæ˜¾çš„æ¯”å…¶å®ƒåŒç­‰çš„è§’è‰²æ¥çš„é«˜ï¼Œé€‚åˆæƒ³ç»ƒæ•æˆ˜çš„çŽ©å®¶ã€‚ç”±äºŽè§’è‰²åˆå§‹èƒ½åŠ›å°±è¿œè¿œé«˜äºŽå…¶å®ƒè§’è‰²ï¼Œè‹¥èƒ½æ­é…æ‹¥æœ‰å¼ºå¤§æ”»å‡»åŠ›çš„ç«å±žæ€§æŠ€èƒ½ï¼Œæˆ–é£Žå±žæ€§çš„é€Ÿåº¦åŠ æˆæŠ€èƒ½è¾…åŠ©ï¼Œå°†ä¼šæ˜¯é€Ÿåº¦åž‹æˆ˜å£«çš„æœ€ä½³ä»£è¡¨ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table92 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV>
 <DIV align=center>
 <TABLE id=table93 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76><SPAN>ç¤Ò°º××Ó</SPAN></TD>
-<TD width=254>½¨ÒéÊôÐÔ: Ë® »ð</TD>
-<TD width=155>ÍÆ¼öÅäµã: ÖÇÁ¦</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76><SPAN>ç»€é‡Žé¹¤å­</SPAN></TD>
+<TD width=254>å»ºè®®å±žæ€§: æ°´ ç«</TD>
+<TD width=155>æŽ¨èé…ç‚¹: æ™ºåŠ›</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table94 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>³õÊ¼ÄÜÁ¦ÒòÎªÖÇ»ÛµÄ¹ØÏµ£¬Ã÷ÏÔµÄ±ÈÆäËü·¨ÊõÐÍ½ÇÉ« SP Öµ¸ß£¬¿ÉÊ©·ÅµÄ·¨Êõ´ÎÊýÒ²Òò´Ë¸ßÓÚÆäËü½ÇÉ«£¬ËäÈ»½ÇÉ«³õÆÚ²»Ò×ÉÏÊÖÇÒÉý¼¶À§ÄÑ£¬µ«Ñ§Ï°µ½¸ß½×Êõ·¨¼¼ÄÜºó£¬Õ½¶·ÆÆ»µÁ¦¿ÉÊÇ¸ßÈËµÃÏÅÈË£¬ÇÒËýÓµÓÐ¸ßÓÚÆäËü½ÇÉ«µÄ SP Á¿£¬¶ÔÓÚ³¤ÆÚÕ½¶·¡¢Ô¶Õ÷»ÄµºÊÇ·¨ÊõÐÍ½ÇÉ«ÖÐ²»´íµÄÑ¡ÔñÖ®Ò»¡£</TD></TR></TBODY></TABLE>
+<TD>åˆå§‹èƒ½åŠ›å› ä¸ºæ™ºæ…§çš„å…³ç³»ï¼Œæ˜Žæ˜¾çš„æ¯”å…¶å®ƒæ³•æœ¯åž‹è§’è‰² SP å€¼é«˜ï¼Œå¯æ–½æ”¾çš„æ³•æœ¯æ¬¡æ•°ä¹Ÿå› æ­¤é«˜äºŽå…¶å®ƒè§’è‰²ï¼Œè™½ç„¶è§’è‰²åˆæœŸä¸æ˜“ä¸Šæ‰‹ä¸”å‡çº§å›°éš¾ï¼Œä½†å­¦ä¹ åˆ°é«˜é˜¶æœ¯æ³•æŠ€èƒ½åŽï¼Œæˆ˜æ–—ç ´ååŠ›å¯æ˜¯é«˜äººå¾—å“äººï¼Œä¸”å¥¹æ‹¥æœ‰é«˜äºŽå…¶å®ƒè§’è‰²çš„ SP é‡ï¼Œå¯¹äºŽé•¿æœŸæˆ˜æ–—ã€è¿œå¾è’å²›æ˜¯æ³•æœ¯åž‹è§’è‰²ä¸­ä¸é”™çš„é€‰æ‹©ä¹‹ä¸€ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table95 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table96 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76><SPAN>ÂêÀòÑÇ</SPAN></TD>
-<TD width=254>½¨ÒéÊôÐÔ:Ë®</TD>
-<TD width=155>ÍÆ¼öÅäµã: ÖÇÁ¦ ÖÇ»Û</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76><SPAN>çŽ›èŽ‰äºš</SPAN></TD>
+<TD width=254>å»ºè®®å±žæ€§:æ°´</TD>
+<TD width=155>æŽ¨èé…ç‚¹: æ™ºåŠ› æ™ºæ…§</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table97 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>´Ë½ÇÉ«µÄ³õÊ¼ÄÜÁ¦·Ç³£ÊÊºÏÅàÑø³ÉÎª¸¨ÖúÐÍ½ÇÉ«£¬Î´À´ÔÚ¸ßÃô½ÝµÄÇ°ÌáÏÂ£¬ÈôÄÜÅäºÏË®Ïµ¸÷ÖÖÇ¿Á¦ÖÎÁÆÊõ£¬½«¿ÉÊµÊ±½â¾È´¹ËÀ±ßÔµµÄ»ï°é£¬ÎÞÂÛÊÇµ¥Á·»òÕßÓÚÆäËüÍæ¼Ò×é¶ÓÁ·µÈ£¬¶¼·Ç³£ÊÕ»¶Ó­À²¡£</TD></TR></TBODY></TABLE>
+<TD>æ­¤è§’è‰²çš„åˆå§‹èƒ½åŠ›éžå¸¸é€‚åˆåŸ¹å…»æˆä¸ºè¾…åŠ©åž‹è§’è‰²ï¼Œæœªæ¥åœ¨é«˜æ•æ·çš„å‰æä¸‹ï¼Œè‹¥èƒ½é…åˆæ°´ç³»å„ç§å¼ºåŠ›æ²»ç–—æœ¯ï¼Œå°†å¯å®žæ—¶è§£æ•‘åž‚æ­»è¾¹ç¼˜çš„ä¼™ä¼´ï¼Œæ— è®ºæ˜¯å•ç»ƒæˆ–è€…äºŽå…¶å®ƒçŽ©å®¶ç»„é˜Ÿç»ƒç­‰ï¼Œéƒ½éžå¸¸æ”¶æ¬¢è¿Žå•¦ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table98 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV>
 <DIV align=center>
 <TABLE id=table99 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=76><SPAN>½àÎ÷¿¨</SPAN></TD>
-<TD width=254>½¨ÒéÊôÐÔ:Ë®</TD>
-<TD width=155>ÍÆ¼öÅäµã: ÖÇÁ¦ ÖÇ»Û</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=76><SPAN>æ´è¥¿å¡</SPAN></TD>
+<TD width=254>å»ºè®®å±žæ€§:æ°´</TD>
+<TD width=155>æŽ¨èé…ç‚¹: æ™ºåŠ› æ™ºæ…§</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table100 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD>½àÎ÷¿¨Ò²ÊÇ¸¨ÖúÐÍ·¨Ê¦µÄÑ¡ÔñÖ®Ò»£¬´Ó³õÊ¼ÄÜÁ¦¿´À´£¬½«ËûÅàÑø³É¸¨ÖúÐÍ·¨Ê¦£¬»òÕ½¶·ÐÍ·¨Ê¦¶¼ÊÇ²»´íµÄÑ¡Ôñ¡£ÊôÐÔ·½ÃæÊ×ÍÆË®Ïµ£¬ÓÉÓÚË®Ïµ·¨Êõ¹¥»÷Á¦²¢²»²î£¬ÇÒË®ÏµµÄÖÎÁÆÓÚ»ØÄ§Êõ½Ô·Ç³£µÄÊµÓÃ£¬¿ÉÈÃÍæ¼ÒÒò´Ë³ÉÎª¶ÓÎéÖÐµÄ×î¼ÑÊØ»¤Éñ¡£</TD></TR></TBODY></TABLE>
+<TD>æ´è¥¿å¡ä¹Ÿæ˜¯è¾…åŠ©åž‹æ³•å¸ˆçš„é€‰æ‹©ä¹‹ä¸€ï¼Œä»Žåˆå§‹èƒ½åŠ›çœ‹æ¥ï¼Œå°†ä»–åŸ¹å…»æˆè¾…åŠ©åž‹æ³•å¸ˆï¼Œæˆ–æˆ˜æ–—åž‹æ³•å¸ˆéƒ½æ˜¯ä¸é”™çš„é€‰æ‹©ã€‚å±žæ€§æ–¹é¢é¦–æŽ¨æ°´ç³»ï¼Œç”±äºŽæ°´ç³»æ³•æœ¯æ”»å‡»åŠ›å¹¶ä¸å·®ï¼Œä¸”æ°´ç³»çš„æ²»ç–—äºŽå›žé­”æœ¯çš†éžå¸¸çš„å®žç”¨ï¼Œå¯è®©çŽ©å®¶å› æ­¤æˆä¸ºé˜Ÿä¼ä¸­çš„æœ€ä½³å®ˆæŠ¤ç¥žã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table101 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV></DIV><!--Content End--></td>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV></DIV><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -393,7 +393,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="»Ø¶¥²¿" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="å›žé¡¶éƒ¨" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

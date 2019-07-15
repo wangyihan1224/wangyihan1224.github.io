@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>5.0����Ƭ-��NPC�ǳ�</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>5.0资料片-新NPC登场</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						5.0����Ƭ-��NPC�ǳ�</span></div></td>
+						5.0资料片-新NPC登场</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -180,47 +180,47 @@ MM_reloadPage(true);
 <TABLE id=table1 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 bgColor=#f3f3f3 border=1>
 <TBODY>
 <TR>
-<TD align=middle width="20%"><A href="113738.html">ǰ��</A></TD>
-<TD align=middle width="20%"><A href="141132.html">������ŷ��</A></TD>
-<TD align=middle width="20%"><A href="142521.html">��NPC�ǳ�</A></TD>
-<TD align=middle width="20%"><A href="143747.html">����ҽ�ɫ����</A></TD>
-<TD align=middle width="20%"><A href="144224.html">�޽�PK�ǳ�</A></TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width="20%"><A href="113738.html">前言</A></TD>
+<TD align=middle width="20%"><A href="141132.html">浪漫游欧洲</A></TD>
+<TD align=middle width="20%"><A href="142521.html">新NPC登场</A></TD>
+<TD align=middle width="20%"><A href="143747.html">新玩家角色开放</A></TD>
+<TD align=middle width="20%"><A href="144224.html">无界PK登场</A></TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>&nbsp;</DIV>
 <TABLE cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
 <TD width=490 colSpan=2><IMG height=39 src="../../../plhjtp/2008-6-26/t3.gif" width=490 border=0></TD></TR>
 <TR>
-<TD width=490 colSpan=2>��</TD></TR>
+<TD width=490 colSpan=2>　</TD></TR>
 <TR>
-<TD>���ｹ�㣺ʥŮ��� 
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��ĳһ�����ϣ�����ʹ��������Ů�����У�������˵������£����Ǿ��������Ů����������ϵ۵İ������ȷ���������<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����ʷ�У����ԭ����һλũ����Ů����16��ʱ�õ��������ʾ����Ҫ���������ո���ʱ��Ӣ������ռ��ķ���ʧ�ء���ʵ�ڼ���������ÿһ�ε�ս�����÷���ʿ�����䣬���ڴ˿̣���µĳ��־�����һ��ϣ��֮�ǣ����Ե���ǰ��ϣũ�Ǳ�Ѱ���������ʱ������������Ҳ����δ���Ĳ���������ͬ���������쵼���ӡ�<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��´��취�����ӻ���������Ӣ�����ո���ռ���ʧ����ʹ�����ָ���һ�����ɵĹ��ң���ʱ�����Ҳ��Ϊ������������ŮӢ�ۡ��������ڷ����������������ǻ�֮�󣬹���������������֧����£����������ķ�����û�к�Ԯ������½ڽڰ��ˡ���һ�γ�ͻ�У���±�Ӣ�����ӷ�²��Ӣ��׽�����֮������Ϊ��ʸ֮�ģ���Ӣ�������ֿ����µ��ڽ̲���������������Ů��֮����������<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ӣ������ս���У���Ϊ����ʥŮ��£����ò��������ɹ��ı�ס�˷�����������ͳ�ԣ���û�б�Ӣ���������Ƶļ̳��ߺ����������򵹡�</P></TD>
+<TD>人物焦点：圣女贞德 
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在某一天晚上，大天使出现在少女的梦中，并对她说：「贞德，��是救祖国的少女，��将获得上帝的帮助拯救法国……」<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在历史中，贞德原本是一位农村少女，在16岁时得到「神的启示」，要求她带兵收复当时由英格兰人占领的法国失地。其实在几年下来，每一次的战败逐渐让法国士气低落，就在此刻，贞德的出现就像是一颗希望之星，所以当她前往希农城堡寻求查理王储时，查理王储（也就是未来的查理七世）同意让她来领导军队。<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 贞德带领法国军队击退来犯的英军，收复被占领的失土，使法国恢复成一个自由的国家，此时的贞德也成为了闻名法国的女英雄。不过，在法国国王查理七世登基之后，国王查理七世不再支持贞德，贞德所带领的法军在没有后援的情况下节节败退。在一次冲突中，贞德被英国军队俘虏。英军捉到贞德之后，视她为众矢之的，由英格兰当局控制下的宗教裁判所，将她判以女巫之罪，活活烧死。<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 英法百年战争中，因为有了圣女贞德，才让查理七世成功的保住了法国国王的正统性，而没有被英格兰所宣称的继承者亨利六世所打倒。</P></TD>
 <TD>
-<P align=center><IMG height=378 hspace=2 src="../../../plhjtp/2008-6-26/main-3_clip_image002.jpg" width=200 vspace=2><BR>ͼΪʥŮ���</P></TD></TR>
+<P align=center><IMG height=378 hspace=2 src="../../../plhjtp/2008-6-26/main-3_clip_image002.jpg" width=200 vspace=2><BR>图为圣女贞德</P></TD></TR>
 <TR>
-<TD width=490 colSpan=2>��</TD></TR>
+<TD width=490 colSpan=2>　</TD></TR>
 <TR>
-<TD width=490 colSpan=2>��ʷС�ٿƣ�����ħŮ<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;��15���͵�17���ͣ���300���ŷ�ޣ���ʢ���š�����ħŮ���Ļ�����Ǳ��̻ỳ����Ů�׵�Ů�ԣ��ͻ�Ī������ر�����ʩ�����˵�����������ֻ����Ϊ��ɫ����ɫ��΢�ͼ�����˲�ͬ��Ҳ�ᱻ��Ϊ��Ů�ס� 
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����ЩŮ�˲���������Ů�ף�����ֻ�Ǳ���ǿ�ȡ���ΪŮ�ס����Ǹ�֪ʶ����������������޷�֤���Լ�����ף�����?����ʷ������Ʒ�����Ⱥ����ֶ�ʮ�ֲ��ң���Ϊ����֪�ľ��ǻ��̡���ʵ��ʱ�̻��Ŀ�ģ�����Ϊ�˲����켺���������������̵���Ϊ��</P>
-<P>����NPC<BR>�� 
+<TD width=490 colSpan=2>历史小百科：狩猎魔女<BR><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在15世纪到17世纪，近300年的欧洲，正盛行着『狩猎魔女』的活动，凡是被教会怀疑是女巫的女性，就会莫名其妙地被冠上施法害人的罪名。甚至只是因为肤色、发色稍微和家族的人不同，也会被认为是女巫。 
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 而这些女人并非真正的女巫，她们只是被『强迫』称为女巫。在那个知识愚昧的年代，她们无法证明自己的清白，而成?了历史的牺牲品。其迫害的手段十分惨烈，最为人所知的就是火刑。其实当时教会的目的，就是为了铲除异己，而做出这样惨忍的行为。</P>
+<P>人物NPC<BR>　 
 <DIV align=center>
 <TABLE cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
 <TD align=middle><IMG height=100 hspace=12 src="../../../plhjtp/2008-6-26/01.gif" width=100 align=left></TD>
-<TD>��ɪ����<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��ɪ���ڻ������ʱ�򣬾��Ѿ���һ�������䣬���������������Ϊ�Ͷ�ɽ֮�۵Ľ�ս��һ�ٻ��������ն�������һ֧������ɭ�ˣ���������Ƥ�����ˡ��ո������밮�����˷�����ս��������������ν����ʿ����<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������ش�˵�У�����¡�����ǰ�ɪ������֮�أ�����һ���ս����������֮������ʱ��������һ�ε�ͳ���������ˡ�</TD></TR>
+<TD>阿瑟王：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 阿瑟王在还年轻的时候，就已经是一个好领袖，他率领各部落在名为巴顿山之役的交战中一举击溃属于日耳曼民族一支的萨克森人，他还曾与皮克西人、苏格兰人与爱尔兰人发生过战争，并创下了所谓的骑士道。<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在塞尔特传说中，阿瓦隆岛仅是阿瑟王长眠之地，他有一天终将复活，而复活之日来到时，他将再一次的统领塞尔特人。</TD></TR>
 <TR>
 <TD align=middle><IMG height=100 hspace=12 src="../../../plhjtp/2008-6-26/02.gif" width=100 align=left></TD>
-<TD>��˹�壺<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��˹���ǰ�ɪ����˵�е�Բ����ʿ֮һ�������ڵ��������¸ҵ�һԱ��Ҳ�ǰ�ɪ�������ε���ʿ֮һ��<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ڵ�ʱ��ʿ����߹������������߱�Ʒ�¸��С�Ӣ����ս���������˵����ԣ���˹����-����ʡ��������ʿ��ߵķ緶��������ɪ������������������Ĺ������������Υ�Ѿõĺ�ƽ��</TD></TR>
+<TD>兰斯洛：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 兰斯洛是阿瑟王传说中的圆桌武士之一，他是众弟兄中最勇敢的一员，也是阿瑟王最信任的骑士之一。<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在当时骑士是最高贵的象征，必须具备品德高尚、英勇善战、忠于主人等特性，兰斯洛特-加龙省秉持着骑士最高的风范，帮助阿瑟王反抗外来蛮夷异族的攻击，并带来睽违已久的和平。</TD></TR>
 <TR>
 <TD align=middle><IMG height=100 hspace=12 src="../../../plhjtp/2008-6-26/03.gif" width=100 align=left></TD>
-<TD>Ĭ�֣�<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����Ĭ���Ǿ������Ů������ǿ���ħ���������ڰ�ɪ�����߰������������ʦ�Ľ�ɫ�������������ܵ���ɫ�����գ���ʧȥ�����е�ħ��������Լ����ڵصף���˵�����ڵȴ���ɪ����������һ�죬�����»ص��˼丨���Ű�ɪ����</TD></TR>
+<TD>默林：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 传言默林是精灵的子女，具有强大的魔法能力，在阿瑟王身边扮演着智者与军师的角色。不过晚年因受到美色的引诱，而失去了所有的魔法，最后将自己关在地底，据说他是在等待阿瑟王回来的那一天，再重新回到人间辅佐着阿瑟王。</TD></TR>
 <TR>
 <TD align=middle><IMG height=100 hspace=12 src="../../../plhjtp/2008-6-26/04.gif" width=100 align=left></TD>
-<TD>����ޱ��<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����ޱ�ǰ�ɪ�������ӣ�ӵ�о��˵���ò�͹��˵��ǻۡ���˵������������˹�壬��һ�β��������İ��飬�Ƿ�ᱻ���������ܣ�<BR>���ţ�����Ϊ�˰��������˹�屳�Ѱ�ɪ��˽��Զ��������</TD></TR>
+<TD>格妮薇：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 格妮薇是阿瑟王的妻子，拥有惊人的美貌和过人的智慧。传说中她爱上了兰斯洛，这一段不被允许的爱情，是否会被世人所接受？<BR>或着，她会为了爱情而和兰斯洛背叛阿瑟王私奔远走他乡吗？</TD></TR>
 <TR>
 <TD align=middle><IMG height=100 hspace=12 src="../../../plhjtp/2008-6-26/06.gif" width=100 align=left></TD>
-<TD>ڤ����<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������������ڤ��֮�ϵ�ڤ�������ؼ���������ͳ�������Ұ���δα����������ź�����Ҫ�����������������������һ��ڤ��������ʲô��ı�أ�<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��������ǲ�����Ļ�����ڤ�������</TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></DIV><!--Content End--></td>
+<TD>冥王：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在四异者与六冥将之上的冥王霍尔特即将现身，统治世界的野望次次被救世主阻扰后，终于要出现亲手来解决救世主，这一次冥王将会用什么计谋呢？<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这个世界是不是真的会落入冥王的手里？</TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></DIV><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -236,7 +236,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>����֮�������������</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>友情之火箭炮制作过程</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						����֮�������������</span></div></td>
+						友情之火箭炮制作过程</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,10 +175,10 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>���ߣ�����</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����û�л���ڵ�ʱ���ҵĺ���Ī��˵�k������������ҲûǮ���Զ���������򣬶�����˵�Ƿ���������k����ԥ��˵�á�</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����˲��ϣ���Щ��������ԣ������޸ߵ���������������õ����ֲ��ϣ��С����󡷣���������ǿ��ġ�ʯ�֡������ҵģ���ʯ�ֵ�ǿ�������£���һ��������ͱ�ʯ�ֵ�ǿ��������ѹ�Ƶ����ˣ����Ŵ峤������Ů��[�޿�]���ҽ��붴��&lt;���&gt;����ʱ�ҿ����峤����Ҫ����Ů��������ս�������һ��ɵ���[�����Ա����ң�]���ڽ�ȥʱ���ɸ��ܵ����ߵĺڰ��Լ��־壬�������˵��ȥ�ۿ��ڲ��Ƿ���ʯ�֣�ȴ�����ˡ��������������޿��˷ܵ���ǰ�ɿ󣬵�Ҫ�ɼ�ʱ���޿��ֻŵĶ���˵��[��û�������Ǳ�ע������?]�����޿�˵���˾仰ʱ����ǰ��Ŀ�������Ȼ�����������������ң��ҵ��ڵ��ϣ��޿�������˵���ų���"��â��������"���Ի�����˧�������ƣ���ʯ�ֽ�����ˣ���˵[лл�㣬�޿�..�ող�����˼��������˹��]�޿�ȴ�Գ�����ս����Ϣ����˵[С�ĵ㣬���Ǳ�ʯ�ְ�Χ��!]��������Ҳ����ս������̬�������������Щʯ�֣������Ǵ���ʯ�ֺ󣬵õ�[����]�ҳ��������Ķ��޿�˵��[�ո��汧Ǹ���һ��������޷���������..]���޿�ȴ����˵[ɵ�ϣ��������Ŀ���˵������Ǹ��]��һ���������˶��������ġ���ͨľͷ���������ҵ�һ�����Ǯ�Լ����࣬�����ąȺ�[��û���˿���������ͨľͷ]�Ⱥ����ڿʣ����޷��څȺ��ˣ���̾����������[��ͨľͷ��Ҫ������ɽ�ӵ�ǿ�������������뵽������ȫ����������..�һ��ǹ��������������������һ��Ƭ��ɭ�ֺ��м�ȴ��һ�ſ���ľ���Һ������[�ǿ�����ʲô��]����Ҫ��ȥ����ʱ���ԱߵĴ���ȴ���Ҹ�ץס���޿����ٵ������Ĵ󵶣����������ֿ������޿�˵��[С�ģ���������]���������������߶�Χ�����ǣ��Ҳ�����˵[��..����]����ȴʩ���˸�ħ��������ѹ���ڵأ���ʹ�Ľ���һ����ֻ�������ҵ��������������Թ�������һ����ĵ��⽣Ӱ֮�У��������ڰ���Щ������ն���ˣ�������һ������Ҳ�����޿����ù���Ϣ�ˣ���Ҳ�����[��ͨľͷ]��</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���ϸ���[Ī��]���k��������������Ҳû���κεķϻ����k��������ʱ���������ã���Ҳ����˯���ˣ�Ī�����˵�����ˣ�����õ��ˣ��һ��[�����]���ǳ����˱�סĪ�磬�Եk˵��[лл��]�޿�����������������߿�����Ҳ���ŵķŵ��ҵ��֣�Ī��˵��[�������������������ǻ�����������!�ǰ�?] <BR></P><!--Content End--></td>
+			<!--Content Start--><P align=right>作者：豆腐</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在我没有火箭炮的时候，我的好友莫风说�k可以制作，我也没钱可以对其他玩家买，而问她说是否可以做，�k不犹豫的说好。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我拿了材料，这些正是我面对，至上无高的死亡，付出所获得的种种材料，有《铁矿》，铁矿正是强大的『石怪』所给我的，在石怪的强大魄力下，怕一个疏忽，就被石怪的强大魄力给压制到死了，带着村长先生的女儿[罗卡]与我进入洞窟&lt;矿坑&gt;，当时我看见村长先生要他的女儿与我挑战试炼，我怀疑的想[她可以保护我？]，在进去时，可感受到洞窟的黑暗以及恐惧，我走深了点进去观看内部是否有石怪，却发现了《矿脉》，我与罗卡兴奋的向前采矿，当要采集时，罗卡恐慌的对我说，[你没发觉我们被注意了吗?]正当罗卡说出此句话时，我前面的矿脉，竟然爬了起来，攻击了我，我倒在地上，罗卡二话不说，放出了"五芒星闪．改"，以华丽且帅气的姿势，把石怪解决掉了，我说[谢谢你，罗卡..刚刚不好意思，我疏忽了怪物。]罗卡却以充满着战意气息对我说[小心点，我们被石怪包围了!]，而我们也进入战斗的姿态，奋力的面对这些石怪，在我们打完石怪后，得到[铁矿]我充满羞愧的对罗卡说，[刚刚真抱歉，我还怀疑你无法帮助到我..]，罗卡却对我说[傻瓜，大男人哪可以说抱不抱歉的]另一个正是万人都不肯卖的《普通木头》，我以我的一点苦力钱以及口舌，奋力的�群�[有没有人可以卖我普通木头]�群暗娇诳剩�而无法在�群傲耍�我叹了气，心想[普通木头需要打力拔山河的强大树精，光是想到就令我全身颤抖，但..我还是股着勇气面对树精，进到一大片的森林后，中间却有一颗枯树木，我好奇的想[那棵树是什么？]，正要过去枯树时，旁边的大树却把我给抓住，罗卡快速的以他的大刀，把树精的手砍掉，罗卡说着[小心，是像树精]，接着树精缓慢走动围着我们，我颤抖的说[阿..惨了]树精却施放了个魔法，将我压制在地，我痛的叫了一声，只可以拿我的武器对树精加以攻击，在一阵阵的刀光剑影之中，我们终于把这些树精给斩除了，我松了一口气，也带着罗卡回旅馆休息了，我也获得了[普通木头]。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 材料给了[莫风]，�k立即帮我制作，也没有任何的废话，�k花费了数时，等了许久，我也都快睡着了，莫风跟我说，好了，让你久等了，我获得[火箭炮]，非常高兴抱住莫风，对�k说着[谢谢你]罗卡而是羞愧对我们这边看，我也慌张的放掉我的手，莫风说着[朋友若不是这样当，那还会有朋友吗!是吧?] <BR></P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -194,7 +194,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

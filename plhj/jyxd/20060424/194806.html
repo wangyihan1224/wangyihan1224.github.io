@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>�����Ƽ� ��</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>练功推荐 二</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						�����Ƽ� ��</span></div></td>
+						练功推荐 二</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,18 +175,18 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����ǰ�Ķ��� <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������Ҫ֪���ľ��Ǻϻ��ĸ������Ϸ �У�ʹ�úϻ��ķ�ʽ�������������о���ֵ�ļӳɵģ����ң�ʹ�úϻ��ķ�ʽ���������ˣ�����õĶ���Ҳ��Ƚ϶�ร����������Ȼ��Ҫ������ ��һ���������ϻ���������ˣ��ʶȵĿ���AGI�Լ�SPD�Ǻ���Ҫ�ġ����⣬ ֻҪ����ܹ�������ü��ܺϻ��������Խ����ս�ߵȹ����п��ܵġ�С�������ʹ�ù����ܺϻ��ķ�ʽ��10��ʱ������������ɱ25�����ˡ������ء��ߵȹִ��˶���ʹ�ģ����˵��ҵ�CON������DEF���ߵĻ������ܴ�ļ�����Ҫ����ס�����ˡ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���˳�����úϻ�ɱ�ֵĸ���֮�⣬����һ�������Ǻ���Ҫ�ġ��Ǹ����ܾ��ǡ��������������к������أ����þ��ǿ������ֵ�SP����Ʈ�� �У�ֻҪ���û�г���Ͷ��WIS�����п��ܳ���SP��������Ρ����˵���û�еõ��������ܣ�������ô˼�������SP�Ļ������ܴ�������͵�Ҫס�������SP��Ʒ�ˡ�������Ҫ���߽׶μ��ܿ�˵�Ƿǳ�������(Ŀǰ��֪����һ�׶μ�����Լ10SP���ڶ��׶μ�����Լ25SP��ĿǰС�������ĵ����׶μ�����Լ40��45SP) �� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���ֽ׶�ָ�� <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����һ��ʼ������Ϸ��������һ�Һ����������棡��ʱ��ҿ��Խ������淿�䣬��������̨��Ϸ���öһ��������Ŷһ������Ը���̨��Ա�� SP70 �Ĳ�Ʒ�����Ҳ����ֱ�ӵ㴬������ĵ����黭�档Ȼ����Ҿͻ������ĵ�����³��ѷ�Ի���󣬰ѵ��ϵı��俪һ����������һ�ã�ȡ���񷤺�Ϳ��������ߵ����㣬���뱱���ķ�Χ�ˡ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����ҽ��뱱��֮�󣬻ῴ��һֻ��֪����ĺ��ӣ���ú���һ�£���λ���Ӿͻ����������ˡ����ӵ��չ����������˵������ģ������޵�ͷ������һ��ʼ���Ҳ������õģ���Ҿ��ú��Ӷ�������޵�ͷ����һ���������ɱ�аɣ������Ӽ�����ҵĶ���֮�󣬾����������� ( ����λ�õ�ͼ���б�ʾ ) �Ϳ��Ե���������ˡ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1��10������������ </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����ҵ��������֮�󣬿���ȥ��������������õ����õĶ��� ( ����������±� ) ��Ȼ��Ϳ��Կ�ʼ������ȵ������ˡ��������񲿷֣������϶��ܼ򵥣����Ҳ�����Ϲ�����ѯ��������ҾͿ��Ը�������峤������Ȼ���ǰ��������ɽ����һЩʯ�������ˣ����ʹ�ü���ɱ�֣������ĺܿ졣����ҪС�ĵ��ǣ���Щʯ��Ҳ����һЩ��ʽ�ؾ���ң���Ҽǵ�ҪԤ�� 80 �����ϵ�Ѫ��ร� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���⣬�����ϷҲ��һ���ܻ������趨�����ǡ������趨���������ٶȲ�������ң��ͻ�Ƚ����׳��ֱ��������Σ������С�������й����������ܷ��������������ԣ����ѡ�ü���ʱ��Ȼ��������ɱ�ֵļ���Ϊ��ã�����ҲҪԤ��������Ѫ����Ҫ��Ȼ���Լ��ļ��ܸ����� + ��ɱ��������ζ���Ǻܲ����ܵģ���ҿ����ڿ�����ɽ�����һЩ��ɫ�������ɫ�������Ϊ�⽫������պ���������Ҥ����ʩ�Ĳ��ϡ�������ɽ��������һֻ 7 ���ı�ɫ������Ҹ�����ʹ�ü��ܺϻ������ܹ����������ֻ��ɫ���ˣ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������ֻ��ɫ��֮�󣬾Ϳ��Ե������嶫�ߵ�����ȥɱ���������ˣ��������������������ľ��������ʯ�����ٵ��ȹ��������ɻ�ȱ��ԭ�ϣ��������๤�߶������õ�����ľ�������ģ����Ա��߽�������ܾ����ռ�����ľ�������嶫�����ֵĸ���������������������� 5 �����ҡ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 ��֮�󣬽���������������񣬿���ʹС�����ܿ�����ֻ���������Ҷ����У���ҿ��Զ����������ֻ��������˸����������Ϳ������������ϱߵش������ˡ���ʱ����ҿ���ȥ��������ѣ�Ҳ���Ե� (5302,655) ��һ���������˿���롣��Ҵ�����Լ�������� 7 ������ʱ�Ϳ��Ե���������һ����������ˣ�˳��ȥ��С��ñ����������߻ᷢ����ֻ 15 ���Ĵ�Ұ�ǣ����ô��˲���ʹ����ҳ�����ü��ܺϻ��ķ�ʽ��ս�پ��Ϳ��Դ򵹴�Ұ���ˡ� <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��Ҵ򵹴�Ұ��֮�󣬿�����С��ñ����������ӡ��Ӵ����Ӵ��̫���ģ����������Χ������С������ 10 ��Ҳ�ǿ��Ե� ( Ҳ����˳���������Ĳ������� ) �� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10��20������ȴ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 ��֮��Ϳ���ǰ����������ɽ��ս���ֹ����ˣ��ڿ�������ɽ������Ҳ���� 18 �����ϻ���һ�������ü��ܺϻ���ɱ���ء���ʱ�Ϳ��Լ�����ϵĹ������ˣ���������뵽��������ɽ��ˣ������Կ�����������Ŀ�����ķ羰�أ���������ɽ�ĳ�û������� 12 �� 14 ���ĸ�����򾣬��ߵĹ���������˵�Ѿ�����ʹ���ˣ���������ü��ܺϻ��ķ�ʽ��ս�پ�����������ɽ�������������Һ�Լ������Ҳ������պ�����ש�����Ʒ������ġ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������ڿ�������ɽ���� 13 ��֮�󣬾Ϳ��������������������ߴ�һЩˮĸ�ˡ���ߵ�ˮĸ���㹻����������� 15 �������ˣ������ 16 ��֮��Ϳ���ȥ�����ɭ������һЩ��ľ�����������ˡ�˳���һ����ߵ��������������Ǹ������峤ѧ�ؼ��������ҿ��Զ��ռ�һЩ��ľ����ľ���������ϣ�������������� 20 ������ʱ�Ϳ���ǰ���ϵ���չ����һ����ð�Ն���</P>
+			<!--Content Start--><P><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 练功前的叮咛 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 首先玩家要知道的就是合击的概念！在游戏 中，使用合击的方式来打死敌人是有经验值的加成的，而且，使用合击的方式来打死敌人，所获得的东西也会比较多喔！所以玩家自然是要跟其它 玩家或宠物来多多合击的啦！因此，适度的控制AGI以及SPD是很重要的。此外， 只要玩家能够充分利用技能合击，则玩家越级挑战高等怪是有可能的。小编就曾经使用过技能合击的方式，10级时就用这招来秒杀25级王了。不过呢～高等怪打人都蛮痛的，如果说玩家的CON或者是DEF不高的话，可能打的几场就要被迫住帐篷了。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 除了充分利用合击杀怪的概念之外，还有一个技能是很重要的。那个技能就是「魂闪」。魂闪有何作用呢？作用就是可以吸怪的SP！在飘流 中，只要玩家没有常在投点WIS，皆有可能出现SP不足的情形。如果说玩家没有得到魂闪技能，充分利用此技能吸怪SP的话，可能打个几场就得要住帐篷或狂吃SP补品了。尤其是要练高阶段技能可说是非常的难练(目前所知，第一阶段技能需约10SP，第二阶段技能需约25SP，目前小编所练的第三阶段技能需约40～45SP) 。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新手阶段指引 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 玩家们一开始进入游戏，会先在一艘豪华邮轮上面！此时玩家可以进入里面房间，玩玩那两台游戏机拿兑换卷。拿着兑换卷可以跟柜台人员换 SP70 的补品。玩家也可以直接点船长进入荒岛剧情画面。然后玩家就会来到荒岛，跟鲁宾逊对话完后，把岛上的宝箱开一开，东西拿一拿！取得竹筏后就可以往东走到传点，进入北岛的范围了。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当玩家进入北岛之后，会看到一只不知死活的猴子，点该猴子一下，那位猴子就会跟着玩家你了。猴子的普攻对于玩家来说是蛮差的，但是无敌头锤这招一开始打怪也还算好用的！玩家就让猴子多多利用无敌头锤这一招来帮玩家杀敌吧！当猴子加入玩家的队伍之后，经过两个传点 ( 传点位置地图都有标示 ) 就可以到达克兰村了。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1～10级　升级攻略 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当玩家到达克兰村之后，可以去解各种新手任务，拿到该拿的东西 ( 帐篷、任务记事本 ) 。然后就可以开始打怪练等的生涯了。关于任务部分，基本上都很简单，玩家也可以上官网查询。接着玩家就可以跟克兰村村长接任务，然后就前往克兰村山洞打一些石怪练等了！多多使用技能杀怪，会练的很快。不过要小心的是，有些石怪也会用一些招式回敬玩家！玩家记得要预留 80 滴以上的血量喔！ </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 另外，这个游戏也有一个很机车的设定，就是「反击设定」。敏捷速度不够的玩家，就会比较容易出现被反的情形！如宠物小兰，就有过常常被技能反弹秒的情况。所以，玩家选用技能时固然是以能秒杀怪的技能为最好，但是也要预留被反的血量。要不然被自己的技能给反击 + 秒杀，那种滋味可是很不好受的！玩家可以在克兰村山洞多打一些白色黏土跟黑色黏土。因为这将是玩家日后制作低温窑等设施的材料。克兰村山洞顶端有一只 7 级的变色龙，玩家跟宠物使用技能合击，就能够轻松秒掉这只变色龙了！ </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 解决了这只变色龙之后，就可以到克兰村东边的树林去杀柳安树精了！柳安树精所掉落的柳安木，是制作石刀跟刨刀等工具所不可或缺的原料！初期许多工具都必须用到柳安木来制作的，所以笔者建议玩家能尽量收集柳安木。克兰村东边树林的各种树精，可以让玩家练到 5 级左右。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 级之后，解完克兰村周遭任务，可以使小兰跟萝卡这两只宠物加入玩家队伍中，玩家可以多多培养这两只人物。打完了各种树精，就可以往克兰村南边地带练功了。此时期玩家可以去打各种蜻蜓，也可以到 (5302,655) 此一坐标点找妮丝加入。玩家打蜻蜓约可以练到 7 级，此时就可以到北岛西边一带打打兔子了，顺便去接小红帽的任务。在这边会发现两只 15 级的大野狼！还好打人不算痛，玩家充分利用技能合击的方式速战速决就可以打倒大野狼了。 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 玩家打倒大野狼之后，可以在小红帽附近多打兔子。嫌打兔子打的太无聊，到威灵村周围打打各种小鸡练到 10 级也是可以的 ( 也可以顺便解解威灵村的部分任务 ) 。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10～20级　冲等大法 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 级之后就可以前往卡玛那瓦山挑战各种怪物了！在卡玛那瓦山第三层也有着 18 级的老虎，一样是利用技能合击秒杀过关。此时就可以检起地上的滚动条了！若玩家深入到卡玛那瓦山最顶端，还可以看到很令人心目神怡的风景呢！卡玛那瓦山的出没怪物就是 12 ～ 14 级的各种蚯蚓，这边的怪物打玩家来说已经是蛮痛的了！请玩家利用技能合击的方式速战速决。卡玛那瓦山的蚯蚓会掉落各种黏液以及黏土！也是玩家日后制作砖块等物品所必须的。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当玩家在卡玛那瓦山练到 13 级之后，就可以来到北岛东部海岸边打一些水母了。这边的水母，足够让玩家们练到 15 级以上了！当玩家 16 级之后就可以去威灵村森林区打一些桧木树精或毒蚂蚁了。顺便解一解这边的任务拿三颗星星跟威灵村村长学特技。这边玩家可以多收集一些桧木。桧木树精或毒蚂蚁，可以让玩家练到 20 级，此时就可以前往南岛，展开进一步的冒险��！</P>
 <P>&nbsp;</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
@@ -203,7 +203,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

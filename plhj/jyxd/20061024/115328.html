@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>�ϳ�װ��������</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>合成装备不求人</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						�ϳ�װ��������</span></div></td>
+						合成装备不求人</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,26 +175,26 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>���ߣ��й��̻�᳤</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����޵ȼ�,��Ȼ��Խ��Խ��!����Խ��,�ϳɷ�ΧԽ��,��Ʒ���Ⱦ�Խ��,��������Ҫռ�ܴ�һ����,�����Ҹ�������ô�ܽ���ĵ�!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���ȸ�Ҫȥ��װ��������˵��һ������,��װ��Ҫ������Ʒ�ȼ��Ͳ���Ʒ��,��һ��������Ҫ��,�����ں��ںϸ߼�װ����ʱ��Ͳ������,����ʡǮ�ͺϳ���װ��!<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��Ʒ����:����Ϸ���и��ָ�����װ��,�����ֵ���Ҳ�����⼸����Ʒ��ϵ�,�������һЩ��������Ʒ����!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1��ϵ:����������Ʒ,38�޹�����,42����ͷ��,32��սѥ,34����Ь,30��ʿ��,40��鳵ȵ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2ͭϵ:����ͭ����Ʒ,30����ͭ�,32ͭ����Ь,42����ñ,44��ͭ����ñ,26ţ��ñ,34�޹�ͭ��,36�޹���ͭ���ȵ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3��ϵ:���н����Ʒ,36��,11���,12��ɳ,15����,40�ƽ�ͷ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4��ϵ:�����ѵ���Ʒ,15�ѺϽ�,10�ѽ���,38ǿ��ս��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5��ʯ:9��ɳ,9Դ��ʯ,10��ʯ,10����,11�������,12���ƺ���,12���ư���,12ˮ��,15��������ʯ,16�����챦ʯ,16����,16��Ͼ����ʯ,17,��Ͼ�챦ʯ,25����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6����:9������,16ħ����,20����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7����:7��ͯҶ</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8ľ��:19ľ��̤��,20������,21��ֱβ��,28ľ��,28����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9Ƥ��:9������Ƥ,10���ɵ���ë,20����Ƥѥ,26��ů��Ƥѥ,28����ѥ,30����ѥ,32��ѥ,34��ů��ѥ,36������ѥ,32��Ƥ��,22ǿ��Ƥ����,34��ʦƤñ,40�ǹⷨñ,36��ħ����,38�׺����׵ȵ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10ˮ��:28����װ,32����װ,34��������װ,36��Ұ����װ,38�������װ,40��������װ,46����װ�ȵ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11������:���������ϵĺϳ��ʺ���,��Ʒ���Ǻܶ�,û����ô�Թ�,�����˵,���������Ʒ����û��������Ʒ���Ļ��ʸ�!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12����:26����,28����,32��˿����,36��������,42��˿����,46����˿��,36���߼�ϰñ,40���߷�ñ,40ħ������,42��ʦ����,30��������,30��������</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���˿����������Ʒ����,�������Ʒ�ȼ��ͼ���!������Ƿֲ�������,��ô��ǵ������Ʒʧ��ʱ�õĶ���,����л���,����֮���,һ���ǻ�����,�������ˮ,��ˮ,��ˮ��,������,����,������,�Ǹֲ�,�������˵,��ͭ��,ͭ��,���Ҳ����˵��,��Щ����!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��Ʒ�ȼ�:��Ʒ�ȼ��ܼ�,����һ��30������ͭ�,������Ʒ�ȼ�����15��,����װ���ȼ���һ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ϳ����:����һ��36��ħ����,������Ʒ�ȼ���18,��Ʒ�����Ƥ,�����������Ͼͽ���18Ƥ,�ںϳɹ�ʽ��,�����18Ƥ�����Ĳ���,���ǾͿ�������ͬ�Ĳ���ȥ�滻,����36����������18��,36���߼�ϰñҲ��18��,��ô�ںϳ�42����ʦ���׵Ĺ�ʽ��,18��+18ͭ+18ͭ,��36�������ۺ�36���߼�ϰñ���ǿ��Ե�!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��Ʒ����:����Ʒ�ϳɹ�����,�õ͵ȼ�����Ʒ�ϳɸߵȼ�����Ʒ,��һ����������,����˵��������ָ��Ʒ�ȼ�������Ҳ����˵18��(36��������)�ϳ���21��(42��ʦ����),����Ҫע�����,��Ʒ������һ������,Ҳ����˵����������Ʒ�ȼ����ֻ���������ĵ��ļ�,����˵19��(38�޹�����)�ϳ���ߵȼ�����Ʒֻ����19+4=23(46���������),���������,�ǾͲ���˵��!19�������Ժϳ�19+1=20(40�޹ǳ�ǹ),19+2=21(42�����޹ǳ�ǹ),19+3=22(44�����),�Դ�����,�������Ҫ�ϳ�56����װ��,����˵��56��������(28��),28-4=24(48�����ָ�����Ʒ),Ҳ����˵����Ҫ��48������Ʒ���ܺϳ���,48��������(24��),48��ʿ��ѥ(24��),48����ս�(24��)</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����,����֪���������Ʒ�ȼ��˾Ϳɺܺõ����ù�ʽ��װ����,�����ʽ�����仯,����װ�������ĺϳɲ��ϲ���仯,��ʱ���ǾͿ��Ա任��������װ����!ÿ����ʽ��ͬ������Ʒ�ȼ�����,�������,�����û��д,��ʵ����һ����!������Ҫ��42�޹Ǹ�����(21��)21-4=17(34����ѥ)Ҳ����˵���17,18,19,20�ĸֶ����ܳ�42�޹Ǹ�����(36�����ۼ�,38��������ǹ,40���¸�����),�����ʽ17��+����+17��,�������κ�һ��������,Ҳ���м��ʳ�42�޹Ǹ�����,��Ȼ,�Ҹ���Ҹ����Ĺ�ʽ��Ŀǰ��˵���������ʡǮ��!</P><!--Content End--></td>
+			<!--Content Start--><P align=right>作者：中国商会会长</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 炼金不限等级,当然是越高越好!炼金越高,合成范围越广,物品跳等就越高,不过运气要占很大一部分,至少我个人是这么总结的心得!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我先给要去合装备的朋友说明一点事情,合装备要分清物品等级和材料品种,这一点是最重要的,这样在后期合高级装备的时候就不会出错,还会省钱就合出好装备!<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 物品分类:在游戏里有各种各样的装备,不过分到底也就是这几种物品组合的,下面就是一些常见的物品例子!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1铁系:凡有铁的物品,38兽骨铁剑,42步兵头盔,32铁战靴,34铁麻鞋,30武士刀,40铁槌等等</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2铜系:凡有铜的物品,30三叉铜戟,32铜编绳鞋,42海贼帽,44青铜海贼帽,26牛角帽,34兽骨铜剑,36兽骨青铜剑等等</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3金系:凡有金的物品,36金斧,11金矿,12金沙,15金条,40黄金头盔</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4钛系:凡有钛的物品,15钛合金,10钛金属,38强守战甲</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5矿石:9银沙,9源晶石,10钻石,10白银,11精制翡翠,12精制红玉,12精制白玉,12水玉,15精纯蓝宝石,16精纯红宝石,16紫玉,16无暇蓝宝石,17,无暇红宝石,25黑玉</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6牙类:9暴龙牙,16魔龙牙,20狼牙</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7草类:7河童叶</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8木类:19木制踏板,20螺旋桨,21垂直尾翼,28木履,28龙杖</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9皮类:9东北虎皮,10狐仙的羽毛,20猎狩皮靴,26保暖厚皮靴,28短马靴,30奔马靴,32马靴,34保暖马靴,36贵族马靴,32韧皮甲,22强化皮手套,34巫师皮帽,40星光法帽,36风魔手套,38甲贺手套等等</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10水类:28忍者装,32蒙面装,34隐形蒙面装,36翔野蒙面装,38真红蒙面装,40荆棘蒙面装,46忍者装等等</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11赤铁类:此类在线上的合成率很少,物品不是很多,没有怎么试过,相对来说,赤铁类的物品还是没有其它物品出的机率高!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12花类:26旗袍,28旗袍,32蚕丝旗袍,36精绣旗袍,42金丝旗袍,46金属丝袍,36贤者见习帽,40贤者法帽,40魔法手套,42巫师手套,30白灵手套,30赤铁护手</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 好了看了上面的物品分类,下面的物品等级就简单了!如果还是分不清楚类别,那么你记得你合物品失败时得的东西,如果有花粉,花蜜之类的,一定是花粉类,如果是污水,淡水,是水类,是铁条,铁板,是铁类,是钢材,这个不用说,是铜板,铜块,这个也不用说了,以些类推!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 物品等级:物品等级很简单,比如一个30级三叉铜戟,它的物品等级就是15级,就是装备等级的一半</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 合成物等:比如一个36风魔手套,它的物品等级是18,物品类别是皮,我们在炼金上就叫它18皮,在合成公式中,如果有18皮这样的材料,我们就可以用相同的材料去替换,比如36精绣旗袍是18花,36贤者见习帽也是18花,那么在合成42级巫师手套的公式中,18花+18铜+18铜,用36精绣旗袍和36贤者见习帽都是可以的!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 物品升级:在物品合成过程中,用低等级的物品合成高等级的物品,是一个升级过程,这里说的升级是指物品等级的升级也就是说18花(36精绣旗袍)合出了21花(42巫师手套),可是要注意的是,物品升级有一个限制,也就是说所有升级物品等级最高只有升到主材的四级,比如说19铁(38兽骨铁剑)合成最高等级的物品只能是19+4=23(46精锐兽人戟),至于最低嘛,那就不用说了!19铁还可以合成19+1=20(40兽骨长枪),19+2=21(42精锐兽骨长枪),19+3=22(44兽人戟),以此类推,如果我们要合成56级的装备,比如说是56钢铁铠甲(28钢),28-4=24(48级各种钢铁物品),也就是说最少要用48级的物品才能合出来,48级狼牙棒(24铁),48骑士长靴(24钢),48兽人战戟(24铁)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 好了,我们知道上面的物品等级了就可很好地利用公式合装备了,如果公式有所变化,可是装备本身的合成材料不会变化,这时我们就可以变换材料来合装备了!每个公式后同都有物品等级配置,看清楚了,后面的没有写,其实都是一样的!比如你要合42兽骨钢铁剑(21钢)21-4=17(34钢翼靴)也就是说物等17,18,19,20的钢都可能出42兽骨钢铁剑(36海蓝鳞甲,38精锐阔刃枪,40弯月钢铁刀),这个公式17钢+狼牙+17钢,对它们任何一个都合适,也都有几率出42兽骨钢铁剑,当然,我给大家给出的公式就目前来说还是最经济最省钱的!</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -210,7 +210,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

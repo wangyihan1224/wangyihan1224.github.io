@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>������֮�������</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>简单任务之兄妹情深！</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						������֮�������</span></div></td>
+						简单任务之兄妹情深！</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,15 +175,15 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>���ߣ�geniusk9999</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������ģ�����ţƤ��ţƤ���ƣ��򵥹��أ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��������ܶ��˶�������������أ���ʵ�ܺô򣬼�ס���ܲ�ս������û��һ���ǹ����˵ģ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��ȥ����ʱ��5��ս+1ˮ������ʵ��5������������һ���ǵ������ã�36�Ļ�ս��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��һս2��������ʯͷ�ֹ����˵ڶ�ս�ͱ���ˣ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������ڶ�ս��ˮϵ�Ͷӳ���2С����ǰһֱ����������ôҪô�����㣬����׼������Ϊ�ڶ�ս��4��սֱ���ϣ���û�μӣ����Ǵ�ɳɳһֱ��BOSS�����Ժܿ�͹��ˣ�BOSS����ǰ�ӳ���Ѫħ���������ܲ������Ƕ��٣���Ϊս��������ֻ�жӳ����ܳ�HP/SP��Ҫô�㲻���˷�ʱ��������������ظ�������900��Ѫ�ص���һ�ꡣ������</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��������ս�����ȫ��սʿ�Ļ��ӳ�������2��սһ�غ���ɱ��2����ϵ�����ˣ�������ʣ6���ˣ����Ŵ���������2��2��ɱ������36���İ�����Ҫ�����ˣ��������˴����ǳ����ǳ�ֱ�ӽ������㣬��ϴ�裬Ȼ��ʱ��ս����ʱ�򲹣��򲹵��˲�ս����������Ѫ�ٵ��ˣ����ӣ�һֱ������һ��������ȫ���㣬��������Ѫ��ˮ��/��������ս���ϵĻ��������÷������ü���˯��������סRO��ԣ�����BOSS��ʱ���û��ң���������Ȥ�������Լ����Լ���սǰץ����򾣬��ץ��Ѫ�࣬������ߵĻ�1�˷�1���������ţ���������ͨ�����ͻ�ֱ�Ӵ�裬�����˵��˺�����ʱ���Ѫ������Ҳ�׳ԣ�ֻ��SPû��ʱ��Ѫ��SPһ��ԣ���ϵ��������ϵ������ˮϵ��һֱ�������ɱ������ϵҲ��ǰ����һ���ļ���ɱ��7С��ȫ����BOSS�������ˣ������ͺ����ɹ��أ����ⴵţƤս��2����Сʱ����5����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����һ�£����ʱ����µ����飬���˾͹������ˣ�������ǰ�����ú�ʱȥ���Ѽ����������Ҿߣ�ʱ�䵽��һ��ȥɱ������0%�ǲ����ģ��������Ӻ���Ҫ���ǳ��ǽ�ֱ�ӳ�Ѫ�������˼�����ħϵ���ܣ����������������һ��ˮ�����ܼ���50%�˺��������ı�ȥ��û��Ѫ�ı�ȥ���᲻�ó�Ѫ�ı�ȥ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����ⷽ����40���Ҿ��ܹ��ˣ���������ȥ���˵��������񣬽���˼�Ҫ˯����NND���賿�����������أ�����ô��˯����5���������ģ�</P><!--Content End--></td>
+			<!--Content Start--><P align=right>作者：geniusk9999</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 晚班无聊，吹吹牛皮，牛皮吹破，简单过关！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 兄妹情深很多人都卡在外星人这关，其实很好打，记住，能参战的任务没有一个是过不了的！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我去做的时候5火战+1水辅，其实是5个人做，还有一个是当靶子用，36的火战！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第一战2个大奶子石头怪过不了第二战就别打了！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 来吹吹第二战，水系和队长在2小怪死前一直防御，不防么要么不打你，打你准死！因为第二战是4火战直接上，我没参加，他们带沙沙一直冰BOSS，所以很快就过了，BOSS快死前队长把血魔都补满，能补多少是多少，因为战斗结束后只有队长不能吃HP/SP！要么你不怕浪费时间就做地上慢慢回复，不过900多血回到哪一年。。。。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 吹吹第三战，如果全是战士的话队长防御，2火战一回合能杀死2个风系外星人，这样就剩6个了，接着打火，用真哈肯2个2个杀，接着36级的靶子重要性来了，被外星人打死登出，登出直接进来吃鱼，别洗澡，然后及时观战，随时候补！候补的人参战进来，级低血少的人（靶子）一直防御，一般外星人全打你，（靶子满血，水辅/辅助都在战场上的话辅助不用防御，用技能睡觉或者困住RO麻痹）除了BOSS有时会用混乱（混乱真有趣，还能自己打自己）战前抓条蚯蚓，好抓且血多，如果级高的话1人发1条雷龙顶着！外星人普通攻击就会直接打宠，避免人的伤害，打时别吃血，吃了也白吃，只有SP没的时候血和SP一起吃，火系死掉后打地系，最后打水系，一直用真哈肯杀，其余系也用前后能一起打的技能杀，7小怪全死后BOSS慢慢玩了，这样就很轻松过关！就这吹牛皮战术2个半小时过了5个！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 建议一下，打的时候别怕掉经验，怕了就过不了了，或者提前商量好何时去，把级升完做做家具，时间到了一起去杀，经验0%是不掉的，带个靶子很重要，登出登进直接吃血！外星人激光是魔系技能，辅助冰冻后给别人一个水镜，能减免50%伤害，怕死的别去，没带血的别去，舍不得吃血的别去！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 照我这方法，40左右就能过了！本来接下去做人的首饰任务，结果人家要睡觉，NND，凌晨还有球赛看呢！！那么早睡！（5号晚上做的）</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -199,7 +199,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

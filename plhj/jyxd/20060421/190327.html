@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>��ý��5������</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>最好解的5颗星星</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						��ý��5������</span></div></td>
+						最好解的5颗星星</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,11 +175,11 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>���ߣ����̷ǳ���</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���һ��������ô�������˾Ϳ����õ��ܶ�����ǣ������Լ�ȴֻ�õ�һ���ţ������ڵõ�����С���������Ľ�����δ�����ĵ�����������Ҫ5�����ǲ���ȥ�����Ĺ����¥����NPC�һ��ɡ��ѹ����ĵ���������˳���İ������ڵĿռ���ร����ԣ�����Ҫ����ҷ�����ý��5������Ҫ��˭��ร�</P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����ֱؾ��Ŀ����壬��������Ȧ���ҵ�һֻ���Ŷ��ε�����ֻҪ����ֻ�����߶����е�Ұ�ǣ��Ϳ��Եõ�һ������ร�������������Ŷ��ε���֮�����ڴ����к�Ȼ����ĳ�������д������������æǰ��������е������У��������������ٵ�С�������Ȼ�������˱��۸���ô�����������⣬��æ������ǰ��ȿ��������˳�����ܿɶ�ĺ���ֻ��Ϳ��Եõ������࣡ </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����߳��������ڱ�����ɭ����̽��ʱ����Ȼ����ɭ�������Ұ�ǵ��Ǻ���������ͻȻ���ֲ�����Ԥ�У��Ͽ�Ѱ��ǰ������������Ȼ�ֿ���Ұ�����۸�С��ñ�����������˵��æ���߿ɶ�Ĵ�Ұ�ǣ����˿��Եõ�С��ñ����ĸ�л֮�⣬Ҳ�����ٵõ�һ������ร��ڽ����С��ñ������֮�󣬷�����һ���µĴ�ׯ������壬�����ׯ��������һ��������С���䣬ȴ������һ����������į���������£�ǰ���˽���Ϊ����ˣ���֪��ԭ��������ά�����������ڴ�ׯ�����Ĵ��������Ϊ���������������ˣ�����ǰ���������Ѱ�ҵ���ĸ�ͷ�����ں��߷�����һֻ��ͨ��������������ͷ��ʱ�򣬺�����������һֻ���ѣ�������һ������ͷ��Ȼ����������������Ų�֪����ô�������ʱ�򣬺��������һλ�ɰ��ľ��飬˵���ոռ�һ�ѽ�ͷ������ͷ�������������һ�ѣ���Ϊ��ʵ�ĺ����꣬��Ȼ�ǻش�����ͷ��������Ҳ�ܸ���������ʵ���ˣ�������Ѹ�ͷ���͸����㡣�ص�������н�����ͷ����������֮��������Ϊ�˴�л�������һ��������Ϊ��л�࣡ </P>
-<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��ͨ����һ�����Ŀ����������ɽ������һ�ߣ�������һ������С������Ⱥ����һֻ��ֵֹģ�ǰ���˽��֪���������������ֻ࣬Ҫ������������е�Ұ�ǣ��Ϳ��Եõ�һ�Ƹ�л������ร� </P><!--Content End--></td>
+			<!--Content Start--><P align=right>作者：黄绿非常红</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 大家一定觉得怎么常常有人就可以拿到很多个星星，但是自己却只拿到一两颗，而且在得到放羊小孩任务后给的奖励『未过户的地契』，还需要5颗星星才能去威灵村的国会大楼，找NPC兑换成『已过户的地契』才能顺利的把帐棚内的空间变大喔！所以，下面要跟大家分享最好解的5颗星星要找谁拿喔！</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在新手必经的克兰村，可以在猪圈中找到一只做着恶梦的猪，只要帮那只猪赶走恶梦中的野狼，就可以得到一颗星星喔！当你帮助完做着恶梦的猪之后，走在村子中忽然听到某间屋子中传出尖叫声，赶忙前往发出尖叫的屋子中，看到被海盗抢劫的小兰祖孙，当然见到好人被欺负怎么可以置身度外，连忙抢身向前解救可怜的祖孙，顺利赶跑可恶的海盗只后就可以得到星星噜！ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当你走出克兰村在北岛的森林中探险时，忽然听到森林深处传来野狼的狼嚎声，心里突然有种不安的预感，赶快寻声前往案发处，果然又看到野狼在欺负小红帽的祖孙，二话不说帮忙赶走可恶的大野狼，除了可以得到小红帽祖孙的感谢之外，也可以再得到一颗星星喔！在解救完小红帽祖孙俩之后，发现了一个新的村庄－威灵村，进入村庄后又是另一个宁静的小村落，却发现有一个年轻人落寞的坐在树下，前往了解他为何如此？才知道原来它用来维生的铁斧掉在村庄北方的大湖附近，为了重新振作年轻人，马上前往北方大湖寻找掉落的斧头，就在湖边发现了一只普通的铁斧，当捡起斧头的时候，好死不死飞来一只蜻蜓，害你手一滑铁斧头竟然掉到湖里，正当烦恼着不知道怎么捡回来的时候，湖里出现了一位可爱的精灵，说他刚刚捡到一把金斧头跟铁斧头，问你掉的是哪一把？身为诚实的好青年，当然是回答铁斧头��！精灵也很高兴遇到诚实的人，便把两把斧头都送给了你。回到威灵村中将铁斧头交给年轻人之后，年轻人为了答谢你便送你一颗星星作为答谢噜！ </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在通过了一连串的考验后，来到了山洞的另一边，发现了一个放羊小孩的羊群中有一只羊怪怪的，前往了解才知道��正被恶梦所苦，只要帮助羊赶跑梦中的野狼，就可以得到一科感谢的星星喔！ </P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -195,7 +195,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

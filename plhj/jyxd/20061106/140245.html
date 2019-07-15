@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
- //alert("ASCII´úÂëÊÇ£º"+event.keyCode);
+function KeyDown(){ //å±è”½é¼ æ ‡å³é”®ã€Ctrl+nã€shift+F10ã€F5åˆ·æ–°ã€é€€æ ¼é”®
+ //alert("ASCIIä»£ç æ˜¯ï¼š"+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //ÆÁ±Î Alt+ ·½Ïò¼ü ¡û
-       (window.event.keyCode==39))){  //ÆÁ±Î Alt+ ·½Ïò¼ü ¡ú
+      ((window.event.keyCode==37)||   //å±è”½ Alt+ æ–¹å‘é”® â†
+       (window.event.keyCode==39))){  //å±è”½ Alt+ æ–¹å‘é”® â†’
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //ÆÁ±ÎÍË¸ñÉ¾³ı¼ü
-      (event.keyCode==116)||                 //ÆÁ±Î F5 Ë¢ĞÂ¼ü
-      (event.keyCode==112)||                 //ÆÁ±Î F1 Ë¢ĞÂ¼ü
-      (event.keyCode==80)||                 //ÆÁ±Î p Ë¢ĞÂ¼ü
+  if ((event.keyCode==8)  ||                 //å±è”½é€€æ ¼åˆ é™¤é”®
+      (event.keyCode==116)||                 //å±è”½ F5 åˆ·æ–°é”®
+      (event.keyCode==112)||                 //å±è”½ F1 åˆ·æ–°é”®
+      (event.keyCode==80)||                 //å±è”½ p åˆ·æ–°é”®
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ĞÂ¡¢ÍË¸ñ¼ü
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //ÆÁ±Î shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //å±è”½ shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //ÆÁ±Î shift ¼ÓÊó±ê×ó¼üĞÂ¿ªÒ»ÍøÒ³
+      window.event.returnValue = false;  //å±è”½ shift åŠ é¼ æ ‡å·¦é”®æ–°å¼€ä¸€ç½‘é¡µ
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>Á¶½ğ°Ù¿ÆÊ¹ÓÃ¼°·ÖÎö</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ç‚¼é‡‘ç™¾ç§‘ä½¿ç”¨åŠåˆ†æ</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "»ªÎÄĞĞ¿¬";
+	font-family: "åæ–‡è¡Œæ¥·";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">¡¡</td>
+				<td height="36" width="131">ã€€</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						Á¶½ğ°Ù¿ÆÊ¹ÓÃ¼°·ÖÎö</span></div></td>
+						ç‚¼é‡‘ç™¾ç§‘ä½¿ç”¨åŠåˆ†æ</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">¡¡</td>
+                <td height="36" width="53">ã€€</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,12 +175,12 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Á·½ğ°Ù¿Æ2ÒÔ¼°Á·½ğ°Ù¿Æ3 ÊÇÓÃÀ´¸¨ÖúÁ·½ğµÄ ¶ÔÁ·½ğÊ¦À´ËµÊÇÒ»¸öºÜ´óµÄ°ïÖú ËùÒÔÍÆ·­Ö®Ç°Ä³ÆªÎÄÕÂÄ³´ó´óËµÁ·½ğÊ¦µÄÂ·ÓÖÒª¸üÄÑ×ßÁËÆäÊµÊÇ¸üºÃ×ßÁËĞí¶à.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ÏÖÔÚÀ´½âÊÍÒ»ÏÂÎÒ¶ÔÕâ¸öÎïÆ·µÄ·ÖÎö£¬Èç¹ûÓĞÊ²Ã´²»¶ÔµÄ»° Çë¸øÓèÖ¸½ÌÅúÆÀ</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Á·½ğ°Ù¿Æ2 ¾ÙÀı42ÊŞ¹Ç¸ÖÌú½£ ÎïÆ·µÈ¼¶21 ´ó¼Ò¶¼ÖªµÀÁ·½ğÖ»¿ÉÒÔÉı4¸öÎïµÈÒªºÏÕâ°Ñ½£´ó¼Ò×îµÍÏŞÖÆÒªÓÃ34¼¶¸ÖÒíÑ¥..ÄÇÃ´Á·½ğ°Ù¿Æ2 ·¢»ÓÊ²Ã´×÷ÓÃÄØ£¿ ¶¾ÑÀ30¼¶×¦+Ä§ÁúÑÀ+30¼¶×¦+Á·½ğ°Ù¿Æ2 Ã»¼ÓÁ·½ğ°Ù¿Æ¾ø¶Ô²»¿ÉÄÜ³öµ½42½£ ×î¶à38¼¶¶«Î÷38¼¶¸ÖÖ»ÓĞĞ¡Õ½¸«ÄÚÊôĞÔÄ¾ ËùÒÔÕâÑùºÏ²»³öÀ´Ò²¾ÍÊÇ×î¶àÖ»ÓĞ34¼¶¸ÖÒíÑ¥ +ÁËÁ·½ğ°Ù¿Æ2 ÎïÆ·µÈ¼¶2 Ò²¾ÍÊÇÕâ¸öÊ±ºòÄãÓÃµÄ30¼¶×¦ ÎïÆ·µÈ¼¶15¼¶¸Ö ±ä³ÉÎïÆ·µÈ¼¶17ÁË Ä§ÁúÑÀ ÎïÆ·µÈ¼¶16 Ó²¿Ç Ò²±ä18µÈÓ²¿Ç ËùÒÔ¾Í¿ÉÒÔºÏ³ö42¼¶½£ÁË</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ¿ÉÄÜÓĞµÄÈË»¹ÊÇ²»Ì«Ã÷°×ÎÒµÄÒâË¼ ×ÜÖ®¼òµ¥µÄÀ´Ëµ Á·½ğ°Ù¿Æ2 ÌáÉıÄãËùÓĞ·Å½øÁ·½ğÂ¯µÄÎïÆ·µÈ¼¶2µÈ Á·½ğ°Ù¿Æ3 ÌáÉı3µÈ Ò²¾ÍÊÇËµ Ö»Òª²ÄÖÊºÍ¸¨Öú²ÄÁÏÏà»¥ÈÚºÏ +ÉÏÕâ¸öÎïÆ·ËùÊÕ»ñµÄ¶«Î÷½«»á±ÈÔ­ÏÈµÄ¶«Î÷µÈ¼¶¸ß Õâ¾ÍÊÇ¶ÔÁ·½ğÊ¦µÄ°ïÖú Á·½ğ°Ù¿ÆÊÇÓÃÀ´ÌáÉıÎïÆ·µÈ¼¶µÄ²¢²»ÊÇÌáÉı³É¹¦ÂÊÓĞµÄÈËÒÔÎª³É¹¦ÂÊ±ä¸ßÁË ÆäÊµ²»È» ÊÇÒòÎªÒÔÇ°ÒªÉı4µÈ²Å¿ÉÒÔÅÀµ½µÄ×°±¸ÏÖÔÚÉı1µÈ¾Í¿ÉÒÔÅÀµ½ ³É¹¦µÄ»ú»á×ÔÈ»±ä´ó µ«ÊÇÁ·½ğ°Ù¿Æ3 ×ÔÉíÃ»ÓĞÌáÉı³É¹¦ÂÊµÄ¹¦ÄÜ</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ±§Ç¸Íü¼ÇĞ´Ê¹ÓÃ·½Ê½ÁË</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ·½Ê½ºÜ¼òµ¥ÔÚÔ­Åä·½µÄ»ù´¡ÉÏ¼ÓÉÏÁ·½ğ°Ù¿Æ</P><!--Content End--></td>
+			<!--Content Start--><P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç»ƒé‡‘ç™¾ç§‘2ä»¥åŠç»ƒé‡‘ç™¾ç§‘3 æ˜¯ç”¨æ¥è¾…åŠ©ç»ƒé‡‘çš„ å¯¹ç»ƒé‡‘å¸ˆæ¥è¯´æ˜¯ä¸€ä¸ªå¾ˆå¤§çš„å¸®åŠ© æ‰€ä»¥æ¨ç¿»ä¹‹å‰æŸç¯‡æ–‡ç« æŸå¤§å¤§è¯´ç»ƒé‡‘å¸ˆçš„è·¯åˆè¦æ›´éš¾èµ°äº†å…¶å®æ˜¯æ›´å¥½èµ°äº†è®¸å¤š.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç°åœ¨æ¥è§£é‡Šä¸€ä¸‹æˆ‘å¯¹è¿™ä¸ªç‰©å“çš„åˆ†æï¼Œå¦‚æœæœ‰ä»€ä¹ˆä¸å¯¹çš„è¯ è¯·ç»™äºˆæŒ‡æ•™æ‰¹è¯„</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ç»ƒé‡‘ç™¾ç§‘2 ä¸¾ä¾‹42å…½éª¨é’¢é“å‰‘ ç‰©å“ç­‰çº§21 å¤§å®¶éƒ½çŸ¥é“ç»ƒé‡‘åªå¯ä»¥å‡4ä¸ªç‰©ç­‰è¦åˆè¿™æŠŠå‰‘å¤§å®¶æœ€ä½é™åˆ¶è¦ç”¨34çº§é’¢ç¿¼é´..é‚£ä¹ˆç»ƒé‡‘ç™¾ç§‘2 å‘æŒ¥ä»€ä¹ˆä½œç”¨å‘¢ï¼Ÿ æ¯’ç‰™30çº§çˆª+é­”é¾™ç‰™+30çº§çˆª+ç»ƒé‡‘ç™¾ç§‘2 æ²¡åŠ ç»ƒé‡‘ç™¾ç§‘ç»å¯¹ä¸å¯èƒ½å‡ºåˆ°42å‰‘ æœ€å¤š38çº§ä¸œè¥¿38çº§é’¢åªæœ‰å°æˆ˜æ–§å†…å±æ€§æœ¨ æ‰€ä»¥è¿™æ ·åˆä¸å‡ºæ¥ä¹Ÿå°±æ˜¯æœ€å¤šåªæœ‰34çº§é’¢ç¿¼é´ +äº†ç»ƒé‡‘ç™¾ç§‘2 ç‰©å“ç­‰çº§2 ä¹Ÿå°±æ˜¯è¿™ä¸ªæ—¶å€™ä½ ç”¨çš„30çº§çˆª ç‰©å“ç­‰çº§15çº§é’¢ å˜æˆç‰©å“ç­‰çº§17äº† é­”é¾™ç‰™ ç‰©å“ç­‰çº§16 ç¡¬å£³ ä¹Ÿå˜18ç­‰ç¡¬å£³ æ‰€ä»¥å°±å¯ä»¥åˆå‡º42çº§å‰‘äº†</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; å¯èƒ½æœ‰çš„äººè¿˜æ˜¯ä¸å¤ªæ˜ç™½æˆ‘çš„æ„æ€ æ€»ä¹‹ç®€å•çš„æ¥è¯´ ç»ƒé‡‘ç™¾ç§‘2 æå‡ä½ æ‰€æœ‰æ”¾è¿›ç»ƒé‡‘ç‚‰çš„ç‰©å“ç­‰çº§2ç­‰ ç»ƒé‡‘ç™¾ç§‘3 æå‡3ç­‰ ä¹Ÿå°±æ˜¯è¯´ åªè¦æè´¨å’Œè¾…åŠ©ææ–™ç›¸äº’èåˆ +ä¸Šè¿™ä¸ªç‰©å“æ‰€æ”¶è·çš„ä¸œè¥¿å°†ä¼šæ¯”åŸå…ˆçš„ä¸œè¥¿ç­‰çº§é«˜ è¿™å°±æ˜¯å¯¹ç»ƒé‡‘å¸ˆçš„å¸®åŠ© ç»ƒé‡‘ç™¾ç§‘æ˜¯ç”¨æ¥æå‡ç‰©å“ç­‰çº§çš„å¹¶ä¸æ˜¯æå‡æˆåŠŸç‡æœ‰çš„äººä»¥ä¸ºæˆåŠŸç‡å˜é«˜äº† å…¶å®ä¸ç„¶ æ˜¯å› ä¸ºä»¥å‰è¦å‡4ç­‰æ‰å¯ä»¥çˆ¬åˆ°çš„è£…å¤‡ç°åœ¨å‡1ç­‰å°±å¯ä»¥çˆ¬åˆ° æˆåŠŸçš„æœºä¼šè‡ªç„¶å˜å¤§ ä½†æ˜¯ç»ƒé‡‘ç™¾ç§‘3 è‡ªèº«æ²¡æœ‰æå‡æˆåŠŸç‡çš„åŠŸèƒ½</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æŠ±æ­‰å¿˜è®°å†™ä½¿ç”¨æ–¹å¼äº†</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; æ–¹å¼å¾ˆç®€å•åœ¨åŸé…æ–¹çš„åŸºç¡€ä¸ŠåŠ ä¸Šç»ƒé‡‘ç™¾ç§‘</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -196,7 +196,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="»Ø¶¥²¿" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="å›é¡¶éƒ¨" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

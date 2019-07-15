@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>ˮ���������ĵ�</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>水辅练技能心得</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						ˮ���������ĵ�</span></div></td>
+						水辅练技能心得</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,25 +175,25 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>���ߣ�oO����Oo</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ڽ��������ĵ�ǰ�Ƚ�һЩ����İɡ�����ˮ���ȼ�32����ʱ��ȥ�����ܣ�������32���ڱ���ȫ��ˮ�����ܶ�Ҫȫ�����ˣ�SPD�˳轨�鱣����104-108�����ݣ���2���ţ�һ��ˮ���ţ�һ���͹�������������Եĺţ����еĺŵ��˳趼���鱣����104-108 SPD��������ص��Ҷ�����Ҫע��ģ�����ˮ���ŵ�SPDҪ����2���ŵ������˳����SPD���˻����1��SPD�����������е���������4��ʱ��ŰѼ������ã����뿴�����ĵõĴ��ȥ�����ܵģ����˱�֤������3��ʱ�������á�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; һ��������</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1������������ʱ��һ��Ҫ���˻�貹��HP��Ȼ�󱻲�HP���˻��ȥ�������о��飻���������˵һ˵�����ģ��ü��ܵ��ǻغϳ��ֺϻ��������������ĳ��֣�����û���飬��Ϊˮ����SPD�����˳�Ҫ��1�㣬���Ա���HP�Ķ���Ҫ����1�غ���ȥ����������ܵõ����顣Ϊʲô��Ūˮ��SPD����ߵ��˻���1���أ���Ϊż����ò������顣</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2����������ȥ��������Ϳ��Եõ������ľ��飬�������1���������1û��������ϻ�����Ϳ��Եõ����������3�����飬�������2����������ȥ�ϻ�����Ϳ��Եõ����������6�����飬������ơ���Ϊ2����4��������ɵ���߾�������12��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3��ȥ�ֶ���3ֻ��Ѽ�������5���Ϳ���ȥ������Ѷ�����Ѽ�������10</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������ħ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1������Ҫ�����������ȡ�÷�����������һ����������Ǳ������������ͱ������ң���</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2�����������˸��裩������20����ħ�ļ���ȥ�����֣���Ϊ������ħ�͵ò������顣��ħ��5������ǰ��1�˸�����1��ͬʱ���ϣ�����1��5����ʱ���㶼ֻ���õ����3���ľ��飻���ǵ���5����Ϳ����õ����6���ľ��飬7��-9������ǰ��3�˻��ߺ���3��ͬʱ��ħ���������㿪3����ȥ�Ļ���������õ�9���ľ��飬���ǲ����飡��Ϊ���������鷳��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3�������ѡ��������������10�������ǻ��ǽ��鵽5����ȥ��������Ϊ�ֵȼ�Խ����õ��Ļ��������Խ�ߣ�������ȥ�Ҹ��Ӹ߼��Ĺ����ˡ�����Ҫע�����32��ȥ����װ�������</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����ظ���</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1��ͬ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2������ֻ����ô�����õ��ظ��������9�������ĵã�5����ʱ���ܲ�˫��ǰ�����������ִ�ȥHP�ˣ����˶��ٲ�Ҫ����ʹ�õ�ʱ���һ�غϸ�ˮ�������ӻظ�����Ϊˮ��SPD��ͣ������ֱ��ȥ�����֣��ڶ��غϸ�����һ�������żӻظ�������ֱ�ӹ�������Ϊˮ��SPD��ͣ�������غϾ�ֻ��ˮ���ı��������õ��������飬��Ϊ�����ڵ�һ�غϾͼ��ϻظ��ˣ������غ�ˮ��������һ���ŵ��˳�һ��ȥ�ϻ����Ϳ����õ���ߵ�9�����飬Ϊʲô�����غϿ����õ��⾭���أ���Ϊˮ���ڵڶ��غϼ���ʹ�ûظ����ǻغ�ûȥ�����������Ǳ��������ģ��ȵ������غ�ȥ������ʱ����ͻᱻ������ȥ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3��1��5���ظ�������������5��10��ȥ����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ģ�������</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1������ص㽲���ɣ���Ϊ�ܶ��˶�˵������������Ķ����ڸ������һ���غ��ǵò�������ģ�������һ�غ�ȥ�����ſ��Եõ��������ܾ��飬����Ǻϻ��Ϳ��Եõ�3�����ܾ��顣</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2�������ص㽲1����Ȼ����10������ľ���̸֮�������ܲ��������Ϳ�����Լ��ˣ������ҿ�����˵�⻰��ʱ�򶼾����ǲ����ܵģ������ҾͿ���������1������10�����ǲ�����������Ҫ��Ҫ����ĵ�ù�˸�������ϲ�����һ�������Ķ���ȥ�����ɹ�ֻ���õ���������ϻ���3�����ڶ������������ȥ��������MISS���»غ���ȥ���������õ���������2���ϻ�����6�������������������ȥ������2�ζ�����MISS���»غ���ȥ���������õ����������3���ϻ�����12����������ơ�����ֻ�����ۣ���û֤ʵ������32����ʱ��7������ܣ���֤ʵ��������7������ܵ�ʱ�����2��MISS�»غ��ٺϻ�����50%+�ļ��ܾ��飬��˵õ��Ľ�����������õ�12���������飻���ģ����۳����Ľ����3��MISS�ٺ����õ�24����4��MISS�ٺ����õ�48���������Ǽӳ˵ģ��������1������ܵ�ʱ����ֻҪ��������ڼ��ξͿ����õ�1000%�ļ��ܾ�����ô�������1��������10��������壺����֤ʵ��ֻ���õ�12�����ܾ��飬����Ĵ��˿ɱ����ң���</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3��������ﶼ���ҳ�Ҫ��ﵽSPD104-108֮��Ϳ��԰����ⷽ��ȥ�����1������ȥ��������׽ֻ���׳�ˮ���Եģ���Ϊ1����ȥ����ȽϺúϡ�ʹ�ù����Լ��������ô�����õ�1000%�ľ����ʣ��Ҽǵ���1����������ʱ��3��������75%��������24�������ʾ�����������10�������ù�������С�����׳��ǽ���������������˷�����Ҳ����׳湥��MISS����Ҫ���������˼ӳ��㹻�ĻغϾ�ȥ��ɱ��ֻҪ�׳�����һ���˻��2��ϻ�����ɹ������Բ�˵��ʼҪ��ù���Ҫ���ˣ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4�����ȥ����һ�°ɣ����ˢ�����ʵĹ�����ʧ�ܽ������ϵǳ��������ø���ȼ��͵�ʱ��ȥƴ�����߼��˾�ֻ�����������õ���50%+�ľ����ʡ��Ǻǣ�������ף��ҵ�ù�����ˣ���ʲô���Եĵط��������ˣ���Ϊֻ������û����֤ʵ��</P><!--Content End--></td>
+			<!--Content Start--><P align=right>作者：oO回忆Oo</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在讲练技能心得前先讲一些必需的吧。建议水辅等级32级的时候去练技能，但是在32级内必需全部水辅技能都要全出来了，SPD人宠建议保持在104-108的敏捷；有2个号，一个水辅号，一个低攻击力的随便属性的号，所有的号的人宠都建议保持在104-108 SPD。最后是重点大家都必须要注意的，就是水辅号的SPD要比在2个号的所有人宠最低SPD的人或宠少1点SPD。本人懒懒闲的所以用了4天时间才把技能练好，我想看了这心得的大家去练技能的，本人保证你们在3天时间内练好。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 一：治疗术</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1：用治疗术的时候一定要给人或宠补上HP，然后被补HP的人或宠去攻击才有经验；因此这里先说一说基本的，用技能的那回合出现合击后再用治疗术的出现，基本没经验，因为水辅的SPD都比人宠要低1点，所以被补HP的对象要在下1回合再去攻击怪物才能得到经验。为什么不弄水辅SPD比最高的人或宠高1点呢？因为偶尔会得不到经验。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2：被补对象去攻击怪物就可以得到基本的经验，如果出现1被补对象跟1没被补对象合击怪物就可以得到基本经验的3倍经验，如果出现2个被补对象去合击那你就可以得到基本经验的6倍经验，如此类推。因为2个号4个对象造成的最高经验率是12倍</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3：去手动打3只羊把技能练到5级就可以去龙岛打讯猛龙把技能练到10</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二：回魔咒</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1：基本要求跟基本经验取得方法跟治疗术一样，如果你是苯蛋还看不懂就别来找我！！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2：被补对象（人跟宠）经常用20左右魔的技能去攻击怪，因为补不上魔就得不到经验。回魔咒5级可以前排1人跟后排1人同时补上，所以1冲5级的时候你都只能拿到最高3倍的经验；但是到了5级你就可以拿到最高6倍的经验，7级-9级都是前排3人或者后排3人同时补魔，因此如果你开3个号去的话你最高能拿到9倍的经验，但是不建议！因为控制起来麻烦！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3：你可以选择打羊那里就练到10级，但是还是建议到5级就去龙岛，因为怪等级越高你得到的基本经验就越高，不建议去找更加高级的怪练了。但是要注意的是32级去龙岛装备会耗损。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 三：回复术</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1：同上</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2：这里只讲怎么才能拿到回复术的最高9倍经验心得，5级的时候能补双，前提条件都被怪打去HP了，打了多少不要紧！使用的时候第一回合给水辅本身加回复，因为水辅SPD最低，其余的直接去攻击怪；第二回合给另外一个陪练号加回复，其余直接攻击，因为水辅SPD最低，所以这回合就只有水辅的宝宝可以拿到基本经验，因为宝宝在第一回合就加上回复了；第三回合水辅跟另外一个号的人宠一起去合击，就可以拿到最高的9倍经验，为什么第三回合可以拿到这经验呢？因为水辅在第二回合继续使用回复，那回合没去攻击，经验是保留下来的，等到第三回合去攻击的时候经验就会被计算上去。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3：1冲5级回复建议找羊练，5到10就去龙岛</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 四：复活术</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1：这个重点讲讲吧，因为很多人都说难练！被复活的对象在复活的那一个回合是得不到经验的，得在下一回合去攻击才可以得到基本技能经验，如果是合击就可以得到3倍技能经验。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2：这里重点讲1级忽然跳到10级复活的经验之谈，至于能不能做到就看大家自己了！我想大家看到我说这话的时候都觉得是不可能的，但是我就可以做到！1级跳到10级不是不可能做到，要就要看你的倒霉运跟幸运配合不？第一：复活后的对象去攻击成功只能拿到基本经验合击就3倍；第二：被复活对象去攻击出现MISS，下回合再去攻击就能拿到基本经验2倍合击就是6倍；第三：被复活对象去攻击怪2次都出现MISS，下回合再去攻击就能拿到基本经验的3倍合击就是12倍。如此类推。（这只是推论，还没证实）本人32级的时候7级复活技能，能证实的是我在7级复活技能的时候出现2次MISS下回合再合击加了50%+的技能经验，因此得到的结论是我最高拿到12倍基本经验；第四：推论出来的结果是3次MISS再合能拿到24倍，4次MISS再合能拿到48倍，经验是加乘的，如果你是1级复活技能的时候练只要推算出到第几次就可以拿到1000%的技能经验那么你就马上1级狂跳到10级复活。第五：我能证实的只有拿到12倍技能经验，后面的错了可别找我！！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3：人物宠物都按我初要求达到SPD104-108之间就可以按我这方法去练复活。1级复活去找羊练。捉只蓝甲虫水属性的，因为1级拿去合羊比较好合。使用过程自己计算好怎么才能拿到1000%的经验率，我记得我1级找羊练的时候3倍经验是75%，因此造成24倍经验率就能马上跳到10级。练得过程是用小兰给甲虫加墙不让它死，其余人防御，也祈求甲虫攻击MISS跟不要反击，到了加乘足够的回合就去合杀，只要甲虫随便跟一个人或宠2体合击就算成功！所以才说开始要倒霉最后要幸运！</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4：大家去尝试一下吧，如果刷经验率的过程中失败建议马上登出重来，趁复活等级低的时候去拼命，高级了就只能象我那样拿到才50%+的经验率。呵呵！！这里祝大家倒霉又幸运，有什么不对的地方别找我了！因为只是推论没经过证实。</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -209,7 +209,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

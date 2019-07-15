@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>��������ӳɹ�ʽ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>公开经验加成公式</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						��������ӳɹ�ʽ</span></div></td>
+						公开经验加成公式</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,39 +175,39 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>���ߣ�ĩ������</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��������ʳ����,�������Ϸ����Ϊ�м���������������,����Ҳ�Ƚϻ�����ʳ.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������е�����˫�����鿨���ණ��,��Ǯ���ܳ弶��,�о��е��ƻ���Ϸƽ��.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������ڲ⵽�浽����,�о�����.�����ϷΪʱ�䲻�Ǻܸ�ԣ,�������ڶ����ӵ���Ҳ����������·��.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���ڹ���250% 500% 750% 1000% 2000%����ӳɹ�ʽ(�ķ�����ô��ʱ���о����= =��Ϊ�ö��˺�����,Ӧ��֪��ȴ������˵,ֻ������250%������÷�...)</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������ֿ���������д�Ķ��˵�,�����һ�����˿���ֻ������!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��һ��:����(��)��ɹ�ʽ(����)250%����<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����ʽ���Ŵ�Ҷ����˽���,����Ҳ�кö��˲�֪��������Ϊû����Ҫ�������!��ϸϸ���°�,</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ҫ�������500% 750 1000% 2000% �������޸����õ�^ ^<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.���ȴ���������������"�����ĺ���",����ĸ�������˼�ǶԵи���.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����:��ϵ�ļ��� �ж� ����,��ϵ�� ���� ����,��ϵ�Ĳ��� ʯ��,��ϵ����� ���� ���.ֻ����Щ�����ڶԵ���ʩչ���ڴ�ɲŻ��о���ӳɵ�.ˮϵ�ļ�Ѫ,��ϵ����ǽ�� ֮��ļ���Ҫ�ڷ�Ѫ��ʩչ����ʩչ�󱻴�,Ȼ��ʩչ�����ڽ����˴�ɲŻ��о���ӳ�,���������൱�鷳!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.�ڶ��������˽�,"���"�ĺ���,�㻹��Ц���������ֲ�֪��,�ϴΰ����ʵ����Ƶ�... ������,�Ͼ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ˭�����ͻῪ��������Ϸ��,�Ǹ��������������ڻ���,�������ǵ����ϵ�.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��������2��״������Ѫ�պñ�����������΢��Ķ��˹־�����������.�ڶ��������,���ﱻ�������ʱ����Ĺ�������������ʣ��ֵ,�����򵽶������Ѫ��һ��!����ͻ��.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��1:һֻ�����Ŀ��͵�С����,��HP��100 ��Ĺ�����100����1�´������͵�С����.��ʱ��ֻС�������ڵ�һ�������������. </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��2:һֻ�����Ŀ��͵�С����,��HP��100 ��Ĺ�����150,һ�²����������͵�С����,���һ������ </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����HP100��һ��Ҳ���Ƕ���50!��ʱ��ֻС�������ڵڶ�������������,���͵�С���ӿ���ȥ�����.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��3:һֻ�����Ŀ��͵�С����,��HP��100 ��Ĺ�����99,û�д������͵�С����,��ֻ���ڵڶ��غ�&nbsp; </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ڹ���һ��,��Ĺ���һ�²����������͵�С����,���һ����������HP100��һ�뻹���98!��ʱ��ֻС�������ڵڶ�������������,���͵�С���ӿ���ȥ�����.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.������������,�������þͿ������ɴ��250%������!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����ϵ:��һ�غ���,���ж�,������.��2�غ�,�ͱ����ϻ��ѹִ��,ս�������������250%��!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����ƫ,���������յ�һ��֮�����ڼ�����!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ڶ���:����(��)����(��)���500%����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �˽�Եи������ܳ���ʱ��.��Ϥ250%����ӳɵ������Ҳ֪�����ܸ�������MISS�˴�ɺ�Ҳ���о���ӳɵ�.����(��)����(�Ӵ��)�Ĺ�ʽҪ�����ھ��ܼ���MISS��Ҳ���г���ʱ���.<BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��1:��ϵ��һ�غϷ�ʯ��,�ڶ��غϷŲ���,����ǰ2�غ϶�����.�����غ�������ĳ�������ܺͱ����ѹִ�ɾ���ӳ���500% ��Ϊʯ����Ч������ʱ�������4-5�غ�,����ʧ��Ч���غϻ��Ǵ��ڵ�.����Ч���غ��Ƕ��غ����������������Ļغϻ��������õ�!����ע��һ������غ�ʯ����ûЧ������Ϊ����ͬһ����.<BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��2:ˮϵ��һ�غϷ�����,�ڶ��غϷű���,����ǰ2�غ϶�����.�����غ�������ĳ�������ܺͱ����ѹִ�ɾ���ӳ���250% ��Ϊ���ε�Ч������ʱ��ͱ�������2�غ�,�ڵ�3�غϹ�����ʱ������Ч�������غ�������ʧ�������𲻵� ����(��)����(�Ӵ��) ��ʽ������</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��3:ˮϵ��һ�غϷ�����,�ڶ��غϷű���,����1�غϹ������ǲ�Ҫ����.�ڶ��غϱ������԰ѹִ��,������Ǳ������Դ�־����2.5��!(����ҿ�����Ŷ����ƽʱ˵��500%Ҳ���������5��)���߿���ȥ���,����ֻ���Լ���2�غ϶Եи���,�ö��Ѻ��Լ��ı����ϻ�,500%�������ɵ���!����ƫ,���������յ�һ��,�ڶ���֮�����ڼ�����!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������:����(��)����(��)����(��)���750%����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������ô����Ҳ�����������˰�= = �͵ڶ���һ������,Ҫ�ǲ�������ľ�������!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������̫��ʵ��,ӵ�г���3�غ϶Եи���,���һ�Ҫ��3������ʱֻ�з�ϵ��= =</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����ƫ,���������յ�һ��,�ڶ���,������֮�����ڼ�����!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���Ŀ�:����(��)����(��)���(��)���1000%����!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ����������Ϸ��������.�Ҹ���Ҿ���˵���Լ������,���Ŵ�Ҷ��Ѿ�é���ٿ���!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��:���͵�С���������Լ���3��20������(ע��С����Ҳ��ʼ��Ư����^ ^),�ֱ��ǻ�,ˮ,��,��!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���͵�С���û�ϵ��û���ǻ� �Ǵ�սʿ, ˮ�ļ����ǻ�30 ����һ���� Ϊ�˳������Ǹ�ս, ���ļ���38�ǻ�4����Ϊ�˳�����,��ļ���11�ǻ�Ϊ�˳����,Ҳ�Ǹ�ս!4���˶��������޿�!4�������ȥ��һֻ����ӥ.</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��һ�غ�4���޿�������!��Ž���,ˮ�ű���,���Ų���,������!</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ڶ��غ�8����һ��ϻ�����ӥ�����,4���޿�����500����!���͵�С���ú�3�����Ѷ�����1500����!<BR><!--Content End--><!--Page Start--><p align=left>��������<font color=red><b>2</b></font>ҳ&nbsp;&nbsp;1</a> <a href='133134-2.html'>2</a> <a href='133134-2.html'>��һҳ</a> </p><!--Page End--></td>
+			<!--Content Start--><P align=right>作者：末日王子</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我是玩吞食过来,玩这个游戏是因为有几个朋友拉我来玩,另外也比较怀念吞食.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 起初真的有点讨厌双倍经验卡这类东西,有钱就能冲级快,感觉有点破坏游戏平衡.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 不过从内测到玩到现在,感觉还好.这个游戏为时间不是很富裕,但是善于动脑子的人也留条不错的路子.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 现在公开250% 500% 750% 1000% 2000%经验加成公式(耗费我这么多时间研究这个= =因为好多人好吝啬,应早知道却不给人说,只告诉人250%经验的拿法...)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我怕新手看不懂所以写的多了点,嫌弃我话多的人可以只看例子!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第一课:辅助(加)打飞公式(等于)250%经验<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这个公式相信大家都很了解了,但是也有好多人不知道甚至因为没掌握要领放弃了!我细细讲下把,</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要不后面的500% 750 1000% 2000% 经验是无福享用的^ ^<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.首先大家请理解这里这个"辅助的含义",这里的辅助的意思是对敌辅助.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例如:火系的减速 中毒 混乱,冰系的 冰冻 入梦,地系的缠绕 石化,风系的碎盾 束缚 麻痹.只有这些技能在对敌人施展后在打飞才会有经验加成的.水系的加血,地系的土墙啊 之类的技能要在费血后施展或者施展后被打,然后被施展对象在将敌人打飞才会有经验加成,操作起来相当麻烦!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.第二点请大家了解,"打飞"的含义,你还别笑就是有新手不知道,上次把我问的郁闷的... 体谅下,毕竟 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 谁出生就会开电脑玩游戏的,那个叫外星人生活在火星,不是咱们地球上的.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 怪物死分2种状况怪物血刚好被打死或者稍微打的多了怪就是正常死亡.第二种情况是,怪物被你打死的时候你的攻击力超过他的剩余值,甚至打到多出他总血的一半!怪物就会飞.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例1:一只笨笨的可耐的小兔子,总HP是100 你的攻击力100正好1下打死可耐的小兔子.这时这只小兔子属于第一种情况正常死亡. </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例2:一只笨笨的可耐的小兔子,总HP是100 你的攻击力150,一下不仅打死可耐的小兔子,而且还多打了 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 他总HP100的一半也就是多了50!这时这只小兔子属于第二种情况被打飞了,可耐的小兔子可以去天国了.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例3:一只笨笨的可耐的小兔子,总HP是100 你的攻击力99,没有打死可耐的小兔子,你只好在第二回合&nbsp; </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在攻击一次,你的攻击一下不仅打死可耐的小兔子,而且还多打了他总HP100的一半还多的98!这时这只小兔子属于第二种情况被打飞了,可耐的小兔子可以去天国了.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.明白以上两点,加以利用就可以轻松打出250%经验了!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例如火系:第一回合主,放中毒,宝防御.第2回合,和宝宝合击把怪打飞,战斗结束后经验就是250%了!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 晋级偏,能熟练掌握第一课之后请在继续看!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第二课:辅助(加)辅助(加)打飞500%经验</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 了解对敌辅助技能持续时间.熟悉250%经验加成的人因该也知道尽管辅助技能MISS了打飞后也是有经验加成的.辅助(加)辅助(加打飞)的公式要点在于尽管技能MISS了也是有持续时间的.<BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例1:土系第一回合放石化,第二回合放缠绕,宝宝前2回合都防御.第三回合主人用某攻击技能和宝宝把怪打飞经验加成是500% 因为石化的效果持续时间好像是4-5回合,尽管失败效果回合还是存在的.缠绕效果回合是二回合所以在他接下来的回合还是起作用的!但是注意一点放两回合石化是没效果的因为这是同一技能.<BR>&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例2:水系第一回合放入梦,第二回合放冰冻,宝宝前2回合都防御.第三回合主人用某攻击技能和宝宝把怪打飞经验加成是250% 因为入梦的效果持续时间和冰冻都是2回合,在第3回合攻击的时候入梦效果持续回合数早消失了所以起不到 辅助(加)辅助(加打飞) 公式的作用</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例3:水系第一回合放入梦,第二回合放冰冻,宝宝1回合攻击但是不要打死.第二回合宝宝独自把怪打飞,经验就是宝宝独自打怪经验的2.5倍!(别和我扣字样哦我们平时说的500%也可以理解成5倍)在者可以去组队,主人只管自己放2回合对敌辅助,让队友和自己的宝宝合击,500%经验轻松到手!晋级偏,能熟练掌握第一课,第二课之后请在继续看!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第三课:辅助(加)辅助(加)辅助(加)打飞750%经验</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 讲了这么多大家也该有所领悟了把= = 和第二课一个道理,要是不懂我真的就无言了!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 不过不太好实现,拥有持续3回合对敌辅助,而且还要有3个的暂时只有风系了= =</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 晋级偏,能熟练掌握第一课,第二课,第三课之后请在继续看!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第四课:辅助(加)辅助(加)组队(加)打飞1000%经验!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这才是这个游戏的主题了.我给大家举例说明自己领悟把,相信大家都已经茅塞顿开了!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例:可耐的小兔兔找来自己的3个20级朋友(注意小兔兔也开始玩漂流了^ ^),分别是火,水,土,风!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可耐的小兔兔火系的没加智慧 是纯战士, 水的加了智慧30 还有一智力 为了出冰冻是辅战, 土的加了38智慧4防御为了出缠绕,风的加了11智慧为了出碎盾,也是辅战!4个人都带的是罗卡!4个人组队去打一只的老鹰.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第一回合4个罗卡都防御!火放降敏,水放冰冻,土放缠绕,风放碎盾!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第二回合8个人一起合击把老鹰打飞了,4个罗卡拿了500经验!可耐的小兔兔和3个朋友都拿了1500经验!<BR><!--Content End--><!--Page Start--><p align=left>本条共有<font color=red><b>2</b></font>页&nbsp;&nbsp;1</a> <a href='133134-2.html'>2</a> <a href='133134-2.html'>下一页</a> </p><!--Page End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -223,7 +223,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

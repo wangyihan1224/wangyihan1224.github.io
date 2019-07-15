@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ÐÂ¡¢ÍË¸ñ¼ü
- //alert("ASCII´úÂëÊÇ£º"+event.keyCode);
+function KeyDown(){ //å±è”½é¼ æ ‡å³é”®ã€Ctrl+nã€shift+F10ã€F5åˆ·æ–°ã€é€€æ ¼é”®
+ //alert("ASCIIä»£ç æ˜¯ï¼š"+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //ÆÁ±Î Alt+ ·½Ïò¼ü ¡û
-       (window.event.keyCode==39))){  //ÆÁ±Î Alt+ ·½Ïò¼ü ¡ú
+      ((window.event.keyCode==37)||   //å±è”½ Alt+ æ–¹å‘é”® â†
+       (window.event.keyCode==39))){  //å±è”½ Alt+ æ–¹å‘é”® â†’
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //ÆÁ±ÎÍË¸ñÉ¾³ý¼ü
-      (event.keyCode==116)||                 //ÆÁ±Î F5 Ë¢ÐÂ¼ü
-      (event.keyCode==112)||                 //ÆÁ±Î F1 Ë¢ÐÂ¼ü
-      (event.keyCode==80)||                 //ÆÁ±Î p Ë¢ÐÂ¼ü
+  if ((event.keyCode==8)  ||                 //å±è”½é€€æ ¼åˆ é™¤é”®
+      (event.keyCode==116)||                 //å±è”½ F5 åˆ·æ–°é”®
+      (event.keyCode==112)||                 //å±è”½ F1 åˆ·æ–°é”®
+      (event.keyCode==80)||                 //å±è”½ p åˆ·æ–°é”®
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //ÆÁ±ÎÊó±êÓÒ¼ü¡¢Ctrl+n¡¢shift+F10¡¢F5Ë¢ÐÂ¡¢ÍË¸ñ¼ü
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //ÆÁ±Î Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //å±è”½ Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //ÆÁ±Î shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //å±è”½ shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //ÆÁ±Î shift ¼ÓÊó±ê×ó¼üÐÂ¿ªÒ»ÍøÒ³
+      window.event.returnValue = false;  //å±è”½ shift åŠ é¼ æ ‡å·¦é”®æ–°å¼€ä¸€ç½‘é¡µ
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>½ÇÉ«Åäµã ¶þ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>è§’è‰²é…ç‚¹ äºŒ</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "å®‹ä½“"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "»ªÎÄÐÐ¿¬";
+	font-family: "åŽæ–‡è¡Œæ¥·";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">¡¡</td>
+				<td height="36" width="131">ã€€</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						½ÇÉ«Åäµã ¶þ</span></div></td>
+						è§’è‰²é…ç‚¹ äºŒ</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">¡¡</td>
+                <td height="36" width="53">ã€€</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -179,238 +179,238 @@ MM_reloadPage(true);
 <TABLE id=table52 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=106>·²ÄÝÉ¯</TD>
-<TD align=middle width=124 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
+<TD align=middle width=75 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=106>å‡¡å¦®èŽŽ</TD>
+<TD align=middle width=124 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
 <TD width=180>INT+3</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=106>´ó°ÍÕÆ</TD>
-<TD align=middle width=124 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=180>Ë®Êô×î¼Ñ</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=106>å¤§å·´æŽŒ</TD>
+<TD align=middle width=124 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=180>æ°´å±žæœ€ä½³</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>Ò»¿ªÊ¼µÄÄÜÁ¦¼Ó³É¾ÍÊÇÈ«ÖÇÁ¦ÁË¡£ÊôÓÚµäÐÍ·¨Ê¦ÐÍµÄÈËÎï£¡½¨ÒéÅäµã¶à×ÅÖØINT¸úWIS£¬ÒÔÖÇÁ¦2ÖÇÄÜ1µÄÄ£Ê½È¥ÅäÊÇ¿ÉÒÔµÄ¡£²»¹ýÒ²ÓÉÓÚ±È½ÏÃ»ÓÐÔÚ¼ÓÃô½Ý£¬ËùÒÔËÙ¶È·½Ãæ¾ÍÒª¿¿×°±¸È¥À­£¬»òÕßÊÇÕÒ¸öÃô½Ý±È½ÏµÍµÄ³èÎïÀ´´îÅä¡£ÁíÍâ£¬ÓÉÓÚ·²ÄÝÉ¯½ü¹¥²»Ç¿£¬´ò¹ÖÊ±Ðè¶à¶àÊ©Õ¹Ä§·¨²Å¿ÉÒÔ¡£´ËÍâ£¬Ò²µÃ¶à¶à×¼±¸SP²¹Æ·ÒÔ±¸²»Ê±Ö®Ðè£¡</TD></TR></TBODY></TABLE></DIV>
+<TD align=middle width=75 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>ä¸€å¼€å§‹çš„èƒ½åŠ›åŠ æˆå°±æ˜¯å…¨æ™ºåŠ›äº†ã€‚å±žäºŽå…¸åž‹æ³•å¸ˆåž‹çš„äººç‰©ï¼å»ºè®®é…ç‚¹å¤šç€é‡INTè·ŸWISï¼Œä»¥æ™ºåŠ›2æ™ºèƒ½1çš„æ¨¡å¼åŽ»é…æ˜¯å¯ä»¥çš„ã€‚ä¸è¿‡ä¹Ÿç”±äºŽæ¯”è¾ƒæ²¡æœ‰åœ¨åŠ æ•æ·ï¼Œæ‰€ä»¥é€Ÿåº¦æ–¹é¢å°±è¦é è£…å¤‡åŽ»æ‹‰ï¼Œæˆ–è€…æ˜¯æ‰¾ä¸ªæ•æ·æ¯”è¾ƒä½Žçš„å® ç‰©æ¥æ­é…ã€‚å¦å¤–ï¼Œç”±äºŽå‡¡å¦®èŽŽè¿‘æ”»ä¸å¼ºï¼Œæ‰“æ€ªæ—¶éœ€å¤šå¤šæ–½å±•é­”æ³•æ‰å¯ä»¥ã€‚æ­¤å¤–ï¼Œä¹Ÿå¾—å¤šå¤šå‡†å¤‡SPè¡¥å“ä»¥å¤‡ä¸æ—¶ä¹‹éœ€ï¼</TD></TR></TBODY></TABLE></DIV>
 <DIV align=center>
 <TABLE id=table53 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <TABLE id=table54 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=106>µ¤Äá¶û</TD>
-<TD align=middle width=127 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=177>STR+1 ¡¢ CON+2</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=106>ä¸¹å°¼å°”</TD>
+<TD align=middle width=127 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=177>STR+1 ã€ CON+2</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=106>¹ý¼çË¤</TD>
-<TD align=middle width=127 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=177>ÍÁÊô×î¼Ñ£¬»ðÊôÆä´Î</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=106>è¿‡è‚©æ‘”</TD>
+<TD align=middle width=127 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=177>åœŸå±žæœ€ä½³ï¼Œç«å±žå…¶æ¬¡</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>µ¤Äá¶ûÊÇÊôÓÚ·ÀÓùÐÍµÄÈËÎï¡£±ÊÕß½¨ÒéÍæ¼Ò¿ÉÒÔ³¯STR+1¡¢CON+1µÄ·½ÏòÈ¥Åä£¡Èç´ËÒ»À´£¬µ¤Äá¶ûµÄHP¸úDEF½ÔÄÜÎ¬³ÖÒ»¶¨Ë®Æ½£¬¶ø¹¥»÷²¿·ÖÒ²²»»áÌ«Èõ¡£¿ÉËµÊÇÒ»¸öºÜ¹¥ÊØ½ÔÒËµÄÅä·¨£¡µ¤Äá¶û¿ÉËµÊÇÓÃÊÖ¶¯»òÒ£¿ØÆ÷½ÔºÃÁ·µÄÈËÎï£¬¿ÉÏ§µ¤Äá¶ûSP²»¶à£¬´ËÄËËûµÄ×î´óÈ±µã¡£</TD></TR></TBODY></TABLE>
+<TD align=middle width=75 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>ä¸¹å°¼å°”æ˜¯å±žäºŽé˜²å¾¡åž‹çš„äººç‰©ã€‚ç¬”è€…å»ºè®®çŽ©å®¶å¯ä»¥æœSTR+1ã€CON+1çš„æ–¹å‘åŽ»é…ï¼å¦‚æ­¤ä¸€æ¥ï¼Œä¸¹å°¼å°”çš„HPè·ŸDEFçš†èƒ½ç»´æŒä¸€å®šæ°´å¹³ï¼Œè€Œæ”»å‡»éƒ¨åˆ†ä¹Ÿä¸ä¼šå¤ªå¼±ã€‚å¯è¯´æ˜¯ä¸€ä¸ªå¾ˆæ”»å®ˆçš†å®œçš„é…æ³•ï¼ä¸¹å°¼å°”å¯è¯´æ˜¯ç”¨æ‰‹åŠ¨æˆ–é¥æŽ§å™¨çš†å¥½ç»ƒçš„äººç‰©ï¼Œå¯æƒœä¸¹å°¼å°”SPä¸å¤šï¼Œæ­¤ä¹ƒä»–çš„æœ€å¤§ç¼ºç‚¹ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table55 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE>
+<TD>ã€€</TD></TR></TBODY></TABLE>
 <TABLE id=table56 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=106>±´µÙ</TD>
-<TD align=middle width=125 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=178>AGI+2¡¢INT+1</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=106>è´è’‚</TD>
+<TD align=middle width=125 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=178>AGI+2ã€INT+1</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=106>·ÉÔ¾</TD>
-<TD align=middle width=125 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=178>·çÊô×î¼Ñ£¬Ë®ÊôÆä´Î</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=106>é£žè·ƒ</TD>
+<TD align=middle width=125 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=178>é£Žå±žæœ€ä½³ï¼Œæ°´å±žå…¶æ¬¡</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>±´µÙµÄ³õÊ¼ÄÜÁ¦¼Ó³ÉÎªAGI+2¡¢INT+1£¬Ò»¿ªÊ¼ÊÇÓÐµãÀàËÆÃôÄ§ÐÍµÄ¡£²»¹ý½¨ÒéÆäÅäµã¶àÍùSTR¹æ»®£¬×ªÐÍ³ÉÎªÃô½ÝÕ½Ê¿ÐÍµÄÈËÎï£¡ÎªÊ²Ã´ÄØ£¿ÒòÎªÐ¡±à¾õµÃ°Ñ±´µÙµ±×÷ÊÇÃô½ÝÕ½Ê¿ÐÍµÄÈËÎïÀ´Á·£¬»á±È°Ñ±´µÙµ±×÷ÃôÄ§ÐÍÈËÎï»¹ÒªºÃÁ·Ò»Ð©¡£Íæ¼ÒÅäµã¿É¿¼ÂÇ¼ÓSTR+2¡¢AGI+1À´×÷¹æ»®¡£</TD></TR></TBODY></TABLE>
+<TD align=middle width=74 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>è´è’‚çš„åˆå§‹èƒ½åŠ›åŠ æˆä¸ºAGI+2ã€INT+1ï¼Œä¸€å¼€å§‹æ˜¯æœ‰ç‚¹ç±»ä¼¼æ•é­”åž‹çš„ã€‚ä¸è¿‡å»ºè®®å…¶é…ç‚¹å¤šå¾€STRè§„åˆ’ï¼Œè½¬åž‹æˆä¸ºæ•æ·æˆ˜å£«åž‹çš„äººç‰©ï¼ä¸ºä»€ä¹ˆå‘¢ï¼Ÿå› ä¸ºå°ç¼–è§‰å¾—æŠŠè´è’‚å½“ä½œæ˜¯æ•æ·æˆ˜å£«åž‹çš„äººç‰©æ¥ç»ƒï¼Œä¼šæ¯”æŠŠè´è’‚å½“ä½œæ•é­”åž‹äººç‰©è¿˜è¦å¥½ç»ƒä¸€äº›ã€‚çŽ©å®¶é…ç‚¹å¯è€ƒè™‘åŠ STR+2ã€AGI+1æ¥ä½œè§„åˆ’ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table57 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV>
 <TABLE id=table58 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=110>ÄÝÄÈ</TD>
-<TD align=middle width=119 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=180>AGI+1 ¡¢INT+1¡¢WIS+1</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=110>å¦®å¨œ</TD>
+<TD align=middle width=119 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=180>AGI+1 ã€INT+1ã€WIS+1</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=110>°®ÐÄ×£¸£</TD>
-<TD align=middle width=119 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=180>Ë®Êô×î¼Ñ£¬·çÊôÆä´Î</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=110>çˆ±å¿ƒç¥ç¦</TD>
+<TD align=middle width=119 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=180>æ°´å±žæœ€ä½³ï¼Œé£Žå±žå…¶æ¬¡</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>ÄÝÄÈÒ»¿ªÊ¼µÄÉè¶¨Ò²ÊÇ±»Éè¶¨³ÉÎªÃôÄ§ÐÍµÄÈËÎï¡£Íæ¼ÒµÄ¼Óµã£¬¿ÉÒÔÅäAGI+1¡¢INT+1¡¢WIS+1»òINT+2¡¢WIS+1£¬¼ÌÐø³¯ÃôÄ§ÐÍµÄÐÍÌ¬È¥·¢Õ¹¡£Ò²¿ÉÒÔ¸ÄÅäSTR+2¡¢AGI+1£¬×ªÐÍÎªÃô½ÝÕ½Ê¿ÐÍ¡£</TD></TR></TBODY></TABLE>
+<TD align=middle width=74 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>å¦®å¨œä¸€å¼€å§‹çš„è®¾å®šä¹Ÿæ˜¯è¢«è®¾å®šæˆä¸ºæ•é­”åž‹çš„äººç‰©ã€‚çŽ©å®¶çš„åŠ ç‚¹ï¼Œå¯ä»¥é…AGI+1ã€INT+1ã€WIS+1æˆ–INT+2ã€WIS+1ï¼Œç»§ç»­æœæ•é­”åž‹çš„åž‹æ€åŽ»å‘å±•ã€‚ä¹Ÿå¯ä»¥æ”¹é…STR+2ã€AGI+1ï¼Œè½¬åž‹ä¸ºæ•æ·æˆ˜å£«åž‹ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table59 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV>
 <TABLE id=table60 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=107>Âå¿Ë</TD>
-<TD align=middle width=120 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=181>AGI+1 ¡¢ INT+2</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=107>æ´›å…‹</TD>
+<TD align=middle width=120 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=181>AGI+1 ã€ INT+2</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=107>ÕÙ»½¹·Èº</TD>
-<TD align=middle width=120 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=181>Ë®Êô×î¼Ñ£¬·çÊôÆä´Î</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=107>å¬å”¤ç‹—ç¾¤</TD>
+<TD align=middle width=120 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=181>æ°´å±žæœ€ä½³ï¼Œé£Žå±žå…¶æ¬¡</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>Ò²ÊÇÃôÄ§ÐÍÈËÎïµÄÒ»ÖÖ£¬½¨ÒéºóÐøÅäµã³¯INT+2¡¢WIS+1µÄ±ÈÀýÈ¥Åä¡£Ð¡±àÍæ¹ýË®ÊôÂå¿ËÕâÖ»ÈËÎï¡£²»¹ýµ±Ê±¿ÉÄÜÊÇ±ÊÕßINTÅäµÄ²»¹ý¶à£¬µ¼ÖÂË®ÊôÂå¿ËµÄ¼¼ÄÜÍþÁ¦²¢²»Ç¿£¬²»ÈÝÒ×Ãë¹Ö£¡Ò²ÐíÍæ¼ÒINTÅäµÄ±È½Ï¶à£¬»òÕßÊÇÁ·µ½±È½Ï¸ß½×µÄ¼¼ÄÜÖ®ºó£¬Çé¿ö¾Í±È½ÏÄÜÓÐËù¸ÄÉÆÁË°É£¡</TD></TR></TBODY></TABLE>
+<TD align=middle width=75 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>ä¹Ÿæ˜¯æ•é­”åž‹äººç‰©çš„ä¸€ç§ï¼Œå»ºè®®åŽç»­é…ç‚¹æœINT+2ã€WIS+1çš„æ¯”ä¾‹åŽ»é…ã€‚å°ç¼–çŽ©è¿‡æ°´å±žæ´›å…‹è¿™åªäººç‰©ã€‚ä¸è¿‡å½“æ—¶å¯èƒ½æ˜¯ç¬”è€…INTé…çš„ä¸è¿‡å¤šï¼Œå¯¼è‡´æ°´å±žæ´›å…‹çš„æŠ€èƒ½å¨åŠ›å¹¶ä¸å¼ºï¼Œä¸å®¹æ˜“ç§’æ€ªï¼ä¹Ÿè®¸çŽ©å®¶INTé…çš„æ¯”è¾ƒå¤šï¼Œæˆ–è€…æ˜¯ç»ƒåˆ°æ¯”è¾ƒé«˜é˜¶çš„æŠ€èƒ½ä¹‹åŽï¼Œæƒ…å†µå°±æ¯”è¾ƒèƒ½æœ‰æ‰€æ”¹å–„äº†å§ï¼</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table61 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV>
 <TABLE id=table62 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=107>Ï¯µÂ</TD>
-<TD align=middle width=119 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=182>STR+2 ¡¢ CON+1</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=107>å¸­å¾·</TD>
+<TD align=middle width=119 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=182>STR+2 ã€ CON+1</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=107>Èý¶ÎÊ½Í»´Ì</TD>
-<TD align=middle width=119 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=182>»ðÊô×î¼Ñ£¬ÍÁÊôÆä´Î</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=107>ä¸‰æ®µå¼çªåˆº</TD>
+<TD align=middle width=119 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=182>ç«å±žæœ€ä½³ï¼ŒåœŸå±žå…¶æ¬¡</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>Ð¡±àÍæ Æ®Á÷µÄµÚÒ»Ö»ÈËÎï±ãÊÇÑ¡ÓÃ»ðÊôÐÔÏ¯µÂ£¡Ï¯µÂÊÇÊôÓÚ¹¥»÷ÐÔÈËÎï£¬ËùÒÔÆäÅäµãÒÔÅäSTR+2¡¢CON+1Îª×î¼Ñ¡£²»ÂÛÍæ¼ÒÊÇÓÃÊÖ¶¯»òÕßÊÇÓÃÒ£¿ØÆ÷£¬¶¼ºÜºÃÁ·¡£µ±È»£¬Íæ¼ÒÒ²¿ÉÒÔÊÓÇé¿ö¼ÓÒ»ÏÂAGI£¬¼Óµ½ÄÜ¸úµÄÉÏ³èÎïÃÇµÄËÙ¶È¼´¿É¡£Ï¯µÂµÄ×î´óÈ±µã¾ÍÔÚÓÚSP¹ýµÍ£¬½öÔ¼100×óÓÒ¶øÒÑ£¬ÔÙ¼ÓÉÏÃ»µãWISÔì³ÉSP³É³¤»ºÂý£¨Ã»µãWIS£¬ÔòÏ¯µÂµÄSPÉýÒ»¼¶½«Ö»ÓÐ³É³¤1µã£©¡£Èç´ËËùÒý·¢µÄºó¹û¾ÍÔÚÓÚ£¬Ñ¡ÓÃ Ï¯µÂÒªÁ·¼¼ÄÜ£¬»áÁ·µÄ±È½ÏÐÁ¿à£¡Èç¹ûËµÍæ¼ÒÃ»ÓÐµÃµ½»êÉÁ¼¼ÄÜ£¬³ä·ÖÀûÓÃ´Ë¼¼ÄÜÎü¹ÖSPµÄ»°£¬¾ÍµÃÒª×¡ÕÊÅñ»ò¿ñ³ÔSP²¹Æ·ÁË¡£</TD></TR></TBODY></TABLE>
+<TD align=middle width=75 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>å°ç¼–çŽ© é£˜æµçš„ç¬¬ä¸€åªäººç‰©ä¾¿æ˜¯é€‰ç”¨ç«å±žæ€§å¸­å¾·ï¼å¸­å¾·æ˜¯å±žäºŽæ”»å‡»æ€§äººç‰©ï¼Œæ‰€ä»¥å…¶é…ç‚¹ä»¥é…STR+2ã€CON+1ä¸ºæœ€ä½³ã€‚ä¸è®ºçŽ©å®¶æ˜¯ç”¨æ‰‹åŠ¨æˆ–è€…æ˜¯ç”¨é¥æŽ§å™¨ï¼Œéƒ½å¾ˆå¥½ç»ƒã€‚å½“ç„¶ï¼ŒçŽ©å®¶ä¹Ÿå¯ä»¥è§†æƒ…å†µåŠ ä¸€ä¸‹AGIï¼ŒåŠ åˆ°èƒ½è·Ÿçš„ä¸Šå® ç‰©ä»¬çš„é€Ÿåº¦å³å¯ã€‚å¸­å¾·çš„æœ€å¤§ç¼ºç‚¹å°±åœ¨äºŽSPè¿‡ä½Žï¼Œä»…çº¦100å·¦å³è€Œå·²ï¼Œå†åŠ ä¸Šæ²¡ç‚¹WISé€ æˆSPæˆé•¿ç¼“æ…¢ï¼ˆæ²¡ç‚¹WISï¼Œåˆ™å¸­å¾·çš„SPå‡ä¸€çº§å°†åªæœ‰æˆé•¿1ç‚¹ï¼‰ã€‚å¦‚æ­¤æ‰€å¼•å‘çš„åŽæžœå°±åœ¨äºŽï¼Œé€‰ç”¨ å¸­å¾·è¦ç»ƒæŠ€èƒ½ï¼Œä¼šç»ƒçš„æ¯”è¾ƒè¾›è‹¦ï¼å¦‚æžœè¯´çŽ©å®¶æ²¡æœ‰å¾—åˆ°é­‚é—ªæŠ€èƒ½ï¼Œå……åˆ†åˆ©ç”¨æ­¤æŠ€èƒ½å¸æ€ªSPçš„è¯ï¼Œå°±å¾—è¦ä½å¸ç¯·æˆ–ç‹‚åƒSPè¡¥å“äº†ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table63 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV>
 <TABLE id=table64 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=107>ÄÂ¶û</TD>
-<TD align=middle width=118 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=184>AGI+1¡¢INT+2</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=107>ç©†å°”</TD>
+<TD align=middle width=118 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=184>AGI+1ã€INT+2</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=107>ÁÒ¾ÆÑæ</TD>
-<TD align=middle width=118 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=184>Ë®Êô×î¼Ñ£¬·çÊôÆä´Î</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=107>çƒˆé…’ç„°</TD>
+<TD align=middle width=118 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=184>æ°´å±žæœ€ä½³ï¼Œé£Žå±žå…¶æ¬¡</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>ÄÂ¶ûµÄÉè¶¨¸úÂå¿Ë²î²»¶à¡£Ò²ÊÇ½¨ÒéÍæ¼ÒºóÐøÅäµã³¯INT+2¡¢WIS+1µÄ±ÈÀýÈ¥Åä¡£ </TD></TR></TBODY></TABLE>
+<TD align=middle width=74 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>ç©†å°”çš„è®¾å®šè·Ÿæ´›å…‹å·®ä¸å¤šã€‚ä¹Ÿæ˜¯å»ºè®®çŽ©å®¶åŽç»­é…ç‚¹æœINT+2ã€WIS+1çš„æ¯”ä¾‹åŽ»é…ã€‚ </TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table65 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV>
 <TABLE id=table66 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=105>Àò¿É</TD>
-<TD align=middle width=118 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=185>STR+2 ¡¢ AGI+1</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=105>èŽ‰å¯</TD>
+<TD align=middle width=118 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=185>STR+2 ã€ AGI+1</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=105>¼²Ê»</TD>
-<TD align=middle width=118 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=185>»ðÊô×î¼Ñ£¬·çÊôÆä´Î</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=105>ç–¾é©¶</TD>
+<TD align=middle width=118 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=185>ç«å±žæœ€ä½³ï¼Œé£Žå±žå…¶æ¬¡</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>¸úÏ¯µÂÒ»ÑùÊôÓÚ¹¥»÷ÐÍµÄÈËÎï¡£Î¨Ò»²»Í¬µÄÊÇ£¬Ï¯µÂ½Ï×¢ÖØCON£¬¶øÀò¿É½Ï×¢ÖØAGI¡£ºóÐøÅäµãÔòÒÀÈ»ÒÔSTR+2¡¢AGI+1Îª±ÈÀýÈ¥Åä¡£Ò²ÊÇÒ£¿ØÆ÷ÓëÊÖ¶¯Á½½ÔÒËµÄÈËÎïÖ®Ò»¡£</TD></TR></TBODY></TABLE>
+<TD align=middle width=75 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>è·Ÿå¸­å¾·ä¸€æ ·å±žäºŽæ”»å‡»åž‹çš„äººç‰©ã€‚å”¯ä¸€ä¸åŒçš„æ˜¯ï¼Œå¸­å¾·è¾ƒæ³¨é‡CONï¼Œè€ŒèŽ‰å¯è¾ƒæ³¨é‡AGIã€‚åŽç»­é…ç‚¹åˆ™ä¾ç„¶ä»¥STR+2ã€AGI+1ä¸ºæ¯”ä¾‹åŽ»é…ã€‚ä¹Ÿæ˜¯é¥æŽ§å™¨ä¸Žæ‰‹åŠ¨ä¸¤çš†å®œçš„äººç‰©ä¹‹ä¸€ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table67 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV>
 <TABLE id=table68 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=105>ç¤Ò°º××Ó</TD>
-<TD align=middle width=117 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=187>INT+2¡¢WIS+1</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=105>ç»€é‡Žé¹¤å­</TD>
+<TD align=middle width=117 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=187>INT+2ã€WIS+1</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=105>»ðÎè</TD>
-<TD align=middle width=117 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=187>Ë®Êô×î¼Ñ</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=105>ç«èˆž</TD>
+<TD align=middle width=117 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=187>æ°´å±žæœ€ä½³</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>¿ÉËµÊÇ´¿·¨Ê¦ÐÍµÄÈËÎï£¬ºóÐøÅäµã½¨ÒéÈÔÒÔINT+2¡¢WIS+1µÄ±ÈÀýÈ¥Åä¡£ÕâÑùµÄÅäµã£¬½ÇÉ«µÄ·ÀÓù¿ÉÄÜ»á²îÁËµã£¬¾ÍÒª¿¿×°±¸À´³Å†ª£¡</TD></TR></TBODY></TABLE>
+<TD align=middle width=74 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>å¯è¯´æ˜¯çº¯æ³•å¸ˆåž‹çš„äººç‰©ï¼ŒåŽç»­é…ç‚¹å»ºè®®ä»ä»¥INT+2ã€WIS+1çš„æ¯”ä¾‹åŽ»é…ã€‚è¿™æ ·çš„é…ç‚¹ï¼Œè§’è‰²çš„é˜²å¾¡å¯èƒ½ä¼šå·®äº†ç‚¹ï¼Œå°±è¦é è£…å¤‡æ¥æ’‘ï¿½ï¿½ï¼</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table69 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV>
 <TABLE id=table70 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=103>°¬ÀöË¹</TD>
-<TD align=middle width=115 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=190>STR+1 ¡¢ CON+2</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=103>è‰¾ä¸½æ–¯</TD>
+<TD align=middle width=115 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=190>STR+1 ã€ CON+2</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=103>ºäÕ¨»ú¹¥»÷</TD>
-<TD align=middle width=115 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=190>ÍÁÊô×î¼Ñ£¬»ðÊôÆä´Î</TD></TR>
+<TD align=middle width=75 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=103>è½°ç‚¸æœºæ”»å‡»</TD>
+<TD align=middle width=115 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=190>åœŸå±žæœ€ä½³ï¼Œç«å±žå…¶æ¬¡</TD></TR>
 <TR>
-<TD align=middle width=75 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>¸úµ¤Äá¶ûÒ»ÑùÊÇÊôÓÚ·ÀÓùÐÍµÄÈËÎï£¡ÅäµãµÄ»°Ò²ÊÇÒÔSTR+1¡¢CON+1µÄ·½ÏòÈ¥Åä¾Í¿ÉÒÔÁË</TD></TR></TBODY></TABLE>
+<TD align=middle width=75 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>è·Ÿä¸¹å°¼å°”ä¸€æ ·æ˜¯å±žäºŽé˜²å¾¡åž‹çš„äººç‰©ï¼é…ç‚¹çš„è¯ä¹Ÿæ˜¯ä»¥STR+1ã€CON+1çš„æ–¹å‘åŽ»é…å°±å¯ä»¥äº†</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table71 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV>
 <TABLE id=table72 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=103>ÂêÀòÑÇ</TD>
-<TD align=middle width=114 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=192>AGI+1¡¢WIS +2</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=103>çŽ›èŽ‰äºš</TD>
+<TD align=middle width=114 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=192>AGI+1ã€WIS +2</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=103>¶þÌåÇáÎ¢ÖÎÁÆ</TD>
-<TD align=middle width=114 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=192>Ë®Êô×î¼Ñ£¬·çÊôÆä´Î</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=103>äºŒä½“è½»å¾®æ²»ç–—</TD>
+<TD align=middle width=114 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=192>æ°´å±žæœ€ä½³ï¼Œé£Žå±žå…¶æ¬¡</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>Ò»¿´¾ÍÖªµÀÊÇ²¹ÑªÐÍµÄ£¬²»¹ý£¬Ò²²»ÊÇÃ»ÓÐ×ªÐÍµÄÆõ»ú£¡¾Í¿´Íæ¼ÒÊÇÒªÄ§·¨Óë²¹Ñª¼æ¾ß£¬»òÕßÊÇ¿É×Ô´ò×Ô²¹µÄ±©Á¦»¤Ê¿ÐÍ¶¼¿ÉÒÔ¡£Èç¹ûËµÍæ¼ÒÊÇÒªÄ§·¨Óë²¹Ñª¼æ¾ßµÄÄ§·¨»¤Ê¿ÐÍ£¬ÔòÅäµã¿É³¯ÏòINT+2¡¢WIS+1µÄ±ÈÀýÈ¥Åä¡£Èç¹ûËµÍæ¼ÒÒªµÄÊÇ¿É×Ô´ò×Ô²¹µÄ±©Á¦»¤Ê¿ÐÍ£¬ÔòÅäµã½¨ÒéÎªSTR+2¡¢AGI+1µÄ±ÈÀýÈ¥Åä¡£</TD></TR></TBODY></TABLE>
+<TD align=middle width=74 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>ä¸€çœ‹å°±çŸ¥é“æ˜¯è¡¥è¡€åž‹çš„ï¼Œä¸è¿‡ï¼Œä¹Ÿä¸æ˜¯æ²¡æœ‰è½¬åž‹çš„å¥‘æœºï¼å°±çœ‹çŽ©å®¶æ˜¯è¦é­”æ³•ä¸Žè¡¥è¡€å…¼å…·ï¼Œæˆ–è€…æ˜¯å¯è‡ªæ‰“è‡ªè¡¥çš„æš´åŠ›æŠ¤å£«åž‹éƒ½å¯ä»¥ã€‚å¦‚æžœè¯´çŽ©å®¶æ˜¯è¦é­”æ³•ä¸Žè¡¥è¡€å…¼å…·çš„é­”æ³•æŠ¤å£«åž‹ï¼Œåˆ™é…ç‚¹å¯æœå‘INT+2ã€WIS+1çš„æ¯”ä¾‹åŽ»é…ã€‚å¦‚æžœè¯´çŽ©å®¶è¦çš„æ˜¯å¯è‡ªæ‰“è‡ªè¡¥çš„æš´åŠ›æŠ¤å£«åž‹ï¼Œåˆ™é…ç‚¹å»ºè®®ä¸ºSTR+2ã€AGI+1çš„æ¯”ä¾‹åŽ»é…ã€‚</TD></TR></TBODY></TABLE>
 <DIV align=center>
 <TABLE id=table73 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD>¡¡</TD></TR></TBODY></TABLE></DIV>
+<TD>ã€€</TD></TR></TBODY></TABLE></DIV>
 <TABLE id=table74 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
 <TBODY>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>½ÇÉ«Ãû³Æ</TD>
-<TD width=104>½àÎ÷¿¨</TD>
-<TD align=middle width=111 bgColor=#f3f3f3>³õÊ¼ÄÜÁ¦¼Ó³É</TD>
-<TD width=194>INT+1¡¢WIS+2</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>è§’è‰²åç§°</TD>
+<TD width=104>æ´è¥¿å¡</TD>
+<TD align=middle width=111 bgColor=#f3f3f3>åˆå§‹èƒ½åŠ›åŠ æˆ</TD>
+<TD width=194>INT+1ã€WIS+2</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>³õÊ¼¼¼ÄÜ</TD>
-<TD width=104>Òô·û</TD>
-<TD align=middle width=111 bgColor=#f3f3f3>½¨Òé´îÅäÊôÐÔ</TD>
-<TD width=194>Ë®Êô×î¼Ñ</TD></TR>
+<TD align=middle width=74 bgColor=#f3f3f3>åˆå§‹æŠ€èƒ½</TD>
+<TD width=104>éŸ³ç¬¦</TD>
+<TD align=middle width=111 bgColor=#f3f3f3>å»ºè®®æ­é…å±žæ€§</TD>
+<TD width=194>æ°´å±žæœ€ä½³</TD></TR>
 <TR>
-<TD align=middle width=74 bgColor=#f3f3f3>ÌØÐÔ</TD>
-<TD colSpan=3>Ò²ÊÇÊôÓÚÄ§·¨ÐÍµÄÈËÎïÖ®Ò»£¬½¨ÒéÅäµã±ÈÀýÎªINT+1¡¢WIS+1£¬Õ½¶·µÄ¹ý³ÌÖÐ£¬¾Í´óÁ¦µÄÊ©·Å·¨ÊõºäÉ±¹ÖÎï°É£¡</TD></TR></TBODY></TABLE></DIV></DIV><!--Content End--></td>
+<TD align=middle width=74 bgColor=#f3f3f3>ç‰¹æ€§</TD>
+<TD colSpan=3>ä¹Ÿæ˜¯å±žäºŽé­”æ³•åž‹çš„äººç‰©ä¹‹ä¸€ï¼Œå»ºè®®é…ç‚¹æ¯”ä¾‹ä¸ºINT+1ã€WIS+1ï¼Œæˆ˜æ–—çš„è¿‡ç¨‹ä¸­ï¼Œå°±å¤§åŠ›çš„æ–½æ”¾æ³•æœ¯è½°æ€æ€ªç‰©å§ï¼</TD></TR></TBODY></TABLE></DIV></DIV><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -426,7 +426,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="»Ø¶¥²¿" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="å›žé¡¶éƒ¨" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

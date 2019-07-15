@@ -5,7 +5,7 @@ Version: 3.0
 Designer: hmily
 CreateTime:2006/08/23 14:34:00*/
 /*+++++++++++++++++++++ Element ++++++++++++++++++++*/
-@charset"gb2312";
+@charset"utf-8";
 html
 {   scrollbar-face-color:#94CFF7;/*箭头背景颜色*/
     scrollbar-highlight-color:#000000;/*滚动条上下方格内投影颜色*/

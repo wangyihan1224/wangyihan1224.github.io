@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>�ط�������</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>地法辅解析</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						�ط�������</span></div></td>
+						地法辅解析</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -175,30 +175,30 @@ MM_reloadPage(true);
         <tr> 
           <td width="28"> </td>
           <td width="490" height="265" valign="top"><br>
-			<!--Content Start--><P align=right>���ߣ��λú���</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��ϵ���ŵ���ʲô��������������֪������ϵ�������ħ���ӳɡ��⵼���кö����Ѷ�����ս�������������ĵ�ս������Ѫ��ûʲô�ŵ㣬���Խ�������Ҫ������ǽ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���ﲻ˵��ս������̸�ط�����</P>
+			<!--Content Start--><P align=right>作者：梦幻海洋</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 地系的优点是什么，防高是吗？我们知道，地系有物防和魔防加成。这导致有好多朋友都练地战，但不出辅技的地战，除了血厚没什么优点，所以建议至少要出到土墙。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这里不说地战，我来谈地法辅。</P>
 <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --------------------</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��ɫѡ������ˣ��Լ�ϲ���ĸ���ɫ���ĸ���ɫ�����ܳ�ʼ���������ˡ������˲�ϲ�����������ϲ����ϵ����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ط�������Ȼ������INT���ǻ�WIS�ˣ����������CON���������ǵķ�û�е�ս�ߣ�AGIһ������²��㣬��װ�����������PK���ˣ����ҵļӵ��㲻�ʺϡ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----�ӵ�----------------</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ȼ���ʱ��CON���㵽9����֤Ѫ���˲�̫��������Ҳ�����ǵ�ϵ���������ڣ��Ժ������������ӡ����������Ѫ������ȥ����Ȫ���ϱ�����������������������20��HP��20��SP��λ�þͲ����҆����ˡ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ٵ�WIS��18����ʱ����ⶳ�ͻ��ѣ�������������������ǰ�ڸ���������������WISֻ��Ϊ���и����SP�����á���Ϊ������Ҫ�ô�����SP���ر�����ǽ�����������Ƿ�ʦ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���ˣ�HP���ˣ�SP���ˡ���ô�ص�����ˡ�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���INT�ɣ�һֱ�㵽INT46�����ҵ����⼼��ʹ�õط�����������ʵķ�Ծ����Ϊ�ǵ��弼�ܣ��ʿ��Ժͳ�ϻ���Ϊʲô����ǰ������������أ���Ϊǰ���������ܶ�����û�ã���Ⱥ�弼�ܣ���ֲ��ۣ��۸�С�ֵ��ǲ�����ѡ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���������ˣ��ٺ٣���ȫ����ô�죿�����ˣ��������谭һ�����������ļ��ܣ���ǽ��Ϊ����ǽ����WIS�ɡ�����ս����ҲҪ������ǽ��������սSP�٣�������һ�ξͿ�ûSP�ˡ���</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������ǽ���󲿷�������Ե����ˡ������԰������ѹ�����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �����ĵط����������͡�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �������Ϳ������ķ��淢չ�ˣ�Ҫ��ʯ���������䣿���˾���Ҫ����ȫ���ɣ�ֻ�ǳ��ͱȽ�������˵��������ϵ��ߵ��幥�����ܣ��������컹��û�п������ǡ���Ȼʯ��Ҳ�ǳ�BT�������������ʼ��ߣ������˾�ֻ�ܱ�Ű����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----�ŵ�----------------</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �߷���������ħ������Ѫ�ࣨ��Ե�ս������սʿ�����µļ�����ǽ������ߵ��幥�����ܣ�����ʯ������������������֡���սҲ������Ѫ����ߵ���ܣ��������ٵ�Ѫ��</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----ȱ��----------------</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��������ǰ���������࣬�ط�������ֻ�����չ��һ����۸�С�����۸��ľ���С����ż�HPҩ���ˣ�SPҩ����ͷ�����ӣ���</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ٶȵͣ���Ϊû��AGI�����AGI�˾ʹ�Ϊ��PK���ٶ��ܿ����ϵ�𣬲�̫���ܣ��˼�ר��AGI�ġ����ǵصĿ��ǡ����Ե������绹��������ɡ���Ȼ�������ٶ�װ����һ�¡�</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �¼��ܳ��ⲻ�Ǻܺã�ֻ����һ�غϡ�����Ҫ�ó��⣬��������ʯ���������˷����ǡ�</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 角色选择随便了，自己喜欢哪个角色就哪个角色，别受初始能力限制了。（个人不喜欢丹尼尔，但喜欢地系。）</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 地法辅，当然加智力INT和智慧WIS了，视情况补补CON，所以我们的防没有地战高，AGI一般情况下不点，靠装备，如果你是PK狂人，那我的加点你不适合。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----加点----------------</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 等级低时点CON，点到9，保证血高了不太容易死，也是我们地系的优势所在，以后想增加再增加。如果还觉得血不够，去泡温泉。南北岛就有两个，共可以增加20点HP和20点SP，位置就不用我��嗦了。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 再点WIS到18，这时会出解冻和唤醒，不理它。这两个技能前期根本不能升级。点WIS只是为了有更多的SP可以用。因为技能需要用大量的SP，特别是土墙，况且我们是法师。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 好了，HP有了，SP有了。那么重点就来了。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 狂点INT吧，一直点到INT46出爆岩弹。这技能使得地法辅打怪有了质的飞跃。因为是单体技能，故可以和宠合击。为什么不练前面的三个技能呢，因为前面三个技能都几乎没用，是群体技能，打怪不疼，欺负小怪倒是不错的选择。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 攻击力有了，嘿嘿，安全性怎么办？别忘了，我们有阻碍一切物理攻击的技能：土墙。为了土墙，加WIS吧。（地战至少也要出到土墙，不过地战SP少，估计用一次就快没SP了。）</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 有了土墙，大部分任务可以单挑了。还可以帮助朋友过任务。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这样的地法辅基本成型。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 接下来就看你往哪方面发展了，要出石化还是殒落？个人觉得要出就全出吧，只是成型比较晚。据说殒落是四系最高单体攻击技能，看来上天还是没有亏待我们。当然石化也是超BT技，而且命中率极高，中招了就只能被虐待。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----优点----------------</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 高防御力，高魔防力，血多（针对地战），有战士都怕怕的技能土墙，有最高单体攻击技能，还有石化。单挑过任务的能手。地战也不错，血厚防高当肉盾，还掉很少的血。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----缺点----------------</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 成型晚，前期升级辛苦，地法辅练级只能用普攻挂机，欺负小动物，最常欺负的就是小鸡（偶穷，HP药便宜，SP药贵。馒头混日子）。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 速度低，因为没点AGI，你点AGI了就纯为了PK。速度能快过风系吗，不太可能，人家专修AGI的。风是地的克星。所以地遇到风还是最好闪吧。当然可以用速度装备补一下。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新技能尘封不是很好，只能用一回合。而且要用尘封，还不如用石化，不必浪费星星。</P>
 <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ------------------------</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; һ���ӾͶ�������ô�࣬��֪���Ե�ϵ������û�а�����</P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ���˵ط���34������Ŭ������ѹ�䡣</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 一下子就哆嗦了这么多，不知道对地系新手有没有帮助。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 本人地法辅34级，正努力冲重压咒。</P>
 <P align=left>&nbsp;</P><!--Content End--></td>
           <td width="32"> </td>
         </tr>
@@ -215,7 +215,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;

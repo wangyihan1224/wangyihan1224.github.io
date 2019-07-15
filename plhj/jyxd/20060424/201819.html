@@ -14,17 +14,17 @@ document.onselectstart=click;
 document.onmousedown=click1;
 </SCRIPT>
 <script>
-function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
- //alert("ASCII�����ǣ�"+event.keyCode);
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
   if ((window.event.altKey)&&
-      ((window.event.keyCode==37)||   //���� Alt+ ����� ��
-       (window.event.keyCode==39))){  //���� Alt+ ����� ��
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
      event.returnValue=false;
      }
-  if ((event.keyCode==8)  ||                 //�����˸�ɾ����
-      (event.keyCode==116)||                 //���� F5 ˢ�¼�
-      (event.keyCode==112)||                 //���� F1 ˢ�¼�
-      (event.keyCode==80)||                 //���� p ˢ�¼�
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
       (event.keyCode==78)||           
       (event.keyCode==83)||           
       (event.keyCode==66)||           
@@ -34,16 +34,16 @@ function KeyDown(){ //��������Ҽ���Ctrl+n��shift+F10��F5ˢ�¡��˸��
      event.keyCode=0;
      event.returnValue=false;
      }
-  if ((event.ctrlKey)&&(event.keyCode==78))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==65))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.ctrlKey)&&(event.keyCode==67))   //���� Ctrl+n
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
      event.returnValue=false;
-  if ((event.shiftKey)&&(event.keyCode==121)) //���� shift+F10
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
      event.returnValue=false;
   if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
-      window.event.returnValue = false;  //���� shift ���������¿�һ��ҳ
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
 	  
 }
 function Showhelp(){
@@ -51,8 +51,8 @@ function Showhelp(){
 }
  </script>
 <meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>���ڳ���</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>初期宠物</title>
 <style type="text/css">
 #floater {
 	position: absolute;
@@ -80,8 +80,8 @@ body {
 	margin-bottom: 0px;
 }
 
-A:link {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
-A:visited {COLOR: #000000; FONT-FAMILY: "����"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
 A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
 body,td,th {
 	font-family: MS Shell Dlg,Tahoma;
@@ -103,7 +103,7 @@ a.color:hover {
 	text-decoration: underline;
 }
 .style43 {
-	font-family: "�����п�";
+	font-family: "华文行楷";
 	font-size: 14pt;
 	font-weight: normal;
 	color: #000000;
@@ -144,19 +144,19 @@ MM_reloadPage(true);
     <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
 		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
           <tr>
-				<td height="36" width="131">��</td>
+				<td height="36" width="131">　</td>
 				
                 <td width="366" rowspan="2" valign="bottom">
 				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
                   <tr>
                     <td height="38" valign="top"><div align="center"><span class="style43">
-						���ڳ���</span></div></td>
+						初期宠物</span></div></td>
                   </tr>
                   <tr>
                     <td> </td>
                   </tr>
                 </table></td>
-                <td height="36" width="53">��</td>
+                <td height="36" width="53">　</td>
 		  </tr>
 			<tr>
 				<td height="52"> </td>
@@ -179,14 +179,14 @@ MM_reloadPage(true);
 <TABLE id=table8 cellSpacing=0 cellPadding=0 width=490 border=0>
 <TBODY>
 <TR>
-<TD width=528>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��Ʈ���þ��У�������Ϊ�������ض��ܼ�����Ҷ����еĳ������ĸ�����һ�������һ��ʼ�ͻ�������С���ӣ���������ڿ�����������Ҷ����С�����ܿ������������ڱ��������Ǻ�������������Ů��˿�� 
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ˵����ߣ���������һ��ɻ�˵������ ������ɽ����������֮�� �ܿ����ͻ�ص��峤����������ôС������������ܿ����������أ���ʵ�����ܼ򵥣�ֻҪ������ ������ɽ���������񣬵ȵ��ܿ��ص��峤����֮����ȥ���ܿ�˵�����ܿ��ͻ������ҵĶ���֮����ร���ô��С���ӡ�С�����ܿ�����˿��������һֻ�ȽϺ��أ�����ָ�����һֻ�أ�С�������߾Ͱ����ĸ�����������Լ����ܸ��г������ô�������ο��� </P>
+<TD width=528>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在飘流幻境中，初期因为任务因素而能加入玩家队伍中的宠物有四个！第一个是玩家一开始就会遇到的小猴子，其次则是在克兰村会加入玩家队伍的小兰跟萝卡，再来则是在北岛东北角海岸所遇到的少女妮丝。 
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 说到这边，或许有玩家会疑惑说，解完 克兰村山洞试炼任务之后， 萝卡不就会回到村长身边了吗？那么小编又是如何让萝卡加入队伍的呢？其实条件很简单，只要玩家完成 克兰村山洞试炼任务，等到萝卡回到村长身边之后，再去跟萝卡说话，萝卡就会加入玩家的队伍之中了喔！那么，小猴子、小兰、萝卡、妮丝，到底哪一只比较好呢？玩家又该练哪一只呢？小编就在这边就把这四个宠物的素质以及技能给列出来，让大家做个参考。 </P>
 <DIV align=center>
 <TABLE id=table9 style="BORDER-COLLAPSE: collapse" borderColor=#cccccc cellSpacing=0 cellPadding=0 width=407 border=1>
 <TBODY>
 <TR>
 <TD vAlign=top colSpan=11>
-<P align=center>С���� ( ���ܣ����㽶���޵�ͷ�� ) </P></TD></TR>
+<P align=center>小猴子 ( 技能：丢香蕉、无敌头锤 ) </P></TD></TR>
 <TR>
 <TD align=middle>LV </TD>
 <TD align=middle>STR </TD>
@@ -212,7 +212,7 @@ MM_reloadPage(true);
 <TD align=middle>6 </TD>
 <TD align=middle>9 </TD></TR>
 <TR>
-<TD vAlign=top align=middle colSpan=11>С�� ( ���ܣ�ʯ��ͻ������ ) </TD></TR>
+<TD vAlign=top align=middle colSpan=11>小兰 ( 技能：石灵突、孤星 ) </TD></TR>
 <TR>
 <TD align=middle>LV </TD>
 <TD align=middle>STR </TD>
@@ -238,7 +238,7 @@ MM_reloadPage(true);
 <TD align=middle>10 </TD>
 <TD align=middle>16 </TD></TR>
 <TR>
-<TD vAlign=top align=middle colSpan=11>�ܿ� ( ���ܣ���â�����ġ��ބx�䵶 ) </TD></TR>
+<TD vAlign=top align=middle colSpan=11>萝卡 ( 技能：五芒星闪改、罗�x弯刀 ) </TD></TR>
 <TR>
 <TD align=middle>LV </TD>
 <TD align=middle>STR </TD>
@@ -264,7 +264,7 @@ MM_reloadPage(true);
 <TD align=middle>7 </TD>
 <TD align=middle>9 </TD></TR>
 <TR>
-<TD vAlign=top align=middle colSpan=11>��˿ ( ���ܣ�������������ħ�� ) </TD></TR>
+<TD vAlign=top align=middle colSpan=11>妮丝 ( 技能：狂雷招来、回魔咒 ) </TD></TR>
 <TR>
 <TD align=middle>LV </TD>
 <TD align=middle>STR </TD>
@@ -289,10 +289,10 @@ MM_reloadPage(true);
 <TD align=middle>15 </TD>
 <TD align=middle>14 </TD>
 <TD align=middle>9 </TD></TR></TBODY></TABLE></DIV>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������������б�������С����һ��ʼ���������Ѿ�ƫ���ˣ���С���ӵ��޵�ͷ������Ȼ˵ҪӦ��һ��ʼ�ĵ����Ǵ´����࣬���ǵ�ҪӦ�� 10 �����ϵĹ���ʱ���Ѿ��Եò����ˡ�����С����ֻ��˵�ǹٷ�Ϊ�������һ��ʼ���а�ս����������Ӧ��һ�µĳ�����ѡ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��С������������ħ�ͣ�С���Ĺ���ֻҪ������û�б��˵�������㶼�ܴ�� 200 ���ϵ����� ( ��ʹ�б���Ҳ���Դ� 120 ���ҵ��˺� ) ������С����ȱ������ HP ̫�٣��������ӣ�һ���ͱ��˲�䱻�Լ��ķ�������ɱ������˵������ѡС������Ҷ��ԣ��������С����������������ʱ�������������뵽С������һ���ܡ�ʯ��ͻ��ֻ��ϧ������ֻ�жԸ�ˮ������Ƚ����ö��ѣ�����������Թ���������������͸о������ˡ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; �ܿ��������ڽ�ս�ⲫ�ͣ�Ӧ�û������������ϲ������ֻ�ġ��ܿ���Ҫ���õļ��ܾ����ބx�䵶�ˡ��ބx�䵶���������䲻��С���Ĺ��������ͣ����Ǻô�ƽ������Ҳ�� 140 ���ϣ������ܿ�Ѫ���Զֻ࣬Ҫ��ҵ�Ѫ���������˺��п��ƺã�Ӧ�þͱȽϲ���ҵ��ˡ� </P>
-<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ��˿���Ƿ�ʦ�ͳ����˿�ļ�������Ҳ��С���ļ�����������ͣ�������˿��ȱ�������似��̫�ķ� SP( ��˿�������� 60SP ���� ) �ˣ������������Ҫ��������Ϣ�ˡ����Ա��߸о���˿������˵��ʵ�ã�������Ҳ�Ƚ����ࡣ </P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ������ҿ��԰ѳ���������ص����С�����ܿ�����ֻ�������档��ս�ⲫϵ�Ľ�ɫ ( ��ϯ�¡�������ȵ� ) �����Կ���ѡ��С����Ϊ���䣻��ʦ����ϵ�Ľ�ɫ ( ����ˡ� �����ǵȵ� ) �����Կ���ѡ���ܿ���Ϊ���䡣������ѡ���ֶ�����ң�ѡ���ս�ⲫϵ�Ľ�ɫ ( ��ϯ�¡�������ȵ� ) �����Ͻ�ս����ǿ�����ܿ���Ӧ�þͿ�����ң�����ҵ���ĵ����˰ɣ�</TD></TR></TBODY></TABLE></DIV><!--Content End--></td>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 从上面的能力列表来看，小猴子一开始的能力就已经偏低了！而小猴子的无敌头锤，虽然说要应付一开始的敌人是绰绰有余，但是当要应付 10 级以上的怪物时，已经显得不足了。所以小猴子只能说是官方为了让玩家一开始能有伴战斗，所送来应付一下的宠物而已。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 而小兰则是属于敏魔型！小兰的孤星只要其属性没有被克到，则随便都能打出 200 以上的素质 ( 即使有被克也可以打到 120 左右的伤害 ) 。不过小兰的缺点在于 HP 太少，不反则矣，一反就变成瞬间被自己的法术给秒杀。所以说，对于选小兰的玩家而言，得需控制小兰法术的威力！这时候或许会有玩家想到小兰的另一技能～石灵突。只可惜，此招只有对付水属怪物比较有用而已，面对其它属性怪物打起来的威力就感觉普普了。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 萝卡则是属于近战肉搏型，应该会有许多玩家蛮喜欢练这只的。萝卡主要常用的技能就是罗�x弯刀了。罗�x弯刀技能威力虽不如小兰的孤星来的猛，但是好歹平均威力也有 140 以上！而且萝卡血量略多，只要玩家的血量跟技能伤害有控制好，应该就比较不会挂掉了。 </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 妮丝则是法师型宠物，妮丝的技能威力也跟小兰的技能威力差不多猛！不过妮丝的缺点在于其技能太耗费 SP( 妮丝技能最少 60SP 起跳 ) 了，差不多打的两场就要进帐篷休息了。所以笔者感觉妮丝并不是说很实用，练起来也比较辛苦。 </P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 所以玩家可以把宠物的栽培重点摆在小兰跟萝卡这两只人物上面。近战肉搏系的角色 ( 如席德、丹尼尔等等 ) ，可以考虑选择小兰作为搭配；法师辅助系的角色 ( 如洛克、 玛莉亚等等 ) ，可以考虑选择萝卡作为搭配。而懒得选择手动的玩家，选择近战肉搏系的角色 ( 如席德、丹尼尔等等 ) ，配上近战攻击强悍的萝卡，应该就可以用遥控器挂到天荒地老了吧！</TD></TR></TBODY></TABLE></DIV><!--Content End--></td>
           <td width="32"> </td>
         </tr>
         <tr> 
@@ -308,7 +308,7 @@ MM_reloadPage(true);
 	</tr>
 </table>
 </div>
-<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="�ض���" border="0"></a></div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
 <script LANGUAGE="JavaScript" type="text/JavaScript">
 <!--//
 self.onError=null;
