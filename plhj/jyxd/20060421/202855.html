@@ -1,0 +1,346 @@
+
+<!plhj-04-17-06-content-01>
+<html>
+<head>
+<SCRIPT LANGUAGE=javascript>
+function click() {
+event.returnValue=false; }
+function click1() {
+if (event.button==2) {event.returnValue=false; }}
+function CtrlKeyDown(){
+if (event.ctrlKey) {event.returnValue=false; }}
+document.onkeydown=CtrlKeyDown;
+document.onselectstart=click;
+document.onmousedown=click1;
+</SCRIPT>
+<script>
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
+  if ((window.event.altKey)&&
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
+     event.returnValue=false;
+     }
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
+      (event.keyCode==78)||           
+      (event.keyCode==83)||           
+      (event.keyCode==66)||           
+      (event.keyCode==79)||           
+      (event.keyCode==76)||           
+      (event.ctrlKey && event.keyCode==82)){ //Ctrl + R
+     event.keyCode=0;
+     event.returnValue=false;
+     }
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
+     event.returnValue=false;
+  if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
+	  
+}
+function Showhelp(){
+ return false;
+}
+ </script>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>我的工蜂成长过程</title>
+<style type="text/css">
+#floater {
+	position: absolute;
+	left: 490;
+	top: 390;
+	visibility: visible;
+	z-index: 10;
+}
+</style>
+<STYLE>
+BODY {
+SCROLLBAR-FACE-COLOR: #4AB6DE;
+ SCROLLBAR-3DLIGHT-COLOR: #734E3C;
+ SCROLLBAR-ARROW-COLOR: #B5D5ED;
+ SCROLLBAR-DARKSHADOW-COLOR: #B5D5ED;
+ SCROLLBAR-BASE-COLOR: #98CBF3;
+ SCROLLBAR-TRACK-COLOR: #FFFFFF;
+
+}
+</STYLE>
+<STYLE type=text/css>
+<!--
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
+body,td,th {
+	font-family: MS Shell Dlg,Tahoma;
+	font-size: 9pt;
+	color:#000000}
+a.color:link {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:hover {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: underline;
+}
+.style43 {
+	font-family: "华文行楷";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #000000;
+}
+#Layer1 {
+	position:absolute;
+	left:131px;
+	top:478px;
+	width:171px;
+	height:68px;
+	z-index:11;
+	visibility: visible;
+}
+-->
+</STYLE>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  oncontextmenu="event.returnValue=false" onhelp="Showhelp();return false;">
+
+
+
+
+
+<div align="center">
+<table width="550" height="471" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table1">
+  <tr>
+		
+      
+    <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
+		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
+          <tr>
+				<td height="36" width="131">　</td>
+				
+                <td width="366" rowspan="2" valign="bottom">
+				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td height="38" valign="top"><div align="center"><span class="style43">
+						我的工蜂成长过程</span></div></td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                  </tr>
+                </table></td>
+                <td height="36" width="53">　</td>
+		  </tr>
+			<tr>
+				<td height="52"> </td>
+			    <td height="52"> </td>
+			</tr>
+			<tr>
+			  <td height="1" colspan="3"> </td>
+		  </tr>
+		</table>
+	</div>    </td>
+  </tr>
+	<tr>
+		
+    <td width="550" valign="top" background="../../../plhjtp/right2.jpg"> 
+      <table width="550" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table3">
+        <tr> 
+          <td width="28"> </td>
+          <td width="490" height="265" valign="top"><br>
+			<!--Content Start--><P align=right>作者：幻影星辰</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 前提是 每相同的只宠物成长过程都不一样!! 抓到的能力也不一样。 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 以我的来说 火属 工蜂 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 等级 力量 体质 智力 智慧 敏捷 升级加成 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV1&nbsp;&nbsp; 9.&nbsp;&nbsp; 10.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; 初级 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV2&nbsp;&nbsp; 9.&nbsp;&nbsp; 11.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; +1体质 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV3&nbsp;&nbsp; 9.&nbsp;&nbsp; 12.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; +1体质 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV4&nbsp;&nbsp; 9.&nbsp;&nbsp; 13.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp;&nbsp; 9.&nbsp; +1体质 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV5&nbsp;&nbsp; 9.&nbsp;&nbsp; 13.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 10.&nbsp; +1敏捷 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV6&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 10.&nbsp; +1体质 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV7&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 11.&nbsp; +1敏捷 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV8&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 12.&nbsp; +1敏捷 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV9&nbsp;&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 13.&nbsp; +1敏捷 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV10&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 5.&nbsp;&nbsp; 6.&nbsp; 14.&nbsp; +1敏捷 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV11&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 14.&nbsp; +1智力 = =? <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV12&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 15.&nbsp; +1敏捷 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV13&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 16.&nbsp; +1敏捷 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV14&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 17.&nbsp; +1敏捷 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV15&nbsp; 9.&nbsp;&nbsp; 14.&nbsp;&nbsp; 6.&nbsp;&nbsp; 6.&nbsp; 18.&nbsp; +1敏捷 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 因为只练到15级总共 体质+4点 智力+1点 敏捷+9点</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 习得技能：三旋蜂袭 8级满 花费SP：8 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 结论：废到爆!! 不爽练下去了!! </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 原因：宠物敏高没有魔法辅助技能就是废物!! 除非以等高 压制!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 攻击力超级差，打花，三旋蜂袭 2X. 2X. 2X. = 6X </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要养宠物建议血要多，后期很多任务想要先解，就是要宠物挡!! </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 怪几乎都会先打宠物，你拿精确火箭炮轰!! <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 想要狂冲等级也是要这样!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目前我抓到的宠物都没有一个有像小兰那样有魔法辅助技， </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 所以宠物敏再高等于无用，除非他的攻击技能够强， </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 但是要知道攻击技能的影响因素是：力量或智力 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 敏高型用在放魔法辅助技能会比较洽当!! </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例如：先放无视物理攻击技或牵制敌人攻击回合技!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 敏高的宠，或人物，有这种技能，无论PK或打怪都是很屌的。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 所以说小兰并不是废宠，我倒是认为他是后期最屌的宠。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 不过小弟认为有某些因素应该会影响宠物成长配点!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 等高的怪抓来当宠物，没错!! 初始能力会比较好!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 拿上面我工蜂11级+1智力的例子来说</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 他那次升级+智力刚好是跟我朋友合击打死怪就升级，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 恰巧我朋友他是全智力法师，不知道是不是这个原因改变了他升级配点?!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 下面我还会补充说明宠物奇怪的成长因素!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 先说我分身，我分身升级都是加1力量2体质，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 他的罗卡一直陪伴着它升级成长，升级竟然也是体质高于力量!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 接着回到上面宠物奇怪的成长因素</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 刚刚我帮我那位法师朋友解80级巨型藤蔓花任务，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 打完之后，我朋友回村，我就跟分身挂在下面打小藤蔓花，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 顺便发文写心得，然后跳回去看画面，刚好看到我的分身的罗卡升级，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是跟我合击之后升级，竟然+力量，原本她几乎都是加体质的!!</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 参照上面2个例子，宠物升级配点，这样是不是非常诡异呢??</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 所以说宠物从小培养应该是最好的，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如过上面我说的没错的话，他应该会从你的配点方式来影响宠物配点，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 系统发的宠物我是不知道，因为还没练，例如：小兰。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果是照我上面的说法来决定影响宠物的成长点数的话，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 那敏捷型或体质型的小兰应该是非常强的宠，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 以目前抓的宠没有魔法辅助技来说，体或敏小兰后期应该是很强，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 因为他可以放魔法来帮你挡攻击，光是这招就够炫了，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果他升级配点是被系统设定好，是智力跟智能在跑的话，那就不用练了，</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 除非你有信心练到等高在说吧!! </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 以上是我练宠的小心得，今晚再练小兰看看，我再做他的升级记录。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 有时间我再PO出来。告诉各位有没有必要练。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果我说的不错滴话帮按个好吧。 </P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 若有错误也麻烦指导一下喔~</P><!--Content End--></td>
+          <td width="32"> </td>
+        </tr>
+        <tr> 
+          <td width="28" height="16"></td>
+          <td width="490" valign="top" height="16"> </td>
+          <td width="32" height="16"></td>
+        </tr>
+      </table>	  </td>
+	</tr>
+	<tr>
+		
+    <td width="550" height="35" valign="bottom" background="../../../plhjtp/right3.jpg"> </td>
+	</tr>
+</table>
+</div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
+<script LANGUAGE="JavaScript" type="text/JavaScript">
+<!--//
+self.onError=null;
+currentX = currentY = 0;
+whichIt = null;
+lastScrollX = 0; lastScrollY = 0;
+NS = (document.layers) ? 1 : 0;
+IE = (document.all) ? 1: 0;
+<!-- STALKER CODE -->
+function heartBeat() {
+if(IE) { diffY = document.body.scrollTop; diffX = document.body.scrollLeft; }
+if(NS) { diffY = self.pageYOffset; diffX = self.pageXOffset; }
+if(diffY != lastScrollY) {
+percent = .1 * (diffY - lastScrollY);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelTop += percent;
+if(NS) document.floater.top += percent; 
+lastScrollY = lastScrollY + percent;
+}
+if(diffX != lastScrollX) {
+percent = .1 * (diffX - lastScrollX);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelLeft += percent;
+if(NS) document.floater.left += percent;
+lastScrollX = lastScrollX + percent;
+}
+}
+<!-- /STALKER CODE -->
+<!-- DRAG DROP CODE -->
+function checkFocus(x,y) { 
+stalkerx = document.floater.pageX;
+stalkery = document.floater.pageY;
+stalkerwidth = document.floater.clip.width;
+stalkerheight = document.floater.clip.height;
+if( (x > stalkerx && x < (stalkerx+stalkerwidth)) && (y > stalkery && y < (stalkery+stalkerheight))) return true;
+else return false;
+}
+function grabIt(e) {
+if(IE) {
+whichIt = event.srcElement;
+while (whichIt.id.indexOf("floater") == -1) {
+whichIt = whichIt.parentElement;
+if (whichIt == null) { return true; }
+}
+whichIt.style.pixelLeft = whichIt.offsetLeft;
+whichIt.style.pixelTop = whichIt.offsetTop;
+currentX = (event.clientX + document.body.scrollLeft);
+currentY = (event.clientY + document.body.scrollTop); 
+} else { 
+window.captureEvents(Event.MOUSEMOVE);
+if(checkFocus (e.pageX,e.pageY)) { 
+whichIt = document.floater;
+StalkerTouchedX = e.pageX-document.floater.pageX;
+StalkerTouchedY = e.pageY-document.floater.pageY;
+} 
+}
+return true;
+}
+function moveIt(e) {
+if (whichIt == null) { return false; }
+if(IE) {
+newX = (event.clientX + document.body.scrollLeft);
+newY = (event.clientY + document.body.scrollTop);
+distanceX = (newX - currentX); distanceY = (newY - currentY);
+currentX = newX; currentY = newY;
+whichIt.style.pixelLeft += distanceX;
+whichIt.style.pixelTop += distanceY;
+if(whichIt.style.pixelTop < document.body.scrollTop) whichIt.style.pixelTop = document.body.scrollTop;
+if(whichIt.style.pixelLeft < document.body.scrollLeft) whichIt.style.pixelLeft = document.body.scrollLeft;
+if(whichIt.style.pixelLeft > document.body.offsetWidth - document.body.scrollLeft - whichIt.style.pixelWidth - 20) whichIt.style.pixelLeft = document.body.offsetWidth - whichIt.style.pixelWidth - 20;
+if(whichIt.style.pixelTop > document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5) whichIt.style.pixelTop = document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5;
+event.returnValue = false;
+} else { 
+whichIt.moveTo(e.pageX-StalkerTouchedX,e.pageY-StalkerTouchedY);
+if(whichIt.left < 0+self.pageXOffset) whichIt.left = 0+self.pageXOffset;
+if(whichIt.top < 0+self.pageYOffset) whichIt.top = 0+self.pageYOffset;
+if( (whichIt.left + whichIt.clip.width) >= (window.innerWidth+self.pageXOffset-17)) whichIt.left = ((window.innerWidth+self.pageXOffset)-whichIt.clip.width)-17;
+if( (whichIt.top + whichIt.clip.height) >= (window.innerHeight+self.pageYOffset-17)) whichIt.top = ((window.innerHeight+self.pageYOffset)-whichIt.clip.height)-17;
+return false;
+}
+return false;
+}
+function dropIt() {
+whichIt = null;
+if(NS) window.releaseEvents (Event.MOUSEMOVE);
+return true;
+}
+<!-- DRAG DROP CODE -->
+if(NS) {
+window.captureEvents(Event.MOUSEUP|Event.MOUSEDOWN);
+window.onmousedown = grabIt;
+window.onmousemove = moveIt;
+window.onmouseup = dropIt;
+}
+if(IE) {
+document.onmousedown = grabIt;
+document.onmousemove = moveIt;
+document.onmouseup = dropIt;
+}
+if(NS || IE) action = window.setInterval("heartBeat()",1);
+//-->
+</script>
+
+</body>
+
+</html>

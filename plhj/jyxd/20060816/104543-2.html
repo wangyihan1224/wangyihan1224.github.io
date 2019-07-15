@@ -1,0 +1,343 @@
+
+<!plhj-04-17-06-content-01>
+<html>
+<head>
+<SCRIPT LANGUAGE=javascript>
+function click() {
+event.returnValue=false; }
+function click1() {
+if (event.button==2) {event.returnValue=false; }}
+function CtrlKeyDown(){
+if (event.ctrlKey) {event.returnValue=false; }}
+document.onkeydown=CtrlKeyDown;
+document.onselectstart=click;
+document.onmousedown=click1;
+</SCRIPT>
+<script>
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
+  if ((window.event.altKey)&&
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
+     event.returnValue=false;
+     }
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
+      (event.keyCode==78)||           
+      (event.keyCode==83)||           
+      (event.keyCode==66)||           
+      (event.keyCode==79)||           
+      (event.keyCode==76)||           
+      (event.ctrlKey && event.keyCode==82)){ //Ctrl + R
+     event.keyCode=0;
+     event.returnValue=false;
+     }
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
+     event.returnValue=false;
+  if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
+	  
+}
+function Showhelp(){
+ return false;
+}
+ </script>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>风属性袖珍手册(珍藏版)</title>
+<style type="text/css">
+#floater {
+	position: absolute;
+	left: 490;
+	top: 390;
+	visibility: visible;
+	z-index: 10;
+}
+</style>
+<STYLE>
+BODY {
+SCROLLBAR-FACE-COLOR: #4AB6DE;
+ SCROLLBAR-3DLIGHT-COLOR: #734E3C;
+ SCROLLBAR-ARROW-COLOR: #B5D5ED;
+ SCROLLBAR-DARKSHADOW-COLOR: #B5D5ED;
+ SCROLLBAR-BASE-COLOR: #98CBF3;
+ SCROLLBAR-TRACK-COLOR: #FFFFFF;
+
+}
+</STYLE>
+<STYLE type=text/css>
+<!--
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
+body,td,th {
+	font-family: MS Shell Dlg,Tahoma;
+	font-size: 9pt;
+	color:#000000}
+a.color:link {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:hover {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: underline;
+}
+.style43 {
+	font-family: "华文行楷";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #000000;
+}
+#Layer1 {
+	position:absolute;
+	left:131px;
+	top:478px;
+	width:171px;
+	height:68px;
+	z-index:11;
+	visibility: visible;
+}
+-->
+</STYLE>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  oncontextmenu="event.returnValue=false" onhelp="Showhelp();return false;">
+
+
+
+
+
+<div align="center">
+<table width="550" height="471" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table1">
+  <tr>
+		
+      
+    <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
+		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
+          <tr>
+				<td height="36" width="131">　</td>
+				
+                <td width="366" rowspan="2" valign="bottom">
+				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td height="38" valign="top"><div align="center"><span class="style43">
+						风属性袖珍手册(珍藏版)</span></div></td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                  </tr>
+                </table></td>
+                <td height="36" width="53">　</td>
+		  </tr>
+			<tr>
+				<td height="52"> </td>
+			    <td height="52"> </td>
+			</tr>
+			<tr>
+			  <td height="1" colspan="3"> </td>
+		  </tr>
+		</table>
+	</div>    </td>
+  </tr>
+	<tr>
+		
+    <td width="550" valign="top" background="../../../plhjtp/right2.jpg"> 
+      <table width="550" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table3">
+        <tr> 
+          <td width="28"> </td>
+          <td width="490" height="265" valign="top"><br>
+			<!--Content Start-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 分身:STR=50 , AGI=103<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 暴风:STR=65 , AGI=124</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ⑶另类的一种风辅战(姐姐和我一起想出的^o^)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 因为是和姐姐研究出来的.暂时保密一下.以后再更新补上.嘻嘻.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 风属性袖珍手册(珍藏版)第四篇---练功篇</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 风战练级后来是出名的累.这里只说一些我的经验.你要是有好的可以发上来.大家一起分享.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 前提准备:</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 最好一起练2个号,这样方便以后的挂机.也可以尝试一下不同类型的风战.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 还有一点就是以后风战练级秤砣是要有的.要不不好练的.^_^.合击经验也多哈.组队回复也快一些.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我就是2个号一起练的.一个是纯风战一个是盾盾的CON和AGI的风战.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 练级思路:</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.有很多RMB做支持.这种人不用说.练的快.开始可以加CON.可以买N多药.高等级后再狂洗点- -!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.按自己的职业一步一步加.具体练法参考下面的文章.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.手动狂人.可以把WIS加到11.碎盾加出来.用经验加乘.不过以后可能要洗点.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 练功地点:</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1-10级就不多说了.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10-20级可以挂小鸡.也可以15后带着自己的盾盾号去挂单只的地花.风战要会瞬杀.法的要旋风或空间切</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 组队因该每次战斗后可以回复满SP的.不用担心:)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20-40级.你和你的盾号可以开始去挂双地花然后开始挂双地绵羊的.自己感觉安全了就可以.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 建议用SP消耗每次30以下的就好.这样每次战斗休息时间SP会长满的.呵呵.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40-53或55.这个阶段你就要有一只小船了.为了去恐龙岛.在那里有2个地属性的恐龙等着你去狂砍它:[</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要是看这里练级慢可以去就交?3层的里面挂蜘蛛(2个60地属性的).不过挂点离的远要手动才能走到</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 打起来经验也蛮快的.要是还快的话.自己又能抗住.就在南岛走挂35无属性的花吧.练级很快的.可以一直练到</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 55.在这里还有一个地方可以走挂.那就是司徒的幽灵.(2个60无属性的8过攻击不高)在这里走挂基本收支可以平衡</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 其实50以后也可以去恐龙岛去挂3地1火增援的恐龙和2火的.但我没去.感觉那个比幽灵快.幽灵出2个的不稳定.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 但有时候会有抢怪发生.我就走挂幽灵了:)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53或55-70???其实按上面说的走挂花是很快的.8过55后挂花就没经验了.所以还是要挂幽灵的.要是你很着急升级53就去南极吧</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 进南极门口走挂.都是2只2只的.8过有增援的.一般都是72地属性的熊.因为你53了不坏装备.所以可以安心的装上好装备.这样消耗会少一些</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 还记得带马鞍哟.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这里还有一种练法.就是学会隐身后.开小号刷龙阵.经验是多.费药也多多.呵呵.(限战士)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我现在62级基本55-62都是挂的狼.打双一天2级.N费药.练级的经验大致就这么多.以后的我在去摸索.感觉挂2狼有增援比3-4个的好一些.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 回合数少一些.3-4个我还容易死.2狼有增援的我开始就可以秒一只.因为没有合击所以很安全^_^</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 好了,练级就说这么多啦.希望大家一起找好的方法.呵呵.</P>
+<P><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 风属性袖珍手册(珍藏版)第五篇---宝宝选择篇</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 因为打了好多.很累了.简单说2句.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 练级的话带卡卡和小克不错的.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PK的话娜娜和小兰(团P)都是不错的</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 还就是那个大石头(复活岛那个)练级PK都不错.就长的丑丑的.鼻子好大的呢XD</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 风属性袖珍手册(珍藏版)第六篇---PK篇</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这里这个不做讨论.装备和宝宝.运气都可以左右战局.每个人有每个人的打法.关键时刻的防御也可以左右战局呢.所以不说了.嘿嘿.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 最后这里说一下.风属性应该学的技能:那就是隐身啦.过一些任务很不错的.战士要学一下箭雨.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 最近我的朋友有好多都不怎么常上了.好想她们.希望还向以前那样大家一起开开心心的一起做任务 ^o^ 快回来吧.牙牙想大家.</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 最后的最后，感谢我的好朋友们:萌彩姐,拂晓,楚楚,天使,星星,踏雪妹妹,岚岚,多多,S^_^S,臭坏坏,疯子(枫),猪猪,</P><!--Content End--><!--Page Start--><p align=left>本条共有<font color=red><b>2</b></font>页&nbsp;&nbsp;<a href='104543.html'>上一页</a> <a href='104543.html'>1</a> 2</a> </p><!--Page End--></td>
+          <td width="32"> </td>
+        </tr>
+        <tr> 
+          <td width="28" height="16"></td>
+          <td width="490" valign="top" height="16"> </td>
+          <td width="32" height="16"></td>
+        </tr>
+      </table>	  </td>
+	</tr>
+	<tr>
+		
+    <td width="550" height="35" valign="bottom" background="../../../plhjtp/right3.jpg"> </td>
+	</tr>
+</table>
+</div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
+<script LANGUAGE="JavaScript" type="text/JavaScript">
+<!--//
+self.onError=null;
+currentX = currentY = 0;
+whichIt = null;
+lastScrollX = 0; lastScrollY = 0;
+NS = (document.layers) ? 1 : 0;
+IE = (document.all) ? 1: 0;
+<!-- STALKER CODE -->
+function heartBeat() {
+if(IE) { diffY = document.body.scrollTop; diffX = document.body.scrollLeft; }
+if(NS) { diffY = self.pageYOffset; diffX = self.pageXOffset; }
+if(diffY != lastScrollY) {
+percent = .1 * (diffY - lastScrollY);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelTop += percent;
+if(NS) document.floater.top += percent; 
+lastScrollY = lastScrollY + percent;
+}
+if(diffX != lastScrollX) {
+percent = .1 * (diffX - lastScrollX);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelLeft += percent;
+if(NS) document.floater.left += percent;
+lastScrollX = lastScrollX + percent;
+}
+}
+<!-- /STALKER CODE -->
+<!-- DRAG DROP CODE -->
+function checkFocus(x,y) { 
+stalkerx = document.floater.pageX;
+stalkery = document.floater.pageY;
+stalkerwidth = document.floater.clip.width;
+stalkerheight = document.floater.clip.height;
+if( (x > stalkerx && x < (stalkerx+stalkerwidth)) && (y > stalkery && y < (stalkery+stalkerheight))) return true;
+else return false;
+}
+function grabIt(e) {
+if(IE) {
+whichIt = event.srcElement;
+while (whichIt.id.indexOf("floater") == -1) {
+whichIt = whichIt.parentElement;
+if (whichIt == null) { return true; }
+}
+whichIt.style.pixelLeft = whichIt.offsetLeft;
+whichIt.style.pixelTop = whichIt.offsetTop;
+currentX = (event.clientX + document.body.scrollLeft);
+currentY = (event.clientY + document.body.scrollTop); 
+} else { 
+window.captureEvents(Event.MOUSEMOVE);
+if(checkFocus (e.pageX,e.pageY)) { 
+whichIt = document.floater;
+StalkerTouchedX = e.pageX-document.floater.pageX;
+StalkerTouchedY = e.pageY-document.floater.pageY;
+} 
+}
+return true;
+}
+function moveIt(e) {
+if (whichIt == null) { return false; }
+if(IE) {
+newX = (event.clientX + document.body.scrollLeft);
+newY = (event.clientY + document.body.scrollTop);
+distanceX = (newX - currentX); distanceY = (newY - currentY);
+currentX = newX; currentY = newY;
+whichIt.style.pixelLeft += distanceX;
+whichIt.style.pixelTop += distanceY;
+if(whichIt.style.pixelTop < document.body.scrollTop) whichIt.style.pixelTop = document.body.scrollTop;
+if(whichIt.style.pixelLeft < document.body.scrollLeft) whichIt.style.pixelLeft = document.body.scrollLeft;
+if(whichIt.style.pixelLeft > document.body.offsetWidth - document.body.scrollLeft - whichIt.style.pixelWidth - 20) whichIt.style.pixelLeft = document.body.offsetWidth - whichIt.style.pixelWidth - 20;
+if(whichIt.style.pixelTop > document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5) whichIt.style.pixelTop = document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5;
+event.returnValue = false;
+} else { 
+whichIt.moveTo(e.pageX-StalkerTouchedX,e.pageY-StalkerTouchedY);
+if(whichIt.left < 0+self.pageXOffset) whichIt.left = 0+self.pageXOffset;
+if(whichIt.top < 0+self.pageYOffset) whichIt.top = 0+self.pageYOffset;
+if( (whichIt.left + whichIt.clip.width) >= (window.innerWidth+self.pageXOffset-17)) whichIt.left = ((window.innerWidth+self.pageXOffset)-whichIt.clip.width)-17;
+if( (whichIt.top + whichIt.clip.height) >= (window.innerHeight+self.pageYOffset-17)) whichIt.top = ((window.innerHeight+self.pageYOffset)-whichIt.clip.height)-17;
+return false;
+}
+return false;
+}
+function dropIt() {
+whichIt = null;
+if(NS) window.releaseEvents (Event.MOUSEMOVE);
+return true;
+}
+<!-- DRAG DROP CODE -->
+if(NS) {
+window.captureEvents(Event.MOUSEUP|Event.MOUSEDOWN);
+window.onmousedown = grabIt;
+window.onmousemove = moveIt;
+window.onmouseup = dropIt;
+}
+if(IE) {
+document.onmousedown = grabIt;
+document.onmousemove = moveIt;
+document.onmouseup = dropIt;
+}
+if(NS || IE) action = window.setInterval("heartBeat()",1);
+//-->
+</script>
+
+</body>
+
+</html>

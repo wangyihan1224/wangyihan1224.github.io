@@ -1,0 +1,346 @@
+
+<!plhj-04-17-06-content-01>
+<html>
+<head>
+<SCRIPT LANGUAGE=javascript>
+function click() {
+event.returnValue=false; }
+function click1() {
+if (event.button==2) {event.returnValue=false; }}
+function CtrlKeyDown(){
+if (event.ctrlKey) {event.returnValue=false; }}
+document.onkeydown=CtrlKeyDown;
+document.onselectstart=click;
+document.onmousedown=click1;
+</SCRIPT>
+<script>
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
+  if ((window.event.altKey)&&
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
+     event.returnValue=false;
+     }
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
+      (event.keyCode==78)||           
+      (event.keyCode==83)||           
+      (event.keyCode==66)||           
+      (event.keyCode==79)||           
+      (event.keyCode==76)||           
+      (event.ctrlKey && event.keyCode==82)){ //Ctrl + R
+     event.keyCode=0;
+     event.returnValue=false;
+     }
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
+     event.returnValue=false;
+  if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
+	  
+}
+function Showhelp(){
+ return false;
+}
+ </script>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>走出盲区，让我们快乐地练级</title>
+<style type="text/css">
+#floater {
+	position: absolute;
+	left: 490;
+	top: 390;
+	visibility: visible;
+	z-index: 10;
+}
+</style>
+<STYLE>
+BODY {
+SCROLLBAR-FACE-COLOR: #4AB6DE;
+ SCROLLBAR-3DLIGHT-COLOR: #734E3C;
+ SCROLLBAR-ARROW-COLOR: #B5D5ED;
+ SCROLLBAR-DARKSHADOW-COLOR: #B5D5ED;
+ SCROLLBAR-BASE-COLOR: #98CBF3;
+ SCROLLBAR-TRACK-COLOR: #FFFFFF;
+
+}
+</STYLE>
+<STYLE type=text/css>
+<!--
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
+body,td,th {
+	font-family: MS Shell Dlg,Tahoma;
+	font-size: 9pt;
+	color:#000000}
+a.color:link {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:hover {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: underline;
+}
+.style43 {
+	font-family: "华文行楷";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #000000;
+}
+#Layer1 {
+	position:absolute;
+	left:131px;
+	top:478px;
+	width:171px;
+	height:68px;
+	z-index:11;
+	visibility: visible;
+}
+-->
+</STYLE>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  oncontextmenu="event.returnValue=false" onhelp="Showhelp();return false;">
+
+
+
+
+
+<div align="center">
+<table width="550" height="471" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table1">
+  <tr>
+		
+      
+    <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
+		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
+          <tr>
+				<td height="36" width="131">　</td>
+				
+                <td width="366" rowspan="2" valign="bottom">
+				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td height="38" valign="top"><div align="center"><span class="style43">
+						走出盲区，让我们快乐地练级</span></div></td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                  </tr>
+                </table></td>
+                <td height="36" width="53">　</td>
+		  </tr>
+			<tr>
+				<td height="52"> </td>
+			    <td height="52"> </td>
+			</tr>
+			<tr>
+			  <td height="1" colspan="3"> </td>
+		  </tr>
+		</table>
+	</div>    </td>
+  </tr>
+	<tr>
+		
+    <td width="550" valign="top" background="../../../plhjtp/right2.jpg"> 
+      <table width="550" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table3">
+        <tr> 
+          <td width="28"> </td>
+          <td width="490" height="265" valign="top"><br>
+			<!--Content Start--><P align=right>作者：Cinderella0213</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 开篇就不多说了，看了论坛很多达人发的帖子，手痒了，也来写下，毕竟自己也练到46了，发个帖子应该不会被喷水-_-!</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 一、为什么要练级</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我见过很多的朋友，玩漂流就是很纯粹地做家具来装饰自己的屋子。其实这并没有错，轻松地玩游戏，正是每一个人的宗旨。但是，一个游戏，如果想长期地玩下去，或者，你想玩得比较快乐，比较满足，除了精力和金钱的投入，游戏的级别也是很重要的。毕竟我们除了自我欣赏的东西以外，很多东西需要和朋友一起分享的，任务中得到的快乐和朋友，很可能超过你做家具的快感。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 拿漂流来举例子，一个纯粹做东西的人，和一个边练级边做东西的人，前期的差别可能不大，甚至做东西的人还因为满屋子的家具很有成就感，但是后期，差距就渐渐体现出来了，没有级别，你跟不上大的潮流，很快会被淘汰掉。比如现在的火龙任务，莎莎任务，蛇王任务等等，到了意识到这一点的时候，再来补，可能就会晚了。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二、练级的方法</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 首先要保证两个大的原则。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第一，了解怪物的情况，包括STR，AGI，CON，技能等等，这些情况的了解，有助于你很好地选择适合自己练级的怪。同等级别的怪，可能有的STR很高，那么，如果你是一个注重攻击的战士，防御过低，就不要选择这类的怪。举个最简单的例子，70级的剧毒花，和74级的幼雷龙，虽然级别只差4，但是花只有700血，而雷龙是1200，这个，就是等级一致情况下，怪物点数不同造成的。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第二，了解四系的属性，火攻高，水血多，地防高，风速快，这些都是基本的。属性相克的时候，你对怪物造成的伤害接近200%，而怪物对你造成的伤害则大概是50%，要很好地利用这一点。当然，针对现在游戏中火系过多，风系怪物抢手的情况，你同样可以选择地系，防高或者速度快的甚至可以选择火系来练级。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 三、练级的方式</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我曾经看到过很多人，为了抢怪争论不休，几乎每一个地方都有出现。实际上，我们练级主要还是为了经验，如果在消耗相差无几的情况下，不一定非要坐挂来练不可的。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 首先来说说坐挂，如果你想长期进行低耗费的练级，这个是不错的选择。但是一般不推荐这个方式，因为练的速度太慢。坐挂主要是适合越级打怪，高经验，药品损耗低。当然，我指的是穿了装备越级的情况（现在是打≥人物等级20的怪，要坏装备），唯一的缺陷就是装备耗得比较厉害。有的朋友说，我可以裸体坐挂。。。。在此不发表太多评论了，按照正常的加点方式，你如果可以裸体坐挂，那么，经验相信不会在你满意的范围内。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 其次，就是走动挂机。在这里想说明一点，如果你坐着挂36级的藤蔓，和走着打23级的强化甲虫，一晚上的经验是相差无几的。后者可能收获更多，因为遇怪的次数基本是坐着的2~3倍。当然，前提是你要可以秒怪，而且是普攻可以秒。这样基本就是零耗费，2组鱼，就可以挂到一个晚上。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 再次，说下练级时宠的问题，我的建议是带着宠。第一是增加合击率，增加经验。第二是不至于让人物等级和宠等级差距太大。不管是哪种方式，建议在不熟悉怪物的情况下，最好是观察半小时左右再开始挂，不然带着宠，万一出了意外，而你又没有带够补品，早上起来那个友好度是要让你吐血的。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 最后一种，就是不多见的手动练级。当然了，并不是傻子一样手动。漂流里的怪物攻击设定，是先攻击等级低的，然后是血少的。90%是这样。所以，所谓的手动，就是带一个小号，全加CON，大号开自动，小号手动防御，这样的方法，非常适合坐挂越级打高等级怪。小号通常是不用管的，让怪去蹂躏好了，而且没有攻击力，不会分经验。大号基本上也不费血。最重要的一点，在组队的时候，如果是2个人，那么坐着的回复，是平时的2倍。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 四、练级的技巧</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 有的朋友可能会说，练级有什么技巧呢，不就是挂着打，就OK了。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这种想法是完全错误的，更多地了解经验获得的方式，适当地调节，是可以让你事半功倍的。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 下面总结几种带宠练级的模式下，可以增加经验的方法。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、合击。地球人都知道，人和宠一起合击怪物，经验值是可以增加大概50%的。合击的概率来自于双方的SPD。越接近，越高。当然，相差3点以内，影响不是很大。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、合击中的顺序问题。这里只说单练。在SPD有差距的情况下，合击分为两种：人先动，宠后；宠先动，人后。貌似在论坛一位达人叙述过，在宠带动人的合击情况下，经验是可以再增加的，比如，单杀经验是100，合击变成150，如果你的合击符合宠带动人的情况，就会是175经验，呵呵，我也实验过，好象有点效果，但是不明显，偶然会提高经验。不过，把宠的SPD提高到比人物高1~2点，似乎也没什么损失。宁可信其有，不可信其无:)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、回合数。正如一位高人所说的。回合增多，经验增多。这点我经过实验，是可以确定的。我们通常多多少少都会遇到怪反击的情况，从而增加我们的战斗回合数。仔细观察一下，经验是不是比平时高了呢，HOHO。不过，我没有刻意去试过增加很多回合，通常以1~2为好，有办法的朋友可以试下，毕竟不手动想达到这个效果比较难。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4、技能的使用。这个好象很少人提到。我也是经过实验，100%可以确定的。判定为：在攻击同一怪物的时候，使用低级的技能，比使用高级的技能，经验要多。举个例子，我43级的时候，刷澳洲的双风龙，在两只都合击情况下，人宠经验均为188（所用技能为火旋杀·改）。那么，当我改用“真·红焰”，在合击两只的情况下，经验值上升为320，人宠都一样。不信的朋友也可以去试下，呵呵。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5、貌似很少人知道这个。就是时间段的差别。具体我不知道如何划分，但是我清楚一点，如果在早上用同样的方式打怪，也就是说，假设上述方法都一样的情况下，下午6点以后，经验会高出30%。不要问我为什么，我也不知道，但是这个是事实。同样拿澳洲的双龙做例子。早上的时候，我合击两只怪，经验是180+，但是晚上6点以后，还是合击两只怪，经验变成了220+。不相信的朋友可以去验证。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6、就是系统设定的问题。我们有时候会发现，打怪的时候，伤害值，只表现为一个数字，而不是分段表现出每一击的伤害值。但是有些时候，一个技能，伤害值又会分段表现出来。举个例子：我用真·狂连杀雷龙。合击出现的时候，有时候只出一个数字，900+，这个时候，经验值是120+；但是，在某些时候，真·狂连会表现出几个数值，151，151，151，151，152，153，用这样的形式表现出来的时候，经验值是会增加的。你不要问我为什么，我也不知道。同样，也不要问我如何可以让技能伤害值分段表现出来，我也不知道，我只知道结果。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 以上，就是目前总结出来的各种增加经验的方式，当然，增加的经验是可以叠加的。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 五、练级的地点，成长过程</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这里先对大家抱歉，因为我只练的火战，而且是敏攻型。所以只能告诉大家这方面的心得。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我是拿了双倍开始练的。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、进到新手岛，花5分钟杀几只果冻怪，到3级，去做任务，拿到萝卡。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、进新手村矿洞，开始使用双倍。从一楼走到3楼，然后从3楼再下来，两个来回，你可以到6级。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、出村子，去到小红帽旁边。找到咖啡兔子，用技能是可以秒杀一只的。咖啡兔子一次刷3只，经验很可观。这时候身上应该是有很多在进岛前拿到的药，可以顶的。15~20分钟，可以到9级。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4、换一套8级装备（貌似我练的是小号，有积蓄。。。），去小鸡场，一次刷4只小鸡，经验一直保持在120~160左右，30~40分钟，可以到12级。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5、去基督，换上12级的头，出门找个刷强化甲虫的点（基督门口刷两只18级的风青蛙，不过有点慢，和打4只小鸡经验差不多），手动用技能杀，甲虫的‘千斤顶’技能，还是比较厉害的。在这里打到18级左右。。（需要有点耐心，也可以打到20），中途记得换上14的黑甲。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6、18级，应该是有真·火焰杀了，直接到南岛刷松鼠的地图。在左下的方位。如果可以找到风老鹰更好。（我那时候刷的是地）开始刷老鹰，老鹰52级，一次刷一只，会技能，一次掉200血左右，人宠都用大招，是可以秒杀的，经验不错，在这里坐挂，一直到24左右。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7、24级开始去刷风羊，只建议刷风的，其他的不建议。绵羊在地图的中部，山洞靠下一点点的位置，一次刷两只，45级的。建议坐挂，经验很客观，还可以打到羊肉做料理。在这里练到28级。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8、做一艘独木船，去澳洲，在进门拐角的第一个洞口附近。刷两只53级的风系变色龙。穿装备打，应该合了就可以秒，不会很吃力。可以打到水蜜桃，兽皮，橘子。在这里练到36级。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9、澳洲地图的最右边，有个湖。湖的正上方靠右一点点，刷两只风系的疾走龙，62级，不会技能，很好杀。掉羊肉，猪肉，蛇肉还有牙齿。在这里可能练到40，甚至45。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10、如果40以后你觉得打龙慢了，建议到澳洲下面的海边去。刷风系的海星，会吸血技能，要小心，一次3只，53级的，2风1水，经验也非常可观，但是出了合击，可能会反过来秒你，尤其是3只一起合。。。，或者，可以带个地系的小号，去南极的洞里，最右边那条路，刷两只狼，73级的，一风一水。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 按照这样的方法，一个星期左右，就可以到40以上了，当然，可能时间会更短，貌似有人三天就可以到40的。。汗。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --------------------------传说中的分割线----------------------------------</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 结束前，说几点个人心得。我通常是早上9点10分左右，开游戏，然后第一个登陆进去。漂流的服务器，是可以开着状态看的。一点到绿灯亮起来，就可以进去了。所以，我基本上不愁占不到点。早上7点起来，把号走到今天要挂的地方，然后下线，去公司上班，维护完以后就可以开始挂了。。。表BS偶，偶公司可以上网。。</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果遇到有人抢怪，我通常会开2个小号，把帐篷放到我周围，即使他屏蔽掉帐篷，也是很难找到合适的落脚点的，因为最好的我占了。。。。而且，对于大多数人，还可以造成一种已经很多人在抢了的假象，非常好用，呵呵</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 最后，祝愿大家都可以很快升级，在任务中体验到更加多的乐趣。朋友多多，极品多多。再次感谢看完这篇帖子的朋友，THANKS！</P>
+<P align=left>&nbsp;</P><!--Content End--></td>
+          <td width="32"> </td>
+        </tr>
+        <tr> 
+          <td width="28" height="16"></td>
+          <td width="490" valign="top" height="16"> </td>
+          <td width="32" height="16"></td>
+        </tr>
+      </table>	  </td>
+	</tr>
+	<tr>
+		
+    <td width="550" height="35" valign="bottom" background="../../../plhjtp/right3.jpg"> </td>
+	</tr>
+</table>
+</div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
+<script LANGUAGE="JavaScript" type="text/JavaScript">
+<!--//
+self.onError=null;
+currentX = currentY = 0;
+whichIt = null;
+lastScrollX = 0; lastScrollY = 0;
+NS = (document.layers) ? 1 : 0;
+IE = (document.all) ? 1: 0;
+<!-- STALKER CODE -->
+function heartBeat() {
+if(IE) { diffY = document.body.scrollTop; diffX = document.body.scrollLeft; }
+if(NS) { diffY = self.pageYOffset; diffX = self.pageXOffset; }
+if(diffY != lastScrollY) {
+percent = .1 * (diffY - lastScrollY);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelTop += percent;
+if(NS) document.floater.top += percent; 
+lastScrollY = lastScrollY + percent;
+}
+if(diffX != lastScrollX) {
+percent = .1 * (diffX - lastScrollX);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelLeft += percent;
+if(NS) document.floater.left += percent;
+lastScrollX = lastScrollX + percent;
+}
+}
+<!-- /STALKER CODE -->
+<!-- DRAG DROP CODE -->
+function checkFocus(x,y) { 
+stalkerx = document.floater.pageX;
+stalkery = document.floater.pageY;
+stalkerwidth = document.floater.clip.width;
+stalkerheight = document.floater.clip.height;
+if( (x > stalkerx && x < (stalkerx+stalkerwidth)) && (y > stalkery && y < (stalkery+stalkerheight))) return true;
+else return false;
+}
+function grabIt(e) {
+if(IE) {
+whichIt = event.srcElement;
+while (whichIt.id.indexOf("floater") == -1) {
+whichIt = whichIt.parentElement;
+if (whichIt == null) { return true; }
+}
+whichIt.style.pixelLeft = whichIt.offsetLeft;
+whichIt.style.pixelTop = whichIt.offsetTop;
+currentX = (event.clientX + document.body.scrollLeft);
+currentY = (event.clientY + document.body.scrollTop); 
+} else { 
+window.captureEvents(Event.MOUSEMOVE);
+if(checkFocus (e.pageX,e.pageY)) { 
+whichIt = document.floater;
+StalkerTouchedX = e.pageX-document.floater.pageX;
+StalkerTouchedY = e.pageY-document.floater.pageY;
+} 
+}
+return true;
+}
+function moveIt(e) {
+if (whichIt == null) { return false; }
+if(IE) {
+newX = (event.clientX + document.body.scrollLeft);
+newY = (event.clientY + document.body.scrollTop);
+distanceX = (newX - currentX); distanceY = (newY - currentY);
+currentX = newX; currentY = newY;
+whichIt.style.pixelLeft += distanceX;
+whichIt.style.pixelTop += distanceY;
+if(whichIt.style.pixelTop < document.body.scrollTop) whichIt.style.pixelTop = document.body.scrollTop;
+if(whichIt.style.pixelLeft < document.body.scrollLeft) whichIt.style.pixelLeft = document.body.scrollLeft;
+if(whichIt.style.pixelLeft > document.body.offsetWidth - document.body.scrollLeft - whichIt.style.pixelWidth - 20) whichIt.style.pixelLeft = document.body.offsetWidth - whichIt.style.pixelWidth - 20;
+if(whichIt.style.pixelTop > document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5) whichIt.style.pixelTop = document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5;
+event.returnValue = false;
+} else { 
+whichIt.moveTo(e.pageX-StalkerTouchedX,e.pageY-StalkerTouchedY);
+if(whichIt.left < 0+self.pageXOffset) whichIt.left = 0+self.pageXOffset;
+if(whichIt.top < 0+self.pageYOffset) whichIt.top = 0+self.pageYOffset;
+if( (whichIt.left + whichIt.clip.width) >= (window.innerWidth+self.pageXOffset-17)) whichIt.left = ((window.innerWidth+self.pageXOffset)-whichIt.clip.width)-17;
+if( (whichIt.top + whichIt.clip.height) >= (window.innerHeight+self.pageYOffset-17)) whichIt.top = ((window.innerHeight+self.pageYOffset)-whichIt.clip.height)-17;
+return false;
+}
+return false;
+}
+function dropIt() {
+whichIt = null;
+if(NS) window.releaseEvents (Event.MOUSEMOVE);
+return true;
+}
+<!-- DRAG DROP CODE -->
+if(NS) {
+window.captureEvents(Event.MOUSEUP|Event.MOUSEDOWN);
+window.onmousedown = grabIt;
+window.onmousemove = moveIt;
+window.onmouseup = dropIt;
+}
+if(IE) {
+document.onmousedown = grabIt;
+document.onmousemove = moveIt;
+document.onmouseup = dropIt;
+}
+if(NS || IE) action = window.setInterval("heartBeat()",1);
+//-->
+</script>
+
+</body>
+
+</html>

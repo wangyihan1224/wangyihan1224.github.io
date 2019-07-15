@@ -1,0 +1,85 @@
+﻿/*============
+TKGAME宝典模板CSS
+===============
+Version: 3.0
+Designer: hmily
+CreateTime:2006/08/23 14:34:00*/
+/*+++++++++++++++++++++ Element ++++++++++++++++++++*/
+@charset"gb2312";
+html
+{   scrollbar-face-color:#94CFF7;/*箭头背景颜色*/
+    scrollbar-highlight-color:#000000;/*滚动条上下方格内投影颜色*/
+    scrollbar-3dlight-color:#EEF5FB;/*滚动条上下方格上方投影颜色*/
+    scrollbar-darkshadow-color:#EEF5FB;/*滚动条上下方格下方投影颜色*/
+    scrollbar-shadow-color:#000000;/*滚动条上下区域箭头颜色*/
+    scrollbar-track-color:#EEF5FB;/*滚动条背景颜色*/
+}
+body { font-size: 12px; line-height: 1.5; text-align: center; letter-spacing: normal; }
+table/* 定义表格显示为细线 */
+{ font-size:12px; border-collapse: collapse; }
+td { font-size: 12px; }
+/*以下为连接样式*/
+a:link  /* 带连接的字体颜色 */ {
+	color: #564c41;
+	text-decoration: none;
+	text-align:center;
+}
+a:visited  /* 访问之后的字体颜色 */ {
+	text-decoration: none;
+	color: #564c41;
+}
+a:hover  /* 变换图片颜色 */ {
+	text-decoration: underline;
+	color: #564c41;
+	background:#DDDCC8;
+}
+a { color: #564c41; text-decoration: underline; }
+u { font-size: 12px; }
+a:active {
+    color: #564c41;
+	text-decoration: none;
+}
+/*+++++++++++++++++++++ CLASS ++++++++++++++++++++*/
+.top/* 内容页顶部部分 */
+{
+	width:553px;
+	height:35px;
+	background:url(news/count_01.gif);
+}
+.middle/* 内容页中间部分 */
+{ background-color: transparent; background-image: url(news/count_02.gif); background-position: 0 0; height:415px; width:553px;}
+.down/* 内容页底部部分 */
+{
+	width:553px;
+	height:20px;
+	background:url(news/count_03.gif);
+}
+.con/* 内容页内容文字定义以及左右边距及初始页面高度部分 */
+{ font-size: 12px; text-align: left; margin-left:21px; margin-right:20px; margin-top:5px; width:490px;}
+.content1
+{ font-size: 12px;}
+.listView1 { font-size: 12px; }
+.listView2 { font-size: 12px; }
+.listView3 { font-size: 12px; }
+.textbox { color: orange; font-size: 12px; font-weight: lighter; background-color: black; border-style: solid; border-width: 1pt; outline-style: double; outline-width: 1px; }
+#sbttn { text-align: center; margin: 1px; border-width: 1px; outline-width: 0; }
+.title/* 内容页内容页标题title定义部分 */
+{ color: black; text-align:center; font-family: "华文行楷"; font-size: 14pt; font-weight: normal; width: 430px; margin-left:0px; margin-right:5px; margin-top:6px; }
+#floater {	position: absolute;
+	left: 490;
+	top: 390;
+	visibility: visible;
+	z-index: 10; }
+.scan/*2*/
+{ color: white; font-family: arial; font-size: 12px; }
+#table1 { font-size: 12px; border-collapse:collapse; }
+#listView2 { font-size: 12px; border-collapse:collapse; text-align: center; }
+/*以下为公告页部分*/
+.news
+{
+	font:10pt/1.5 arial;
+	margin-left:15px;
+	margin-right:15px;
+	width:100%;
+	height:100%;
+}

@@ -1,0 +1,536 @@
+
+<!plhj-04-17-06-content-01>
+<html>
+<head>
+<SCRIPT LANGUAGE=javascript>
+function click() {
+event.returnValue=false; }
+function click1() {
+if (event.button==2) {event.returnValue=false; }}
+function CtrlKeyDown(){
+if (event.ctrlKey) {event.returnValue=false; }}
+document.onkeydown=CtrlKeyDown;
+document.onselectstart=click;
+document.onmousedown=click1;
+</SCRIPT>
+<script>
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
+  if ((window.event.altKey)&&
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
+     event.returnValue=false;
+     }
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
+      (event.keyCode==78)||           
+      (event.keyCode==83)||           
+      (event.keyCode==66)||           
+      (event.keyCode==79)||           
+      (event.keyCode==76)||           
+      (event.ctrlKey && event.keyCode==82)){ //Ctrl + R
+     event.keyCode=0;
+     event.returnValue=false;
+     }
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
+     event.returnValue=false;
+  if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
+	  
+}
+function Showhelp(){
+ return false;
+}
+ </script>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>交通工具</title>
+<style type="text/css">
+#floater {
+	position: absolute;
+	left: 490;
+	top: 390;
+	visibility: visible;
+	z-index: 10;
+}
+</style>
+<STYLE>
+BODY {
+SCROLLBAR-FACE-COLOR: #4AB6DE;
+ SCROLLBAR-3DLIGHT-COLOR: #734E3C;
+ SCROLLBAR-ARROW-COLOR: #B5D5ED;
+ SCROLLBAR-DARKSHADOW-COLOR: #B5D5ED;
+ SCROLLBAR-BASE-COLOR: #98CBF3;
+ SCROLLBAR-TRACK-COLOR: #FFFFFF;
+
+}
+</STYLE>
+<STYLE type=text/css>
+<!--
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
+body,td,th {
+	font-family: MS Shell Dlg,Tahoma;
+	font-size: 9pt;
+	color:#000000}
+a.color:link {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:hover {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: underline;
+}
+.style43 {
+	font-family: "华文行楷";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #000000;
+}
+#Layer1 {
+	position:absolute;
+	left:131px;
+	top:478px;
+	width:171px;
+	height:68px;
+	z-index:11;
+	visibility: visible;
+}
+-->
+</STYLE>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  oncontextmenu="event.returnValue=false" onhelp="Showhelp();return false;">
+
+
+
+
+
+<div align="center">
+<table width="550" height="471" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table1">
+  <tr>
+		
+      
+    <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
+		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
+          <tr>
+				<td height="36" width="131">　</td>
+				
+                <td width="366" rowspan="2" valign="bottom">
+				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td height="38" valign="top"><div align="center"><span class="style43">
+						交通工具</span></div></td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                  </tr>
+                </table></td>
+                <td height="36" width="53">　</td>
+		  </tr>
+			<tr>
+				<td height="52"> </td>
+			    <td height="52"> </td>
+			</tr>
+			<tr>
+			  <td height="1" colspan="3"> </td>
+		  </tr>
+		</table>
+	</div>    </td>
+  </tr>
+	<tr>
+		
+    <td width="550" valign="top" background="../../../plhjtp/right2.jpg"> 
+      <table width="550" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table3">
+        <tr> 
+          <td width="28"> </td>
+          <td width="490" height="265" valign="top"><br>
+			<!--Content Start--><DIV align=center>
+<TABLE id=table50 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="20%"><A href="#机车">机车</A></TD>
+<TD align=middle width="20%"><A href="#帆船">帆船</A></TD>
+<TD align=middle width="20%"><A href="#蒸气船">蒸气船</A></TD>
+<TD align=middle width="20%"><A href="#游艇">游艇</A></TD>
+<TD align=middle width="20%"><A href="#敞篷车">敞篷车</A></TD></TR>
+<TR>
+<TD align=middle width="20%"><A href="#人力飞机">人力飞机</A></TD>
+<TD align=middle width="20%"><A href="#魔毯">魔毯</A></TD>
+<TD align=middle width="20%"><A href="#热气球">热气球</A></TD>
+<TD align=middle width="20%"><A href="#飞船">飞船</A></TD>
+<TD align=middle width="20%"><A href="#金龟车">金龟车</A></TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table51 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV align=center>
+<TABLE id=table52 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=机车>机车</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>陶瓷汽缸 --红色黏土x3、灰色黏土x4、柴薪x8 =4分= <BR>小型引擎 --陶瓷汽缸x1、熟铁材x3、润滑油x1 =12分= 轴承 --钢材x4 =15分= 轮胎x2 --橡胶x2、灰色黏土x2、柴薪x8 =16分= 压克力板x5 --轻油x5、橡胶x10 =20分= </TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>所需材料如下： <BR>陶瓷汽缸(红色黏土x3、灰色黏土x4、柴薪x8) =4分= <BR>小型引擎(红色黏土x3、灰色黏土x4、铁矿x6、柴薪x27、原油x1) =54分= <BR>轴承(铁矿x24、柴薪x48) =47分= <BR>轮胎x2(灰色黏土x2、生橡胶x4、柴薪x16) =34分= <BR>压克力板x5(生橡胶x20、原油x5、柴薪x20) =210分=</TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>红色黏土x6 <BR>灰色黏土x10 <BR>生橡胶x24 <BR>铁矿x30 <BR>原油x6 <BR>柴薪x119(普木30根) <BR>所需时间：349分(5小时49分)</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table53 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table54 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=帆船>帆船</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>帆船船体 --柳安木材x7、钉子x18 =20分= <BR>帆船甲板 --柳安木材x8、钉子x12 =8分= <BR>帆船掌舵装置 --柳安木材x4、钉子x10、木制小齿轮x8、木制大齿轮x5 =8分= <BR>帆船主动力装置 --钉子x10、木制滑轮x1、拉索x1、船桅x1、船帆x1 =8分= <BR>辅助动力装置 --桧木材x3、螺旋桨x1、小型引擎x1 =10分=</TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>柳安木材x19 <BR>桧木材x3 <BR>钉子x50(铁矿x18、柴薪x27) =36分= <BR>木制滑轮x1(橡木材x1) =6分= <BR>木制小齿轮x8(柳安木材x3) <BR>木制大齿轮x5(柳安木材x5) =20分= <BR>螺旋桨x1(橡木材x2) =4分= <BR>拉索x1(麻草x8) =6分= <BR>船桅x1(柳安木x4) =6分= <BR>船帆x1(麻草x48、生橡胶x3、原油x3、柴薪x18) =208分= <BR>小型引擎x1(红色黏土x3、灰色黏土x4、铁矿x6、原油x1、柴薪x27) =54分=</TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>柳安木x4 <BR>柳安木材x27 <BR>橡木材x3 <BR>桧木材x3 <BR>麻草x168 <BR>生橡胶x3 <BR>红色黏土x3 <BR>灰色黏土x4 <BR>铁矿x24 <BR>原油x4 <BR>柴薪x72(普木18根) <BR>所需时间：394分(6小时34分)</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table55 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table56 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=蒸气船>蒸气船</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>蒸气船主体 --大型绞盘x1、蒸气船骨架x1、推进轮x2 =30分= <BR>大型绞盘 --柳安木材x5、钉子x8、麻绳x6、木制中齿轮x3、木制曲柄x1 =16分= <BR>蒸气船骨架 --钢材x4 =12分= <BR>推进轮 --橡木材x8、钉子x10、木制中齿轮x2、木制大齿轮x3、木制轮轴x3 =20分= <BR>蒸气船船舱 --柳安木材x10、钉子x10 =24分= <BR>蒸气船掌舵装置 --橡木材x8、钢材x8、木制中齿轮x6 =10分= <BR>蒸气船启动装置 --钢材x4、木制轮轴x3、金属齿轮x4、蒸气机x1 =24分= </TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>柳安木材x15 <BR>橡木材x16 <BR>钉子x28(铁矿x10、柴薪x15) = 20分= <BR>钢材x16(铁矿x96、柴薪x192) =128分= <BR>木制中齿轮x11(橡木材x6) =44分= <BR>木制大齿轮x3(柳安木材x3) =12分= <BR>木制轮轴x6(柳安木材x6) <BR>木制曲柄x1(柳安木材x1) =8分= <BR>金属齿轮x4(铁矿x24、柴薪x60) = 44分= <BR>蒸气机x1(柳安木材x1、铁矿x20、铝矿x12、柴薪x46) =44分=</TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>柳安木材x26 <BR>橡木材x22 <BR>铁矿x150 <BR>铝矿x12 <BR>柴薪x313(普木79根) <BR>所需时间：436分(7小时16分)</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table57 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table58 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=游艇>游艇</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>钢材x10 --熟铁材x30、柴薪x60 =80分= <BR>主桅杆 --柳安木材x6、麻布x3、麻绳x3 =8分= <BR>大型绞盘 --柳安木材x5、麻绳x6、钉子x8、木制曲柄x1、木制中齿轮x3 =16分= <BR>ＤＣ发电机x2 --电线x12、小型引擎x2、整流器x2 =16分= <BR>小型引擎x2 --熟铁材x6、润滑油x2 =24分=</TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>柳安木材x11 <BR>麻布x3(麻草x30) =18分= <BR>麻绳x9(麻草x36) =45分= <BR>钉子x8(铁矿x4、柴薪x8) =6分= <BR>电线x12(铜矿x48、生橡胶x24、柴薪x120) =120分= <BR>熟铁材x36((铁矿x72、柴薪x72) =72分= <BR>木制曲柄x1(柳安木材x1) =8分= <BR>木制中齿轮x3(橡木材x2) =8分= <BR>润滑油x2(原油x2、柴薪x26) =64分= <BR>整流器x2 <BR>(铁矿x15、铜矿x34、铝矿x12、生橡胶x12、云母岩x2、灰色黏土x２、白色黏土x2、柴薪x133) =130分= <BR>小型引擎x2(红色黏土x6、灰色黏土x8、铁矿x12、原油x2、柴薪x54) =108分= <BR>陶瓷汽缸x2(红色黏土x6、灰色黏土x8、柴薪x16) =8分= <BR>　</TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>柳安木材x12 <BR>橡木材x2 <BR>麻草x66 <BR>生橡胶x36 <BR>云母岩x2 <BR>铁矿x103 <BR>铜矿x82 <BR>铝矿x12 <BR>原油x4 <BR>红色黏土x12 <BR>灰色黏土x18 <BR>白色黏土x2 <BR>柴薪x489(普木123根) <BR>所需时间：731分(12小时11分) </TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table59 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table60 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=敞篷车>敞篷车</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>轴承x4 --钢材x16<BR>轮胎x4 --橡胶x4、灰色黏土x4、柴薪x16 =4分= <BR>大型引擎 --陶瓷汽缸x2、汽化器x1、汽门x1、小型燃料槽x1 =30分= <BR>钢材x8 --铁矿x48、柴薪x96</TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>灰色黏土x4 <BR>钢材x24(铁矿x144、柴薪x288) =192分= <BR>橡胶x4(生橡胶x8) =4分= <BR>陶瓷汽缸x2(红色黏土x6、灰色黏土x8、柴薪x16) =8分= <BR>汽化器(铁矿x26、柴薪x54) =68分= <BR>汽门(铁矿x6.、柴薪x12、黑色黏土x1、白色黏土x1) =16分= <BR>小型燃料槽x4(铁矿x72、柴薪x168) =136分=</TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>红色黏土x6 <BR>灰色黏土x12 <BR>黑色黏土x1 <BR>白色黏土x1 <BR>生橡胶x8 <BR>铁矿x248 <BR>柴薪x554(普木139根) <BR>所需时间：458分(7小时38分) </TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table61 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table62 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD>游艇</TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>钢材x10 --熟铁材x30、柴薪x60 =80分= <BR>主桅杆 --柳安木材x6、麻布x3、麻绳x3 =8分= <BR>大型绞盘 --柳安木材x5、麻绳x6、钉子x8、木制曲柄x1、木制中齿轮x3 =16分= <BR>ＤＣ发电机x2 --电线x12、小型引擎x2、整流器x2 =16分= <BR>小型引擎x2 --熟铁材x6、润滑油x2 =24分= </TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>柳安木材x11 <BR>麻布x3(麻草x30) =18分= <BR>麻绳x9(麻草x36) =45分= <BR>钉子x8(铁矿x4、柴薪x8) =6分= <BR>电线x12(铜矿x48、生橡胶x24、柴薪x120) =120分= <BR>熟铁材x36((铁矿x72、柴薪x72) =72分= <BR>木制曲柄x1(柳安木材x1) =8分= <BR>木制中齿轮x3(橡木材x2) =8分= <BR>润滑油x2(原油x2、柴薪x26) =64分= <BR>整流器x2 <BR>(铁矿x15、铜矿x34、铝矿x12、生橡胶x12、云母岩x2、灰色黏土x２、白色黏土x2、柴薪x133) =130分= <BR>小型引擎x2(红色黏土x6、灰色黏土x8、铁矿x12、原油x2、柴薪x54) =108分= <BR>陶瓷汽缸x2(红色黏土x6、灰色黏土x8、柴薪x16) =8分= </TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>柳安木材x12 <BR>橡木材x2 <BR>麻草x66 <BR>生橡胶x36 <BR>云母岩x2 <BR>铁矿x103 <BR>铜矿x82 <BR>铝矿x12 <BR>原油x4 <BR>红色黏土x12 <BR>灰色黏土x18 <BR>白色黏土x2 <BR>柴薪x489(普木123根) <BR>所需时间：731分(12小时11分) </TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table63 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table64 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=魔毯>魔毯</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>魔毯 --麻线x10、棉线x10、蔓草x5、白狐狸毛x2、凤凰羽毛x2 =32分=</TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>蔓草x5 <BR>白狐狸毛x2 <BR>凤凰羽毛x2 <BR>麻线x10(麻草x20) =10分= <BR>棉线x10(棉花x10) =10分=</TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>蔓草x5 <BR>白狐狸毛x2 <BR>凤凰羽毛x2 <BR>麻草x20 <BR>棉花x10 <BR>所需时间：52分</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table65 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table66 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=热气球>热气球</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>气球 --气密剂x1、棉布x10、麻线x5 =32分= <BR>连结绳 --棉线x2、麻线x2 =2分= <BR>沙袋 --棉线x3、棉布x2、灰色黏土x5 =2分= <BR>热气球吊篮 --藤蔓x10、橡木材x8、麻绳x2 =16分= <BR>燃烧器 --硬铝板x5、小型燃料槽x4、汽化器x1 =14分=</TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>橡木材x8 <BR>藤蔓x10 <BR>灰色黏土x5 <BR>气密剂x1(原油x1、生橡胶x1、柴薪x6) =32分= <BR>棉布x12(棉花x24) =36分= <BR>麻线x5(麻草x10) =5分= <BR>麻绳x2(麻草x8) =6分= <BR>棉线x5(棉花x5) =5分= <BR>硬铝板x5(铝矿x60、柴薪x100) =40分= <BR>小型燃料槽x4(铁矿x72、柴薪x168) =136分= <BR>汽化器x1(铁矿x26、柴薪x54) =92分= </TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>橡木材x8 <BR>藤蔓x10 <BR>灰色黏土x5 <BR>原油x1 <BR>生橡胶x1 <BR>棉花x29 <BR>麻草x18 <BR>铁矿x98 <BR>铝矿x60 <BR>柴薪x328(普木82根) <BR>所需时间：386分(6小时58分)</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table67 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table68 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=飞船>飞船</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>飞船浮力装置 --飞船的骨架x1、飞船气球x1、高度调整阀x1、氢气产生器x1 =42分= <BR>飞船的船舱 --橡木材x10、压克力板x1、气密剂x4、柴薪x5 =20分= <BR>氢氧产生器 --稀硫酸x3、铜沙x3、熟铁材x2、柴薪x2 =4分= <BR>飞船掌舵装置 --柳安木材x2、生橡胶x3 =12分= <BR>推进风扇 --螺旋桨x1、细粒磨光粉x3、钢材x3、电线x4、精密电路x1 =16分= </TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>柳安木材x2 <BR>橡木材x10 <BR>生橡胶x3 <BR>铜沙x3(铜矿x3、柴薪x6) =6分= <BR>熟铁材x2(铁矿x4、柴薪x4) =4分= <BR>钢材x3(铁矿x18、柴薪x36) =24分= <BR>电线x4(铜矿x16、生橡胶x8、柴薪x40) =40分=) <BR>细粒磨光粉x3(赤铁矿x3) =12分= <BR>压克力板x1(生橡胶x4、原油x1、柴薪x4) =42分= <BR>稀硫酸x3(硫磺x3、污水x3、柴薪x1) =12分= <BR>气密剂x4(原油x4、生橡胶x4、柴薪x24) =128分= <BR>飞船的骨架x1(橡木材x10、铁矿x24、 柴薪x48) = 56分= <BR>飞船气球x1(棉花x10、生橡胶x1、原油x1、柴薪x6) =79分= <BR>高度调整阀x1(铝矿x24、铅矿x２、柴薪x45) =47分= <BR>氢气产生器x1(铁矿x4、铜矿x3、硫磺x3、污水x3、柴薪x15) =26分= <BR>螺旋桨x1(橡木材x2) =4分= <BR>精密电路x1(铁矿x15、铜矿x14、铝矿x12、锡矿x12、石英x2、云母岩x1、 <BR>生橡胶x6、灰色黏土x2、黑色黏土x2、白色黏土x2、柴薪x107) =113分= </TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>柳安木材x2 <BR>橡木材x22 <BR>棉花x10 <BR>生橡胶x26 <BR>灰色黏土x2 <BR>黑色黏土x2 <BR>白色黏土x2 <BR>铁矿x65 <BR>铜矿x36 <BR>铝矿x36 <BR>锡矿x12 <BR>铅矿x2 <BR>赤铁矿x3 <BR>硫磺x6 <BR>石英x2 <BR>云母岩x1 <BR>原油x6 <BR>污水x6 <BR>柴薪x343(普木86根) <BR>所需时间：687分(11小时27分) </TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table69 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table70 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=人力飞机>人力飞机</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>人力飞机的骨架 --橡木材x 10、钉子x10 =16分= <BR>机翼x2 --橡木材x16 =32分= <BR>飞机启动装置 --柳安木材x6、麻绳x5、铜材x4、木制轮轴x3、木制曲柄x3 =16分= <BR>飞机控制装置 --钉子x10、驱动装置x1、水平尾翼x1、垂直尾翼x1、螺旋桨x1 =8分= <BR>木制踏板 --橡木材x2、木制曲柄x1 =8分= </TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>柳安木材x6 <BR>橡木材x28 <BR>钉子x10(铁矿x4、柴薪x6) =8分= <BR>铜材x4(铜矿x24、柴薪x48) =24分= <BR>麻绳x5(麻草x20) =15分= <BR>木制轮轴x3(柳安木材x3) <BR>木制曲柄x4(柳安木材x4) =32分= <BR>驱动装置x1(柳安木材x3、橡木材x2、麻草x20) =33分= <BR>水平尾翼x1(橡木材x2) =6分= <BR>垂直尾翼x1(橡木材x2) =6分= <BR>螺旋桨x1(橡木材x2) =4分= </TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>柳安木材x16 <BR>橡木材x28 <BR>铁矿x4 <BR>铜矿x24 <BR>麻草x40 <BR>柴薪x54(普木14根) <BR>所需时间：192分(3小时28分) </TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table71 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table72 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellSpacing=0 cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width="23%">名称</TD>
+<TD><A name=金龟车>金龟车</A></TD></TR>
+<TR>
+<TD align=middle width="23%">属性</TD>
+<TD>轴承x2 --钢材x8 <BR>轮胎x4 --橡胶x4、灰色黏土x4、柴薪x16 =4分= <BR>大型引擎 --陶瓷汽缸x2、汽化器x1、汽门x1、小型燃料槽x1 =30分= <BR>钢材x9 --铁矿54、柴薪x108 </TD></TR>
+<TR>
+<TD align=middle width="23%">材料</TD>
+<TD>灰色黏土x4 <BR>钢材x16(铁矿x96、柴薪x192) =128分= <BR>橡胶x4(生橡胶x8) =4分= <BR>陶瓷汽缸x2(红色黏土x6、灰色黏土x8、柴薪x16) =8分= <BR>汽化器(铁矿x26、柴薪x54) =68分= <BR>汽门(铁矿x6.、柴薪x12、黑色黏土x1、白色黏土x1) =16分= <BR>小型燃料槽x4(铁矿x72、柴薪x168) =136分= </TD></TR>
+<TR>
+<TD align=middle width="23%">合计</TD>
+<TD>红色黏土x6 <BR>灰色黏土x12 <BR>黑色黏土x1 <BR>白色黏土x1 <BR>生橡胶x8 <BR>铁矿x200 <BR>柴薪x458(普木115根) <BR>所需时间：394分(6小时34分)</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV><!--Content End--></td>
+          <td width="32"> </td>
+        </tr>
+        <tr> 
+          <td width="28" height="16"></td>
+          <td width="490" valign="top" height="16"> </td>
+          <td width="32" height="16"></td>
+        </tr>
+      </table>	  </td>
+	</tr>
+	<tr>
+		
+    <td width="550" height="35" valign="bottom" background="../../../plhjtp/right3.jpg"> </td>
+	</tr>
+</table>
+</div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
+<script LANGUAGE="JavaScript" type="text/JavaScript">
+<!--//
+self.onError=null;
+currentX = currentY = 0;
+whichIt = null;
+lastScrollX = 0; lastScrollY = 0;
+NS = (document.layers) ? 1 : 0;
+IE = (document.all) ? 1: 0;
+<!-- STALKER CODE -->
+function heartBeat() {
+if(IE) { diffY = document.body.scrollTop; diffX = document.body.scrollLeft; }
+if(NS) { diffY = self.pageYOffset; diffX = self.pageXOffset; }
+if(diffY != lastScrollY) {
+percent = .1 * (diffY - lastScrollY);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelTop += percent;
+if(NS) document.floater.top += percent; 
+lastScrollY = lastScrollY + percent;
+}
+if(diffX != lastScrollX) {
+percent = .1 * (diffX - lastScrollX);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelLeft += percent;
+if(NS) document.floater.left += percent;
+lastScrollX = lastScrollX + percent;
+}
+}
+<!-- /STALKER CODE -->
+<!-- DRAG DROP CODE -->
+function checkFocus(x,y) { 
+stalkerx = document.floater.pageX;
+stalkery = document.floater.pageY;
+stalkerwidth = document.floater.clip.width;
+stalkerheight = document.floater.clip.height;
+if( (x > stalkerx && x < (stalkerx+stalkerwidth)) && (y > stalkery && y < (stalkery+stalkerheight))) return true;
+else return false;
+}
+function grabIt(e) {
+if(IE) {
+whichIt = event.srcElement;
+while (whichIt.id.indexOf("floater") == -1) {
+whichIt = whichIt.parentElement;
+if (whichIt == null) { return true; }
+}
+whichIt.style.pixelLeft = whichIt.offsetLeft;
+whichIt.style.pixelTop = whichIt.offsetTop;
+currentX = (event.clientX + document.body.scrollLeft);
+currentY = (event.clientY + document.body.scrollTop); 
+} else { 
+window.captureEvents(Event.MOUSEMOVE);
+if(checkFocus (e.pageX,e.pageY)) { 
+whichIt = document.floater;
+StalkerTouchedX = e.pageX-document.floater.pageX;
+StalkerTouchedY = e.pageY-document.floater.pageY;
+} 
+}
+return true;
+}
+function moveIt(e) {
+if (whichIt == null) { return false; }
+if(IE) {
+newX = (event.clientX + document.body.scrollLeft);
+newY = (event.clientY + document.body.scrollTop);
+distanceX = (newX - currentX); distanceY = (newY - currentY);
+currentX = newX; currentY = newY;
+whichIt.style.pixelLeft += distanceX;
+whichIt.style.pixelTop += distanceY;
+if(whichIt.style.pixelTop < document.body.scrollTop) whichIt.style.pixelTop = document.body.scrollTop;
+if(whichIt.style.pixelLeft < document.body.scrollLeft) whichIt.style.pixelLeft = document.body.scrollLeft;
+if(whichIt.style.pixelLeft > document.body.offsetWidth - document.body.scrollLeft - whichIt.style.pixelWidth - 20) whichIt.style.pixelLeft = document.body.offsetWidth - whichIt.style.pixelWidth - 20;
+if(whichIt.style.pixelTop > document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5) whichIt.style.pixelTop = document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5;
+event.returnValue = false;
+} else { 
+whichIt.moveTo(e.pageX-StalkerTouchedX,e.pageY-StalkerTouchedY);
+if(whichIt.left < 0+self.pageXOffset) whichIt.left = 0+self.pageXOffset;
+if(whichIt.top < 0+self.pageYOffset) whichIt.top = 0+self.pageYOffset;
+if( (whichIt.left + whichIt.clip.width) >= (window.innerWidth+self.pageXOffset-17)) whichIt.left = ((window.innerWidth+self.pageXOffset)-whichIt.clip.width)-17;
+if( (whichIt.top + whichIt.clip.height) >= (window.innerHeight+self.pageYOffset-17)) whichIt.top = ((window.innerHeight+self.pageYOffset)-whichIt.clip.height)-17;
+return false;
+}
+return false;
+}
+function dropIt() {
+whichIt = null;
+if(NS) window.releaseEvents (Event.MOUSEMOVE);
+return true;
+}
+<!-- DRAG DROP CODE -->
+if(NS) {
+window.captureEvents(Event.MOUSEUP|Event.MOUSEDOWN);
+window.onmousedown = grabIt;
+window.onmousemove = moveIt;
+window.onmouseup = dropIt;
+}
+if(IE) {
+document.onmousedown = grabIt;
+document.onmousemove = moveIt;
+document.onmouseup = dropIt;
+}
+if(NS || IE) action = window.setInterval("heartBeat()",1);
+//-->
+</script>
+
+</body>
+
+</html>

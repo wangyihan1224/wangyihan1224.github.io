@@ -1,0 +1,310 @@
+
+<!plhj-04-17-06-content-01>
+<html>
+<head>
+<SCRIPT LANGUAGE=javascript>
+function click() {
+event.returnValue=false; }
+function click1() {
+if (event.button==2) {event.returnValue=false; }}
+function CtrlKeyDown(){
+if (event.ctrlKey) {event.returnValue=false; }}
+document.onkeydown=CtrlKeyDown;
+document.onselectstart=click;
+document.onmousedown=click1;
+</SCRIPT>
+<script>
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
+  if ((window.event.altKey)&&
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
+     event.returnValue=false;
+     }
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
+      (event.keyCode==78)||           
+      (event.keyCode==83)||           
+      (event.keyCode==66)||           
+      (event.keyCode==79)||           
+      (event.keyCode==76)||           
+      (event.ctrlKey && event.keyCode==82)){ //Ctrl + R
+     event.keyCode=0;
+     event.returnValue=false;
+     }
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
+     event.returnValue=false;
+  if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
+	  
+}
+function Showhelp(){
+ return false;
+}
+ </script>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>风辅战的单挑任务之路</title>
+<style type="text/css">
+#floater {
+	position: absolute;
+	left: 490;
+	top: 390;
+	visibility: visible;
+	z-index: 10;
+}
+</style>
+<STYLE>
+BODY {
+SCROLLBAR-FACE-COLOR: #4AB6DE;
+ SCROLLBAR-3DLIGHT-COLOR: #734E3C;
+ SCROLLBAR-ARROW-COLOR: #B5D5ED;
+ SCROLLBAR-DARKSHADOW-COLOR: #B5D5ED;
+ SCROLLBAR-BASE-COLOR: #98CBF3;
+ SCROLLBAR-TRACK-COLOR: #FFFFFF;
+
+}
+</STYLE>
+<STYLE type=text/css>
+<!--
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
+body,td,th {
+	font-family: MS Shell Dlg,Tahoma;
+	font-size: 9pt;
+	color:#000000}
+a.color:link {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:hover {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: underline;
+}
+.style43 {
+	font-family: "华文行楷";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #000000;
+}
+#Layer1 {
+	position:absolute;
+	left:131px;
+	top:478px;
+	width:171px;
+	height:68px;
+	z-index:11;
+	visibility: visible;
+}
+-->
+</STYLE>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  oncontextmenu="event.returnValue=false" onhelp="Showhelp();return false;">
+
+
+
+
+
+<div align="center">
+<table width="550" height="471" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table1">
+  <tr>
+		
+      
+    <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
+		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
+          <tr>
+				<td height="36" width="131">　</td>
+				
+                <td width="366" rowspan="2" valign="bottom">
+				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td height="38" valign="top"><div align="center"><span class="style43">
+						风辅战的单挑任务之路</span></div></td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                  </tr>
+                </table></td>
+                <td height="36" width="53">　</td>
+		  </tr>
+			<tr>
+				<td height="52"> </td>
+			    <td height="52"> </td>
+			</tr>
+			<tr>
+			  <td height="1" colspan="3"> </td>
+		  </tr>
+		</table>
+	</div>    </td>
+  </tr>
+	<tr>
+		
+    <td width="550" valign="top" background="../../../plhjtp/right2.jpg"> 
+      <table width="550" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table3">
+        <tr> 
+          <td width="28"> </td>
+          <td width="490" height="265" valign="top"><br>
+			<!--Content Start--><P align=right>作者：百人众～魅</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 大家好，我是珍珠一46风辅战，转入正题，没出新技能（隐身）之前，感觉风辅战不是很强悍，攻击、防御都不高，而且也没有纯风战速度快，后来和自己组织的兄弟们一起拼过了新技能任务，会了隐身，发现自己也能单挑很多任务。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 举个例子，我就穿蒙面、蓝晶头、风魔手套、保暖厚皮靴，最重要的是带极风戒指，SPD轻轻松松就430+，这个速度要单杀任务也已经相对很轻松了。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 比如我单挑麦哲伦任务，第一回合隐身，8个海盗一起合击我都MISS，然后我再放箭雨，慢慢清，由于我是辅战，SP还是比较多的，我有730的SP，不至于象纯风战那么少蓝，最后没多少怪的时候再换武器单杀。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 再比如我单杀日本武士，还是先隐身，但是我很有可能被他反击而死，我只有315的HP，武士单砍我一下都是700+只能改用远距离攻击技能，带着柰子，她攻击总是MISS，我就没带，所以就是持久战与消耗战。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 所以说，从自己过任务来讲，只要BOSS血量在5000左右或5000以下，我都可以单跳，血再多的BOSS我就杀不动了，就算拿宠出来（我练的是小克）也是相当费劲的。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要是给别人过任务，只要能保证他不被打飞，到最后我用复活拉起来他就可以了，而且我也有定技，也能牵制怪一回合。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 综合来说，风辅战在任务方面还是相当强悍的，现在暂时不讨论风辅战的PK问题。</P>
+<P align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 最后，也象征性的感谢一下，本人是珍珠“傲视情缘”组织长，欢迎大家和我交流。</P><!--Content End--></td>
+          <td width="32"> </td>
+        </tr>
+        <tr> 
+          <td width="28" height="16"></td>
+          <td width="490" valign="top" height="16"> </td>
+          <td width="32" height="16"></td>
+        </tr>
+      </table>	  </td>
+	</tr>
+	<tr>
+		
+    <td width="550" height="35" valign="bottom" background="../../../plhjtp/right3.jpg"> </td>
+	</tr>
+</table>
+</div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
+<script LANGUAGE="JavaScript" type="text/JavaScript">
+<!--//
+self.onError=null;
+currentX = currentY = 0;
+whichIt = null;
+lastScrollX = 0; lastScrollY = 0;
+NS = (document.layers) ? 1 : 0;
+IE = (document.all) ? 1: 0;
+<!-- STALKER CODE -->
+function heartBeat() {
+if(IE) { diffY = document.body.scrollTop; diffX = document.body.scrollLeft; }
+if(NS) { diffY = self.pageYOffset; diffX = self.pageXOffset; }
+if(diffY != lastScrollY) {
+percent = .1 * (diffY - lastScrollY);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelTop += percent;
+if(NS) document.floater.top += percent; 
+lastScrollY = lastScrollY + percent;
+}
+if(diffX != lastScrollX) {
+percent = .1 * (diffX - lastScrollX);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelLeft += percent;
+if(NS) document.floater.left += percent;
+lastScrollX = lastScrollX + percent;
+}
+}
+<!-- /STALKER CODE -->
+<!-- DRAG DROP CODE -->
+function checkFocus(x,y) { 
+stalkerx = document.floater.pageX;
+stalkery = document.floater.pageY;
+stalkerwidth = document.floater.clip.width;
+stalkerheight = document.floater.clip.height;
+if( (x > stalkerx && x < (stalkerx+stalkerwidth)) && (y > stalkery && y < (stalkery+stalkerheight))) return true;
+else return false;
+}
+function grabIt(e) {
+if(IE) {
+whichIt = event.srcElement;
+while (whichIt.id.indexOf("floater") == -1) {
+whichIt = whichIt.parentElement;
+if (whichIt == null) { return true; }
+}
+whichIt.style.pixelLeft = whichIt.offsetLeft;
+whichIt.style.pixelTop = whichIt.offsetTop;
+currentX = (event.clientX + document.body.scrollLeft);
+currentY = (event.clientY + document.body.scrollTop); 
+} else { 
+window.captureEvents(Event.MOUSEMOVE);
+if(checkFocus (e.pageX,e.pageY)) { 
+whichIt = document.floater;
+StalkerTouchedX = e.pageX-document.floater.pageX;
+StalkerTouchedY = e.pageY-document.floater.pageY;
+} 
+}
+return true;
+}
+function moveIt(e) {
+if (whichIt == null) { return false; }
+if(IE) {
+newX = (event.clientX + document.body.scrollLeft);
+newY = (event.clientY + document.body.scrollTop);
+distanceX = (newX - currentX); distanceY = (newY - currentY);
+currentX = newX; currentY = newY;
+whichIt.style.pixelLeft += distanceX;
+whichIt.style.pixelTop += distanceY;
+if(whichIt.style.pixelTop < document.body.scrollTop) whichIt.style.pixelTop = document.body.scrollTop;
+if(whichIt.style.pixelLeft < document.body.scrollLeft) whichIt.style.pixelLeft = document.body.scrollLeft;
+if(whichIt.style.pixelLeft > document.body.offsetWidth - document.body.scrollLeft - whichIt.style.pixelWidth - 20) whichIt.style.pixelLeft = document.body.offsetWidth - whichIt.style.pixelWidth - 20;
+if(whichIt.style.pixelTop > document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5) whichIt.style.pixelTop = document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5;
+event.returnValue = false;
+} else { 
+whichIt.moveTo(e.pageX-StalkerTouchedX,e.pageY-StalkerTouchedY);
+if(whichIt.left < 0+self.pageXOffset) whichIt.left = 0+self.pageXOffset;
+if(whichIt.top < 0+self.pageYOffset) whichIt.top = 0+self.pageYOffset;
+if( (whichIt.left + whichIt.clip.width) >= (window.innerWidth+self.pageXOffset-17)) whichIt.left = ((window.innerWidth+self.pageXOffset)-whichIt.clip.width)-17;
+if( (whichIt.top + whichIt.clip.height) >= (window.innerHeight+self.pageYOffset-17)) whichIt.top = ((window.innerHeight+self.pageYOffset)-whichIt.clip.height)-17;
+return false;
+}
+return false;
+}
+function dropIt() {
+whichIt = null;
+if(NS) window.releaseEvents (Event.MOUSEMOVE);
+return true;
+}
+<!-- DRAG DROP CODE -->
+if(NS) {
+window.captureEvents(Event.MOUSEUP|Event.MOUSEDOWN);
+window.onmousedown = grabIt;
+window.onmousemove = moveIt;
+window.onmouseup = dropIt;
+}
+if(IE) {
+document.onmousedown = grabIt;
+document.onmousemove = moveIt;
+document.onmouseup = dropIt;
+}
+if(NS || IE) action = window.setInterval("heartBeat()",1);
+//-->
+</script>
+
+</body>
+
+</html>

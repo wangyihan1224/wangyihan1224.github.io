@@ -1,0 +1,367 @@
+
+<!plhj-04-17-06-list-01>
+<html>
+<head>
+<SCRIPT LANGUAGE=javascript>
+function click() {
+event.returnValue=false; }
+function click1() {
+if (event.button==2) {event.returnValue=false; }}
+function CtrlKeyDown(){
+if (event.ctrlKey) {event.returnValue=false; }}
+document.onkeydown=CtrlKeyDown;
+document.onselectstart=click;
+document.onmousedown=click1;
+</SCRIPT>
+<script>
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
+  if ((window.event.altKey)&&
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
+     event.returnValue=false;
+     }
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
+      (event.keyCode==78)||           
+      (event.keyCode==83)||           
+      (event.keyCode==66)||           
+      (event.keyCode==79)||           
+      (event.keyCode==76)||           
+      (event.ctrlKey && event.keyCode==82)){ //Ctrl + R
+     event.keyCode=0;
+     event.returnValue=false;
+     }
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
+     event.returnValue=false;
+  if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
+	  
+}
+function Showhelp(){
+ return false;
+}
+ </script>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>心得列表页</title>
+<style type="text/css">
+#floater {
+	position: absolute;
+	left: 490;
+	top: 390;
+	visibility: visible;
+	z-index: 10;
+}
+</style>
+<STYLE>
+BODY {
+SCROLLBAR-FACE-COLOR: #4AB6DE;
+ SCROLLBAR-3DLIGHT-COLOR: #734E3C;
+ SCROLLBAR-ARROW-COLOR: #B5D5ED;
+ SCROLLBAR-DARKSHADOW-COLOR: #B5D5ED;
+ SCROLLBAR-BASE-COLOR: #98CBF3;
+ SCROLLBAR-TRACK-COLOR: #FFFFFF;
+
+}
+</STYLE>
+<STYLE type=text/css>
+<!--
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
+body,td,th {
+	font-family: MS Shell Dlg,Tahoma;
+	font-size: 9pt;
+	color:#000000}
+a.color:link {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:hover {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: underline;
+}
+.style43 {
+	font-family: "华文行楷";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #000000;
+}
+#Layer1 {
+	position:absolute;
+	left:131px;
+	top:478px;
+	width:171px;
+	height:68px;
+	z-index:11;
+	visibility: visible;
+}
+-->
+</STYLE>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  oncontextmenu="event.returnValue=false" onhelp="Showhelp();return false;">
+
+
+
+
+
+<div align="center">
+<table width="550" height="470" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table1">
+  <tr>
+		
+      
+    <td width="550" height="89" background="../../plhjtp/right1.jpg">    <div align="center">
+		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="88">
+          <tr>
+				<td height="36" width="131">　</td>
+				
+                <td width="366" rowspan="2" valign="bottom">
+				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td height="37" valign="top"><div align="center">　</div></td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                  </tr>
+                </table></td>
+                <td height="36" width="53">　</td>
+		  </tr>
+			<tr>
+				<td height="52"> </td>
+			    <td height="52"> </td>
+			</tr>
+			<tr>
+			  <td height="1" colspan="3"> </td>
+		  </tr>
+		</table>
+	</div>    </td>
+  </tr>
+	<tr>
+		
+    <td width="550" valign="top" background="../../plhjtp/right2.jpg"> 
+      <table width="550" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table3">
+        <tr> 
+          <td width="28"> </td>
+          <td width="490" height="265" valign="top"><!--Content Start--><TABLE border=0 cellPadding=0 cellSpacing=0 width='100%'><tr><td height="1172">·<a href="20090714/112157.html"style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">弗雷德转生任务心得</A><br>
+              ·<a href='20090714/112908.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">1-36刀剑合成95%几率</a><br>
+              ·<a href='20090714/112826.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">最简单的黄金眼泪合成</a><br>
+              ·<a href='20090714/112749.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">人宠贞德获得任务全套流程</a><br>
+              ·<a href='20090714/112644.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">台锯制作所需物品</a><br>
+              ·<a href='20080121/105637.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">火杀与火智的差别</a><br>
+              ·<a href='20080121/105324.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">关于风系的各个职业</a><br>
+              ·<a href='20080115/112346.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">埃及祭司的阴谋奖励列表</a><br>
+              ·<a href='20071227/114341.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">职业配点-火杀手篇</a><br>
+              ·<a href='20071227/113447.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">部分任务怪物增援情况</a><br>
+              ·<a href='20071129/151225.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">友好度物品取得任务整理</a><br>
+              ·<a href='20071129/151038.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">梦守丹取得任务整理</a><br>
+              ·<a href='20071129/150811.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">笑脸泥菩萨整理</a><br>
+              ·<a href='20071129/150159.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">所有海洋之心碎片整理</a><br>
+              ·<a href='20071129/114626.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">任务排名前20</a><br>
+              ·<a href='20071129/113944.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">各职业套装物属</a><br>
+              ·<a href='20071011/141147.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">副本奖励物属</a><br>
+              ·<a href='20071011/140226.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">赤铁装爬法</a><br>
+              ·<a href='20071011/114404.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">比较近期的物等物属</a><br>
+              ·<a href='20070913/145207.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">转职问题解答</a><br>
+              ·<a href='20070913/143431.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">职业披风数值总整理</a><br>
+              ·<a href='20070913/142726.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">牧师防御能力测试</a><br>
+              ·<a href='20070913/141715.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">每小时经验破百万心得分享</a><br>
+              ·<a href='20070913/135624.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">180等~199等辅助升级方法</a><br>
+              ·<a href='20070913/134739.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">辅助技能性质说明</a><br>
+              ·<a href='20070907/104534.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">武防数值加成算法</a><br>
+              ·<a href='20070907/101623.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">中阶炼金术解析</a><br>
+              ·<a href='20070830/104930.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">航海心得分享</a><br>
+              ·<a href='20070830/104724.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">航海路线分享</a><br>
+              ·<a href='20070802/144938.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">火法练功心得</a><br>
+              ·<a href='20070802/144727.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">1-100级单挂心得</a><br>
+              ·<a href='20070802/144539.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">地战练功心得</a><br>
+              ·<a href='20070802/144400.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">地辅心得</a><br>
+              ·<a href='20070426/113712.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">风系战士技能和配点心得</a><br>
+              ·<a href='20070426/113423.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">风法的练功心得</a><br>
+              ·<a href='20070426/113205.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">风法配点</a><br>
+              ·<a href='20070426/113007.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">风敏战</a><br>
+              ·<a href='20070426/112617.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">火战如何练来PK&解任务整体</a><br>
+              ·<a href='20070426/111621.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">火战配点分析</a><br>
+              ·<a href='20070426/111230.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">纯水法&水辅法</a><br>
+              ·<a href='20070426/110921.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">水属性辅助、法师配点心得</a><br>
+              ·<a href='20070426/110020.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">水战1-120级 3种练法</a><br>
+              ·<a href='20070426/105800.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">水战养成分析</a><br>
+              ·<a href='20070426/103921.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">水法心得</a><br>
+              ·<a href='20070426/102936.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">地战配点分析</a><br>
+              ·<a href='20070308/100143.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">物等物属资料</a><br>
+              ·<a href='20070301/110239.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">练金术狂升法</a><br>
+              ·<a href='20070301/105453.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">超爽另类练法</a><br>
+              ·<a href='20070301/105252.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">火法1-70练级地方</a><br>
+              ·<a href='20070301/105120.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">50级火战经验心得</a><br>
+              ·<a href='20061220/152740.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">十大导师攻略之火系</a><br>
+              ·<a href='20061220/152200.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">十大导师攻略之风系</a><br>
+              ·<a href='20061220/151941.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">十大导师攻略之水系</a><br>
+              ·<a href='20061220/151814.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">2.0转职职业简单分析</a><br>
+              ·<a href='20061106/140711.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">炼金百科及其带来的市场变化</a><br>
+              ·<a href='20061106/140245.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">炼金百科使用及分析</a><br>
+              ·<a href='20061106/135554.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">中级炼金解析</a><br>
+              ·<a href='20061030/134659.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">11.1更新以后的市场走向</a><br>
+              ·<a href='20061024/115613.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">我的一星期心得</a><br>
+              ·<a href='20061024/115328.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">合成装备不求人</a><br>
+              ·<a href='20061024/115015.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">克里夫任务解法(新手)</a><br>
+              ·<a href='20061024/114755.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">让你有惊喜！</a><br>
+              ·<a href='20061018/105255.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">黄金宝箱资料</a><br>
+              ·<a href='20061018/104708.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">初阶材料快速取得</a><br>
+              ·<a href='20061018/104537.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">新手赚钱小密招</a><br>
+              ·<a href='20061018/103948.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">水辅加点法!</a><br>
+              ·<a href='20061016/133703.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">单练快速练级心得</a><br>
+              ·<a href='20061016/133252.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">水辅练技能心得</a><br>
+              ·<a href='20061011/095933.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">开源与节流</a><br>
+              ·<a href='20061011/095645.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">关于水辅</a><br>
+              ·<a href='20061011/095453.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">地战全攻略</a><br>
+              ·<a href='20061011/095255.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">漂流新手风向标</a><br>
+              ·<a href='20061011/094656.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">漂流的合成与建议</a><br>
+              ·<a href='20060930/113719.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">练金师的悲哀</a><br>
+              ·<a href='20060930/111702.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">一个刷宠改的方法</a><br>
+              ·<a href='20060930/110923.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">刷回魔咒的方法</a><br>
+              ·<a href='20060930/110754.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">新技能的过法</a><br>
+              ·<a href='20060929/111221.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">关于炼金师卖东西贵的回答</a><br>
+              ·<a href='20060929/110656.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">风辅战的单挑任务之路</a><br>
+              ·<a href='20060925/112859.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">简单的炼金术变化(新手篇)</a><br>
+              ·<a href='20060918/110554.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">炼金合成心得</a><br>
+              ·<a href='20060918/105847.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">合成探讨</a><br>
+              ·<a href='20060918/105240.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">兽皮环、臂环物属和物等</a><br>
+              ·<a href='20060918/104836.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">日本贩卖武防的物等</a><br>
+              ·<a href='20060911/142325.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">人宠弗雷德练攻心得</a><br>
+              ·<a href='20060911/110232.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">弗雷德获得任务流程</a><br>
+              ·<a href='20060901/145651.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">地法辅解析</a><br>
+              ·<a href='20060816/110803.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">我的地战心得</a><br>
+              ·<a href='20060816/110332.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">3系新技能个人评估</a><br>
+              ·<a href='20060816/110041.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">火法小心得</a><br>
+              ·<a href='20060816/105318.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">各属性战士之配点</a><br>
+              ·<a href='20060816/104543.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">风属性袖珍手册(珍藏版)</a><br>
+              ·<a href='20060807/113409.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">合成果汁小技巧</a><br>
+              ·<a href='20060807/112020.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">快速省钱合铝板和硬铝板</a><br>
+              ·<a href='20060807/111330.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">充分的利用小号赚钱</a><br>
+              ·<a href='20060731/120820.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">风法不悲哀-练级加点PK心得</a><br>
+              ·<a href='20060728/110719.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">家具之我见(7.29更新)</a><br>
+              ·<a href='20060724/102236.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">快速直达各大洲无耗损的方法</a><br>
+              ·<a href='20060721/133734.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">所有物品等级整理</a><br>
+              ·<a href='20060721/133134.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">公开经验加成公式</a><br>
+              ·<a href='20060714/105509.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">关于宠物友好度的算法</a><br>
+              ·<a href='20060714/105137.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">50级以后想去哪练? 看看这里吧~</a><br>
+              ·<a href='20060714/104623.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">水辅助宠物选择之道</a><br>
+              ·<a href='20060714/104254.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">走出盲区，让我们快乐地练级</a><br>
+              ·<a href='20060707/171056.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">[新手赚钱]无与伦比</a><br>
+              ·<a href='20060707/170744.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">真正火战挂机地点心得</a><br>
+              ·<a href='20060707/170421.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">简单任务之兄妹情深！</a><br>
+              ·<a href='20060707/142444.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">关于水晶骷髅头的用处</a><br>
+              ·<a href='20060707/140949.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">法师过加柰子的心得~</a><br>
+              ·<a href='20060430/101255.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">物品合成心得二</a><br>
+              ·<a href='20060430/101005.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">物品合成心得一</a><br>
+              ·<a href='20060430/100412.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">省钱炼金术狂升法</a><br>
+              ·<a href='20060430/095628.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">飘流幻境练功技巧攻略</a><br>
+              ·<a href='20060430/095422.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">初期任务数则</a><br>
+              ·<a href='20060424/204907.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">取得设计图</a><br>
+              ·<a href='20060424/204621.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">宝箱宝物</a><br>
+              ·<a href='20060424/204433.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">航海心得</a><br>
+              ·<a href='20060424/204040.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">取得宠物</a><br>
+              ·<a href='20060424/203604.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">原料取得</a><br>
+              ·<a href='20060424/201819.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">初期宠物</a><br>
+              ·<a href='20060424/201346.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">交通工具</a><br>
+              ·<a href='20060424/195046.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">星星任务</a><br>
+              ·<a href='20060424/194806.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">练功推荐 二</a><br>
+              ·<a href='20060424/194454.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">练功推荐 一</a><br>
+              ·<a href='20060424/112822.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">角色配点 二</a><br>
+              ·<a href='20060424/110150.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">角色配点 一</a><br>
+              ·<a href='20060424/104714.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">火法心得</a><br>
+              ·<a href='20060424/104341.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">恐龙岛牧场攻略心得</a><br>
+              ·<a href='20060424/103503.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">水系补助纯WIS练法及补血技能练法</a><br>
+              ·<a href='20060424/103249.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">各属性隐技点法</a><br>
+              ·<a href='20060424/103105.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">兄妹情深 攻略</a><br>
+              ·<a href='20060424/102810.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">花的取得</a><br>
+              ·<a href='20060424/102107.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">桌上型计算机使用心得</a><br>
+              ·<a href='20060424/101629.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">练岩壁心得</a><br>
+              ·<a href='20060424/101412.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">制作多人共享一台用具</a><br>
+              ·<a href='20060424/101146.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">武器防具数值总整理</a><br>
+              ·<a href='20060424/100121.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">扭蛋机和自动贩卖机</a><br>
+              ·<a href='20060424/095843.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">独木舟走世界</a><br>
+              ·<a href='20060421/203120.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">矿石合成</a><br>
+              ·<a href='20060421/202855.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">我的工蜂成长过程</a><br>
+              ·<a href='20060421/194320.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">南极任务之卖火柴的小女孩</a><br>
+              ·<a href='20060421/193524.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">飘流入门十大必备工具(上)</a><br>
+              ·<a href='20060421/193350.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">关于宠物好友度</a><br>
+              ·<a href='20060421/193144.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">飘流初期宠物讨论</a><br>
+              ·<a href='20060421/192840.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">飘流幻境练功技巧攻略</a><br>
+              ·<a href='20060421/192754.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">飘流从这里开始[4]</a><br>
+              ·<a href='20060421/192705.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">飘流从这里开始[3]</a><br>
+              ·<a href='20060421/192608.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">飘流从这里开始[2]</a><br>
+              ·<a href='20060421/192504.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">飘流从这里开始[1]</a><br>
+              ·<a href='20060421/191649.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">开源节流</a><br>
+              ·<a href='20060421/191440.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">星星任务</a><br>
+              ·<a href='20060421/191108.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">老鸟有交代，菜鸟要忍耐</a><br>
+              ·<a href='20060421/190824.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">小妮子的采摘日记</a><br>
+              ·<a href='20060421/190635.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">友情之火箭炮制作过程</a><br>
+              ·<a href='20060421/190327.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">最好解的5颗星星</a><br>
+              ·<a href='20060421/120743.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">萝卡好友度</a><br>
+              ·<a href='20060421/120328.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">克里夫(海盗)任务解法&打法</a><br>
+              ·<a href='20060421/115812.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">如何减少宠物叛逃</a><br>
+              ·<a href='20060421/115418.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">轻油原油快速取得法</a><br>
+              ·<a href='20060421/114303.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">新手赚钱小密招</a><br>
+              ·<a href='20060421/113831.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">货架功能&铝板的合成</a><br>
+              ·<a href='20060421/113643.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">1-30级练功推荐地点</a><br>
+              ·<a href='20060421/113453.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">初阶材料快速取得</a><br>
+              ·<a href='20060421/113049.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">三个小小小密技</a><br>
+              ·<a href='20060421/112844.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">罗卡的刀 取回办法</a><br>
+              ·<a href='20060421/112648.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">11星星取得方式</a><br>
+              ·<a href='20060421/111829.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">系别对属性的影响</a><br>
+              ·<a href='20060421/110932.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">资源回收桶的妙用</a><br>
+              ·<a href='20060421/105153.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">楼梯制做</a><br>
+              ·<a href='20060421/104923.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">冷气机制作</a><br>
+              ·<a href='20060421/104021.html' style="color: #000000; font-family: 宋体; font-size: 9pt; line-height: 11pt; text-decoration: none">初阶物品制作攻略</a><br>
+              
+                      </p></td></tr></table><!--Content End--></td>
+          <td width="32"> </td>
+        </tr>
+        <tr> 
+          <td width="28" height="16"></td>
+          <td width="490" valign="top" height="16"> </td>
+          <td width="32" height="16"></td>
+        </tr>
+      </table>	  </td>
+	</tr>
+	<tr>
+		
+    <td width="550" height="34" valign="bottom" background="file:///E|/Program Files/天空游戏网/天空飘流幻境宝典/data/0001/plhjtp/right3.jpg"> </td>
+	</tr>
+</table>
+</div>
+
+</body>
+
+</html>

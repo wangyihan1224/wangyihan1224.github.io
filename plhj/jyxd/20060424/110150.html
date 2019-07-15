@@ -1,0 +1,504 @@
+
+<!plhj-04-17-06-content-01>
+<html>
+<head>
+<SCRIPT LANGUAGE=javascript>
+function click() {
+event.returnValue=false; }
+function click1() {
+if (event.button==2) {event.returnValue=false; }}
+function CtrlKeyDown(){
+if (event.ctrlKey) {event.returnValue=false; }}
+document.onkeydown=CtrlKeyDown;
+document.onselectstart=click;
+document.onmousedown=click1;
+</SCRIPT>
+<script>
+function KeyDown(){ //屏蔽鼠标右键、Ctrl+n、shift+F10、F5刷新、退格键
+ //alert("ASCII代码是："+event.keyCode);
+  if ((window.event.altKey)&&
+      ((window.event.keyCode==37)||   //屏蔽 Alt+ 方向键 ←
+       (window.event.keyCode==39))){  //屏蔽 Alt+ 方向键 →
+     event.returnValue=false;
+     }
+  if ((event.keyCode==8)  ||                 //屏蔽退格删除键
+      (event.keyCode==116)||                 //屏蔽 F5 刷新键
+      (event.keyCode==112)||                 //屏蔽 F1 刷新键
+      (event.keyCode==80)||                 //屏蔽 p 刷新键
+      (event.keyCode==78)||           
+      (event.keyCode==83)||           
+      (event.keyCode==66)||           
+      (event.keyCode==79)||           
+      (event.keyCode==76)||           
+      (event.ctrlKey && event.keyCode==82)){ //Ctrl + R
+     event.keyCode=0;
+     event.returnValue=false;
+     }
+  if ((event.ctrlKey)&&(event.keyCode==78))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==65))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.ctrlKey)&&(event.keyCode==67))   //屏蔽 Ctrl+n
+     event.returnValue=false;
+  if ((event.shiftKey)&&(event.keyCode==121)) //屏蔽 shift+F10
+     event.returnValue=false;
+  if (window.event.srcElement.tagName == "A" && window.event.shiftKey) 
+      window.event.returnValue = false;  //屏蔽 shift 加鼠标左键新开一网页
+	  
+}
+function Showhelp(){
+ return false;
+}
+ </script>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>角色配点 一</title>
+<style type="text/css">
+#floater {
+	position: absolute;
+	left: 490;
+	top: 390;
+	visibility: visible;
+	z-index: 10;
+}
+</style>
+<STYLE>
+BODY {
+SCROLLBAR-FACE-COLOR: #4AB6DE;
+ SCROLLBAR-3DLIGHT-COLOR: #734E3C;
+ SCROLLBAR-ARROW-COLOR: #B5D5ED;
+ SCROLLBAR-DARKSHADOW-COLOR: #B5D5ED;
+ SCROLLBAR-BASE-COLOR: #98CBF3;
+ SCROLLBAR-TRACK-COLOR: #FFFFFF;
+
+}
+</STYLE>
+<STYLE type=text/css>
+<!--
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+A:link {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; FONT-FAMILY: "宋体"; FONT-SIZE: 10pt; LINE-HEIGHT: 11pt; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0c00; TEXT-DECORATION: none}
+body,td,th {
+	font-family: MS Shell Dlg,Tahoma;
+	font-size: 9pt;
+	color:#000000}
+a.color:link {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:visited {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: none;
+}
+a.color:hover {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #FF0000;
+	text-decoration: underline;
+}
+.style43 {
+	font-family: "华文行楷";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #000000;
+}
+#Layer1 {
+	position:absolute;
+	left:131px;
+	top:478px;
+	width:171px;
+	height:68px;
+	z-index:11;
+	visibility: visible;
+}
+-->
+</STYLE>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  oncontextmenu="event.returnValue=false" onhelp="Showhelp();return false;">
+
+
+
+
+
+<div align="center">
+<table width="550" height="471" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table1">
+  <tr>
+		
+      
+    <td width="550" height="72" background="../../../plhjtp/right1.jpg">    <div align="center">
+		<table border="0" cellpadding="0" width="100%" bordercolor="#C0C0C0" id="table4" cellspacing="0" height="71">
+          <tr>
+				<td height="36" width="131">　</td>
+				
+                <td width="366" rowspan="2" valign="bottom">
+				<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td height="38" valign="top"><div align="center"><span class="style43">
+						角色配点 一</span></div></td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                  </tr>
+                </table></td>
+                <td height="36" width="53">　</td>
+		  </tr>
+			<tr>
+				<td height="52"> </td>
+			    <td height="52"> </td>
+			</tr>
+			<tr>
+			  <td height="1" colspan="3"> </td>
+		  </tr>
+		</table>
+	</div>    </td>
+  </tr>
+	<tr>
+		
+    <td width="550" valign="top" background="../../../plhjtp/right2.jpg"> 
+      <table width="550" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000" id="table3">
+        <tr> 
+          <td width="28"> </td>
+          <td width="490" height="265" valign="top"><br>
+			<!--Content Start--><DIV align=center>
+<TABLE id=table66 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76>凡妮莎</TD>
+<TD width=254>建议属性:地 水 火 风</TD>
+<TD width=155>推荐配点: 智力</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table67 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>凡 妮 莎初始值为智力 (INT)3 点 , 若能再将自由分配的 5 点加在智力 (INT), 则不管选择哪一系属性 , 都可以在 4 级前学习到高阶段技能 、 如火系爆炎阵 、 水系寒气弹 、 地系落 石术 、 风系风切术 … 等等，更可在战斗中快速提升技能等级。</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table68 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<TABLE id=table69 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=75><SPAN>丹尼尔</SPAN></TD>
+<TD width=255>建议属性:地</TD>
+<TD width=155>推荐配点: 体质 力量</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table70 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>这个角色由于初始能力为力量（ STR ） 1 点、体力（ CON ） 2 点，即使没有很好的装备，等级提升后角色成长将自动增加一定的物理防御力（ DEF ），若再将配点放于力量（ STR ），并搭配地属性的护盾术，更可为最佳打手唷!</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table71 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table72 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76>贝蒂</TD>
+<TD width=254>建议属性:水 火 风</TD>
+<TD width=155>推荐配点: 智力 敏捷</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table73 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>从初始能力值看来，虽然智力点数较为逊色，但若将升级点数分配于智力（ INT ）于敏捷（ AGI ），便能于第一时间出手解决棘手的敌人，非常适合喜欢快速战斗的玩家。后期敏捷（ AGI ）将会是战斗成败的重要关键，若能搭配水系的治疗、火系的降敏术或风系的加速术，更可成为战场上的最佳辅助角色。</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table74 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table75 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76><SPAN>妮娜</SPAN></TD>
+<TD width=254>建议属性:地 火</TD>
+<TD width=155>推荐配点: 平均配点</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table76 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>此角色初始能力较为平均，笔者曾测试将初始能力的 5 点再度平均配点，并与角色升级后，将点数全部投入力量（ STR ） , 结果防御力的表现虽不及丹尼尔，物理攻击（ ATK ）比不上席德，但也因为初始值的关系，能力皆比席德与丹尼尔高一些，将她培养成战士或法师，都是不错的选择。 </TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table77 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table78 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76><SPAN>洛克</SPAN></TD>
+<TD width=254>建议属性:地 风</TD>
+<TD width=155>推荐配点: 智力 敏捷</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table79 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>由于角色专属技能偏向地属性，且初始能力以敏捷为辅，建议培育成风系敏法，若害怕血量于防御较低，也可以选择地系；虽然风、地两系的术法攻击略逊于火系的破环力，但风、地的辅助型法术再配合上初始敏捷的加成，将会有不错的效果。</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table80 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table81 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76><SPAN>席德</SPAN></TD>
+<TD width=254>建议属性:火</TD>
+<TD width=155>推荐配点: 力量</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table82 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>席德初始能力即拥有超高的力量（ STR ）成长率于体力值 (CON) ，建议后续升级点数可平均分配于力量（ STR ）于速度（ AGI ），或力量（ STR ）于体力 (CON) ，甚至将所有的点数分配于力量，都是不错的选择。另外，若能加上火系的肉搏技能的加持，随便挥个手都能看到破百的攻击力，可说是培养战士的最佳角色。</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table83 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table84 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76><SPAN>穆尔</SPAN></TD>
+<TD width=254>建议属性: 火 风</TD>
+<TD width=155>推荐配点: 智力 敏捷</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table85 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>此角色专属技能为火系，且由于火系破坏力较其它三系高，搭配初始能力的敏捷加成效果，即使配点以智力、智慧为主，也会因为有初始属性加成的辅助，使得出手速度不会太过于缓慢；若配合初始属性而将升级点数分配于智力于速度，则将因出手速度快且又拥有高水平破坏力，而成为以速度型取胜的法师。</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table86 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV align=center>
+<TABLE id=table87 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76><SPAN>艾丽斯</SPAN></TD>
+<TD width=254>建议属性:地</TD>
+<TD width=155>推荐配点: 体力 力量</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table88 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>艾丽斯的能力可说是丹尼尔的女生版，虽然初始能力于丹尼而相同，但初始装备 加起来的防御值有略高于丹尼尔一些，建议可搭配地属性的护盾术，更可协助玩家快速冲等唷！</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table89 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table90 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76><SPAN>莉可</SPAN></TD>
+<TD width=254>建议属性: 火 风</TD>
+<TD width=155>推荐配点: 敏捷 力量</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table91 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>速度快、力量大是莉可的最大特色，且由初始能力可推测，未来角色敏捷（ AGI ）的成长率，将明显的比其它同等的角色来的高，适合想练敏战的玩家。由于角色初始能力就远远高于其它角色，若能搭配拥有强大攻击力的火属性技能，或风属性的速度加成技能辅助，将会是速度型战士的最佳代表。</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table92 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV>
+<DIV align=center>
+<TABLE id=table93 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76><SPAN>绀野鹤子</SPAN></TD>
+<TD width=254>建议属性: 水 火</TD>
+<TD width=155>推荐配点: 智力</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table94 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>初始能力因为智慧的关系，明显的比其它法术型角色 SP 值高，可施放的法术次数也因此高于其它角色，虽然角色初期不易上手且升级困难，但学习到高阶术法技能后，战斗破坏力可是高人得吓人，且她拥有高于其它角色的 SP 量，对于长期战斗、远征荒岛是法术型角色中不错的选择之一。</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table95 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table96 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76><SPAN>玛莉亚</SPAN></TD>
+<TD width=254>建议属性:水</TD>
+<TD width=155>推荐配点: 智力 智慧</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table97 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>此角色的初始能力非常适合培养成为辅助型角色，未来在高敏捷的前提下，若能配合水系各种强力治疗术，将可实时解救垂死边缘的伙伴，无论是单练或者于其它玩家组队练等，都非常收欢迎啦。</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table98 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV>
+<DIV align=center>
+<TABLE id=table99 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD align=middle width=76><SPAN>洁西卡</SPAN></TD>
+<TD width=254>建议属性:水</TD>
+<TD width=155>推荐配点: 智力 智慧</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE id=table100 style="BORDER-COLLAPSE: collapse" borderColor=#c6d3de cellPadding=0 width=490 border=1>
+<TBODY>
+<TR>
+<TD>洁西卡也是辅助型法师的选择之一，从初始能力看来，将他培养成辅助型法师，或战斗型法师都是不错的选择。属性方面首推水系，由于水系法术攻击力并不差，且水系的治疗于回魔术皆非常的实用，可让玩家因此成为队伍中的最佳守护神。</TD></TR></TBODY></TABLE>
+<DIV align=center>
+<TABLE id=table101 cellSpacing=0 cellPadding=0 width=490 border=0>
+<TBODY>
+<TR>
+<TD>　</TD></TR></TBODY></TABLE></DIV></DIV><!--Content End--></td>
+          <td width="32"> </td>
+        </tr>
+        <tr> 
+          <td width="28" height="16"></td>
+          <td width="490" valign="top" height="16"> </td>
+          <td width="32" height="16"></td>
+        </tr>
+      </table>	  </td>
+	</tr>
+	<tr>
+		
+    <td width="550" height="35" valign="bottom" background="../../../plhjtp/right3.jpg"> </td>
+	</tr>
+</table>
+</div>
+<div ID="floater" style="left:490px; top: 390px"><a href="#"><img src="../../../plhjtp/top.gif" alt="回顶部" border="0"></a></div>
+<script LANGUAGE="JavaScript" type="text/JavaScript">
+<!--//
+self.onError=null;
+currentX = currentY = 0;
+whichIt = null;
+lastScrollX = 0; lastScrollY = 0;
+NS = (document.layers) ? 1 : 0;
+IE = (document.all) ? 1: 0;
+<!-- STALKER CODE -->
+function heartBeat() {
+if(IE) { diffY = document.body.scrollTop; diffX = document.body.scrollLeft; }
+if(NS) { diffY = self.pageYOffset; diffX = self.pageXOffset; }
+if(diffY != lastScrollY) {
+percent = .1 * (diffY - lastScrollY);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelTop += percent;
+if(NS) document.floater.top += percent; 
+lastScrollY = lastScrollY + percent;
+}
+if(diffX != lastScrollX) {
+percent = .1 * (diffX - lastScrollX);
+if(percent > 0) percent = Math.ceil(percent);
+else percent = Math.floor(percent);
+if(IE) document.all.floater.style.pixelLeft += percent;
+if(NS) document.floater.left += percent;
+lastScrollX = lastScrollX + percent;
+}
+}
+<!-- /STALKER CODE -->
+<!-- DRAG DROP CODE -->
+function checkFocus(x,y) { 
+stalkerx = document.floater.pageX;
+stalkery = document.floater.pageY;
+stalkerwidth = document.floater.clip.width;
+stalkerheight = document.floater.clip.height;
+if( (x > stalkerx && x < (stalkerx+stalkerwidth)) && (y > stalkery && y < (stalkery+stalkerheight))) return true;
+else return false;
+}
+function grabIt(e) {
+if(IE) {
+whichIt = event.srcElement;
+while (whichIt.id.indexOf("floater") == -1) {
+whichIt = whichIt.parentElement;
+if (whichIt == null) { return true; }
+}
+whichIt.style.pixelLeft = whichIt.offsetLeft;
+whichIt.style.pixelTop = whichIt.offsetTop;
+currentX = (event.clientX + document.body.scrollLeft);
+currentY = (event.clientY + document.body.scrollTop); 
+} else { 
+window.captureEvents(Event.MOUSEMOVE);
+if(checkFocus (e.pageX,e.pageY)) { 
+whichIt = document.floater;
+StalkerTouchedX = e.pageX-document.floater.pageX;
+StalkerTouchedY = e.pageY-document.floater.pageY;
+} 
+}
+return true;
+}
+function moveIt(e) {
+if (whichIt == null) { return false; }
+if(IE) {
+newX = (event.clientX + document.body.scrollLeft);
+newY = (event.clientY + document.body.scrollTop);
+distanceX = (newX - currentX); distanceY = (newY - currentY);
+currentX = newX; currentY = newY;
+whichIt.style.pixelLeft += distanceX;
+whichIt.style.pixelTop += distanceY;
+if(whichIt.style.pixelTop < document.body.scrollTop) whichIt.style.pixelTop = document.body.scrollTop;
+if(whichIt.style.pixelLeft < document.body.scrollLeft) whichIt.style.pixelLeft = document.body.scrollLeft;
+if(whichIt.style.pixelLeft > document.body.offsetWidth - document.body.scrollLeft - whichIt.style.pixelWidth - 20) whichIt.style.pixelLeft = document.body.offsetWidth - whichIt.style.pixelWidth - 20;
+if(whichIt.style.pixelTop > document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5) whichIt.style.pixelTop = document.body.offsetHeight + document.body.scrollTop - whichIt.style.pixelHeight - 5;
+event.returnValue = false;
+} else { 
+whichIt.moveTo(e.pageX-StalkerTouchedX,e.pageY-StalkerTouchedY);
+if(whichIt.left < 0+self.pageXOffset) whichIt.left = 0+self.pageXOffset;
+if(whichIt.top < 0+self.pageYOffset) whichIt.top = 0+self.pageYOffset;
+if( (whichIt.left + whichIt.clip.width) >= (window.innerWidth+self.pageXOffset-17)) whichIt.left = ((window.innerWidth+self.pageXOffset)-whichIt.clip.width)-17;
+if( (whichIt.top + whichIt.clip.height) >= (window.innerHeight+self.pageYOffset-17)) whichIt.top = ((window.innerHeight+self.pageYOffset)-whichIt.clip.height)-17;
+return false;
+}
+return false;
+}
+function dropIt() {
+whichIt = null;
+if(NS) window.releaseEvents (Event.MOUSEMOVE);
+return true;
+}
+<!-- DRAG DROP CODE -->
+if(NS) {
+window.captureEvents(Event.MOUSEUP|Event.MOUSEDOWN);
+window.onmousedown = grabIt;
+window.onmousemove = moveIt;
+window.onmouseup = dropIt;
+}
+if(IE) {
+document.onmousedown = grabIt;
+document.onmousemove = moveIt;
+document.onmouseup = dropIt;
+}
+if(NS || IE) action = window.setInterval("heartBeat()",1);
+//-->
+</script>
+
+</body>
+
+</html>

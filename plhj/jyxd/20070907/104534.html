@@ -1,0 +1,80 @@
+
+<!--plhj-08-08-28-content-01-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link href="../../../plhjtp/zh_tkbd.css" rel="stylesheet" type="text/css" />
+<title>武防数值加成算法</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Hide
+function killErrors() {
+return true;
+}
+window.onerror = killErrors;
+// -->
+</SCRIPT>
+<script type="text/javascript" language="JavaScript1.2" src="../../../plhjtp/fd.js"></script>
+<style type="text/css">
+<!--
+.STYLE2 {font-size: 18px}
+a:active {
+	color: #313131;
+}
+a:link {
+	color: #2B2922;
+}
+a:visited {
+	color: #48473C;
+}
+a:hover {
+	color: #2B2922;
+}
+body {
+	background-image: url(../../../plhjtp/news/bj.gif);
+	background-attachment:fixed;
+}
+-->
+</style></head>
+
+<body>
+
+
+
+
+
+<div class="top">
+<div class="title">
+    <p><span class="STYLE2">武防数值加成算法</span></div>
+</div>
+<div class="middle">
+<div class="con">
+  <p><br>
+	<!--Content Start--><P>转自巴哈</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 无论是武器还是防具<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 到某个等级还会再加或减其它属性<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 或是更改能力的比重</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 武器：</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 棒：ATK，DEF<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV*0.5-1<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →DEF=LV*0.5+1</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 棍：ATK，DEF<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV*0.5-1<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →DEF=LV*0.5+1</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 枪：ATK<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 矛：ATK<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 戟<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 剑：ATK，SPD<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV*0.5<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →SPD=LV*0.5</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 刀：ATK，SPD<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV*0.5<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →SPD=LV*0.5</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 爪：ATK，SPD<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV*0.5-1<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →SPD=LV*0.5+1</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 弓：ATK，SPD<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV*0.5+1<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →SPD=LV*0.5-1</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 杖：MATK，MDEF<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →MATK=LV*0.5<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →MDEF=LV*0.5</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 枪：ATK(目前知道LV4~LV18)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →ATK=LV*2.5</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 装备：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 以部位来说：头、腕、身体、脚、特殊物品五种<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 以能力来说：ATK、DEF、SPD、MATK、MDEF也都有防具类的不好分，<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 待整理.....以下仅供参考</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 头：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →魔防：MDEF=LV (EX：粉红头带LV4 MDEF+4)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →魔攻：MATK=LV*0.5 (EX：红色头带LV6 MATK+3)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →魔攻敏：MATK=(LV*0.5-2)*0.5 SPD=(LV*0.5+2)*0.5 (EX：猫头饰♀LV10 MATK+2 SPD+3)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →法师型：MATK=LV*0.25-1 MDEF=LV*0.25+1 (EX：神职帽 LV12 MATK+2 MDEF+4)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →防御型：DEF=LV*0.25+1 MDEF=LV*0.25-1 (EX：禾草桂冠 LV12 DEF+4 MDEF+2)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 腕部：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →普防：DEF=LV*0.5(兽皮 LV4 DEF+2)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →普防增敏：DEF=LV*0.5-1 SPD=1(虎皮 LV6 DEF+2 SPD+1)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →普防减敏：DEF=LV*0.5+1 SPD=-1(铁 LV14 DEF+8 SPD-1)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →魔防：MDEF=LV*0.5(木 MDEF+5)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 身体：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →普防：DEF=LV*0.5<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →敏捷：SPD=LV*0.5 <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →魔防：MDEF=LV*0.5 (我猜的..)</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 脚：<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV8以下(含)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →敏捷：SPD=LV*0.5<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LV10以上<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →魔攻普防：MATK=(LV-2)*0.25 DEF=(LV+2)*0.25<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →普防：DEF=LV*0.5<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →普防加敏：DEF=1 SPD=LV*0.5-1</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这是以我目前拥有的资料析出来的....</P><!--Content End--></p>
+  <hr align="center" color="#999999" width="200">
+  <form style="text-align:right;margin-right:10px">
+    <input type="button" value="『返回上一页』" onClick="history.back(-1)">
+  </form></div>
+</div>
+<div class="down"></div>
+<div id=floater style="position: absolute; left: 470px; top: 400px"><a href="#" style="background:transparent"><img SRC="../../../plhjtp/news/top.gif" alt="回顶部" border="0"></a></div>
+</body>
+</html>
